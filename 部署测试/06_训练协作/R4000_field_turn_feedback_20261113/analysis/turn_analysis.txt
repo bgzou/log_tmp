@@ -1,0 +1,49 @@
+walk frames=6001 cmd vx[-0.400,+0.397] wz[-0.100,+0.095]
+applied leg-q step straight p50/p99/max = 0.0000/0.0051/0.0180 (slew limit 0.018 rad)
+applied leg-q step turning p50/p99/max = 0.0001/0.0120/0.0167
+
+FORWARD >=0.30 m/s segments (2 ms capture extracts):
+  [5194:5257]  1.3s cmd=-0.370 -> body ~0.338 m/s (91%)
+
+TURN segments (wz cmd, gyro_z, wheel differential, rear posture):
+  [1792:1882]   1.8s wz=-0.082 gyro_z=+nan(nan%) cmdDdq=-1.19 measDdq=+nan rearThigh=0.949 rearCalfMin=-1.767
+  [1978:2560]  11.6s wz=-0.097 gyro_z=-0.0123( 13%) cmdDdq=-1.47 measDdq=-0.17 rearThigh=0.845 rearCalfMin=-1.922
+  [2630:2732]   2.0s wz=+0.042 gyro_z=+0.0213( 50%) cmdDdq=+0.60 measDdq=+0.46 rearThigh=0.832 rearCalfMin=-1.881
+  [2740:2891]   3.0s wz=+0.074 gyro_z=+nan(nan%) cmdDdq=+1.12 measDdq=+nan rearThigh=0.845 rearCalfMin=-1.783
+  [2921:3557]  12.7s wz=+0.092 gyro_z=+0.0126( 14%) cmdDdq=+1.40 measDdq=+0.14 rearThigh=0.799 rearCalfMin=-1.925
+  [3871:3943]   1.4s wz=-0.086 gyro_z=+nan(nan%) cmdDdq=-1.23 measDdq=+nan rearThigh=0.949 rearCalfMin=-1.745
+  [5733:5768]   0.7s wz=-0.073 gyro_z=+nan(nan%) cmdDdq=-0.94 measDdq=+nan rearThigh=0.962 rearCalfMin=-1.652
+  [5785:5999]   4.3s wz=-0.083 gyro_z=+nan(nan%) cmdDdq=-1.24 measDdq=+nan rearThigh=0.882 rearCalfMin=-1.791
+
+Long-turn time evolution (1 s bins):
+  --- wz=-0.097 ---
+    t=  0.0s measDdq=-0.36 gyro_z=-0.0186 rearThigh=0.939 rearCalf=-1.632 tau_L=+0.56 tau_R=-0.90
+    t=  1.0s measDdq=-0.35 gyro_z=-0.0161 rearThigh=0.895 rearCalf=-1.670 tau_L=+0.98 tau_R=-1.21
+    t=  2.0s measDdq=-0.18 gyro_z=-0.0140 rearThigh=0.866 rearCalf=-1.685 tau_L=+1.15 tau_R=-1.33
+    t=  3.0s measDdq=-0.08 gyro_z=-0.0088 rearThigh=0.849 rearCalf=-1.693 tau_L=+1.23 tau_R=-1.36
+    t=  4.0s measDdq=-0.05 gyro_z=-0.0011 rearThigh=0.843 rearCalf=-1.700 tau_L=+1.29 tau_R=-1.37
+    t=  5.0s measDdq=-0.07 gyro_z=-0.0068 rearThigh=0.837 rearCalf=-1.704 tau_L=+1.34 tau_R=-1.46
+    t=  6.0s measDdq=-0.09 gyro_z=-0.0114 rearThigh=0.828 rearCalf=-1.711 tau_L=+1.36 tau_R=-1.43
+    t=  7.0s measDdq=-0.07 gyro_z=-0.0072 rearThigh=0.824 rearCalf=-1.721 tau_L=+1.38 tau_R=-1.46
+    t=  8.0s measDdq=-0.13 gyro_z=-0.0098 rearThigh=0.819 rearCalf=-1.725 tau_L=+1.53 tau_R=-1.17
+    t=  9.0s measDdq=-0.32 gyro_z=-0.0299 rearThigh=0.811 rearCalf=-1.761 tau_L=+1.65 tau_R=-0.70
+    t= 10.0s measDdq=-0.18 gyro_z=-0.0121 rearThigh=0.805 rearCalf=-1.763 tau_L=+1.26 tau_R=-1.36
+    t= 11.0s measDdq=-0.15 gyro_z=-0.0111 rearThigh=0.805 rearCalf=-1.760 tau_L=+0.87 tau_R=-1.75
+  --- wz=+0.092 ---
+    t=  0.0s measDdq=+0.31 gyro_z=+0.0232 rearThigh=0.832 rearCalf=-1.690 tau_L=-0.75 tau_R=+0.80
+    t=  1.0s measDdq=+0.24 gyro_z=+0.0193 rearThigh=0.829 rearCalf=-1.711 tau_L=-1.14 tau_R=+1.19
+    t=  2.0s measDdq=+0.12 gyro_z=+0.0127 rearThigh=0.814 rearCalf=-1.718 tau_L=-1.25 tau_R=+1.31
+    t=  3.0s measDdq=+0.10 gyro_z=+0.0096 rearThigh=0.809 rearCalf=-1.724 tau_L=-1.28 tau_R=+1.36
+    t=  4.0s measDdq=+0.06 gyro_z=+0.0040 rearThigh=0.806 rearCalf=-1.727 tau_L=-1.33 tau_R=+1.40
+    t=  5.0s measDdq=+0.06 gyro_z=+0.0100 rearThigh=0.803 rearCalf=-1.729 tau_L=-1.34 tau_R=+1.40
+    t=  6.0s measDdq=+0.07 gyro_z=+0.0088 rearThigh=0.800 rearCalf=-1.736 tau_L=-1.34 tau_R=+1.41
+    t=  7.0s measDdq=+0.07 gyro_z=+0.0068 rearThigh=0.797 rearCalf=-1.740 tau_L=-1.31 tau_R=+1.47
+    t=  8.0s measDdq=+0.20 gyro_z=+0.0177 rearThigh=0.788 rearCalf=-1.747 tau_L=-0.86 tau_R=+1.67
+    t=  9.0s measDdq=+0.16 gyro_z=+0.0160 rearThigh=0.785 rearCalf=-1.757 tau_L=-0.89 tau_R=+1.72
+    t= 10.0s measDdq=+0.22 gyro_z=+0.0165 rearThigh=0.781 rearCalf=-1.781 tau_L=-0.79 tau_R=+1.69
+    t= 11.0s measDdq=+0.11 gyro_z=+0.0105 rearThigh=0.771 rearCalf=-1.774 tau_L=-0.82 tau_R=+1.91
+    t= 12.0s measDdq=+0.08 gyro_z=+0.0071 rearThigh=0.768 rearCalf=-1.773 tau_L=-0.92 tau_R=+1.82
+
+ONNX wheel outputs on ALL moving frames (from replay report if present):
+  wheel clip fraction = 1.000; steering range = [0.0, 0.0]; leg clip fraction = 0.0000
+  protection nonzero rows = 0

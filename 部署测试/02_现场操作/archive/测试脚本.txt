@@ -1,0 +1,4 @@
+powershell.exe -ExecutionPolicy Bypass -File "D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试\运行现场策略会话.ps1" -Policy r214 -Mode motion -MonitorSeconds 90 -ConfirmMotion
+
+恢复HDC
+& "D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试\00_HDC工具\hdc_6.1.1.280\hdc.exe" tconn 192.168.10.180:10178

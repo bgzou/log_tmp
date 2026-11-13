@@ -1,0 +1,11 @@
+mode  seed  zero(thigh/calf)      motion(thigh/calf)     max_bias  max_step@t
+old  101  0.823/-1.624  ->  0.782/-1.760    0.131  0.1264 @ 4.08s
+old  202  0.825/-1.633  ->  0.784/-1.754    0.131  0.1269 @ 4.08s
+old  303  0.826/-1.640  ->  0.788/-1.760    0.128  0.1239 @ 4.08s
+new  101  0.806/-1.602  ->  0.808/-1.605    0.194  0.0630 @ 6.58s
+new  202  0.816/-1.594  ->  0.768/-1.644    0.159  0.0630 @ 6.52s
+new  303  0.815/-1.594  ->  0.767/-1.643    0.155  0.0630 @ 6.52s
+
+measured FixedStand start: thigh~0.74 / calf~-1.79 (real robot)
+OLD: posture extends at zero-speed handoff, then drops on first motion (single-frame target step at t=4.08s).
+NEW: posture extends at zero-speed handoff, holds through motion (no step at start; 0.063rad is normal control mid-motion).

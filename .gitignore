@@ -1,0 +1,21 @@
+# 发布到 GitHub 时额外排除
+# DSH 临时目录（含传输中转文件）
+.dsh_tmp/
+# 该路径是指向 部署参考/unitree_ros 的 Windows junction，会让 git 重复收录 1.7GB 同一份文件
+部署参考/omni-blind-stairs/assets/official-model/
+
+# 采样日志(722M)与可再生包不入库——追溯靠 INDEX 记录的路径/SHA
+部署测试/04_调试记录/logs/
+部署测试/01_现场部署包/
+# 外部仓库副本(有自己的 .git, 追溯靠 GitHub)
+部署参考/Rob2Nav-r214-source/
+# 构建产物与临时输出
+**/field_logs/
+**/__pycache__/
+**/build*/
+**/dist/
+*.tar.gz
+*.pyc
+shadow.out
+sportstate.out
+*.log.tmp
