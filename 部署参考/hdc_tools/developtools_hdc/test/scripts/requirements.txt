@@ -1,0 +1,11 @@
+pytest
+allure-pytest
+pytest-xdist
+pytest-ordering
+pytest-rerunfailures
+pytest-testreport
+pytest-repeat
+setuptools
+Jinja2
+requests
+pywinpty; sys_platform == "win32"

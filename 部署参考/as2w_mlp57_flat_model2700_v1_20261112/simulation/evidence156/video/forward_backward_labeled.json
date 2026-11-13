@@ -1,0 +1,121 @@
+{
+  "video": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/video/forward_backward_labeled.mp4",
+  "fps": 25,
+  "frames": 300,
+  "duration_seconds": 12.0,
+  "trajectory": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/evaluation/trajectory.npz",
+  "trajectory_sha256": "23a348b00c2789e906ba2cb7837140c460d2fc030ae964da1280cb10d5a36061",
+  "policy_path": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/policy.pt",
+  "policy_sha256": "bc579e4380c7bc08d29d415153fc6eb481a897f60b989dcfe17fbcde9c786b84",
+  "policy_metadata": {
+    "checkpoint": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/checkpoint.pt",
+    "checkpoint_sha256": "68ef6b47cf8462ffb9d01660d60159b5fd4654db3ec4e9d4be4a7863c03b78fe",
+    "saved_update_index": 2700,
+    "input_size": 57,
+    "output_size": 16,
+    "policy": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/policy.pt",
+    "scope": "Unmodified deterministic actor mean; no exploration noise, no fine tuning."
+  },
+  "mujoco_version": "3.2.7",
+  "trimesh_version": "4.5.1",
+  "urdf": "/home/chenzihao/projects/as2w-robot-lab/assets/as2w/source/as2w.urdf",
+  "urdf_sha256": "05da624085b16c91a9223b77872d568d97c44e480d29f3ce6933a9554bfb7d2c",
+  "profiles": [
+    "forward_0.10__r0",
+    "forward_0.30__r0",
+    "forward_0.50__r0",
+    "forward_0.80__r0",
+    "forward_1.00__r0",
+    "backward_0.10__r0",
+    "backward_0.30__r0",
+    "backward_0.50__r0",
+    "backward_0.80__r0",
+    "backward_1.00__r0"
+  ],
+  "scope": "Recorded native PhysX root/joint poses, rendered offline at 1x speed. MuJoCo used only for forward kinematics and rendering; no mj_step, policy inference or new dynamics. Native training URDF visual meshes with simplified colors. Not a live screen capture.",
+  "source_case_indices": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40
+  ],
+  "source_rendered_video": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/video/forward_backward.mp4",
+  "source_rendered_video_sha256": "5828885b367557ffd10db6d2f6364010455dca087110b5ff0eeb4af5d83677ce",
+  "annotation_only": true,
+  "panel_permutation": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "label_image": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/video/forward_backward_labels.png",
+  "annotation_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-y",
+    "-i",
+    "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/video/forward_backward.mp4",
+    "-i",
+    "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/video/forward_backward_labels.png",
+    "-filter_complex",
+    "[0:v][1:v]overlay=0:0[out]",
+    "-map",
+    "[out]",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "18",
+    "-threads",
+    "2",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/video/forward_backward_labeled.mp4"
+  ],
+  "video_sha256": "96630b89a559ceefc0fb7d2aad26a774cf06e98b9853db9b47f335e9158668d2",
+  "ffprobe": {
+    "programs": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 680,
+        "r_frame_rate": "25/1",
+        "nb_frames": "300"
+      }
+    ],
+    "format": {
+      "duration": "12.000000"
+    }
+  },
+  "preview_panel_mean_absolute_pixel_error": [
+    1.6590220928192139,
+    1.7152737379074097,
+    1.7725080251693726,
+    1.809154748916626,
+    1.7893983125686646,
+    1.6272315979003906,
+    1.666359543800354,
+    1.7817003726959229,
+    1.8294885158538818,
+    1.8273756504058838
+  ],
+  "preview_visually_inspected": true
+}

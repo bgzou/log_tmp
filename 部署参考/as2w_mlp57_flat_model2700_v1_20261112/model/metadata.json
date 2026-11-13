@@ -1,0 +1,31 @@
+{
+  "policy_id": "as2w_mlp57_flat_model2700_v1_20261112",
+  "date": "2026-11-12",
+  "skill": "nominal flat quadruped wheeled locomotion",
+  "selected_output": "selected_checkpoint.pt",
+  "selected_output_sha256": "68ef6b47cf8462ffb9d01660d60159b5fd4654db3ec4e9d4be4a7863c03b78fe",
+  "initialization_checkpoint": "../source/initialization_checkpoint_1300.pt",
+  "initialization_sha256": "41718560bdd44754f6fb756156eafdd3f60ae7753e26da1e81915636a0e829af",
+  "torchscript": "policy.ts",
+  "torchscript_sha256": "bc579e4380c7bc08d29d415153fc6eb481a897f60b989dcfe17fbcde9c786b84",
+  "onnx": "policy.onnx",
+  "onnx_sha256": "5c2cf0c7b045dfc340ca25765c288038f64fdb5c6f213ea4b82ab8d2cb6a88ef",
+  "saved_iteration_index": 2700,
+  "completed_ppo_updates": 2701,
+  "control_frequency_hz": 50,
+  "observation_dimension": 57,
+  "output_dimension": 16,
+  "actor_layers": [
+    57,
+    512,
+    256,
+    128,
+    16
+  ],
+  "activation": "ELU alpha=1, linear output",
+  "latent": "not_applicable; no encoder",
+  "observation_history": "not_applicable; one current frame plus previous raw action",
+  "second_simulator": "not_run",
+  "arm64": "not_run",
+  "hardware_control": "not_run"
+}

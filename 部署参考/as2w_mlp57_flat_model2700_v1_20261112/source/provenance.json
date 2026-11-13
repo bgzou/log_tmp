@@ -1,0 +1,19 @@
+{
+  "training_commit": "64bc0e6a668242fe8afd226d8c0df207f0b80b18",
+  "selected_run_id": "2026-11-12_03-13-53_as2w_flat_32768_5000_20261112_031350",
+  "selected_saved_iteration": 2700,
+  "completed_updates": 2701,
+  "selected_output_sha256": "68ef6b47cf8462ffb9d01660d60159b5fd4654db3ec4e9d4be4a7863c03b78fe",
+  "initialization_saved_iteration": 1300,
+  "initialization_completed_updates": 1301,
+  "initialization_sha256": "41718560bdd44754f6fb756156eafdd3f60ae7753e26da1e81915636a0e829af",
+  "initialization_role": "earlier AS2W MLP checkpoint; first stage started randomly; not a teacher",
+  "original_launch": "training_records/launch_and_stop.json",
+  "original_resolved_env": "resolved_config/env.yaml",
+  "original_resolved_agent": "resolved_config/agent.yaml",
+  "immutable_training_source": "training_source_snapshot.zip",
+  "original_source_sha256": "../model/as2w_contract.json",
+  "formal_evaluation_source": "../simulation/evidence156/as2w_source_snapshot.zip",
+  "selection_reason": "frozen checkpoint with exact matching 156-case evidence and previous stable replay; not the unvalidated later4601 or1.5m/s continuation",
+  "raw_historical_absolute_paths": "provenance only; package indexes and supplied replay scripts resolve local relative paths"
+}

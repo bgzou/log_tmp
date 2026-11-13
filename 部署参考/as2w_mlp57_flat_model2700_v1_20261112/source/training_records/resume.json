@@ -1,0 +1,56 @@
+{
+  "checkpoint": "/home/chenzihao/projects/as2w-robot-lab/logs/rsl_rl/unitree_as2w_flat/2026-11-12_01-53-30_as2w_flat_32768_5000_20261112_015326/model_1300.pt",
+  "sha256": "41718560bdd44754f6fb756156eafdd3f60ae7753e26da1e81915636a0e829af",
+  "saved_zero_based_iteration": 1300,
+  "completed_updates": 1301,
+  "optimizer_loaded": true,
+  "device_verification": {
+    "phase": "resumed",
+    "physics_device": "cuda:0",
+    "ppo_device": "cuda:0",
+    "current_cuda_device": 0,
+    "tensor_devices": {
+      "actor_critic_parameters": [
+        "cuda:0"
+      ],
+      "rollout_tensors": [
+        "cuda:0"
+      ],
+      "rollout_observations": [
+        "cuda:0"
+      ],
+      "physics_observations": [
+        "cuda:0"
+      ],
+      "optimizer_moments": [
+        "cuda:0"
+      ]
+    },
+    "cuda_device_name": "NVIDIA GeForce RTX 5090",
+    "physical_gpu_index": 1,
+    "physical_gpu_uuid": "GPU-73534024-5a4f-37de-db0a-af4f2c7df1e7",
+    "process_gpu_allocations": [
+      {
+        "gpu_uuid": "GPU-73534024-5a4f-37de-db0a-af4f2c7df1e7",
+        "pid": 1024677,
+        "used_memory_mib": 11715
+      }
+    ],
+    "cuda_visible_devices": "GPU-73534024-5a4f-37de-db0a-af4f2c7df1e7",
+    "engine_settings": {
+      "/renderer/activeGpu": 1,
+      "/physics/cudaDevice": 0,
+      "/renderer/multiGpu/enabled": false,
+      "/validate/iommu/enabled": false,
+      "/validate/p2p/enabled": false,
+      "/validate/p2p/memoryCheck/enabled": false
+    },
+    "cpu_optimizer_step_scalars_allowed": true
+  },
+  "model_state_exactly_restored": true,
+  "optimizer_state_exactly_restored": true,
+  "optimizer_step_min": 26020.0,
+  "optimizer_step_max": 26020.0,
+  "restored_learning_rate": 0.00038443359375000017,
+  "note": "Model and optimizer resumed; simulator state and RNG are initialized anew by upstream training."
+}

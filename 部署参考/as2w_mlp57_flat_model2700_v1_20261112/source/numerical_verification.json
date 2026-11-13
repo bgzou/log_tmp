@@ -1,0 +1,10 @@
+{
+  "cases": 156,
+  "commands": 39,
+  "trajectory_frames": 600,
+  "max_recomputed_mean_error": 0,
+  "all_finite": true,
+  "move_command_and_stop_schedule_verified": true,
+  "no_evaluation_failure_marker": true,
+  "trajectory_sha256": "23a348b00c2789e906ba2cb7837140c460d2fc030ae964da1280cb10d5a36061"
+}

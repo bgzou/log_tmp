@@ -1,0 +1,31 @@
+{
+  "output": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230",
+  "source_run": "/home/chenzihao/projects/as2w-robot-lab/logs/rsl_rl/unitree_as2w_flat/2026-11-12_03-13-53_as2w_flat_32768_5000_20261112_031350",
+  "checkpoint": "/home/chenzihao/projects/as2w-robot-lab/logs/rsl_rl/unitree_as2w_flat/2026-11-12_03-13-53_as2w_flat_32768_5000_20261112_031350/model_2700.pt",
+  "frozen_checkpoint": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/checkpoint.pt",
+  "saved_iteration": 2700,
+  "completed_updates": 2701,
+  "checkpoint_sha256": "68ef6b47cf8462ffb9d01660d60159b5fd4654db3ec4e9d4be4a7863c03b78fe",
+  "selected_at": "2026-11-12T04:32:30.662539+08:00",
+  "physical_gpu": 1,
+  "training_continues": true,
+  "training_control_source_hashes_verified": true,
+  "evaluation_pid": 2425702,
+  "evaluation_log": "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/evaluation.log",
+  "evaluation_command": [
+    "/home/chenzihao/projects/as2w-robot-lab/.venv/bin/python",
+    "scripts/evaluate.py",
+    "--gpu",
+    "1",
+    "--speed-sweep",
+    "--repeats",
+    "4",
+    "--seconds",
+    "8",
+    "--policy",
+    "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/policy.pt",
+    "--output",
+    "/home/chenzihao/projects/as2w-robot-lab/outputs/speed_sweep_model2700_20261112_043230/evaluation"
+  ],
+  "status": "evaluating"
+}

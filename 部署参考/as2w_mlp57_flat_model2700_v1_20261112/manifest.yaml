@@ -1,0 +1,113 @@
+policy_id: as2w_mlp57_flat_model2700_v1_20261112
+delivery_date: '2026-11-12'
+classification: sim2sim_candidate
+training_owner: not_provided; this package assembled by Codex from archived project
+  evidence
+deployment_owner: not_provided
+selected_checkpoint_sha256: 68ef6b47cf8462ffb9d01660d60159b5fd4654db3ec4e9d4be4a7863c03b78fe
+initialization_checkpoint_sha256: 41718560bdd44754f6fb756156eafdd3f60ae7753e26da1e81915636a0e829af
+torchscript_sha256: bc579e4380c7bc08d29d415153fc6eb481a897f60b989dcfe17fbcde9c786b84
+onnx_sha256: 5c2cf0c7b045dfc340ca25765c288038f64fdb5c6f213ea4b82ab8d2cb6a88ef
+skill: nominal standing-start flat wheel-legged locomotion; deterministic single actor
+acceptance_boundaries:
+  formal_PhysX_cases: 156
+  survived: 156
+  posture_pass: 156
+  stop_pass: 156
+  strict_velocity_pass: 56
+  second_simulator: not_run
+  arm64: not_run
+  hardware_control: not_run
+  long_hold: not_run
+  full_arbitrary_recovery: not_run
+input:
+  dimension: 57
+  dtype: float32
+  history_frames: 0
+  state: last raw16 actions outside model
+  frequency_hz: 50
+output:
+  dimension: 16
+  leg_positions: 12
+  wheel_velocities: 4
+core:
+  C1:
+    status: included
+    paths:
+    - model/selected_checkpoint.pt
+    - source/initialization_checkpoint_1300.pt
+    - model/policy.ts
+    - model/policy.onnx
+    - source/provenance.json
+    - source/training_source_snapshot.zip
+    - source/resolved_config/env.yaml
+    - source/resolved_config/agent.yaml
+    - source/training_environment.json
+  C2:
+    status: x86_64 verified; ARM64 not_run
+    paths:
+    - model/metadata.json
+    - model/export_models.py
+    - model/export_equivalence.json
+    - checks/parity.json
+  C3:
+    status: included; hardware mapping not_validated
+    paths:
+    - runtime/observations.csv
+    - runtime/reference.py
+    - runtime/reference.hpp
+    - runtime/effective_runtime.yaml
+  C4:
+    status: native/Python/C++ parity verified
+    paths:
+    - runtime/joints.csv
+    - runtime/reference.py
+    - runtime/reference.hpp
+    - runtime/effective_runtime.yaml
+    - runtime/wheels.yaml
+  C5:
+    status: included; outer hardware handover not_run
+    paths:
+    - runtime/entry_exit.md
+    - runtime/hardware_mapping.md
+  C6:
+    status: training/evaluation replay sources and assets included; binary dependencies
+      external
+    paths:
+    - simulation/assets/as2w/source/as2w.urdf
+    - simulation/assets/as2w/source/manifest.json
+    - simulation/prepare_workspace.py
+    - simulation/run_native.py
+    - simulation/reproduce_156.py
+    - source/vendor/manifest.json
+    - source/runtime_source_sha256.json
+    - simulation/README.md
+  C7:
+    status: selected weight original evidence preserved
+    paths:
+    - simulation/evidence156/summary.json
+    - simulation/evidence156/cases.csv
+    - simulation/evidence156/trajectory.npz
+    - simulation/evidence156/video/forward_backward_labeled.mp4
+    - simulation/evidence156/video/lateral_and_turning_labeled.mp4
+    - simulation/evidence156/stop_diagnostics.csv
+  C8:
+    status: 6000native frames +12boundary probes passed
+    paths:
+    - simulation/native_replay/native_samples.npz
+    - simulation/native_replay/summary.json
+    - replay/dataset_schema.json
+    - replay/verify_parity.py
+    - checks/parity.json
+optional_modules: runtime/optional_modules.yaml
+differences: runtime/mode_differences.csv
+integrity:
+  algorithm: SHA256
+  file_list: SHA256SUMS.txt
+  excludes:
+  - SHA256SUMS.txt
+  archive_sha256: outside archive as .zip.sha256
+quick_check: python -B checks/verify_package.py
+offline_parity: python -B replay/verify_parity.py
+all_manifest_file_paths: relative to package root; original absolute paths inside
+  historical evidence are provenance only

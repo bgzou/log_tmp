@@ -1,0 +1,43 @@
+{
+  "phase": "after_first_update",
+  "physics_device": "cuda:0",
+  "ppo_device": "cuda:0",
+  "current_cuda_device": 0,
+  "tensor_devices": {
+    "actor_critic_parameters": [
+      "cuda:0"
+    ],
+    "rollout_tensors": [
+      "cuda:0"
+    ],
+    "rollout_observations": [
+      "cuda:0"
+    ],
+    "physics_observations": [
+      "cuda:0"
+    ],
+    "optimizer_moments": [
+      "cuda:0"
+    ]
+  },
+  "cuda_device_name": "NVIDIA GeForce RTX 5090",
+  "physical_gpu_index": 1,
+  "physical_gpu_uuid": "GPU-73534024-5a4f-37de-db0a-af4f2c7df1e7",
+  "process_gpu_allocations": [
+    {
+      "gpu_uuid": "GPU-73534024-5a4f-37de-db0a-af4f2c7df1e7",
+      "pid": 1024677,
+      "used_memory_mib": 16189
+    }
+  ],
+  "cuda_visible_devices": "GPU-73534024-5a4f-37de-db0a-af4f2c7df1e7",
+  "engine_settings": {
+    "/renderer/activeGpu": 1,
+    "/physics/cudaDevice": 0,
+    "/renderer/multiGpu/enabled": false,
+    "/validate/iommu/enabled": false,
+    "/validate/p2p/enabled": false,
+    "/validate/p2p/memoryCheck/enabled": false
+  },
+  "cpu_optimizer_step_scalars_allowed": true
+}

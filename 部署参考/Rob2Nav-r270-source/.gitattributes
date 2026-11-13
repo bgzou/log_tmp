@@ -1,0 +1,43 @@
+* text=auto eol=lf
+/vendor/RoboGauge/** -text
+/vendor/NJUAgility/** -text -whitespace
+/vendor/moe_reference/** -text -whitespace
+/artifacts/** -text
+/artifacts/perceptive/** -text -whitespace
+/artifacts/ame/** -text -whitespace
+/artifacts/narrow/** -text -whitespace
+/artifacts/critical_ame/** -text -whitespace
+/artifacts/moe_perceptive/** -text -whitespace
+/artifacts/moe_memory_diagnostic/** -text -whitespace
+*.pt -text
+*.zip -text
+*.mp4 -text
+*.png -text
+*.npz -text
+
+/artifacts/moe_memory_v2_start/** -text -whitespace
+
+/artifacts/moe_memory_v2_end/** -text -whitespace
+/artifacts/sensor_research_v3/** -text -whitespace
+
+/artifacts/v4_redesign/** -text -whitespace
+/artifacts/v4_completed/** -text -whitespace
+/artifacts/perception_diagnostics_v6/** -text -whitespace
+
+/artifacts/release_20261021/** -text -whitespace
+/artifacts/unified_deployment_20261021/** -text -whitespace
+/artifacts/fixstand_20261021/** -text -whitespace
+/artifacts/backflip_v7_verified_20261022/** -text -whitespace
+/artifacts/unified_backflip_contract_20261022/** -text -whitespace
+/artifacts/acrobatics_clean_goal_20261022/** -text -whitespace
+
+/artifacts/substep_peak_recovery_20261022/** -text -whitespace
+/artifacts/backflip_v8_2200_verified_20261022/** -text -whitespace
+/artifacts/reference_continuity_v3_20261022_162257/** -text -whitespace
+/artifacts/web_continuity_iteration_20261023/** -text -whitespace
+/artifacts/prepared_web_stability_v2_20261022/** -text -whitespace
+
+/artifacts/step_airtime_recovery_20261023/** -text -whitespace
+
+/artifacts/four_flip_recovery_20261023/** -text -whitespace
+/artifacts/空翻续训交接_20261023/** -text -whitespace

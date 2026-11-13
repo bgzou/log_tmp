@@ -1,0 +1,9 @@
+连上CPRO后按照这个命令配置一下，记得安装一下hdc工具
+ip link set eth0 up
+ip addr add 192.168.123.100/24 dev eth0
+ip route add default via 192.168.123.1 dev eth0 src 192.168.123.100
+ip rule add to 192.168.123.18/24 table main priority 1000
+ip rule add from 192.168.123.100 table main priority 1000
+cd /data/ubunte_in_hm/
+unshare --uts --fork /bin/sh
+source chroot.sh -m ubunte_rootfs/

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "format_note": "JSON syntax is valid YAML 1.2; Python stdlib json reads this file without PyYAML.",
+  "control_period_s": 0.02,
+  "policies": {
+    "recovery-r09": {"kind": "recovery", "model": "models/recovery-r09.bin", "fixture": "models/recovery-r09.fixture", "online_shadow": false},
+    "recovery-r12": {"kind": "recovery", "model": "models/recovery-r12.bin", "fixture": "models/recovery-r12.fixture", "online_shadow": false},
+    "recovery-r13": {"kind": "recovery", "model": "models/recovery-r13.bin", "fixture": "models/recovery-r13.fixture", "online_shadow": false},
+    "stairs-r14": {"kind": "stairs", "model": "models/stairs-r14.bin", "fixture": "models/stairs-r14.fixture", "online_shadow": true},
+    "stairs-r17-2000": {"kind": "stairs", "model": "models/stairs-r17-2000.bin", "fixture": "models/stairs-r17-2000.fixture", "online_shadow": true},
+    "stairs-r17-3000": {"kind": "stairs", "model": "models/stairs-r17-3000.bin", "fixture": "models/stairs-r17-3000.fixture", "online_shadow": true}
+  }
+}

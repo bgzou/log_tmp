@@ -1,0 +1,7 @@
+build/
+build-sdk2/
+build_win/
+dist/
+*.log
+*.csv
+__pycache__/

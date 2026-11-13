@@ -1,0 +1,31 @@
+{
+ "frames": 600,
+ "slots_active": "0-15",
+ "slots_zero": "16-34",
+ "leg_triples": "slot 3k,3k+1,3k+2 = (hip,thigh,calf) of leg k",
+ "hip_side_split": {
+  "legs_negative": [
+   0,
+   2
+  ],
+  "legs_positive": [
+   1,
+   3
+  ]
+ },
+ "wheel_forward_sign": {
+  "12": 0.29856619007936513,
+  "13": 0.29204067857142857,
+  "14": 0.2950600103174604,
+  "15": 0.26472134325396823
+ },
+ "imu": {
+  "quat": "wxyz unit, body-to-world",
+  "yaw_drift_deg": 2.577231218010354,
+  "gyro_quat_corr": [
+   0.8276256376627213,
+   0.7157273726608219,
+   0.9275244655607824
+  ]
+ }
+}

@@ -1,0 +1,42 @@
+{
+  "checkpoint_sha256": "68ef6b47cf8462ffb9d01660d60159b5fd4654db3ec4e9d4be4a7863c03b78fe",
+  "checkpoint_saved_iteration": 2700,
+  "completed_updates": 2701,
+  "torchscript_sha256": "bc579e4380c7bc08d29d415153fc6eb481a897f60b989dcfe17fbcde9c786b84",
+  "onnx_sha256": "5c2cf0c7b045dfc340ca25765c288038f64fdb5c6f213ea4b82ab8d2cb6a88ef",
+  "opset": 17,
+  "input": {
+    "name": "observation",
+    "shape": [
+      "batch",
+      57
+    ],
+    "dtype": "float32"
+  },
+  "output": {
+    "name": "raw_action_mean",
+    "shape": [
+      "batch",
+      16
+    ],
+    "dtype": "float32"
+  },
+  "tested_platform": "Linux x86_64 CPU",
+  "torch_version": "2.7.0+cu128",
+  "onnx_version": "1.22.0",
+  "onnxruntime_version": "1.30.0",
+  "batch_sizes_tested": [
+    1,
+    4,
+    512
+  ],
+  "random_seed": 81200,
+  "torchscript_max_absolute_error": 0.0,
+  "onnx_max_absolute_error": 5.7220458984375e-06,
+  "threshold": {
+    "absolute": 2e-05,
+    "relative": 2e-05
+  },
+  "arm64": "not_run",
+  "scope": "Export equivalence only; random inputs do not qualify motion capability. Raw actor mean, no normalization, action noise, tanh, residual or external controller."
+}

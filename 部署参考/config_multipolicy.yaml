@@ -1,0 +1,340 @@
+FSM:
+  _: # enabled fsms
+    Passive:
+      id: 1
+    FixStand:
+      id: 2
+      type: Fix
+    FixSquat:
+      id: 3
+      type: Fix
+    Velocity_Up:
+      id: 4
+      type: RLBase
+    Velocity_Down:
+      id: 5
+      type: RLBase
+    Velocity_Left:
+      id: 6
+      type: RLBase
+    Velocity_Right:
+      id: 7
+      type: RLBase
+    LSD_Loco:
+      id: 20
+      type: LSDLoco
+    LSD_Jump:
+      id: 21
+      type: LSDMotion
+    LSD_Backflip:
+      id: 22
+      type: LSDMotion
+    LSD_Sideflip:
+      id: 23
+      type: LSDMotion
+    BackflipV7:
+      id: 25
+      type: Backflip
+    SideflipV10:
+      id: 26
+      type: LSDMotion
+    Quad2Hand:
+      id: 24
+      type: Quad2Hand
+    StandDown:
+      id: 27
+      type: StandDown
+    HimlocoWalk:
+      id: 28
+      type: RLBase
+
+  Passive:
+    transitions: 
+      FixStand: LT + A.on_pressed
+    mode: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    kd: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  FixStand:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+      Velocity_Up: start + up
+      Velocity_Down: start + down
+      Velocity_Left: start + left
+      Velocity_Right: start + right
+      LSD_Loco: RB + up
+      LSD_Jump: RB + right
+      LSD_Backflip: RB + down
+      LSD_Sideflip: RB + left
+      BackflipV7: RT + down
+      SideflipV10: RT + left
+      Quad2Hand: LB + up
+      HimlocoWalk: RB + up
+    kp: [60, 80, 80, 60, 80, 80, 60, 80, 80, 60, 80, 80]
+    kd: [5, 4, 4, 5, 4, 4, 5, 4, 4, 5, 4, 4]
+    ts: [0, 1, 2]
+    qs: [
+      [],
+      [0.0, 1.36, -2.65, 0.0, 1.36, -2.65, 0.0, 1.36, -2.65, 0.0, 1.36, -2.65],
+      # Target matches RL policy default_joint_pos (SDK order) for zero-jump
+      # FixStand <-> Velocity transition. Mapped from policy order via joint_ids_map.
+      [-0.1, 0.8, -1.5, 0.1, 0.8, -1.5, -0.1, 1.0, -1.5, 0.1, 1.0, -1.5],
+    ]
+  FixSquat:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixStand: LT + A.on_pressed
+    auto_transition: Passive
+    kp: [60, 80, 80, 60, 80, 80, 60, 80, 80, 60, 80, 80]
+    kd: [5, 4, 4, 5, 4, 4, 5, 4, 4, 5, 4, 4]
+    ts: [0, 1, 2]
+    qs: [
+      [],
+      [0., 0.8, -1.5, 0., 0.8, -1.5, 0., 0.8, -1.5, 0., 0.8, -1.5],
+      [0.0, 1.36, -2.65, 0.0, 1.36, -2.65, 0.0, 1.36, -2.65, 0.0, 1.36, -2.65],
+    ]
+
+  # ==================== StandDown (controlled fold to prone) ====================
+  # RoboGauge 13C: smooth FixStand -> folded prone -> Passive transition.
+  # Target qs is the user-measured standard folded pose (2026-10-10, 50-frame
+  # average) converted from policy order (FL,FR,RL,RR) to SDK order (FR,FL,RR,RL)
+  # via joint_ids_map=[3,4,5,0,1,2,9,10,11,6,7,8].
+  #   policy: FL[-0.030,1.292,-2.827] FR[-0.026,1.258,-2.797] RL[0.351,1.298,-2.804] RR[-0.339,1.293,-2.797]
+  #   SDK:    FR[-0.026,1.258,-2.797] FL[-0.030,1.292,-2.827] RR[-0.339,1.293,-2.797] RL[0.351,1.298,-2.804]
+  # Lower kp/kd than FixStand so the fold is gentle; RL_KP/RL_KD start (40/1)
+  # is applied in enter() and ramped down in run() to avoid gain drop from RL.
+  # Completion is gated on settling (q_tol + dq_tol sustained for confirm_time),
+  # not on time alone. max_time logs a warning and holds the controlled pose
+  # (does NOT auto-drop position control).
+  # NOTE: transitions below are for DDS-direct joystick (DSL). In UDP mode
+  # (go2_jumpflip_xbox_wifi.sh), Y/View sends mode='z' which main.cpp
+  # reinterprets as the controlled stop chain (RL->FixStand->StandDown->Passive).
+  StandDown:
+    transitions:
+      Passive: LT + B.on_pressed
+    auto_transition: Passive
+    kp: [30, 50, 50, 30, 50, 50, 30, 50, 50, 30, 50, 50]
+    kd: [4, 3, 3, 4, 3, 3, 4, 3, 3, 4, 3, 3]
+    ts: [0, 1, 2]
+    qs: [
+      [],
+      [],
+      # SDK order (FR, FL, RR, RL) — converted from user-measured policy order
+      [-0.025610, 1.258127, -2.797206,
+       -0.030074, 1.291565, -2.826983,
+       -0.338981, 1.293146, -2.797300,
+        0.350733, 1.297879, -2.804353],
+    ]
+
+    q_tol: 0.05        # ~2.9 deg per-joint tracking error threshold
+    dq_tol: 0.30       # rad/s per-joint velocity threshold
+    confirm_time: 0.3  # seconds settled must be sustained before auto_transition
+    max_time: 4.0      # seconds; if exceeded without settling, warn + hold (no auto-drop)
+  HimlocoWalk:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+      Velocity_Up: start + up
+      Velocity_Down: start + down
+      Velocity_Left: start + left
+      Velocity_Right: start + right
+    policy_dir: ../../../logs/imported/himloco_go2
+    velocity_command_damping:
+      enabled: true
+      vx:
+        speed_points: [0.0, 1.0, 2.0, 4.0]
+        time_constants: [0.0, 0.0, 0.4, 0.6]
+        max_acceleration: 4.0  # m/s^2
+        max_deceleration: 3.0  # m/s^2
+  Velocity_Up:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+      Velocity_Down: start + down
+      Velocity_Left: start + left
+      Velocity_Right: start + right
+    policy_dir: ../../../logs/rsl_rl/go2_robotlab_official_176k
+    # policy_dir: ../../../logs/go2/go2_moe_cts_137k_0.6713  # 13D: MoE policy 让机器人右倾，回退到 176k 官方 policy
+    fixed_command:
+      enabled: false
+      lin_vel_x: 0.0
+      lin_vel_y: 0.0
+      ang_vel_z: 0.0
+      duration: 3.0
+    # RoboGauge task11: 速度平滑与 Velocity_Down 统一。
+    # vx 一阶阻尼 + 加速度限制；vy/vyaw 直接透传（由适配器做速率限制）。
+    # speed_points/time_constants: 0~1 m/s 区间 τ=0（低速响应灵敏，导航 0.20 m/s 在此区间），
+    # 1~2 m/s τ=0→0.4（中速过渡），2~4 m/s τ=0.4→0.6（高速平滑）。
+    # max_acceleration=4.0 m/s², max_deceleration=3.0 m/s²。
+    # 注意：适配器 vx 速率限制 0.20 m/s² 远严于此处 4.0 m/s²，因此导航时适配器是约束瓶颈，
+    # 此处 damping 主要保护手柄/键盘高速突变输入。
+    velocity_command_damping:
+      enabled: true
+      vx:
+        speed_points: [0.0, 1.0, 2.0, 4.0]
+        time_constants: [0.0, 0.0, 0.4, 0.6]
+        max_acceleration: 4.0  # m/s^2
+        max_deceleration: 3.0  # m/s^2
+  Velocity_Down:
+    transitions: 
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+      Velocity_Up: start + up
+      Velocity_Left: start + left
+      Velocity_Right: start + right
+    # policy_dir: ../../../logs/go2/go2_moe_cts_flat_max4.5_71k
+    policy_dir: ../../../logs/rsl_rl/go2_moe_cts_flat_max4.5_71k  # fast flat model
+    velocity_command_damping:
+      enabled: true
+      vx:
+        speed_points: [0.0, 1.0, 2.0, 4.0]
+        time_constants: [0.0, 0.0, 0.4, 0.6]
+        max_acceleration: 4.0  # m/s^2
+        max_deceleration: 3.0  # m/s^2
+  Velocity_Left:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+      Velocity_Up: start + up
+      Velocity_Down: start + down
+      Velocity_Right: start + right
+    policy_dir: ../../../logs/rsl_rl/go2_moe_cts_164k_0.6715
+    # RoboGauge task11: 与 Velocity_Up/Down 统一速度平滑
+    velocity_command_damping:
+      enabled: true
+      vx:
+        speed_points: [0.0, 1.0, 2.0, 4.0]
+        time_constants: [0.0, 0.0, 0.4, 0.6]
+        max_acceleration: 4.0  # m/s^2
+        max_deceleration: 3.0  # m/s^2
+  Velocity_Right:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+      Velocity_Up: start + up
+      Velocity_Down: start + down
+      Velocity_Left: start + left
+    policy_dir: ../../../logs/rsl_rl/go2_moe_cts_expert_goal_137000_0.6745
+    # RoboGauge task11: 与 Velocity_Up/Down 统一速度平滑
+    velocity_command_damping:
+      enabled: true
+      vx:
+        speed_points: [0.0, 1.0, 2.0, 4.0]
+        time_constants: [0.0, 0.0, 0.4, 0.6]
+        max_acceleration: 4.0  # m/s^2
+        max_deceleration: 3.0  # m/s^2
+    logging: false
+    logging_dt: 0.01
+    fixed_command:
+      enabled: false
+      lin_vel_x: 0.0
+      lin_vel_y: 0.0
+      ang_vel_z: 0.0
+      duration: 3.5
+    joint_pos_udp:
+      enabled: false
+      host: 192.168.1.255
+      port: 15000
+      dt: 0.1
+
+  # ==================== LSD Loco (45-dim, J order) ====================
+  LSD_Loco:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+    policy_dir: ../../../logs/imported/lsd_go2_loco
+
+  # ==================== LSD Jump (69-dim, J order) ====================
+  LSD_Jump:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+    policy_dir: ../../../logs/imported/lsd_go2_jump
+    joint_order: J
+    default_q: [0.1, -0.1, 0.1, -0.1, 0.8, 0.8, 1.0, 1.0, -1.5, -1.5, -1.5, -1.5]
+    kp: [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0]
+    kd: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    action_scale: [0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25]
+    motion:
+      csv_file: go2_jump.csv
+      time_start: 0.5
+      time_end: 2.6
+      fps: 50.0
+    return_state: FixStand
+
+  # ==================== LSD Backflip (69-dim, J order) ====================
+  LSD_Backflip:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+    policy_dir: ../../../logs/imported/lsd_go2_back_filp
+    joint_order: J
+    default_q: [0.0, -0.0, 0.0, -0.0, 0.9, 0.9, 0.9, 0.9, -1.8, -1.8, -1.8, -1.8]
+    kp: [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0]
+    kd: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    action_scale: [0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25]
+    motion:
+      csv_file: go2_backfilp_0428_for_csv_to_npz.csv
+      time_start: 0.0
+      time_end: 1.6
+      fps: 50.0
+    return_state: FixStand
+
+  # ==================== LSD Sideflip (69-dim, L order, special wrapper) ====================
+  LSD_Sideflip:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+    policy_dir: ../../../logs/imported/lsd_go2_silde_filp
+    joint_order: L
+    default_q: [-0.1, 0.9, -1.8, 0.1, 0.9, -1.8, -0.1, 0.9, -1.8, 0.1, 0.9, -1.8]
+    kp: [17.6918, 17.6918, 65.2191, 17.6918, 17.6918, 65.2191, 17.6918, 17.6918, 65.2191, 17.6918, 17.6918, 65.2191]
+    kd: [1.1263, 1.1263, 4.1520, 1.1263, 1.1263, 4.1520, 1.1263, 1.1263, 4.1520, 1.1263, 1.1263, 4.1520]
+    action_scale: [0.3349, 0.3349, 0.1741, 0.3349, 0.3349, 0.1741, 0.3349, 0.3349, 0.1741, 0.3349, 0.3349, 0.1741]
+    motion:
+      csv_file: go2_sildfilp_0428_for_csv_to_npz.csv
+      time_start: 0.0
+      time_end: 2.0
+      fps: 50.0
+    return_state: FixStand
+
+  # ==================== Quad2Hand (dual ONNX, L order) ====================
+  Quad2Hand:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+    policy_dir: ../../../logs/imported/quad2hand
+    initial_mode: 0  # 0=quadruped, 1=handstand
+
+  # ==================== Backflip V7 (60-dim, phase clock, L order) ====================
+  # model_1999, verified_entry v7, single-skill acceptance 4/4, pure observation + phase clock
+  BackflipV7:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+    policy_dir: ../../../logs/imported/backflip_v7
+    default_q: [0.0, 0.8, -1.5, 0.0, 0.8, -1.5, 0.0, 1.0, -1.5, 0.0, 1.0, -1.5]
+    kp: [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0]
+    kd: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    action_scale: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    clip_action: 8.0
+    duration: 2.0
+    return_state: FixStand
+
+  # ==================== Sideflip V10 (69-dim, J order, motion reference) ====================
+  # model_10695, landing-constrained v10, uses sideflip.csv motion reference
+  SideflipV10:
+    transitions:
+      Passive: LT + B.on_pressed
+      FixSquat: LT + A.on_pressed
+    policy_dir: ../../../logs/imported/sideflip_v10
+    joint_order: J
+    default_q: [0.0, 0.0, 0.0, 0.0, 0.8, 0.8, 1.0, 1.0, -1.5, -1.5, -1.5, -1.5]
+    kp: [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0]
+    kd: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    action_scale: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    motion:
+      csv_file: sideflip.csv
+      time_start: 0.0
+      time_end: 5.96
+      fps: 50.0
+    return_state: FixStand

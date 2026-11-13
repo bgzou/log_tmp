@@ -1,0 +1,12 @@
+{
+  "physical_gpu": 1,
+  "logical_cuda_device": "cuda:0",
+  "actor_and_physics_same_device": true,
+  "process_allocations": [
+    {
+      "gpu_uuid": "GPU-73534024-5a4f-37de-db0a-af4f2c7df1e7",
+      "pid": 585964,
+      "memory_mib": 3003
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+/outputs/
+/.research/
+/vendor/RoboGauge/logs/
+*.tar.gz
+.env
+.env.*
+*.pem
+*.key
+/studio/frontend/node_modules/
+/studio/frontend/dist/
+/studio/frontend/*.tsbuildinfo
+.pytest_cache/
+pytest-cache-files-*/
+
+# External motion reference is prepared from the pinned upstream source.
+/deployment/reference/*.npz

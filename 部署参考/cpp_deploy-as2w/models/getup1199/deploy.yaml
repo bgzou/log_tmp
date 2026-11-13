@@ -1,0 +1,57 @@
+model_version: getup1199-deep-side-research
+policy_file: policy.onnx
+step_dt: 0.02
+observation_size: 42
+action_size: 12
+# Policy joint order (official AS2-W reference order, same as r1199/r4000);
+# hardware DDS slots come from config/r152_measured.map.
+joint_names: [FL_hip, FR_hip, RL_hip, RR_hip, FL_thigh, FR_thigh, RL_thigh, RR_thigh, FL_calf, FR_calf, RL_calf, RR_calf, FL_foot, FR_foot, RL_foot, RR_foot]
+default_joint_pos: [0.0, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, -1.6, -1.6, -1.6, -1.6, 0.0, 0.0, 0.0, 0.0]
+stiffness: [85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 25.0, 25.0, 25.0, 25.0]
+damping: [3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 4.0, 4.0, 4.0, 4.0]
+# Training runtime contract (runs/recovery/deep-side-curriculum,
+# formal/model_1199.pt, contract flags: staged_rise=true, support_handoff=true,
+# fixed_stand_integral=true, low_support_handoff=true, recovery_symmetry=true,
+# predictive_guard=true, observation_packet_loss=0.02 training-only).
+# Every value below maps 1:1 to eval_as2w_mujoco_recovery.py / as2w_recovery_control.py.
+action_scale: 0.35
+action_clip: 2.0
+staged_entry_ramp_s: [0.22, 0.50]
+staged_plant_ramp_s: [0.22, 1.10]
+staged_extend_ramp_s: [1.45, 1.20]
+# normalized staged crouch anchor (pre action_scale)
+staged_crouch: [0.0, 0.0, 0.0, 0.0, 0.46, 0.46, 0.46, 0.46, -0.72, -0.72, -0.72, -0.72]
+staged_authority: 0.42
+stable_height: 0.27
+latch_quiet_s: 0.45
+latch_min_height: 0.25
+blend_tau_s: 0.85
+integral_min_height: 0.25
+integral_decay: 0.04
+integral_gain: 1.10
+integral_clip: 0.34
+command_margin: 0.06
+guard_lookahead_s: 0.04
+guard_band: 0.10
+guard_gain: 2.0
+guard_margin: 0.06
+wheel_hold_kp: 25.0
+wheel_hold_kd: 4.0
+# URDF angle table (training 90% envelope source; NOT hardware calibrated)
+angle_lower_rad: [-0.7065, -0.7065, -0.7065, -0.7065, -1.72, -1.72, -1.09, -1.09, -2.65093, -2.65093, -2.65093, -2.65093]
+angle_upper_rad: [0.7065, 0.7065, 0.7065, 0.7065, 3.2228, 3.2228, 3.851, 3.851, -0.89197, -0.89197, -0.89197, -0.89197]
+effort_limit_nm: [54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 81.0, 81.0, 81.0, 81.0, 13.5, 13.5, 13.5, 13.5]
+effort_fraction: 0.90
+# Deployment-only: entry gate + success gate thresholds. Estimated signals
+# (leg-FK height, wheel quietness) were validated 2026-11-13 against the
+# training evaluator (40/40 rise, 24/40 strict pass, identical to baseline).
+entry_min_up_z: 0.60
+entry_max_height_est: 0.26
+entry_wheel_quiet_dq: 0.35
+success_height: 0.31
+success_up: 0.95
+success_joint_error: 0.18
+success_speed: 0.06
+success_spin: 0.18
+success_hold_s: 2.0
+getup_cap_s: 15.0

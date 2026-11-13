@@ -1,0 +1,25 @@
+model_version: r4000-stage020-research
+policy_file: policy.onnx
+step_dt: 0.02
+observation_size: 65
+action_size: 16
+joint_names: [FL_hip, FR_hip, RL_hip, RR_hip, FL_thigh, FR_thigh, RL_thigh, RR_thigh, FL_calf, FR_calf, RL_calf, RR_calf, FL_foot, FR_foot, RL_foot, RR_foot]
+default_joint_pos: [0.0, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, -1.6, -1.6, -1.6, -1.6, 0.0, 0.0, 0.0, 0.0]
+stiffness: [55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 0.0, 0.0, 0.0, 0.0]
+damping: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+# Training runtime contract (run filtered-4000-env4096-stage020.ovvRL3,
+# checkpoint model_3999.pt e46954b6...): 5 Hz leg-residual one-pole filter
+# and 0.9 rad/s wrapped leg-target slew are part of the training wrapper
+# (as2w_rolling_filtered / as2w_rolling_low_speed_smooth). Changing either
+# value is a new policy revision and requires the full offline chain again.
+leg_filter_hz: 5.0
+leg_slew_rad_s: 0.9
+# Speed envelope. The rolling-4000 training sampled straight commands up to
+# 0.20 m/s and turn commands 0.035..0.12 rad/s. 0.4 m/s straight is OUTSIDE
+# the training command domain (obs channel vx-0.4 reaches 0.0) and was only
+# cleared by the 2026-11-13 measured-start MuJoCo quick gate (3 seeds x
+# forward/back: 6/6 stable/tracked/held, no non-wheel contact, ~0.39 m/s
+# achieved). 0.2 rad/s yaw FAILED the same gate (0/6 stable, rear-calf
+# contact) and stays locked at 0.1.
+vx_limit: 0.4
+wz_limit: 0.1

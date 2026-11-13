@@ -1,0 +1,8 @@
+field,training,formal_PhysX_evaluation,delivered_offline_reference,validation
+observation_noise,enabled uniform per term,off,off,6000-frame parity passed
+dynamics_randomization,saved env.yaml startup/reset/interval events,off; nominal 26 kg and PD,real plant not assumed identical,hardware not_run
+command_generator,heading goal; XY threshold; 2% standing,fixed direct vx/vy/wz,fixed direct physical commands,156-case original evidence
+action_sampling,Gaussian during PPO,deterministic mean,deterministic mean,export + native parity
+runtime_history,none; last raw action only,same,same,6000-frame previous-state exact
+automatic_reset,enabled training terminations,disabled; no failures hidden,not implemented; outer exit required,original cases retained
+physical_target_clipping,"[-100,100] after affine",same,same,native/C++ plus synthetic clip probes

@@ -1,0 +1,217 @@
+# Copyright (C) 2021 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/ohos.gni")
+HDC_PATH = "//developtools/hdc"
+import("//developtools/hdc/hdc.gni")
+
+declare_args() {
+  # suggestion: uv threads number from 16 - 256
+  hdcd_uv_thread_size = 16
+  hdc_uv_thread_size = 128
+}
+
+hdc_common_sources = [
+  "${HDC_PATH}/src/common/async_cmd.cpp",
+  "${HDC_PATH}/src/common/auth.cpp",
+  "${HDC_PATH}/src/common/base.cpp",
+  "${HDC_PATH}/src/common/channel.cpp",
+  "${HDC_PATH}/src/common/debug.cpp",
+  "${HDC_PATH}/src/common/file.cpp",
+  "${HDC_PATH}/src/common/file_descriptor.cpp",
+  "${HDC_PATH}/src/common/forward.cpp",
+  "${HDC_PATH}/src/common/session.cpp",
+  "${HDC_PATH}/src/common/task.cpp",
+  "${HDC_PATH}/src/common/tcp.cpp",
+  "${HDC_PATH}/src/common/transfer.cpp",
+  "${HDC_PATH}/src/common/usb.cpp",
+]
+if (hdc_support_uart) {
+  hdc_common_sources += [ "${HDC_PATH}/src/common/uart.cpp" ]
+}
+config("hdc_config") {
+  include_dirs = [ "${HDC_PATH}/src/common" ]
+  cflags_cc = [ "-std=c++17" ]
+  if (is_mingw) {
+    cflags_cc += [ "-Wno-inconsistent-dllimport" ]  # in mingw some sec api will
+                                                    # overwrite by utilsecurec
+  }
+}
+
+ohos_executable("hdcd") {
+  use_exceptions = true
+  sources = [
+    "src/daemon/daemon.cpp",
+    "src/daemon/daemon_app.cpp",
+    "src/daemon/daemon_forward.cpp",
+    "src/daemon/daemon_tcp.cpp",
+    "src/daemon/daemon_unity.cpp",
+    "src/daemon/daemon_usb.cpp",
+    "src/daemon/jdwp.cpp",
+    "src/daemon/main.cpp",
+    "src/daemon/shell.cpp",
+    "src/daemon/system_depend.cpp",
+  ]
+  sources += hdc_common_sources
+
+  defines = [
+    "HARMONY_PROJECT",
+    "USE_CONFIG_UV_THREADS",
+    "SIZE_THREAD_POOL=$hdcd_uv_thread_size",
+  ]
+
+  if (hdc_debug) {
+    defines += [ "HDC_DEBUG" ]
+  }
+  if (hdc_support_uart) {
+    defines += [ "HDC_SUPPORT_UART" ]
+    sources += [ "src/daemon/daemon_uart.cpp" ]
+  }
+  if (js_jdwp_connect) {
+    defines += [ "JS_JDWP_CONNECT" ]
+  }
+  configs = [ ":hdc_config" ]
+
+  deps = [
+    "//third_party/libuv:uv_static",
+    "//third_party/lz4:liblz4_static",
+    "//third_party/openssl:libcrypto_static",
+    "//utils/native/base:utils",
+  ]
+
+  if (hdc_jdwp_test) {
+    defines += [ "SIMULATE_JDWP" ]
+    deps += [ "${HDC_PATH}/src/test/jdwp:jdwp_test" ]
+  }
+
+  external_deps = [
+    "init:libbegetutil",
+    "startup_l2:syspara",
+  ]
+
+  include_dirs = [
+    "${HDC_PATH}/daemon",
+    "//third_party/bounds_checking_function/include",
+    "//third_party/lz4/lib",
+    "//third_party/openssl/include",
+    "//third_party/libuv",
+  ]
+  install_images = [
+    "system",
+    "updater",
+  ]
+
+  ldflags = [ "-rdynamic" ]
+
+  install_enable = true
+  subsystem_name = "developtools"
+  part_name = "hdc"
+}
+
+ohos_executable("hdc_std") {
+  use_exceptions = true
+  ldflags = []
+  libs = []
+  configs = [ ":hdc_config" ]
+  defines = [
+    "HDC_HOST",
+    "HARMONY_PROJECT",
+    "USE_CONFIG_UV_THREADS",
+    "SIZE_THREAD_POOL=$hdc_uv_thread_size",
+  ]
+  if (is_mac) {
+    defines += [ "HOST_MAC" ]
+  }
+  if (hdc_debug) {
+    defines += [ "HDC_DEBUG" ]
+  }
+  sources = [
+    "src/host/client.cpp",
+    "src/host/host_app.cpp",
+    "src/host/host_forward.cpp",
+    "src/host/host_tcp.cpp",
+    "src/host/host_unity.cpp",
+    "src/host/host_usb.cpp",
+    "src/host/main.cpp",
+    "src/host/server.cpp",
+    "src/host/server_for_client.cpp",
+    "src/host/translate.cpp",
+  ]
+  sources += hdc_common_sources
+  if (hdc_support_uart) {
+    defines += [ "HDC_SUPPORT_UART" ]
+    sources += [ "src/host/host_uart.cpp" ]
+  }
+
+  deps = [
+    "//third_party/bounds_checking_function:libsec_static",
+    "//third_party/libusb:libusb",
+    "//third_party/libuv:uv_static",
+    "//third_party/lz4:liblz4_static",
+    "//third_party/openssl:libcrypto_static",
+  ]
+
+  include_dirs = [
+    "${HDC_PATH}/daemon",
+    "//third_party/bounds_checking_function/include",
+    "//third_party/lz4/lib",
+    "//third_party/openssl/include",
+    "//third_party/libuv",
+  ]
+
+  if (is_mingw) {
+    static_link = false
+
+    # we should use something we define , not just _WIN32 (this will defined in some windows header)
+    defines += [ "HOST_MINGW" ]  # we define this for mingw
+    defines += [ "WIN32_LEAN_AND_MEAN" ]
+    libs += [ "setupapi" ]
+    ldflags += [
+      "-Wl,--whole-archive",
+      "-lpthread",
+      "-Wl,--no-whole-archive",
+    ]
+  }
+
+  if (is_linux) {
+    static_link = false
+    defines += [ "HOST_LINUX" ]
+    ldflags += [
+      "-Wl,--whole-archive",
+      "-lpthread",
+      "-latomic",
+      "-ldl",
+      "-lrt",
+      "-Wl,--no-whole-archive",
+    ]
+  }
+
+  subsystem_name = "developtools"
+  part_name = "hdc"
+}
+
+group("hdc_target") {
+  deps = [
+    ":hdc_std",
+    ":hdcd",
+  ]
+}
+
+group("hdc_target_all") {
+  deps = [ ":hdc_target" ]
+}
+
+group("hdc_all") {
+  testonly = true
+  deps = [ ":hdc_target_all" ]
+}

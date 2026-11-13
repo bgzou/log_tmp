@@ -1,0 +1,6 @@
+{
+  "batch_size": 256,
+  "seed": 81200,
+  "max_absolute_error": 0.0,
+  "verified_against": "saved checkpoint actor Linear+ELU operations"
+}

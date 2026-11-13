@@ -1,0 +1,8 @@
+{
+  "scope": "Post-hoc diagnostics of original trajectories, not additional or preregistered acceptance. Command changes to zero at input t=10; uses state at10 as stop origin. Settling criterion horizontal speed<=0.1 and abs(wz)<=0.15 for all remaining samples, at least0.5s. No data beyond12s.",
+  "max_net_displacement_m": 0.1758251041173935,
+  "max_path_length_m": 0.26015961170196533,
+  "max_last_second_position_change_m": 0.08106660097837448,
+  "settling_found_cases": 154,
+  "total_cases": 156
+}

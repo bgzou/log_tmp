@@ -1,0 +1,7 @@
+{
+  "captured_at": "2026-11-12T11:24:48.505944+08:00",
+  "capture_timing": "packaging time from the currently reused local Python runtime",
+  "historical_training_runtime_record": "training_environment.json",
+  "historical_training_isaaclab_commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+  "scope": "Additional exact source reference for export/native I/O parity reproduction. The original checkpoint records dependency versions/IsaacLab commit but not an independently timestamped747-file runtime hash set; do not present this set as a checkpoint-time archive. Project control code is separately verified against its original20-file training source hash snapshot, and287 upstream files are pinned."
+}

@@ -1,0 +1,10 @@
+model_version: r284-500-flat-simulation-preview
+policy_file: policy.onnx
+step_dt: 0.02
+observation_size: 65
+action_size: 16
+joint_names: [FL_hip, FR_hip, RL_hip, RR_hip, FL_thigh, FR_thigh, RL_thigh, RR_thigh, FL_calf, FR_calf, RL_calf, RR_calf, FL_foot, FR_foot, RL_foot, RR_foot]
+default_joint_pos: [0.0, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, -1.6, -1.6, -1.6, -1.6, 0.0, 0.0, 0.0, 0.0]
+stiffness: [55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 0.0, 0.0, 0.0, 0.0]
+damping: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+

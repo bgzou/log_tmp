@@ -1,0 +1,30 @@
+external_velocity_commands:
+  status: included
+  path: runtime/velocity_command.yaml
+zero_command_parking:
+  status: limited evidence
+  path: runtime/entry_exit.md
+  scope: 2s after command zero, last1s thresholds only
+stand_and_takeover:
+  status: nominal stand entry only; takeover not_run
+  path: runtime/entry_exit.md
+wheels:
+  status: included
+  path: runtime/joints.csv
+  gear_ratio: not_validated hardware; simulation joint-side velocity in URDF radians/s
+previous_action_state:
+  status: included
+  path: runtime/effective_runtime.yaml
+recovery:
+  status: not_applicable
+  reason: not declared; randomized training starts do not establish recovery qualification
+stairs:
+  status: not_applicable
+  reason: flat skill only
+high_speed_contact:
+  status: limited evidence
+  reason: commands through1m/s evaluated with failures; no>1m/s claim; contact scope
+    listed in simulation/README.md
+multiple_policy_FSM:
+  status: not_applicable
+  reason: one Actor; outer hardware handover not implemented

@@ -1,0 +1,9 @@
+# 环境溯源
+
+训练环境真实版本见training_environment.json，导出/校验环境见packaging_environment.json。IsaacLab源码Git commit为b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8，VERSION2.3.2，对应Python distribution isaaclab0.54.4；二者是不同版本标识，不要混用。robot_lab上游09f6a9d，具体锁定见training_project/upstream.lock.json。287个上游文件与747份实际Python运行时源码随包和SHA给出；依赖的NVIDIA二进制需要部署方依法安装，不捆绑。
+
+完整vendor快照含继承配置所需的上游参考文件；真正选中权重只由model/metadata.json及manifest标识。训练时源码后来已改到1.5m/s，不能用当前项目目录覆盖此包的旧源码。外层训练CLI与解析配置也一并保留；本次权重从AS2W model_1300续训，初始化和本次输出的SHA分别列出。
+
+离线CPU对齐无需Isaac；runtime/requirements_offline.txt记录已测试版本，PyTorch原训练包带cu128但这里只执行CPU。ARM64同输入加载和延迟检查由部署方补，未验证的安装不自动视为支持。
+
+747份运行时Python源码是在打包时从当前复用环境采集，具体采集时间与证据边界见runtime_snapshot_provenance.json；它们用于本次导出/补采回放复现，不冒充检查点当时独立保存的747文件快照。检查点当时的项目控制源码20文件有原始SHA，287个vendor文件有固定Git blob/SHA；原始运行时记录提供版本和IsaacLab commit。

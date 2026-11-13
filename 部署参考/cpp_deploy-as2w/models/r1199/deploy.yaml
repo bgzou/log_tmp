@@ -1,0 +1,21 @@
+model_version: r1199-zero-b-candidate
+policy_file: policy.onnx
+step_dt: 0.02
+observation_size: 65
+action_size: 16
+joint_names: [FL_hip, FR_hip, RL_hip, RR_hip, FL_thigh, FR_thigh, RL_thigh, RR_thigh, FL_calf, FR_calf, RL_calf, RR_calf, FL_foot, FR_foot, RL_foot, RR_foot]
+default_joint_pos: [0.0, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, -1.6, -1.6, -1.6, -1.6, 0.0, 0.0, 0.0, 0.0]
+stiffness: [55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 0.0, 0.0, 0.0, 0.0]
+damping: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+# Speed envelope for the joystick/training-contract candidate (m/s, rad/s).
+# This file is the only place to change it; allowed range 0.01..0.30.
+# Any change requires offline re-verification (parity + MuJoCo at the new
+# value) before field use, per the training-contract alignment rule.
+# Verified envelope (2026-11-12, training-contract flags, measured start):
+#   vx 0.2 m/s: forward/back x3 seeds all stable/tracked/held, no nonwheel.
+#   wz 0.2 rad/s REJECTED: knee clearance down to 1.5mm, brake/hold exceed.
+#   wz 0.1 rad/s: 6/6 stable, no nonwheel; yaw tracking ~50-65% of command,
+#   post-turn hold drift up to 0.037m in 3/6 (cap 0.02m) — acceptable for a
+#   supervised first yaw test only.
+vx_limit: 0.2
+wz_limit: 0.1

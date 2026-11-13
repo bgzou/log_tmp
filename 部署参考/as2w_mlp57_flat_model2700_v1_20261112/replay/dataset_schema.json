@@ -1,0 +1,267 @@
+{
+  "ordering": "time-major, then profile order in simulation/native_replay/summary.json",
+  "frames": 600,
+  "cases": 10,
+  "control_dt_s": 0.02,
+  "fields": {
+    "gyro_body": {
+      "shape": [
+        600,
+        10,
+        3
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "gravity_body": {
+      "shape": [
+        600,
+        10,
+        3
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "joint_q": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "joint_dq": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "previous_raw_action": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "command_body": {
+      "shape": [
+        600,
+        10,
+        3
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "observation": {
+      "shape": [
+        600,
+        10,
+        57
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "raw_action": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "root_quaternion_wxyz_before": {
+      "shape": [
+        600,
+        10,
+        4
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "root_position_before": {
+      "shape": [
+        600,
+        10,
+        3
+      ],
+      "dtype": "float32",
+      "time": "pre-control t"
+    },
+    "sim_counter_before": {
+      "shape": [
+        600
+      ],
+      "dtype": "int64",
+      "time": "pre-control t"
+    },
+    "q_des": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "dq_des": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "kp": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "kd": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "tau_ff": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "next_previous_raw_action": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "next_observation": {
+      "shape": [
+        600,
+        10,
+        57
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "root_position_after": {
+      "shape": [
+        600,
+        10,
+        3
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "root_quaternion_wxyz_after": {
+      "shape": [
+        600,
+        10,
+        4
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "velocity_body_after": {
+      "shape": [
+        600,
+        10,
+        3
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "angular_velocity_body_after": {
+      "shape": [
+        600,
+        10,
+        3
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "joint_q_after": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "joint_dq_after": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "applied_torque_after": {
+      "shape": [
+        600,
+        10,
+        16
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "contact_force_history_after": {
+      "shape": [
+        600,
+        10,
+        4,
+        17,
+        3
+      ],
+      "dtype": "float32",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "sim_counter_after": {
+      "shape": [
+        600
+      ],
+      "dtype": "int64",
+      "time": "post-step t+0.02; targets held over the step"
+    },
+    "control_time": {
+      "shape": [
+        600
+      ],
+      "dtype": "float64",
+      "time": "pre-control t"
+    },
+    "state_time_after": {
+      "shape": [
+        600
+      ],
+      "dtype": "float64",
+      "time": "post-step t+0.02; targets held over the step"
+    }
+  },
+  "applied_torque_after": "actual simulator actuator-data estimate at final substep, not electrical power or per-substep maximum",
+  "contact_force_history_after": "world-frame Newton; full4physics-step history; body order in native summary",
+  "not_applicable": "no RNN/history/phase/odometry integral state; next_previous_raw_action is the only controller state",
+  "contact_force_history_order": "index0 newest at state_time_after; indexi time=state_time_after-i*physics_dt (0.005s), latest to oldest"
+}

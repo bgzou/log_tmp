@@ -1,0 +1,49 @@
+wheel_joint_order:
+- FR_foot
+- FL_foot
+- RR_foot
+- RL_foot
+geometry_from_official_STL:
+  FL_foot:
+    mesh_radius_m: 0.085999995470047
+    mesh_half_width_m: 0.025907457806169987
+    center_in_base_m:
+    - 0.2119
+    - 0.1654
+    - -0.3375395305847997
+  FR_foot:
+    mesh_radius_m: 0.085999995470047
+    mesh_half_width_m: 0.025907457806169987
+    center_in_base_m:
+    - 0.2119
+    - -0.1654
+    - -0.3375395305847997
+  RL_foot:
+    mesh_radius_m: 0.08600001037120819
+    mesh_half_width_m: 0.025907457806169987
+    center_in_base_m:
+    - -0.21190000000000003
+    - 0.1654
+    - -0.3375395305847997
+  RR_foot:
+    mesh_radius_m: 0.08600001037120819
+    mesh_half_width_m: 0.025907457806169987
+    center_in_base_m:
+    - -0.21190000000000003
+    - -0.1654
+    - -0.3375395305847997
+units: joint-side rad/s; not tire linear m/s, not rpm
+positive_direction: URDF joint local positive axis; see joints.csv and URDF transforms
+wheel_phase_observation: zero before training noise; no phase or wrap state
+simulation_gear_ratio: not_applicable; direct joint-side actuator without transmission
+  model
+hardware_gear_ratio: not_validated; deployment-side mapping required
+nominal_velocity_drive:
+  kp: 0
+  kd: 1
+  tau_ff: 0
+park: zero body-speed request through actor, no wheel-angle lock
+odometry_integrator: not_applicable; no wheel odometry state in actor/runtime
+contact_evidence: original156 records four-wheel support counts and nonwheel force
+  peaks; complete per-body four-substep force history only for supplemental10-case
+  native capture

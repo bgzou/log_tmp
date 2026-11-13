@@ -1,0 +1,328 @@
+{
+  "contract": {
+    "robot": "Unitree AS2W",
+    "official_asset_source": {
+      "repository": "https://github.com/unitreerobotics/unitree_ros",
+      "commit": "4ddbf6df0aa5bf8c8789d3edfa83e5e3ca45fe48",
+      "path": "robots/as2w_description"
+    },
+    "urdf_sha256": "05da624085b16c91a9223b77872d568d97c44e480d29f3ce6933a9554bfb7d2c",
+    "nominal_mass_kg": 26.0,
+    "action_joint_order": [
+      "FR_hip",
+      "FR_thigh",
+      "FR_calf",
+      "FL_hip",
+      "FL_thigh",
+      "FL_calf",
+      "RR_hip",
+      "RR_thigh",
+      "RR_calf",
+      "RL_hip",
+      "RL_thigh",
+      "RL_calf",
+      "FR_foot",
+      "FL_foot",
+      "RR_foot",
+      "RL_foot"
+    ],
+    "nominal_joint_pos_rad": {
+      "FR_hip": 0.0,
+      "FR_thigh": 0.65,
+      "FR_calf": -1.3,
+      "FL_hip": 0.0,
+      "FL_thigh": 0.65,
+      "FL_calf": -1.3,
+      "RR_hip": 0.0,
+      "RR_thigh": 0.65,
+      "RR_calf": -1.3,
+      "RL_hip": 0.0,
+      "RL_thigh": 0.65,
+      "RL_calf": -1.3,
+      "FR_foot": 0.0,
+      "FL_foot": 0.0,
+      "RR_foot": 0.0,
+      "RL_foot": 0.0
+    },
+    "nominal_pose_source": "Symmetric simulation reference from as2w-sim/config/robot.json (0/.65/-1.3); not a measured pose or loaded B2W reference.",
+    "initial_base_height_m": 0.4284399501472309,
+    "initial_clearance_m": 0.005,
+    "joint_limits": {
+      "FR_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FR_thigh": {
+        "lower": -2.0,
+        "upper": 3.492,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FR_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "FL_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FL_thigh": {
+        "lower": -2.0,
+        "upper": 3.492,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FL_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "RR_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RR_thigh": {
+        "lower": -1.3,
+        "upper": 4.19,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RR_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "RL_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RL_thigh": {
+        "lower": -1.3,
+        "upper": 4.19,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RL_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "FR_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      },
+      "FL_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      },
+      "RR_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      },
+      "RL_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      }
+    },
+    "wheels": {
+      "FL_foot": {
+        "mesh_radius_m": 0.085999995470047,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          0.2119,
+          0.1654,
+          -0.3375395305847997
+        ]
+      },
+      "FR_foot": {
+        "mesh_radius_m": 0.085999995470047,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          0.2119,
+          -0.1654,
+          -0.3375395305847997
+        ]
+      },
+      "RL_foot": {
+        "mesh_radius_m": 0.08600001037120819,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          -0.21190000000000003,
+          0.1654,
+          -0.3375395305847997
+        ]
+      },
+      "RR_foot": {
+        "mesh_radius_m": 0.08600001037120819,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          -0.21190000000000003,
+          -0.1654,
+          -0.3375395305847997
+        ]
+      }
+    },
+    "motor_pd": {
+      "leg_kp": 40.0,
+      "leg_kd": 1.0,
+      "wheel_kp": 0.0,
+      "wheel_kd": 1.0
+    },
+    "pd_source": "config/quadruped_recorded_sample.json: mode-3 quadruped packet, 2026-11-06; one observed mode, not a universal firmware specification.",
+    "actuator_model": "Same DC motor approximation as robot_lab B2W for legs; max torque/speed from AS2W URDF. Full measured torque-speed curves are unavailable. Implicit wheel velocity PD."
+  },
+  "actual_joint_order": [
+    "FL_hip",
+    "FR_hip",
+    "RL_hip",
+    "RR_hip",
+    "FL_thigh",
+    "FR_thigh",
+    "RL_thigh",
+    "RR_thigh",
+    "FL_calf",
+    "FR_calf",
+    "RL_calf",
+    "RR_calf",
+    "FL_foot",
+    "FR_foot",
+    "RL_foot",
+    "RR_foot"
+  ],
+  "body_names": [
+    "base_link",
+    "FL_hip",
+    "FR_hip",
+    "RL_hip",
+    "RR_hip",
+    "FL_thigh",
+    "FR_thigh",
+    "RL_thigh",
+    "RR_thigh",
+    "FL_calf",
+    "FR_calf",
+    "RL_calf",
+    "RR_calf",
+    "FL_foot",
+    "FR_foot",
+    "RL_foot",
+    "RR_foot"
+  ],
+  "action_terms": {
+    "joint_pos": {
+      "joint_names": [
+        "FR_hip",
+        "FR_thigh",
+        "FR_calf",
+        "FL_hip",
+        "FL_thigh",
+        "FL_calf",
+        "RR_hip",
+        "RR_thigh",
+        "RR_calf",
+        "RL_hip",
+        "RL_thigh",
+        "RL_calf"
+      ],
+      "scale": [
+        0.125,
+        0.25,
+        0.25,
+        0.125,
+        0.25,
+        0.25,
+        0.125,
+        0.25,
+        0.25,
+        0.125,
+        0.25,
+        0.25
+      ]
+    },
+    "joint_vel": {
+      "joint_names": [
+        "FR_foot",
+        "FL_foot",
+        "RR_foot",
+        "RL_foot"
+      ],
+      "scale": [
+        5.0
+      ]
+    }
+  },
+  "active_reward_weights_equal_to_B2W": {
+    "lin_vel_z_l2": -2.0,
+    "ang_vel_xy_l2": -0.05,
+    "joint_torques_l2": -1e-05,
+    "joint_acc_l2": -1e-07,
+    "joint_pos_limits": -5.0,
+    "joint_power": -1e-05,
+    "stand_still": -2.0,
+    "joint_pos_penalty": -1.0,
+    "joint_mirror": -0.05,
+    "action_rate_l2": -0.01,
+    "undesired_contacts": -1.0,
+    "contact_forces": -0.00015,
+    "track_lin_vel_xy_exp": 3.0,
+    "track_ang_vel_z_exp": 1.5,
+    "feet_contact_without_cmd": 0.1,
+    "upward": 3.0,
+    "joint_acc_wheel_l2": -2.5e-10
+  },
+  "nominal_runtime_mass_kg": 26.000003814697266,
+  "randomized_physics_mass_range_kg": [
+    26.000003814697266,
+    26.000003814697266
+  ],
+  "wheel_phase_invariance_verified": true,
+  "policy_observation_shape": [
+    10,
+    57
+  ],
+  "critic_observation_shape": [
+    10,
+    60
+  ],
+  "num_envs": 10,
+  "device": "cuda:0",
+  "physics_dt": 0.005,
+  "policy_dt": 0.02,
+  "project_commit": "64bc0e6a668242fe8afd226d8c0df207f0b80b18",
+  "source_sha256": {
+    "source/as2w_robot_lab/audit.py": "7ea73446aee82f7e9bb0583532d71457c6c997d1ac31e13fc804740e9a8f6082",
+    "source/as2w_robot_lab/env_cfg.py": "93d558fe0ce5671f012ed93847db3e619c057f134bedb23413aeddbce5f65c22",
+    "source/as2w_robot_lab/device_audit.py": "196b15135b0dd4a8bcd64fc075aea723a6865dd757cdf3bbf484d752f5f5ea1a",
+    "source/as2w_robot_lab/morphology.py": "091cb71ec410007e4153bd11b609f8a1eeb0563304453b69cdc4bdfa243454fa",
+    "source/as2w_robot_lab/__init__.py": "1666c78e0a1610ed93f7e65ab9e0cd5d8556adacf519104073ed0aa22311a9c6",
+    "scripts/start_training.py": "2657eb41c886479000f75c9e0f72536b9226c5b1151c8e0d7bffd3c9186c00d2",
+    "scripts/upstream_train.py": "4c8af30d1cd9e15b4d2e7d7f286ab3a8e5a3bc180940a7d3f828045b1b8cb467",
+    "scripts/display.py": "52d096764c1fec0e515d862250c963789ec273fa689972651bf91a6e5301dd60",
+    "scripts/render_trajectory.py": "59d8ae3b94cbde94052df2192ff2d90887d7986915b9ce48f38c69936ec15699",
+    "scripts/setup_env.sh": "f9a5eadd5ca429b4739a89248d1c31755d2b0dc4ee167600d96a5ea84578438d",
+    "scripts/train.py": "5fb42688d3b5264b9e95bee29a746b15a794294b7bdd1d888babd22c7efc43f6",
+    "scripts/benchmark.py": "c52e39fc16de43c25a215fa0e8a0eca99f352425caad8c0569f039a6c7eee125",
+    "scripts/bootstrap.py": "e668d3a354d5f6e98560ad8ced9147604477a7bb2b2fe7ef9994859deefa7ec4",
+    "scripts/evaluate_isaac.py": "d8f8469abf02e2a7d58360631f9d062a09556f47d43fcf80a5728b0551bb68d7",
+    "scripts/doctor.py": "a1e3b9bc98090e598eab21f83e83cd73815545cc2302060a1b158165528c7983",
+    "scripts/status.py": "523a63a7324d8ecc35b022137bd97fdd22b6050dd844e7cf0cbca4cf2fd4af62",
+    "scripts/export_checkpoint.py": "7f9858e6ac5f8b06f79d298a8a57137cae09b307e66dca6c76a0cf5943723bc2",
+    "scripts/evaluate.py": "5d2207f1d6c7f59c20bb14263c7895f5357c27e05035f985df7fdb61519b351c",
+    "config/quadruped_recorded_sample.json": "720753d969b28f7fcc5256400f1eae62a0a7349da9e19238776fc881b2f27f1a",
+    "config/as2w_robot.json": "1a0df8ba3d0050697626ad532a33f322600c8b235c2820fd99f1cad73824a1fb"
+  },
+  "control": "Deterministic actor mean at evaluation; sampled actor in PPO; joint-position/velocity PD only. No StraightRoll, StopStance, motion teacher or pretrained B2W weights."
+}

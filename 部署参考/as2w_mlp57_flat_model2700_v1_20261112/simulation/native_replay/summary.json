@@ -1,0 +1,103 @@
+{
+  "profiles": {
+    "stand": [
+      0,
+      0,
+      0
+    ],
+    "forward": [
+      0.5,
+      0,
+      0
+    ],
+    "backward": [
+      -0.5,
+      0,
+      0
+    ],
+    "left": [
+      0,
+      0.3,
+      0
+    ],
+    "right": [
+      0,
+      -0.3,
+      0
+    ],
+    "turn_left": [
+      0,
+      0,
+      0.5
+    ],
+    "turn_right": [
+      0,
+      0,
+      -0.5
+    ],
+    "low_left": [
+      0,
+      0.1,
+      0
+    ],
+    "low_turn": [
+      0,
+      0,
+      0.2
+    ],
+    "forward_limit": [
+      1,
+      0,
+      0
+    ]
+  },
+  "frames": 600,
+  "cases": 10,
+  "policy_dt": 0.02,
+  "physics_dt": 0.005,
+  "command_schedule": "0-2 s zero; 2-10 s listed body command; 10-12 s zero",
+  "joint_names": [
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf",
+    "FR_foot",
+    "FL_foot",
+    "RR_foot",
+    "RL_foot"
+  ],
+  "contact_body_names": [
+    "base_link",
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "FL_foot",
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "FR_foot",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf",
+    "RL_foot",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf",
+    "RR_foot"
+  ],
+  "initial_base_height": 0.4284399501472309,
+  "observation_reconstruction_max_abs_error": 0.0,
+  "processed_target_max_abs_error": 0.0,
+  "next_previous_action_max_abs_error": 0.0,
+  "policy_sha256": "bc579e4380c7bc08d29d415153fc6eb481a897f60b989dcfe17fbcde9c786b84",
+  "sample_sha256": "a0bb606c5a519d44bd7108034235d71434c928f6bc67e2d647e8b4c016c7b03b",
+  "scope": "Native PhysX nominal I/O parity capture of the selected checkpoint. No observation noise, randomization, prior or auto-reset. Not a second simulator acceptance or a new 156-case qualification."
+}

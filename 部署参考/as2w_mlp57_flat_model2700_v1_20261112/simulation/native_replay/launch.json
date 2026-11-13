@@ -1,0 +1,18 @@
+{
+  "command_at_capture": [
+    "python",
+    "simulation/run_native.py",
+    "--workspace",
+    "<prepared_pinned_workspace>",
+    "--gpu",
+    "1",
+    "--output",
+    "<new_capture_directory>"
+  ],
+  "fixed_seed": 81200,
+  "original_workspace_commit": "64bc0e6a668242fe8afd226d8c0df207f0b80b18",
+  "observation_noise": false,
+  "dynamics_randomization": false,
+  "automatic_reset": false,
+  "same_weight_as_formal_evidence": true
+}

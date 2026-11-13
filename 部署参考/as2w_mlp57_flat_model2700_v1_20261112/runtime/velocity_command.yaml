@@ -1,0 +1,42 @@
+axes:
+  vx: body forward m/s
+  vy: body left m/s
+  wz: CCW rad/s
+trained_box:
+  vx:
+  - -1
+  - 1
+  vy:
+  - -1
+  - 1
+  wz:
+  - -1
+  - 1
+training:
+  sampler: independent uniform vx/vy, then XY norm <=0.2 becomes zero
+  resample_period_s: 10
+  standing_probability: 0.02
+  heading_command: true
+  heading_environment_fraction: 1.0
+  heading_gain: 0.5
+  heading_target_rad:
+  - -3.141592653589793
+  - 3.141592653589793
+  yaw_command: clip(0.5*wrap_to_pi(target_heading-world_heading),-1,1)
+  standing_postprocess: all three command components zero
+formal_evaluation:
+  mode: fixed physical body velocity commands; written before every observation compute
+  heading_command: false
+  standing_sampler: false
+  resample_override: explicit fixed commands bypass XY deadzone for diagnostic low-speed
+    tests
+  schedule: 2 s zero + 8 s listed command + 2 s zero
+delivery_reference:
+  mode: direct physical body velocity; same as evaluation
+  joystick_axis_mapping: not_provided; no joystick is required by the model interface
+  slew_rate_limiter: null
+  command_timeout: not_defined_by_policy; deployment owner must specify outer-controller
+    behavior
+  zero_command: request zero body velocity; not brake-wheel, wheel angle lock or world-position
+    fixed stand
+  mid_command_reset: false

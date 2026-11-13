@@ -1,0 +1,219 @@
+{
+  "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+  "executable": "/home/chenzihao/projects/as2w-robot-lab/.venv/bin/python",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "mujoco": "3.2.7",
+    "numpy": "1.26.0",
+    "isaacsim": "5.1.0.0",
+    "isaaclab": "0.54.4",
+    "isaaclab_rl": "0.5.2",
+    "rsl-rl-lib": "3.3.0",
+    "gymnasium": "1.2.1",
+    "tensordict": "0.14.2"
+  },
+  "sources": {
+    "robot_lab": {
+      "repo": "fan-ziqi/robot_lab",
+      "commit": "09f6a9dfdf48f32f38bb851dfa3a7d44db32b270",
+      "tag": "v2.3.2"
+    },
+    "rl_sar": {
+      "repo": "fan-ziqi/rl_sar",
+      "commit": "376d42c9b128f963ab08579762d5a216a976ce39"
+    },
+    "rl_sar_zoo": {
+      "repo": "fan-ziqi/rl_sar_zoo",
+      "commit": "7dd30bdc7806898950b354260655d5a7f0ce844e"
+    }
+  },
+  "isaaclab_checkout": "/home/chenzihao/projects/IsaacLab",
+  "isaaclab_commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+  "isaaclab_version_file": "2.3.2",
+  "verified_source_files": 287,
+  "as2w_model": {
+    "robot": "Unitree AS2W",
+    "official_asset_source": {
+      "repository": "https://github.com/unitreerobotics/unitree_ros",
+      "commit": "4ddbf6df0aa5bf8c8789d3edfa83e5e3ca45fe48",
+      "path": "robots/as2w_description"
+    },
+    "urdf_sha256": "05da624085b16c91a9223b77872d568d97c44e480d29f3ce6933a9554bfb7d2c",
+    "nominal_mass_kg": 26.0,
+    "action_joint_order": [
+      "FR_hip",
+      "FR_thigh",
+      "FR_calf",
+      "FL_hip",
+      "FL_thigh",
+      "FL_calf",
+      "RR_hip",
+      "RR_thigh",
+      "RR_calf",
+      "RL_hip",
+      "RL_thigh",
+      "RL_calf",
+      "FR_foot",
+      "FL_foot",
+      "RR_foot",
+      "RL_foot"
+    ],
+    "nominal_joint_pos_rad": {
+      "FR_hip": 0.0,
+      "FR_thigh": 0.65,
+      "FR_calf": -1.3,
+      "FL_hip": 0.0,
+      "FL_thigh": 0.65,
+      "FL_calf": -1.3,
+      "RR_hip": 0.0,
+      "RR_thigh": 0.65,
+      "RR_calf": -1.3,
+      "RL_hip": 0.0,
+      "RL_thigh": 0.65,
+      "RL_calf": -1.3,
+      "FR_foot": 0.0,
+      "FL_foot": 0.0,
+      "RR_foot": 0.0,
+      "RL_foot": 0.0
+    },
+    "nominal_pose_source": "Symmetric simulation reference from as2w-sim/config/robot.json (0/.65/-1.3); not a measured pose or loaded B2W reference.",
+    "initial_base_height_m": 0.4284399501472309,
+    "initial_clearance_m": 0.005,
+    "joint_limits": {
+      "FR_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FR_thigh": {
+        "lower": -2.0,
+        "upper": 3.492,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FR_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "FL_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FL_thigh": {
+        "lower": -2.0,
+        "upper": 3.492,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "FL_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "RR_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RR_thigh": {
+        "lower": -1.3,
+        "upper": 4.19,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RR_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "RL_hip": {
+        "lower": -0.785,
+        "upper": 0.785,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RL_thigh": {
+        "lower": -1.3,
+        "upper": 4.19,
+        "effort": 60.0,
+        "velocity": 25.0
+      },
+      "RL_calf": {
+        "lower": -2.7677,
+        "upper": -0.8133,
+        "effort": 90.0,
+        "velocity": 16.67
+      },
+      "FR_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      },
+      "FL_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      },
+      "RR_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      },
+      "RL_foot": {
+        "effort": 15.0,
+        "velocity": 98.47
+      }
+    },
+    "wheels": {
+      "FL_foot": {
+        "mesh_radius_m": 0.085999995470047,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          0.2119,
+          0.1654,
+          -0.3375395305847997
+        ]
+      },
+      "FR_foot": {
+        "mesh_radius_m": 0.085999995470047,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          0.2119,
+          -0.1654,
+          -0.3375395305847997
+        ]
+      },
+      "RL_foot": {
+        "mesh_radius_m": 0.08600001037120819,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          -0.21190000000000003,
+          0.1654,
+          -0.3375395305847997
+        ]
+      },
+      "RR_foot": {
+        "mesh_radius_m": 0.08600001037120819,
+        "mesh_half_width_m": 0.025907457806169987,
+        "center_in_base_m": [
+          -0.21190000000000003,
+          -0.1654,
+          -0.3375395305847997
+        ]
+      }
+    },
+    "motor_pd": {
+      "leg_kp": 40.0,
+      "leg_kd": 1.0,
+      "wheel_kp": 0.0,
+      "wheel_kd": 1.0
+    },
+    "pd_source": "config/quadruped_recorded_sample.json: mode-3 quadruped packet, 2026-11-06; one observed mode, not a universal firmware specification.",
+    "actuator_model": "Same DC motor approximation as robot_lab B2W for legs; max torque/speed from AS2W URDF. Full measured torque-speed curves are unavailable. Implicit wheel velocity PD."
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "robot_lab": {"repo": "fan-ziqi/robot_lab", "commit": "09f6a9dfdf48f32f38bb851dfa3a7d44db32b270", "tag": "v2.3.2"},
+  "rl_sar": {"repo": "fan-ziqi/rl_sar", "commit": "376d42c9b128f963ab08579762d5a216a976ce39"},
+  "rl_sar_zoo": {"repo": "fan-ziqi/rl_sar_zoo", "commit": "7dd30bdc7806898950b354260655d5a7f0ce844e"}
+}

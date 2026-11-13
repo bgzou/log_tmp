@@ -1,0 +1,140 @@
+[
+ {
+  "variant": "T1",
+  "seed": 101,
+  "prone_height": 0.2323423385620117,
+  "interp_max_leg_dq": 1.4115730995758657,
+  "interp_heights": [
+   0.231,
+   0.252,
+   0.295,
+   0.342,
+   0.39
+  ],
+  "handoff_height": 0.4331698516950989,
+  "handoff_upright": 0.9998866309860672,
+  "handoff_pose_err_max": 0.3287071851522336,
+  "hold_upright_min": 0.9988806868353766,
+  "hold_height": 0.39107663622748456,
+  "walk_forward_m": 0.7286227096473692,
+  "stop_speed": 0.042983947634045144,
+  "stop_upright": 0.9999997967609829,
+  "fallen": false,
+  "peak_nonwheel_n": 0.0
+ },
+ {
+  "variant": "T1",
+  "seed": 202,
+  "prone_height": 0.23221855163574215,
+  "interp_max_leg_dq": 1.522271502531862,
+  "interp_heights": [
+   0.23,
+   0.252,
+   0.295,
+   0.34,
+   0.385
+  ],
+  "handoff_height": 0.4231236172288996,
+  "handoff_upright": 0.9999281656521936,
+  "handoff_pose_err_max": 0.26297147302554935,
+  "hold_upright_min": 0.9995336680932425,
+  "hold_height": 0.38276189534433086,
+  "walk_forward_m": 0.7074100560009782,
+  "stop_speed": 0.04285781811049281,
+  "stop_upright": 0.9930985370529499,
+  "fallen": false,
+  "peak_nonwheel_n": 0.0
+ },
+ {
+  "variant": "T1",
+  "seed": 303,
+  "prone_height": 0.23444671630859373,
+  "interp_max_leg_dq": 1.4460707271685578,
+  "interp_heights": [
+   0.233,
+   0.252,
+   0.295,
+   0.34,
+   0.385
+  ],
+  "handoff_height": 0.4196768021989266,
+  "handoff_upright": 0.9999115811947429,
+  "handoff_pose_err_max": 0.23711347585372577,
+  "hold_upright_min": 0.9995868950406807,
+  "hold_height": 0.375666738090103,
+  "walk_forward_m": 0.6772114205772874,
+  "stop_speed": 0.05473121205128778,
+  "stop_upright": 0.9423072123257229,
+  "fallen": false,
+  "peak_nonwheel_n": 0.0
+ },
+ {
+  "variant": "T2",
+  "seed": 101,
+  "prone_height": 0.2323423385620117,
+  "interp_max_leg_dq": 1.4559761081646876,
+  "interp_heights": [
+   0.23,
+   0.243,
+   0.275,
+   0.312,
+   0.349
+  ],
+  "handoff_height": 0.3857570442073453,
+  "handoff_upright": 0.9998978583866646,
+  "handoff_pose_err_max": 0.24450260446163086,
+  "hold_upright_min": 0.9997883726008255,
+  "hold_height": 0.39733617017281775,
+  "walk_forward_m": 0.7135973575764202,
+  "stop_speed": 0.04196284177811123,
+  "stop_upright": 0.9956982638222038,
+  "fallen": false,
+  "peak_nonwheel_n": 0.0
+ },
+ {
+  "variant": "T2",
+  "seed": 202,
+  "prone_height": 0.23221855163574215,
+  "interp_max_leg_dq": 1.5923486890059684,
+  "interp_heights": [
+   0.23,
+   0.243,
+   0.275,
+   0.31,
+   0.346
+  ],
+  "handoff_height": 0.3811471012870708,
+  "handoff_upright": 0.9998670418793497,
+  "handoff_pose_err_max": 0.20617375124249246,
+  "hold_upright_min": 0.9995498583342444,
+  "hold_height": 0.38879293697920325,
+  "walk_forward_m": 0.6490749430750368,
+  "stop_speed": 0.04402508346062075,
+  "stop_upright": 0.9250272810360187,
+  "fallen": false,
+  "peak_nonwheel_n": 0.0
+ },
+ {
+  "variant": "T2",
+  "seed": 303,
+  "prone_height": 0.23444671630859373,
+  "interp_max_leg_dq": 1.4800611853971872,
+  "interp_heights": [
+   0.233,
+   0.243,
+   0.274,
+   0.31,
+   0.346
+  ],
+  "handoff_height": 0.3803993715216563,
+  "handoff_upright": 0.9999156255523104,
+  "handoff_pose_err_max": 0.20124297455701476,
+  "hold_upright_min": 0.9996713092451772,
+  "hold_height": 0.38749636094556106,
+  "walk_forward_m": 0.6401732762947815,
+  "stop_speed": 0.03676026371453566,
+  "stop_upright": 0.9168472701365519,
+  "fallen": false,
+  "peak_nonwheel_n": 10.385805614493055
+ }
+]

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "native_frames": 6000,
+  "sequence_frames": 600,
+  "cases": 10,
+  "samples_sha256": "a0bb606c5a519d44bd7108034235d71434c928f6bc67e2d647e8b4c016c7b03b",
+  "observation": {
+    "max_absolute": 0.0,
+    "flat_frame": 0,
+    "component": 0,
+    "first_exceedance": null
+  },
+  "gravity_from_quaternion": {
+    "max_absolute": 5.960464477539063e-08,
+    "flat_frame": 2715,
+    "component": 2,
+    "first_exceedance": null
+  },
+  "torchscript_cpu_vs_native_gpu": {
+    "max_absolute": 2.86102294921875e-06,
+    "flat_frame": 2943,
+    "component": 3,
+    "first_exceedance": null
+  },
+  "onnx_cpu_vs_native_gpu": {
+    "max_absolute": 3.337860107421875e-06,
+    "flat_frame": 2943,
+    "component": 3,
+    "first_exceedance": null
+  },
+  "cpp_observation_and_targets": {
+    "max_absolute": 0.0,
+    "flat_frame": 0,
+    "component": 0,
+    "first_exceedance": null
+  },
+  "cpp_synthetic_clip_cases": 12,
+  "next_previous_action": "exact",
+  "torchscript_version": "2.7.0+cu128",
+  "onnxruntime_version": "1.30.0",
+  "thresholds": {
+    "observation_absolute": 2e-06,
+    "raw_action_absolute": 2e-05,
+    "raw_action_relative": 2e-05,
+    "target_absolute": 0.0002,
+    "target_relative": 2e-05,
+    "cpp_absolute": 2e-06
+  },
+  "tested_platform": "Linux x86_64; C++ g++; ONNX CPUExecutionProvider; native PhysX GPU",
+  "arm64": "not_run",
+  "cpp_model_inference": "not_run; C++ observation/target/state mapping tested only",
+  "scope": "Offline parity; no second-simulator dynamics, robot publishing, or hardware control acceptance."
+}

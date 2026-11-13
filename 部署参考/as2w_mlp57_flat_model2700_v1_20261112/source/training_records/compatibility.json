@@ -1,0 +1,7 @@
+{
+  "removed_default_fields": {
+    "optimizer": "adam",
+    "share_cnn_encoders": false
+  },
+  "reason": "Isaac Lab config API / RSL-RL 3.3 compatibility; no reward, model or PPO hyperparameter change."
+}

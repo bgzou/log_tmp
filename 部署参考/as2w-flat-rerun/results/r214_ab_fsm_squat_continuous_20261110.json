@@ -1,0 +1,158 @@
+[
+  {
+    "seed": 101,
+    "route": "A_Y",
+    "variant": "T2",
+    "brake_ok": true,
+    "standing_min_up": 0.9991588589863094,
+    "standing_min_height": 0.21532018906996442,
+    "standing_peak_nonwheel_n": 14.001008813039,
+    "final_height": 0.16297352776013405,
+    "phases": [
+      {
+        "name": "passive",
+        "seconds": 2.0,
+        "start_height": 0.2322262423095703,
+        "end_height": 0.21607427482292532,
+        "min_height": 0.215832591697348,
+        "min_up": 0.9999787241678366,
+        "peak_nonwheel_n": 31.009271314727215,
+        "min_vz": -0.28208370074067146
+      },
+      {
+        "name": "A_fixstand",
+        "seconds": 3.0,
+        "start_height": 0.21609943356821326,
+        "end_height": 0.38185372968976805,
+        "min_height": 0.21532018906996442,
+        "min_up": 0.9991588589863094,
+        "peak_nonwheel_n": 14.001008813039,
+        "min_vz": -0.0012978063379175423
+      },
+      {
+        "name": "fixed_hold",
+        "seconds": 2.0,
+        "start_height": 0.3850509089131112,
+        "end_height": 0.37365561383204926,
+        "min_height": 0.37365561383204926,
+        "min_up": 0.9996198935686326,
+        "peak_nonwheel_n": 0.0,
+        "min_vz": -0.03832461664900722
+      },
+      {
+        "name": "Y_fixsquat",
+        "seconds": 7.0,
+        "start_height": 0.3733870998231881,
+        "end_height": 0.16297352776013405,
+        "min_height": 0.16297352776013405,
+        "min_up": 0.9978362272686244,
+        "peak_nonwheel_n": 15.801105207468483,
+        "min_vz": -0.10067169996686479
+      }
+    ]
+  },
+  {
+    "seed": 202,
+    "route": "A_Y",
+    "variant": "T2",
+    "brake_ok": true,
+    "standing_min_up": 0.9990412723740146,
+    "standing_min_height": 0.21522381645675726,
+    "standing_peak_nonwheel_n": 15.904806807183295,
+    "final_height": 0.13530956493283958,
+    "phases": [
+      {
+        "name": "passive",
+        "seconds": 2.0,
+        "start_height": 0.23213602471923822,
+        "end_height": 0.2160312341441504,
+        "min_height": 0.2155975157554484,
+        "min_up": 0.9999753331243711,
+        "peak_nonwheel_n": 38.19433018244546,
+        "min_vz": -0.27298570068655964
+      },
+      {
+        "name": "A_fixstand",
+        "seconds": 3.0,
+        "start_height": 0.21605667058006822,
+        "end_height": 0.37634697223424224,
+        "min_height": 0.21522381645675726,
+        "min_up": 0.9990412723740146,
+        "peak_nonwheel_n": 15.904806807183295,
+        "min_vz": -0.0013966623051840123
+      },
+      {
+        "name": "fixed_hold",
+        "seconds": 2.0,
+        "start_height": 0.3792157577603383,
+        "end_height": 0.3638175119624261,
+        "min_height": 0.3638175119624261,
+        "min_up": 0.9996027997762889,
+        "peak_nonwheel_n": 0.0,
+        "min_vz": -0.035735858729620776
+      },
+      {
+        "name": "Y_fixsquat",
+        "seconds": 7.0,
+        "start_height": 0.36361335745582746,
+        "end_height": 0.13530956493283958,
+        "min_height": 0.13530956493283958,
+        "min_up": 0.9950318776022287,
+        "peak_nonwheel_n": 17.522769703623887,
+        "min_vz": -0.1081525749361467
+      }
+    ]
+  },
+  {
+    "seed": 303,
+    "route": "A_Y",
+    "variant": "T2",
+    "brake_ok": true,
+    "standing_min_up": 0.9991749210818937,
+    "standing_min_height": 0.21549399022222132,
+    "standing_peak_nonwheel_n": 16.507372115914926,
+    "final_height": 0.13111980498473427,
+    "phases": [
+      {
+        "name": "passive",
+        "seconds": 2.0,
+        "start_height": 0.23435999322509765,
+        "end_height": 0.2163044519132386,
+        "min_height": 0.2159539399214046,
+        "min_up": 0.999932256498889,
+        "peak_nonwheel_n": 45.600830713995556,
+        "min_vz": -0.3397650143913816
+      },
+      {
+        "name": "A_fixstand",
+        "seconds": 3.0,
+        "start_height": 0.2163300779434869,
+        "end_height": 0.3754965007074245,
+        "min_height": 0.21549399022222132,
+        "min_up": 0.9991749210818937,
+        "peak_nonwheel_n": 16.507372115914926,
+        "min_vz": -0.0014481767495487371
+      },
+      {
+        "name": "fixed_hold",
+        "seconds": 2.0,
+        "start_height": 0.3783253245171254,
+        "end_height": 0.3632395014812424,
+        "min_height": 0.3632395014812424,
+        "min_up": 0.9996928092459226,
+        "peak_nonwheel_n": 0.0,
+        "min_vz": -0.0346292609923076
+      },
+      {
+        "name": "Y_fixsquat",
+        "seconds": 7.0,
+        "start_height": 0.36308129770447656,
+        "end_height": 0.13111980498473427,
+        "min_height": 0.13111980498473427,
+        "min_up": 0.9951154598661811,
+        "peak_nonwheel_n": 20.309350095345952,
+        "min_vz": -0.10701712004940353
+      }
+    ]
+  }
+]

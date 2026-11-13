@@ -1,0 +1,103 @@
+policy: ../model/policy.onnx
+control_dt_s: 0.02
+physics_dt_s: 0.005
+decimation: 4
+joint_order:
+- FR_hip
+- FR_thigh
+- FR_calf
+- FL_hip
+- FL_thigh
+- FL_calf
+- RR_hip
+- RR_thigh
+- RR_calf
+- RL_hip
+- RL_thigh
+- RL_calf
+- FR_foot
+- FL_foot
+- RR_foot
+- RL_foot
+input:
+  shape:
+  - batch
+  - 57
+  dtype: float32
+  onnx_name: observation
+  torchscript_argument: input
+  frame: x forward, y left, z up; right-handed base_link
+  orientation: body-to-world quaternion wxyz for gravity frontend; quaternion itself
+    is not an actor input
+  normalization: fixed per-term scale only; no running normalizer
+  clipping: each raw term [-100,100] before multiplying its scale
+  observation_noise: false
+  history_frames: 0
+  previous_action: raw last 16 model actions (ActionManager inputs), not scaled/clipped
+    targets; reset zeros
+output:
+  shape:
+  - batch
+  - 16
+  dtype: float32
+  onnx_name: raw_action_mean
+  sampling: false
+  tanh: false
+  raw_action_clip: null
+  leg_scale:
+  - 0.125
+  - 0.25
+  - 0.25
+  - 0.125
+  - 0.25
+  - 0.25
+  - 0.125
+  - 0.25
+  - 0.25
+  - 0.125
+  - 0.25
+  - 0.25
+  leg_offset:
+  - 0
+  - 0.65
+  - -1.3
+  - 0
+  - 0.65
+  - -1.3
+  - 0
+  - 0.65
+  - -1.3
+  - 0
+  - 0.65
+  - -1.3
+  wheel_scale: 5
+  wheel_offset: 0
+  processed_target_clip:
+  - -100
+  - 100
+  clip_order: affine then clip in physical target units
+  previous_action_update: save raw action, including when processed targets clip
+  interpolation: none; zero-order target hold for four physics steps
+  filters: null
+  teacher: false
+  StraightRoll: false
+  StopStance: false
+  compensation: false
+motor_requests:
+  leg:
+    q: processed position
+    dq: 0
+    kp: 40
+    kd: 1
+    tau_ff: 0
+  wheel:
+    q: 0
+    q_usage: unused because kp=0; no wheel-angle lock
+    dq: processed angular velocity
+    kp: 0
+    kd: 1
+    tau_ff: 0
+hardware_mapping: joints.csv symbols only; DDS slot, encoder zero, sign, mode and
+  ownership must be provided by deployment owner
+hardware_watchdog_and_exit: not implemented in this offline reference; outer controller
+  must define them; no hardware motor publishing in package

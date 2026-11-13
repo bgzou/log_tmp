@@ -1,0 +1,121 @@
+{
+  "joint_names": [
+    "FL_hip",
+    "FR_hip",
+    "RL_hip",
+    "RR_hip",
+    "FL_thigh",
+    "FR_thigh",
+    "RL_thigh",
+    "RR_thigh",
+    "FL_calf",
+    "FR_calf",
+    "RL_calf",
+    "RR_calf",
+    "FL_foot",
+    "FR_foot",
+    "RL_foot",
+    "RR_foot"
+  ],
+  "control_period_s": 0.02,
+  "onnx_policies": {
+    "r152": {
+      "mode": "stairs",
+      "status": "active deployment target (user-designated 2026-11-09 15:00)",
+      "runtime": "onnxruntime-1.22.0",
+      "source": "YuTaoV5/Rob2Nav main @ 40c80f0e07362b0a8e38528379076355d50ecbf5 deliveries/as2w-deploy/omni-blind-stairs-r152",
+      "policy_onnx_sha256": "fdc661f936a08a96d8db7ae34bb26933f6c34ed980dae8a5119283812a80f5d1",
+      "trace_sha256": "9e31a294305c8b6f24211f45d5ab2c4acdc0af54f31c34dfcaad33a7a642945a",
+      "files": {
+        "onnx": "models/r152/policy.onnx",
+        "params": "models/r152/deploy.yaml",
+        "parity_trace": "models/r152/r152-trace.csv"
+      },
+      "interface": {
+        "obs": "float32[1,41]: body-frame vx,vy,wz command, IMU gyro, projected gravity, 16 abs positions, 16 velocities",
+        "state": "float32[1,844]: zero on mode entry, fed by previous next_state (DO NOT mix with R41 state[1,835])",
+        "actions": "float32[1,16]: 12 leg position targets + 4 wheel velocity targets, joint order per deploy.yaml (identical to R41)",
+        "rate_hz": 50
+      },
+      "verification": {
+        "date": "2026-11-09",
+        "where": "server OpenCode x86 (INDEX 15:00-15:12 and R152 entries)",
+        "mujoco_flat_onnx": "fixed tracking/parking 44/52, strict contact/gait 21/52; independent 25/52, strict 9/52; 104 episodes zero falls, zero front-wheel crossing; exact per-case match with delivered evidence (mismatch 0/104)",
+        "strict_failures": "rear-leg non-wheel ground contact >=50N in 23/44 fixed and 16/25 independent tracking-passed episodes (RL/RR calf/thigh); stop and forward_slow are 4/4 strict-clean",
+        "cpp_replay": "rows=750 max_abs_error=0 leg_and_wheel_targets=verified stale_state=latched_off (x86 ORT 1.22.0, integrated into this repo with AS2W_R152=ON)",
+        "r41_comparison_same_criteria": "R41 python/onnx: fixed strict 13/12 of 52, independent 4/5 of 52, plus front-wheel crossing in 18/41 tracking-passed fixed episodes (R41 stop stance crosses front wheels ~12cm past centerline); R152 strictly dominates on tracking, strict rate and geometry",
+        "notes": "ORT must be 1.22.0 (1.24.2 rejects the model's TopK shape); rear-leg contact trait exists in both generations, more frequent in R152 among tracking-passed episodes (52% vs 24% fixed) but offset by zero crossing and better net strict rate"
+      }
+    },
+    "r41": {
+      "mode": "stairs",
+      "status": "offline reference only (superseded by r152 as deployment target)",
+      "runtime": "onnxruntime-1.22.0",
+      "source": "YuTaoV5/Rob2Nav main deliveries/as2w-deploy/omni-blind-stairs (R41)",
+      "policy_sha256": "sha256 per deliveries/as2w-deploy/omni-blind-stairs/SHA256SUMS",
+      "files": {
+        "onnx": "models/r41/policy.onnx",
+        "params": "models/r41/deploy.yaml",
+        "parity_trace": "models/r41/r41-trace.csv"
+      },
+      "interface": {
+        "obs": "float32[1,41]: body-frame vx,vy,wz command, IMU gyro, projected gravity, 16 abs positions, 16 velocities",
+        "state": "float32[1,835]: zero on mode entry, fed by previous next_state",
+        "actions": "float32[1,16]: 12 leg position targets + 4 wheel velocity targets, joint order per deploy.yaml",
+        "rate_hz": 50
+      },
+      "verification": {
+        "date": "2026-11-09",
+        "where": "server OpenCode x86 (see 04_调试记录/INDEX.md 12:1x entry)",
+        "flat_fixed": "41/52 passed, 0 fallen; forward 0.2/0.4 m/s 4/4 each, reverse 4/4, turns 4/4, stop 4/4",
+        "flat_confirmation": "20/52 passed, 0 fallen",
+        "cpp_replay": "rows=750 max_abs_error=0 leg_and_wheel_targets=verified stale_state=latched_off",
+        "notes": "ORT must be 1.22.0 (1.24.2 rejects the model's TopK shape); stairs marginal seeds vary with numerics (confirmation 6cm: 8 vs colleague's 10) - flat results reproduce exactly"
+      }
+    }
+  },
+  "models": {
+    "recovery-r09": {
+      "mode": "recovery",
+      "source_checkpoint": "righting-streak-r09-model_7000.pt",
+      "source_sha256": "e2eb44258ed1c64af80343cfc60b374411df8748fec49a431880ee1484e07e50",
+      "actor_sha256": "49bfcd1bd671b37f6c26e18331fadb2143dfd2aacdfde6714fef42789512ac92",
+      "onnx_sha256": "a2b66ac56873fd9df3d22e765954adda276e49b6fbf8d081aaad61a8c5dac62f"
+    },
+    "recovery-r12": {
+      "mode": "recovery",
+      "source_checkpoint": "righting-conservative-r12-model_1999.pt",
+      "source_sha256": "a8bac34e75fc18cdb68fc36b2bb3352e8032d981a30429b8f641d1209e70d834",
+      "actor_sha256": "bfe871225444beb043bed7aba64af8c19f2d964ace82d79fe06276d02f0a14ef",
+      "onnx_sha256": "c4887155f360a45d2f07ec5df2fc8b1befc04001b5502c6163fba76de34e8c61"
+    },
+    "recovery-r13": {
+      "mode": "recovery",
+      "source_checkpoint": "righting-mixed-terrain-r13-model_1999.pt",
+      "source_sha256": "9a0fbed56558eb8fa7818f702809fe336c6438a830b8a1b52d3b2b9301c8e7fe",
+      "actor_sha256": "05766876d51bec93c988a16c3336b026285bcce290c9556beca234be0f4d8a75",
+      "onnx_sha256": "5531e22882166402edf180de11d208b28af786777eb9c3a2a4f017eb047a74b8"
+    },
+    "stairs-r14": {
+      "mode": "stairs",
+      "source_checkpoint": "blind-stairs-r14-model_1999.pt",
+      "source_sha256": "aa40442b799a78da60047f5989f9c716730b02395b8dc7b4686c85dbe9097c86",
+      "actor_sha256": "3e01481dac605320343e4980bdd815cb80f8611ef5abb4a8ac1baa96de6a1247",
+      "onnx_sha256": "215dac0abd7baa46bdee43480e754d8f53b6fa3af7c93178d5fd50401263550f"
+    },
+    "stairs-r17-2000": {
+      "mode": "stairs",
+      "source_checkpoint": "blind-stairs-imitation-r17-model_1999.pt",
+      "source_sha256": "c0319bfc5adc5377fe292b364d9e194c80a0888c023837c2d228751a7571f88b",
+      "actor_sha256": "b50bb898a28514e336d612c1dd36a492a3d125bce76e614cde963981063cf5d0",
+      "onnx_sha256": "393d1a5537d79b8965d0b5e2a3a090466ed07e3d6fa13db0119995f8c94a747a"
+    },
+    "stairs-r17-3000": {
+      "mode": "stairs",
+      "source_checkpoint": "blind-stairs-imitation-r17-to5000-model_2999.pt",
+      "source_sha256": "cc39762e6cd146cf0acf4617847e44722e5b20fe9cbd26bd818ddb80bebeabce",
+      "actor_sha256": "0701bd0e2409ae25ec49e17f989f3315ae3e86c948ec2d37321ef7841c079bf6",
+      "onnx_sha256": "dd89206e89aa3956c5c40c84f1eb006779f4535bf9b5126566912c785e773be3"
+    }
+  }
+}
