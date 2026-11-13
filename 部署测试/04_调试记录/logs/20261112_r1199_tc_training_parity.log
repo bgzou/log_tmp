@@ -1,0 +1,1 @@
+TRAINING_FORWARD_PARITY runtime=training frames=950 motion_frames=590 max_action_error=1.1920929e-07 at_frame=151 max_previous_action_error=0 threshold=1e-05

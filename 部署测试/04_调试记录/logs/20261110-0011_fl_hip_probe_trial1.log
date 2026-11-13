@@ -1,0 +1,26 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+BOUNDED SINGLE-AXIS PROBE: A/B/Y ignored.
+Type 'GO' and press Enter to start (nothing else proceeds).
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=4913666 packets=583
+FSM started in Passive startup. A/B/Y locked out. X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+PROBE ready contract_index=0 dds_slot=3 raw_q0=0.567687 model_amplitude=0.02
+STARTUP: Passive ready after 727 frames
+PROBE sample t=0.200427 scale=0 cmd_q=0.567681 cmd_dq=0 feedback_q=0.567681 feedback_dq=0
+PROBE sample t=0.400213 scale=0 cmd_q=0.567681 cmd_dq=0 feedback_q=0.567681 feedback_dq=-0.00306796
+PROBE sample t=0.610809 scale=0.221618 cmd_q=0.563254 cmd_dq=0 feedback_q=0.567681 feedback_dq=0.00613592
+PROBE sample t=0.815547 scale=0.631093 cmd_q=0.555065 cmd_dq=0 feedback_q=0.567579 feedback_dq=-0.0122718
+PROBE sample t=1.01988 scale=1 cmd_q=0.547687 cmd_dq=0 feedback_q=0.567513 feedback_dq=0
+PROBE sample t=1.22971 scale=1 cmd_q=0.547687 cmd_dq=0 feedback_q=0.567489 feedback_dq=0.00306796
+PROBE sample t=1.43597 scale=1 cmd_q=0.547687 cmd_dq=0 feedback_q=0.567495 feedback_dq=0
+PROBE sample t=1.64257 scale=0.714862 cmd_q=0.553389 cmd_dq=0 feedback_q=0.567501 feedback_dq=-0.00920388
+PROBE sample t=1.8526 scale=0.294808 cmd_q=0.561791 cmd_dq=0 feedback_q=0.567549 feedback_dq=0.0122718
+PROBE sample t=2.05833 scale=0 cmd_q=0.567573 cmd_dq=0 feedback_q=0.567573 feedback_dq=0.00613592
+PROBE sample t=2.2604 scale=0 cmd_q=0.567591 cmd_dq=0 feedback_q=0.567591 feedback_dq=0
+PROBE sample t=2.46761 scale=0 cmd_q=0.567579 cmd_dq=0 feedback_q=0.567579 feedback_dq=0
+PROBE sample t=2.66973 scale=0 cmd_q=0.567597 cmd_dq=0 feedback_q=0.567597 feedback_dq=0.00613592
+PROBE sample t=2.8831 scale=0 cmd_q=0.567585 cmd_dq=0 feedback_q=0.567585 feedback_dq=-0.00306796
+PROBE bounded duration complete
+Operator exit; stop.
+Done. Final state: EmergencyDamping

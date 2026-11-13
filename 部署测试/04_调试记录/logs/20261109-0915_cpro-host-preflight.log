@@ -1,0 +1,250 @@
+Stage 1 CPRO Harmony host read-only preflight, 2026-11-09 CST
+COMMAND: uname -a; id; pwd; ip -br addr; ip route
+HarmonyOS localhost HongMeng Kernel 1.12.0 #1 SMP Thu Oct 22 03:39:07 UTC 2026 aarch64
+uid=0(root) gid=0(root) groups=0(root),1006(file_manager),1007(log),2000(shell),3009(readproc) context=u:r:su:s0
+/
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+dummy0           DOWN           
+tunl0@NONE       DOWN           
+ip_vti0@NONE     DOWN           
+ip6_vti0@NONE    DOWN           
+sit0@NONE        DOWN           
+ip6tnl0@NONE     DOWN           
+eth0             UP             fe80::218:82ff:fe0c:d65/64 
+eth1             UP             fe80::218:82ff:fe0c:d64/64 
+endvnic          DOWN           
+can0             DOWN           
+Hisilicon0       DOWN           
+wlan0            UP             192.168.10.180/24 fe80::a0c1:99ff:fe7a:5eb8/64 
+p2p0             DORMANT        
+wlan1            DOWN           
+192.168.10.0/24 dev wlan0 proto kernel scope link src 192.168.10.180 
+COMMAND: ls/mount/df/links
+ls: /data/ubunte_in_hm: No such file or directory
+ls: /data/ubunte_in_hm/chroot.sh: No such file or directory
+ls: /data/ubunte_in_hm/ubunte_rootfs: No such file or directory
+drwxrwx--x 6 shell shell 8192 2026-11-06 14:34 /data/local/tmp
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/block/nvme0n1p117 215G  108G  107G  51% /mnt/user/100/nosharefs/appdata/el1/base
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+dummy0           DOWN           32:92:9b:fb:41:09 <BROADCAST,NOARP> 
+tunl0@NONE       DOWN           0.0.0.0 <NOARP> 
+ip_vti0@NONE     DOWN           0.0.0.0 <NOARP> 
+ip6_vti0@NONE    DOWN           :: <NOARP> 
+sit0@NONE        DOWN           0.0.0.0 <NOARP> 
+ip6tnl0@NONE     DOWN           :: <NOARP> 
+eth0             UP             00:18:82:0c:0d:65 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth1             UP             00:18:82:0c:0d:64 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+endvnic          DOWN           00:e0:fc:fc:d3:d3 <BROADCAST,MULTICAST> 
+can0             DOWN           <NOARP,ECHO> 
+Hisilicon0       DOWN           00:00:00:00:00:00 <BROADCAST,MULTICAST> 
+wlan0            UP             a2:c1:99:7a:5e:b8 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+p2p0             DORMANT        62:c4:28:98:d6:03 <NO-CARRIER,BROADCAST,MULTICAST,UP,LOWER_UP> 
+wlan1            DOWN           c4:11:02:78:03:ea <BROADCAST,MULTICAST> 
+eth0
+1
+00:18:82:0c:0d:65
+eth1
+1
+00:18:82:0c:0d:64
+COMMAND: ls /data /mnt /storage; locate Ubuntu rootfs/chroot shallow
+total 6941097984
+drwxrwx--x 41 system                system                      4096 2026-11-06 16:18 .
+drwxr-xr-x 28 root                  root                         603 2024-06-06 08:00 ..
+-rw-r--r--  1 root                  root                         172 2026-11-06 16:15 .ro_test
+drwxr-xr-x  3 root                  root                        3440 2026-10-16 09:32 .ros
+-rw-r--r--  1 root                  root                  6933960810 2001-01-02 16:18 CPro-env.tar.gz
+-rw-r--r--  1 root                  root                         524 2026-10-26 10:53 VLADemo.env
+drwxr-xr-x  2 root                  root                        3440 2026-10-22 14:48 __pycache__
+drwxrwx--x  7 system                system                      3440 2001-01-02 16:08 app
+-rw-r--r--  1 root                  root                       15712 2026-10-22 14:48 backup_roboparty_data.py
+-rw-r--r--  1 root                  root                         396 2026-10-22 14:26 backup_roboparty_data.sh
+drwx--x--x  4 root                  root                        3440 2001-01-02 16:08 chipset
+drwxr-xr-x  3 root                  root                        3440 2026-07-01 16:42 cloud
+drwxrwx--x  6 system                system                      3440 2001-01-02 16:08 data
+drwxr-xr-x  2 ddr_inspect           ddr_inspect                 3440 2001-01-02 16:08 ddr_inspect
+drwxr-xr-x  2 root                  root                        3440 2026-10-15 21:11 ethercat_log_20261015_211113
+-rw-rw-r--  1 foundation            system                       762 2001-01-02 16:08 hap_crl
+drwxrwx---  4 root                  system                      3440 2026-07-01 20:21 hisi_logs
+drwxrwx--x  2 system                system                      3440 2001-01-02 16:07 hmos4
+drwxr-xr-x  3 root                  root                        3440 2026-05-20 17:54 ibrobot
+-rwxrwxrwx  1 root                  root                         362 2026-11-06 16:22 init_AS2_env.sh
+drwxr-xr-x 13 root                  root                      118784 2026-10-30 16:43 install
+drwxr-x--x  6 root                  root                        3440 2001-01-02 16:08 local
+drwxrwxr-x 38 system                log                         3440 2026-11-08 13:45 log
+drwxrwx---  2 root                  root                        3440 2001-01-02 16:08 lost+found
+drwxr-x---  2 media                 media                       3440 2001-01-02 16:08 media_analysis
+drwxrwx--t  3 system                misc                        3440 2001-01-02 16:08 misc
+drwxrwxr-x  4 update                update                      3440 2001-01-02 16:07 module_update
+drwxr-xr-x  5 root                  root                        3440 2026-05-20 19:37 my_msgs
+drwxrwx---  3 nfc                   nfc                         3440 2001-01-02 16:08 nfc
+drwxr-xr-x  2 root                  root                        3440 2001-01-02 16:08 nfc_tag
+drwxr-xr-x 16 root                  root                        3440 2026-05-21 02:06 out
+drwxrwx---  3 file_transfer_service file_transfer_service       3440 2001-01-02 16:08 pc_service
+drwx------  2 power_host            power_host                  3440 2001-01-02 16:08 power
+drwxr-xr-x 36 root                  root                       20480 2026-10-30 16:50 roboparty
+-rw-r--r--  1 root                  root                        8122 2026-10-22 14:48 roboparty_backup_manifest_20261022.md
+drwx------  4 root                  root                        3440 2026-10-22 14:40 roboparty_backups
+drwxr-xr-x  6 root                  root                        3440 2026-09-21 11:24 roboparty_deploy_bz0918_test
+drwxr-xr-x  6 root                  root                        3440 2026-10-30 19:50 roboparty_ibmw
+-rw-r--r--  1 root                  root                        1045 2026-05-20 18:37 ros2ohos.env
+drwxr-----  2 samgr                 samgr                       3440 2026-11-09 07:22 samgr
+drwx--x--x  8 root                  root                        3440 2001-01-02 16:08 service
+drwxr-xr-x  2 storage_info          storage_info                3440 2001-01-02 16:08 storage
+-rw-r--r--  1 root                  root                         846 2026-05-20 19:39 sysdeps.env
+drwxrwx--x  5 system                system                      3440 2001-01-02 16:08 system
+drwxrwxr-x  2 hiview                system                      3440 2001-01-02 16:08 system_ce
+drwxr-xr-x  3 root                  root                        3440 2026-11-06 15:02 ubuntu_in_hm
+drwxrwx--- 10 update                update                      3440 2001-01-02 16:08 update
+drwxrwxr-x  3 update                update                      3440 2026-11-06 16:15 updater
+drwxrwx--x 14 root                  root                        3440 2001-01-02 16:08 vendor
+drwx-----x  9 root                  root                        3440 2001-01-02 16:08 virt_service
+drwxr-xr-x  4 root                  root                        3440 2026-08-21 10:42 work
+total 4096
+drwxr-xr-x 13 root        root        4096 2026-11-06 16:15 .
+drwxr-xr-x 28 root        root         603 2024-06-06 08:00 ..
+drwxr-xr-x  3 hwf_service hwf_service 4096 2026-11-06 16:15 .VMDocs
+drwxr-xr-x  6 root        root        4096 2026-11-06 16:15 data
+drwxr-xr-x  2 root        root        4096 2026-11-06 16:15 debug
+drwx--x--x  3 root        root        4096 2026-11-06 16:15 hmdfs
+drwxr-xr-x  2 root        root        4096 2026-11-06 16:15 isula
+drwxr-xr-x  8 root        root        4096 2026-11-06 16:15 lower
+drwxr-xr-x  8 root        root        4096 2026-11-06 16:15 overlay
+drwxr-xr-x  8 root        root        4096 2026-11-06 16:15 sandbox
+drwx--x--x  3 root        root        4096 2026-11-06 16:15 share
+drwxrwxr-x  2 update      update      4096 2026-11-06 16:15 sys_installer
+drwx--x--x  3 root        root        4096 2026-11-06 16:15 user
+total 4096
+drwxr-xr-x  4 root root 4096 2026-11-06 16:15 .
+drwxr-xr-x 28 root root  603 2024-06-06 08:00 ..
+drwx--x--x  3 root root 4096 2026-11-06 16:15 cloud
+drwx--x--x  3 root root 4096 2026-11-06 16:15 media
+/data/ubuntu_in_hm
+/data/ubuntu_in_hm/ubuntu_rootfs.tar.gz.00
+/data/ubuntu_in_hm/ubuntu_rootfs.tar.gz.01
+/data/ubuntu_in_hm/ubuntu_rootfs.tar.gz.02
+/data/ubuntu_in_hm/chroot.sh
+/data/ubuntu_in_hm/ubuntu_rootfs
+/data/ubuntu_in_hm/ubuntu_rootfs/etc/newt/palette.ubuntu
+/data/ubuntu_in_hm/ubuntu_rootfs/etc/depmod.d/ubuntu.conf
+COMMAND: inspect actual Ubuntu entry and host AS2 initialization scripts, no execution
+total 2.7G
+drwxr-xr-x  3 root   root   3.3K 2026-11-06 15:02 .
+drwxrwx--x 41 system system 4.0K 2026-11-06 16:18 ..
+-rw-r--r--  1 root   root    749 2026-11-06 15:02 chroot.sh
+drwxrwxr-x 17 system system 3.3K 2026-07-07 11:21 ubuntu_rootfs
+-rw-r--r--  1 root   root   1.0G 2026-11-06 14:57 ubuntu_rootfs.tar.gz.00
+-rw-r--r--  1 root   root   1.0G 2026-11-06 15:00 ubuntu_rootfs.tar.gz.01
+-rw-r--r--  1 root   root   716M 2026-11-06 15:01 ubuntu_rootfs.tar.gz.02
+#!/bin/bash
+mnt() {
+	echo "MOUNTING"
+	mount -t proc /proc ${2}proc
+	mount -t sysfs /sys ${2}sys
+	mount -o bind /dev ${2}dev
+	mount -o bind /dev/pts ${2}dev/pts
+	chroot ${2} /bin/bash -i
+}
+umnt() {
+	echo "UNMOUNTING"
+	umount ${2}proc
+	umount ${2}sys
+	umount ${2}dev/pts
+	umount ${2}dev
+}
+ 
+if [ "$1" == "-m" ] && [ -n "$2" ] ;
+then
+	mnt $1 $2
+elif [ "$1" == "-u" ] && [ -n "$2" ];
+then
+	umnt $1 $2
+else
+	echo ""
+	echo "Either 1'st, 2'nd or both parameters were missing"
+	echo ""
+	echo "1'st parameter can be one of these: -m(mount) OR -u(umount)"
+	echo "2'nd parameter is the full path of rootfs directory(with trailing '/')"
+	echo ""
+	echo "For example: ch-mount -m /media/sdcard/"
+	echo ""
+	echo 1st parameter : ${1}
+	echo 2nd parameter : ${2}
+fi
+
+INIT_AS2
+#!/bin/bash
+
+
+
+ip link set eth0 up
+
+ip addr add 192.168.123.100/24 dev eth0
+
+ip route add default via 192.168.123.1 dev eth0 src 192.168.123.100
+
+ip rule add to 192.168.123.18/24 table main priority 1000
+
+ip rule add from 192.168.123.100 table main priority 1000
+
+
+
+cd /data/ubuntu_in_hm/
+
+unshare --uts --fork /bin/sh
+
+source chroot.sh -m ubuntu_rootfs/
+
+
+
+
+
+
+
+ROOTFS_OS
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+ROOTFS_TOOLS
+-rwxr-xr-x 1 root root 5657664 2024-02-04 07:33 /data/ubuntu_in_hm/ubuntu_rootfs/usr/bin/cmake
+lrwxrwxrwx 1 root root       6 2021-08-05 15:36 /data/ubuntu_in_hm/ubuntu_rootfs/usr/bin/g++ -> g++-11
+COMMAND: unshare --uts --fork chroot Ubuntu /bin/bash -lc read-only environment
+Linux localhost 5.10.43 #1 SMP Thu Oct 22 03:39:07 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+uid=0(root) gid=0(root) groups=0(root),1006,1007,2000,3009
+/bin/cmake
+cmake version 3.22.1
+/bin/g++
+g++ (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+dummy0           DOWN           
+tunl0@NONE       DOWN           
+ip_vti0@NONE     DOWN           
+ip6_vti0@NONE    DOWN           
+sit0@NONE        DOWN           
+ip6tnl0@NONE     DOWN           
+eth0             UP             fe80::218:82ff:fe0c:d65/64 
+eth1             DOWN           
+endvnic          DOWN           
+can0             DOWN           
+Hisilicon0       DOWN           
+wlan0            UP             192.168.10.180/24 fe80::a0c1:99ff:fe7a:5eb8/64 
+p2p0             DORMANT        
+wlan1            DOWN           
+COMMAND: HDC transferred two tarballs and SHA256SUMS.txt to /data/local/tmp/as2w_field; verify on CPRO
+cpp_deploy-as2w.tar.gz: OK
+unitree_sdk2-src.tar.gz: OK
+-rw-r--r-- 1 root root 2.0M 2026-11-09 09:16 cpp_deploy-as2w.tar.gz
+-rw-r--r-- 1 root root  16M 2026-11-09 09:16 unitree_sdk2-src.tar.gz

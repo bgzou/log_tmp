@@ -1,0 +1,33 @@
+[field-session] mode=getup monitor=150s dry_run=0 dir=/root/field_sessions/20261113-181327_getup
+[field-session] step1 binary: build-getup1199/deploy/robots/as2w/getup1199/as2w_getup1199_publish
+a5436f498446c0590370f2bf58bc62ac54d7a2a87e9a76a23e886a2e77cd35f1  deploy/robots/as2w/common/as2w_publish.cpp
+0cf7b4f67ad8a7b3d862b83b78bc5b598654b5a9f7db982e1dc398b9370f21c2  deploy/robots/as2w/getup1199/getup1199_controller.cpp
+bb6301d1ba521e60692fbc5877338afe242ed7ef71578919110d8d836015faea  deploy/robots/as2w/getup1199/getup1199_controller.hpp
+0bdaf1002a0294e05c5c5ba786631012058251776da3f2c718c4e47da8a29a12  tools/run_getup1199_trial.sh
+970e692ebcb99ef4a3a7b6d6574944128f97e75a1dddba8cef9678725caea971  models/getup1199/policy.onnx
+8896bbc738159fc851df75c643408413f806ac2dd401685bb01454e14e30cb10  build-getup1199/deploy/robots/as2w/getup1199/as2w_getup1199_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1038 tick=3103571 mode_pr=0 mode_machine=2 imu_wxyz=0.993272,0.00237446,-0.00151757,-0.115767, gyro=-0.00958738,-0.00319579,0.00532632, m0=-0.565697,0 m1=0.996075,0 m2=-2.74758,0 m3=0.538068,0.00306796 m4=1.00754,0.00306796 m5=-2.769,0.00818123 m6=-0.564241,0 m7=1.01775,0 m8=-2.75572,0 m9=0.56813,-0.00613592 m10=0.973095,-0.00920388 m11=-2.7472,0.00409062 m12=0.471483,0 m13=0.0026605,0 m14=1.19739,0 m15=1.18117,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2000,2086,1,3105879,0,2,0.993259,0.00240745,-0.00106044,-0.115887,-0.00319579,0.00426106,-0.00213053,-0.56570
+[field-session] step4 packets=2086 16-axis modes={0}
+[field-session] step4 prone calf gate=yes
+[field-session] step5 starting 150s monitoring (low-capture 2ms + low-protection)
+[field-session] step6 launching: bash tools/run_getup1199_trial.sh
+[field-session]     >>> Passive ready expected in ~3-5s; then hand the remote to the operator.
+[field-session]     >>> GETUP1199: B once = knee-open (~2.5s, body lifts ~3cm) -> staged rise (~3-5s) -> FixedStand hold (auto-squat after 30s or Y); A disabled; X=emergency; one B chain per session.
+[field-session] publisher exited rc=0
+[field-session] debug diagnostics archived: debug_policy.csv (1 lines)
+[field-session] debug diagnostics archived: debug_lowcmd.csv (5160 lines)
+[field-session] monitoring done; artifacts:
+total 9357
+drwxr-xr-x.  2 root root    3440 Nov 13 18:13 .
+drwxr-xr-x. 51 root root    4096 Nov 13 18:13 ..
+-rw-r--r--.  1 root root 2280235 Nov 13 18:13 debug_lowcmd.csv
+-rw-r--r--.  1 root root     295 Nov 13 18:13 debug_policy.csv
+-rw-r--r--.  1 root root 6612844 Nov 13 18:13 low_capture_fast.log
+-rw-r--r--.  1 root root  667648 Nov 13 18:13 low_protection.log
+-rw-r--r--.  1 root root    2003 Nov 13 18:13 publisher.log
+-rw-r--r--.  1 root root    2749 Nov 13 18:13 session.log
+[field-session] session complete (mode=getup rc=0). Copy /root/field_sessions/20261113-181327_getup back to the workstation logs dir and append INDEX.

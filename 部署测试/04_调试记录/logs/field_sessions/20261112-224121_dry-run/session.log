@@ -1,0 +1,18 @@
+[field-session] mode=training-contract monitor=30s dry_run=1 debug=1 lowpass_ms=40 lowpass_wheels=0 dir=/root/field_sessions/20261112-224121_dry-run
+[field-session] step1 binary: build-r1199-training-contract-filter/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+15a2f654ba973cc064a56ecbfcc67babdb0f1f189927851dee34bae0206fca6a  deploy/robots/as2w/common/as2w_publish.cpp
+feebea78e4af238cf682fc043fa253b856b7db4a2c4c8e61f9b17ba40f2bda4c  deploy/robots/as2w/r1199/r1199_controller.cpp
+fc526254a8ac51455cb71c50902a9ea0853de310679c1ec2d82b0cb681fbd750  deploy/robots/as2w/r1199/r1199_controller.hpp
+0e794783bc2d0315117acf24728c4b2b136b881c2f9b9c6475f12a4a8447240c  tools/run_r1199_forward_trial.sh
+ca72bbe60abd5e4714e67f38dab1f5ed77949f47c86b5ca0de80230fb2d36d38  tools/run_r1199_joystick_trial.sh
+5669fddafa5ae43b00286cb9f0855fb86972086aa9c0bf48bb5775a36aada5ff  tools/run_r1199_training_contract_trial.sh
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+5d963ce3c1cf9051315649b525d24fa29891218d8eaf1db8863ff15efd17e1ae  build-r1199-training-contract-filter/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1057 tick=4122164 mode_pr=0 mode_machine=2 imu_wxyz=0.998381,0.00223012,0.00390908,0.056712, gyro=-0.00532632,-0.00213053,-0.00106526, m0=-0.565452,0 m1=0.99336,0 m2=-2.75616,0.00613592 m3=0.55946,0 m4=0.985643,0.00613592 m5=-2.75815,0.00204531 m6=-0.55282,0.0184078 m7=0.99958,0 m8=-2.74863,-0.00204531 m9=0.533837,0.00306796 m10=0.975774,0 m11=-2.75845,0 m12=-0.00115043,0 m13=-0.321009,-0.0122718 m14=-0.499287,-0.0122718 m15=-0.98031,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2001,2088,1,4124492,0,2,0.998368,0.00196324,0.00415332,0.056917,-0.00852211,-0.00106526,0.0127832,-0.565458,0
+[field-session] step4 packets=2088 16-axis modes={0}
+[field-session] step4 forward prone calf gate=yes
+[field-session] dry-run: steps 1-4 PASS; would now start monitoring + training-contract launcher

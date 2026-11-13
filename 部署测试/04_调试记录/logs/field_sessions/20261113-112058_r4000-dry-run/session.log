@@ -1,0 +1,13 @@
+[field-session] mode=r4000 monitor=30s dry_run=1 vx_limit=0.2 wz_limit=0.1 dir=/root/field_sessions/20261113-112058_r4000-dry-run
+[field-session] step1 binary: build-r4000-joystick/deploy/robots/as2w/r4000/as2w_r4000_joystick_publish
+b13e674c8d7c687f1621195f1adb4b3fc947f049ada597347c68d94446027969  deploy/robots/as2w/common/as2w_publish.cpp
+dc9b5808f46020585e6ff4e4c93293514a62fbe688d34c2c361eb622e00f54b2  deploy/robots/as2w/r4000/r4000_controller.cpp
+0918387856232d2f428e3601d423300c38d74e78a99652f819f543b0987c32fd  deploy/robots/as2w/r4000/r4000_controller.hpp
+8966f0f9b80049846aba34fe78defd95a0ef4ffa10088dd5ba76d1b82585c02c  deploy/robots/as2w/r4000/r4000_observations.hpp
+4ca26985e1fd8b56617428c52b75e5d40205bef1cc4c03ec7c2e6da46dbc9edb  tools/run_r4000_trial.sh
+dd42ada25c494fb1801dfdc11e9bde01fd442f8a0ab453da9cfbfbbb29083775  models/r4000/policy.onnx
+3b0bbc28350be6e6c9800457aa4887199e635c9df6d3a2ac3dfd02fe0b5f6d54  build-r4000-joystick/deploy/robots/as2w/r4000/as2w_r4000_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1040 tick=277507 mode_pr=0 mode_machine=2 imu_wxyz=0.999728,0.00324964,-0.00153417,0.023065, gyro=0.00426106,0.00213053,0.00213053, m0=-0.580246,-0.00306796 m1=1.05051,0.00306796 m2=-2.76228,-0.00409062 m3=0.573517,-0.0153398 m4=1.04748,-0.00306796 m5=-2.75692,0.00204531 m6=-0.570665,-0.00613592 m7=1.04826,0.00613592 m8=-2.75504,-0.00204531 m9=0.574368,0.00306796 m10=1.04265,0 m11=-2.75211,0 m12=-0.384286,0 m13=-0.398284,0 m14=-0.31461,-0.0122718 m15=-0.654626,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=ai
+[field-session] dry-run: factory mode (ai); would stand-down-if-standing + ReleaseMode here

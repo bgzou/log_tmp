@@ -1,0 +1,14 @@
+SESSION 20261112-223732_training-contract
+  policy_walk_frames=751 protection_rows=10682
+  protection_complete_rows=10681 protection_nonzero=0
+  guard_trips=0
+  forward: frames=251 command_mean=+0.1393 gyro_z_mean=-0.0009
+  backward: frames=218 command_mean=-0.1775 gyro_z_mean=+0.0006
+SESSION 20261112-224151_training-contract
+  policy_walk_frames=1501 protection_rows=12953
+  protection_complete_rows=12952 protection_nonzero=0
+  guard_trips=0
+  forward: frames=262 command_mean=+0.1382 gyro_z_mean=+0.0040
+  backward: frames=232 command_mean=-0.1359 gyro_z_mean=+0.0034
+  yaw_positive: frames=117 command_mean=+0.0910 gyro_z_mean=+0.0250
+  yaw_negative: frames=328 command_mean=-0.0883 gyro_z_mean=-0.0218

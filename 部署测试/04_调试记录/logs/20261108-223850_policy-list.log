@@ -1,0 +1,5 @@
+Stage: policy-list
+Started: 2026-11-08T22:38:50+08:00
+Command: python3 tools/policy_select.py list
+Exit code: 49
+Finished: 2026-11-08T22:38:51+08:00

@@ -1,0 +1,10 @@
+2026-11-08 / Windows PC / read-only GO2 source audit
+Inspected: unitree_cpp_deploy-go2/deploy/include, deploy/robots/go2, deploy/tools, scripts/udp_test.py.
+Finding: deploy/tools has two plotting Python files; scripts/udp_test.py receives a 12-axis JPOS UDP packet. The deployment main chain is C++ FSMState/CtrlFSM/State_RLBase plus IsaacLab observation/action managers and ONNX Runtime.
+Finding: GO2 FSMState::post_run() calls lowcmd->unlockAndPublish(); CtrlFSM dt is 0.001 s; Types.h binds unitree::robot::go2 LowCmd/LowState wrappers. These sources are not AS2-W low-level implementation.
+Output: docs/go2_deploy_audit.md and field copy 02_现场操作/GO2文件移植判断.md.
+Package verification:
+cpp_deploy-as2w.tar.gz: OK
+unitree_sdk2-src.tar.gz: OK
+docs/go2_deploy_audit.md present in archive: True
+GO2文件移植判断.md present in field guide: True

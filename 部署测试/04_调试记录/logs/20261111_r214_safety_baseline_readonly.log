@@ -1,0 +1,29 @@
+COMMAND: ip -br link show eth0
+eth0             DOWN           00:18:82:0c:0d:65 <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+HDC_EXIT=0
+COMMAND: pidof as2w_r214_publish || true
+HDC_EXIT=0
+COMMAND: /data/local/tmp/as2w_field/cpro_ubuntu.sh /bin/bash -lc 'cd /root/as2w_deploy && env LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib ./build-sdk2/as2w_sdk2 low-state eth0 rt/lowstate 2'
+1794404705.664387 [0]  as2w_sdk2: eth0: does not match an available interface.
+Catch dds::core exception. Class:::dds::core::Error, Message:Error Error - Failed to create domain explicitly.
+===============================================================================
+Context     : org::eclipse::cyclonedds::domain::DomainWrap::DomainWrap
+Node        : UnknownNode
+
+HDC_EXIT=0
+COMMAND: /data/local/tmp/as2w_field/cpro_ubuntu.sh /bin/bash -lc 'cd /root/as2w_deploy && env LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib ./build-sdk2/as2w_sdk2 motion-mode eth0'
+1794404706.424089 [0]  as2w_sdk2: eth0: does not match an available interface.
+Catch dds::core exception. Class:::dds::core::Error, Message:Error Error - Failed to create domain explicitly.
+===============================================================================
+Context     : org::eclipse::cyclonedds::domain::DomainWrap::DomainWrap
+Node        : UnknownNode
+
+HDC_EXIT=0
+COMMAND: /data/local/tmp/as2w_field/cpro_ubuntu.sh /bin/bash -lc 'cd /root/as2w_deploy && env LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib ./build-sdk2/as2w_sdk2 sport-command eth0 get-state'
+1794404707.222947 [0]  as2w_sdk2: eth0: does not match an available interface.
+Catch dds::core exception. Class:::dds::core::Error, Message:Error Error - Failed to create domain explicitly.
+===============================================================================
+Context     : org::eclipse::cyclonedds::domain::DomainWrap::DomainWrap
+Node        : UnknownNode
+
+HDC_EXIT=0

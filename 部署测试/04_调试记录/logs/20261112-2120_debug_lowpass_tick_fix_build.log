@@ -1,0 +1,307 @@
+[  4%] Built target as2w_r214
+[  9%] Built target as2w_r270
+[ 13%] Built target as2w_policy
+[ 18%] Built target as2w_r249
+[ 22%] Built target as2w_r1199
+[ 27%] Built target as2w_r1199_joystick
+[ 31%] Built target as2w_r284
+[ 36%] Built target as2w_deploy
+[ 40%] Built target as2w_bench
+[ 45%] Built target as2w_controller_test
+[ 50%] Built target as2w_r214_replay
+Consolidate compiler generated dependencies of target as2w_r214_publish
+Consolidate compiler generated dependencies of target as2w_r249_publish
+[ 54%] Built target as2w_r249_smoke
+[ 59%] Built target as2w_r270_smoke
+[ 61%] Building CXX object deploy/robots/as2w/r249/CMakeFiles/as2w_r249_publish.dir/__/common/as2w_publish.cpp.o
+[ 63%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/__/common/as2w_publish.cpp.o
+Consolidate compiler generated dependencies of target as2w_r270_publish
+[ 68%] Built target as2w_r284_smoke
+[ 70%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_publish.dir/__/common/as2w_publish.cpp.o
+Consolidate compiler generated dependencies of target as2w_r284_publish
+[ 72%] Building CXX object deploy/robots/as2w/r284/CMakeFiles/as2w_r284_publish.dir/__/common/as2w_publish.cpp.o
+[ 75%] Linking CXX executable as2w_r249_publish
+[ 77%] Linking CXX executable as2w_r214_publish
+[ 79%] Linking CXX executable as2w_r270_publish
+[ 81%] Linking CXX executable as2w_r284_publish
+[ 81%] Built target as2w_r249_publish
+[ 86%] Built target as2w_r1199_replay
+[ 86%] Built target as2w_r214_publish
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+[ 90%] Built target as2w_r1199_joystick_replay
+[ 90%] Built target as2w_r270_publish
+[ 93%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/common/as2w_publish.cpp.o
+[ 93%] Built target as2w_r284_publish
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_publish
+[ 95%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/common/as2w_publish.cpp.o
+[ 97%] Linking CXX executable as2w_r1199_publish
+[ 97%] Built target as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-debug-validation
+Test project /root/as2w_deploy/build-debug-validation
+      Start  1: recovery-r09
+ 1/16 Test  #1: recovery-r09 .....................   Passed    0.02 sec
+      Start  2: recovery-r12
+ 2/16 Test  #2: recovery-r12 .....................   Passed    0.02 sec
+      Start  3: recovery-r13
+ 3/16 Test  #3: recovery-r13 .....................   Passed    0.02 sec
+      Start  4: stairs-r14
+ 4/16 Test  #4: stairs-r14 .......................   Passed    0.02 sec
+      Start  5: stairs-r17-2000
+ 5/16 Test  #5: stairs-r17-2000 ..................   Passed    0.02 sec
+      Start  6: stairs-r17-3000
+ 6/16 Test  #6: stairs-r17-3000 ..................   Passed    0.02 sec
+      Start  7: controller
+ 7/16 Test  #7: controller .......................   Passed    0.02 sec
+      Start  8: r214-startup-frame-audit
+ 8/16 Test  #8: r214-startup-frame-audit .........   Passed    0.54 sec
+      Start  9: r249-controller-smoke
+ 9/16 Test  #9: r249-controller-smoke ............   Passed    0.09 sec
+      Start 10: r249-startup-frame-audit
+10/16 Test #10: r249-startup-frame-audit .........   Passed    0.11 sec
+      Start 11: r270-controller-smoke
+11/16 Test #11: r270-controller-smoke ............   Passed    0.07 sec
+      Start 12: r270-startup-frame-audit
+12/16 Test #12: r270-startup-frame-audit .........   Passed    0.08 sec
+      Start 13: r284-controller-smoke
+13/16 Test #13: r284-controller-smoke ............   Passed    0.08 sec
+      Start 14: r284-startup-frame-audit
+14/16 Test #14: r284-startup-frame-audit .........   Passed    0.10 sec
+      Start 15: r1199-startup-frame-audit
+15/16 Test #15: r1199-startup-frame-audit ........   Passed    0.11 sec
+      Start 16: r1199-joystick-startup-audit
+16/16 Test #16: r1199-joystick-startup-audit .....   Passed    0.09 sec
+
+100% tests passed, 0 tests failed out of 16
+
+Total Test time (real) =   1.42 sec
+[ 10%] Built target as2w_policy
+[ 20%] Built target as2w_r1199_joystick
+[ 30%] Built target as2w_r1199
+[ 40%] Built target as2w_deploy
+[ 50%] Built target as2w_bench
+[ 60%] Built target as2w_controller_test
+[ 70%] Built target as2w_r1199_replay
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_publish
+[ 80%] Built target as2w_r1199_joystick_replay
+[ 85%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/common/as2w_publish.cpp.o
+[ 90%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/common/as2w_publish.cpp.o
+[ 95%] Linking CXX executable as2w_r1199_publish
+[ 95%] Built target as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-training-contract-filter
+Test project /root/as2w_deploy/build-r1199-training-contract-filter
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r1199-startup-frame-audit
+8/9 Test #8: r1199-startup-frame-audit ........   Passed    0.10 sec
+    Start 9: r1199-joystick-startup-audit
+9/9 Test #9: r1199-joystick-startup-audit .....   Passed    0.11 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.34 sec
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r1199-training-contract-debug
+Consolidate compiler generated dependencies of target as2w_r1199
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r1199_joystick
+[ 10%] Built target as2w_policy
+[ 20%] Built target as2w_r1199
+[ 30%] Built target as2w_r1199_joystick
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_r1199_replay
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_bench
+[ 40%] Built target as2w_controller_test
+[ 50%] Built target as2w_r1199_replay
+[ 60%] Built target as2w_deploy
+[ 70%] Built target as2w_bench
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_replay
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_publish
+[ 80%] Built target as2w_r1199_joystick_replay
+[ 85%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/common/as2w_publish.cpp.o
+[ 90%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/common/as2w_publish.cpp.o
+[ 95%] Linking CXX executable as2w_r1199_publish
+[ 95%] Built target as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-training-contract-debug
+Test project /root/as2w_deploy/build-r1199-training-contract-debug
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.03 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.03 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.03 sec
+    Start 8: r1199-startup-frame-audit
+8/9 Test #8: r1199-startup-frame-audit ........   Passed    0.10 sec
+    Start 9: r1199-joystick-startup-audit
+9/9 Test #9: r1199-joystick-startup-audit .....   Passed    0.10 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.38 sec
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-debug-stand
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r214
+[ 14%] Built target as2w_policy
+[ 28%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_r214_replay
+[ 57%] Built target as2w_deploy
+[ 57%] Built target as2w_bench
+[ 71%] Built target as2w_controller_test
+[ 85%] Built target as2w_r214_replay
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 92%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/__/common/as2w_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-debug-stand
+Test project /root/as2w_deploy/build-r214-debug-stand
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.55 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.70 sec
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-debug-zero-b
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r214
+[ 14%] Built target as2w_policy
+[ 28%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_r214_replay
+[ 42%] Built target as2w_deploy
+[ 57%] Built target as2w_bench
+[ 71%] Built target as2w_r214_replay
+[ 85%] Built target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 92%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/__/common/as2w_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-debug-zero-b
+Test project /root/as2w_deploy/build-r214-debug-zero-b
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.03 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.54 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.71 sec
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-debug-full
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r214
+[ 28%] Built target as2w_r214
+[ 28%] Built target as2w_policy
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_r214_replay
+[ 42%] Built target as2w_bench
+[ 71%] Built target as2w_r214_replay
+[ 85%] Built target as2w_controller_test
+[ 85%] Built target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 92%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/__/common/as2w_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-debug-full
+Test project /root/as2w_deploy/build-r214-debug-full
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.55 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.71 sec
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown

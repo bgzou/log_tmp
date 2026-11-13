@@ -1,0 +1,7 @@
+﻿time=2026-11-09T10:42:50.3620143+08:00
+server=192.168.10.163
+sshd=Running
+port=22
+authorized_keys=C:\ProgramData\ssh\administrators_authorized_keys
+launcher=C:\Users\zoubu\as2w_field.ps1
+auth=server ed25519 key; private key stays on server

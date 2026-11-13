@@ -1,0 +1,26 @@
+﻿Stage: policy-shadow
+Started: 2026-11-09T11:27:56+08:00
+Command: python3 tools/policy_select.py shadow stairs-r17-3000 eth0 config/hypothesis.map 60
+SHADOW_ONLY stairs-r17-3000; no LowCmd will be published
+SHADOW_ONLY tick=9431276 age_ms=0.1775 RR_foot_slot=15 RR_foot_sdk_dq=8.7365
+SHADOW_ONLY tick=9431776 age_ms=0.177344 RR_foot_slot=15 RR_foot_sdk_dq=3.94554
+SHADOW_ONLY tick=9432276 age_ms=0.645312 RR_foot_slot=15 RR_foot_sdk_dq=3.9387
+SHADOW_ONLY tick=9432775 age_ms=0.816094 RR_foot_slot=15 RR_foot_sdk_dq=3.93493
+SHADOW_ONLY tick=9433276 age_ms=0.165937 RR_foot_slot=15 RR_foot_sdk_dq=3.94494
+SHADOW_ONLY tick=9433776 age_ms=0.398125 RR_foot_slot=15 RR_foot_sdk_dq=3.91932
+SHADOW_ONLY tick=9434275 age_ms=0.671875 RR_foot_slot=15 RR_foot_sdk_dq=3.91881
+SHADOW_ONLY tick=9434775 age_ms=1.03922 RR_foot_slot=15 RR_foot_sdk_dq=3.92261
+SHADOW_ONLY tick=9435276 age_ms=0.256718 RR_foot_slot=15 RR_foot_sdk_dq=3.9389
+SHADOW_ONLY tick=9435775 age_ms=0.483282 RR_foot_slot=15 RR_foot_sdk_dq=3.92322
+SHADOW_ONLY tick=9436275 age_ms=0.935 RR_foot_slot=15 RR_foot_sdk_dq=3.93965
+SHADOW_ONLY tick=9436776 age_ms=0.26 RR_foot_slot=15 RR_foot_sdk_dq=3.92498
+SHADOW_ONLY tick=9437276 age_ms=0.607187 RR_foot_slot=15 RR_foot_sdk_dq=3.93585
+SHADOW_ONLY tick=9437775 age_ms=0.867187 RR_foot_slot=15 RR_foot_sdk_dq=3.92312
+SHADOW_ONLY tick=9438276 age_ms=0.158438 RR_foot_slot=15 RR_foot_sdk_dq=3.91842
+SHADOW_ONLY tick=9438776 age_ms=0.487032 RR_foot_slot=15 RR_foot_sdk_dq=3.94038
+SHADOW_ONLY tick=9439275 age_ms=0.76 RR_foot_slot=15 RR_foot_sdk_dq=3.9295
+SHADOW_ONLY tick=9439776 age_ms=0.132187 RR_foot_slot=15 RR_foot_sdk_dq=3.93416
+shadow locked: stale/invalid state at tick 9440276
+SHADOW_SUMMARY ticks=451 stale_skips=0 locked=1 age_ms_p50=0.545937 age_ms_p99=1.13328 age_ms_max=21.7166 compute_ms_p50=0.247188 compute_ms_p99=0.638125 compute_ms_max=1.15578
+Exit code: 0
+Finished: 2026-11-09T11:28:05+08:00

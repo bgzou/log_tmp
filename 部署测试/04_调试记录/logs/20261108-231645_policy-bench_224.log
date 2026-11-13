@@ -1,0 +1,7 @@
+Stage: policy-bench
+Started: 2026-11-08T23:16:45+08:00
+Command: python tools/policy_select.py bench recovery-r12 3000
+BENCH recovery-r12 (recovery); compute only, no DDS
+iterations=3000 p50_us=67.50 p99_us=124.30 max_us=648.90 policy_period_us=20000 action_sum=1072.61
+Exit code: 0
+Finished: 2026-11-08T23:16:46+08:00

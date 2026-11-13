@@ -1,0 +1,6 @@
+﻿Stage: r214-replay
+Started: 2026-11-09T20:08:33+08:00
+Command: ./build-r214/deploy/robots/as2w/r214/as2w_r214_replay models/r214/deploy.yaml models/r214/r214-trace.csv
+rows=1050 max_abs_error=9.53674e-07 leg_and_wheel_targets=verified stale_state=latched_off
+Exit code: 0
+Finished: 2026-11-09T20:08:35+08:00

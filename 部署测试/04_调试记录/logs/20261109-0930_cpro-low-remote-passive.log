@@ -1,0 +1,11 @@
+2026-11-09 raw remote bytes from HG LowState; user reports original remote paired
+Stage: low-remote
+Started: 2026-11-09T09:32:03+08:00
+Command: ./build-sdk2/as2w_sdk2 low-remote eth0 rt/lowstate 5
+low remote packets=1041 tick=2479823 raw24=555100000000000000000000000000000000000000000000 candidate_buttons=0x0 candidate_axes=0,0,0,0,0
+low remote packets=2098 tick=2480827 raw24=555100000000000000000000000000000000000000000000 candidate_buttons=0x0 candidate_axes=0,0,0,0,0
+low remote packets=3154 tick=2481831 raw24=555100000000000000000000000000000000000000000000 candidate_buttons=0x0 candidate_axes=0,0,0,0,0
+low remote packets=4211 tick=2482835 raw24=5551000000000000000000000000000000000000bc0ddebe candidate_buttons=0x0 candidate_axes=0,0,0,0,-0.433699
+low remote packets=5272 tick=2483843 raw24=555100000000000000000000000000000000000000000000 candidate_buttons=0x0 candidate_axes=0,0,0,0,0
+Exit code: 0
+Finished: 2026-11-09T09:32:08+08:00

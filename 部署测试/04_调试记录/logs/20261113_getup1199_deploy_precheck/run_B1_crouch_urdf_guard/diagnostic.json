@@ -1,0 +1,2858 @@
+{
+ "cr0": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20506039706325918,
+     "up_z": 0.9992344450601419,
+     "angular_velocity_rad_s": [
+      0.04233856107110113,
+      0.02091276701099667,
+      0.011528831702116191
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7479832346860382,
+      -2.748172646130552,
+      -2.7298317838511603,
+      -2.748128385518329
+     ],
+     "velocity_rad_s": [
+      -0.2265877488304752,
+      -0.3781169044414874,
+      -0.13207072721418503,
+      -0.34270841466345464
+     ],
+     "wheel_vertical_load_n": [
+      248.30178285387842,
+      278.2708530464556,
+      234.31851243934915,
+      258.2456794021436
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20502119763671578,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2724715151332177,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2050600755848276,
+     "up_z": 0.9992344450601419,
+     "angular_velocity_rad_s": [
+      0.009094436347015043,
+      0.015941052456140855,
+      0.010069941710004526
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7480715540979745,
+      -2.748189957521679,
+      -2.7297832565233615,
+      -2.74812421381138
+     ],
+     "velocity_rad_s": [
+      -0.29724327837967324,
+      -0.39196601734309783,
+      -0.09324886497506299,
+      -0.3393710491039698
+     ],
+     "wheel_vertical_load_n": [
+      248.93434042029415,
+      276.0676903941397,
+      234.43395801707632,
+      266.1077006549689
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20502119763671578,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20508213577153614,
+     "up_z": 0.9992344450601419,
+     "angular_velocity_rad_s": [
+      -0.059641335632339525,
+      0.027996750670322226,
+      0.007319830234947291
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747798797197435,
+      -2.748115596205995,
+      -2.729696805840485,
+      -2.7478371468082554
+     ],
+     "velocity_rad_s": [
+      -0.07903775794811668,
+      -0.3324769647960244,
+      -0.024088318674144765,
+      -0.10971744660437126
+     ],
+     "wheel_vertical_load_n": [
+      301.6713139554197,
+      357.59902626592395,
+      301.1281315844517,
+      332.4699423558111
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20502119763671578,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.41394574001895706,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20506060705071613,
+     "up_z": 0.9992344450601419,
+     "angular_velocity_rad_s": [
+      -0.0034412443824978958,
+      0.019672363919208388,
+      0.009342236114708235
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747958643520866,
+      -2.748260102427975,
+      -2.729830631176631,
+      -2.748049396062148
+     ],
+     "velocity_rad_s": [
+      -0.2069148166929822,
+      -0.4480819423800182,
+      -0.13114858759112538,
+      -0.2795168497183249
+     ],
+     "wheel_vertical_load_n": [
+      233.13989847422422,
+      287.09590464852164,
+      235.89719014709672,
+      274.8480538015848
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20502119763671578,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.27072387107320495,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20508816769160987,
+     "up_z": 0.9992344450601419,
+     "angular_velocity_rad_s": [
+      -0.06211799440446493,
+      0.03015155120336687,
+      -0.0009110579133411239
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7478765777556826,
+      -2.7479888257430867,
+      -2.7296762725163948,
+      -2.7476799373267977
+     ],
+     "velocity_rad_s": [
+      -0.14126220454611524,
+      -0.2310605944692456,
+      -0.007661659402011963,
+      0.016050138561752636
+     ],
+     "wheel_vertical_load_n": [
+      336.2469615604681,
+      356.4781361193069,
+      296.32447232256624,
+      353.1091166572037
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20502119763671578,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4476530228191714,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ },
+ "cr1": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.22136551086905204,
+     "up_z": 0.9994710625726932,
+     "angular_velocity_rad_s": [
+      0.03114207295594292,
+      0.018655926258101054,
+      0.009418236344581702
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747554371866034,
+      -2.7437232163308938,
+      -2.7474844087517503,
+      -2.7476863683544233
+     ],
+     "velocity_rad_s": [
+      0.11650250717286903,
+      -0.0897147877943906,
+      0.17247299859993862,
+      0.01090531646143686
+     ],
+     "wheel_vertical_load_n": [
+      166.55012054030735,
+      218.18033930520127,
+      158.31663142140172,
+      169.59402107465746
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.2213339946492063,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2724715151332182,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.22136533975038183,
+     "up_z": 0.9994710625726932,
+     "angular_velocity_rad_s": [
+      0.0022365913827105087,
+      0.015519762566099129,
+      0.0074749332703003225
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7476437945964007,
+      -2.7437465312035103,
+      -2.74743124699568,
+      -2.747678560582201
+     ],
+     "velocity_rad_s": [
+      0.04496432287941015,
+      -0.10836668588748777,
+      0.2150024034559237,
+      0.017151534239184016
+     ],
+     "wheel_vertical_load_n": [
+      167.53587011573947,
+      215.32644269430114,
+      158.20691710649334,
+      177.81870515231876
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.2213339946492063,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.22138806013653461,
+     "up_z": 0.9994710625726932,
+     "angular_velocity_rad_s": [
+      -0.056479414896912904,
+      0.03396017852319779,
+      0.0028795222644446305
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7473711664132785,
+      -2.743681435616946,
+      -2.7473190956159192,
+      -2.7473677870011466
+     ],
+     "velocity_rad_s": [
+      0.26306686937727325,
+      -0.05629021663601291,
+      0.3047235072645673,
+      0.2657703990828046
+     ],
+     "wheel_vertical_load_n": [
+      220.2720488678812,
+      295.1082230902855,
+      233.663710599233,
+      243.80279061061265
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.2213339946492063,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4210643302650536,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2213657996595561,
+     "up_z": 0.9994710625726932,
+     "angular_velocity_rad_s": [
+      -0.014351081189329349,
+      0.019228577337696368,
+      0.006403030923034255
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.74753216576343,
+      -2.743814498246557,
+      -2.7474796449035574,
+      -2.747601659411161
+     ],
+     "velocity_rad_s": [
+      0.13426738925578718,
+      -0.16274032032489794,
+      0.17628407715401465,
+      0.07867247107121769
+     ],
+     "wheel_vertical_load_n": [
+      151.62744579036828,
+      226.91199985766664,
+      159.80403755047928,
+      185.94565519616793
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.2213339946492063,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.27072387107320495,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.22139383427709208,
+     "up_z": 0.9994710625726932,
+     "angular_velocity_rad_s": [
+      -0.05718436484737641,
+      0.03514173900119238,
+      -0.0038030979081884364
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7474475092988055,
+      -2.743547905254632,
+      -2.747296492062893,
+      -2.747214446066958
+     ],
+     "velocity_rad_s": [
+      0.20199256095572576,
+      0.050534073215121045,
+      0.32280634968543054,
+      0.38844314643373135
+     ],
+     "wheel_vertical_load_n": [
+      254.4142001388643,
+      293.47983131487365,
+      228.19315548382872,
+      263.9581744081785
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.2213339946492063,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4476530228191714,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ },
+ "cr2": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21454459164330122,
+     "up_z": 0.9999077648158615,
+     "angular_velocity_rad_s": [
+      0.05460982912409705,
+      0.030475250451412472,
+      0.008907096605961227
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7476696217308754,
+      -2.7477578253287818,
+      -2.738148550147127,
+      -2.652512257163198
+     ],
+     "velocity_rad_s": [
+      0.024302615299554374,
+      -0.046260263025544285,
+      -0.18287755864167934,
+      -0.5258711864732044
+     ],
+     "wheel_vertical_load_n": [
+      189.78619142222792,
+      208.84458541037876,
+      249.37596817184107,
+      272.5928503654044
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21450867461482678,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2724715151332177,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21454413574593345,
+     "up_z": 0.9999077648158615,
+     "angular_velocity_rad_s": [
+      0.02457834331342285,
+      0.02590247582982138,
+      0.007187210121640097
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747758860931401,
+      -2.7477771694294457,
+      -2.738099336240832,
+      -2.652508919371098
+     ],
+     "velocity_rad_s": [
+      -0.047088745120852475,
+      -0.06173554355653392,
+      -0.14350643360564533,
+      -0.5232009527932977
+     ],
+     "wheel_vertical_load_n": [
+      191.15835710661116,
+      206.04293014576825,
+      249.20067419192765,
+      279.2694214228348
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21450867461482678,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.214562081431576,
+     "up_z": 0.9999077648158615,
+     "angular_velocity_rad_s": [
+      0.003361099969769366,
+      0.019362658962152716,
+      0.011626272893228875
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747457030523511,
+      -2.7477045585195974,
+      -2.738045525461065,
+      -2.6523293016321055
+     ],
+     "velocity_rad_s": [
+      0.1943755811910465,
+      -0.003646815677842835,
+      -0.10045780979204302,
+      -0.3795067615994153
+     ],
+     "wheel_vertical_load_n": [
+      242.92966015063178,
+      286.8943998292352,
+      323.12674226963827,
+      297.5213399303215
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21450867461482678,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.41394574001895706,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21454430170357272,
+     "up_z": 0.9999077648158615,
+     "angular_velocity_rad_s": [
+      0.012414342425436773,
+      0.02819263996871892,
+      0.007117785689368114
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7476448050387208,
+      -2.7478465187351206,
+      -2.7381505674228426,
+      -2.6524422621838135
+     ],
+     "velocity_rad_s": [
+      0.04415596902353729,
+      -0.1172149880966222,
+      -0.18449137921391154,
+      -0.46987520296557594
+     ],
+     "wheel_vertical_load_n": [
+      174.295822529546,
+      217.5272699284863,
+      251.20965619630005,
+      283.96278027631365
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21450867461482678,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2688856089796132,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21456669305162093,
+     "up_z": 0.9999077648158615,
+     "angular_velocity_rad_s": [
+      0.013636735417966655,
+      0.016382303996005442,
+      0.007634699406193598
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7475300955470816,
+      -2.747579233480026,
+      -2.7380342649757887,
+      -2.6522045416703315
+     ],
+     "velocity_rad_s": [
+      0.13592356233470237,
+      0.09661321597914896,
+      -0.09144942157113295,
+      -0.2796987921801256
+     ],
+     "wheel_vertical_load_n": [
+      277.15970409766624,
+      285.3867253975445,
+      318.91921079971115,
+      308.3904410002814
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21450867461482678,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4476530228191714,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ },
+ "cr3": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21570275789993568,
+     "up_z": 0.9999861951229392,
+     "angular_velocity_rad_s": [
+      0.05107330738177498,
+      0.02534180721382208,
+      0.00716037838558958
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747795075445814,
+      -2.7477086534790525,
+      -2.7476964810792617,
+      -2.7210895760977594
+     ],
+     "velocity_rad_s": [
+      -0.07606035665136841,
+      -0.006922783241878713,
+      0.0028151365905950097,
+      -0.241356513008383
+     ],
+     "wheel_vertical_load_n": [
+      215.8694650381878,
+      200.011971575367,
+      203.967438161835,
+      228.261609535544
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21566739235379967,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2724715151332182,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21570245605268437,
+     "up_z": 0.9999861951229392,
+     "angular_velocity_rad_s": [
+      0.020159554239602754,
+      0.021376203904826824,
+      0.005473463475317618
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747885363237597,
+      -2.747728866269923,
+      -2.7476462390581418,
+      -2.721084763971036
+     ],
+     "velocity_rad_s": [
+      -0.14829059007744347,
+      -0.02309301593839573,
+      0.04300875348644752,
+      -0.23750681162961418
+     ],
+     "wheel_vertical_load_n": [
+      217.3793598086291,
+      197.46648327991315,
+      204.10295808526863,
+      236.49258127947903
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21566739235379967,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2157240670475862,
+     "up_z": 0.9999861951229392,
+     "angular_velocity_rad_s": [
+      -0.02786764547168286,
+      0.03255189840563731,
+      0.006555939986087567
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7476015795199933,
+      -2.747650560669982,
+      -2.7475476047006007,
+      -2.720819402187491
+     ],
+     "velocity_rad_s": [
+      0.07873638400550044,
+      0.039551464014227766,
+      0.1219162395194208,
+      -0.0252173847937396
+     ],
+     "wheel_vertical_load_n": [
+      271.0935428429841,
+      277.5514645878378,
+      280.45657029402463,
+      289.77636783950163
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21566739235379967,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4210643302650536,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2157029225515402,
+     "up_z": 0.9999861951229392,
+     "angular_velocity_rad_s": [
+      0.005214488019550774,
+      0.025086158350415295,
+      0.004300721269553765
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7477723988960023,
+      -2.7477973741584325,
+      -2.747694190473848,
+      -2.7210097172298795
+     ],
+     "velocity_rad_s": [
+      -0.05791911680186458,
+      -0.07789932674611401,
+      0.00464762092161408,
+      -0.17746941870447747
+     ],
+     "wheel_vertical_load_n": [
+      200.47567682378664,
+      208.60012079293622,
+      205.6759161488799,
+      244.5819981327873
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21566739235379967,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.27072387107320445,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21572967348314298,
+     "up_z": 0.9999861951229392,
+     "angular_velocity_rad_s": [
+      -0.02607006198269579,
+      0.03361875602354279,
+      0.0006629705664068806
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7476784295242127,
+      -2.7475208918687564,
+      -2.747526011985175,
+      -2.720671223453533
+     ],
+     "velocity_rad_s": [
+      0.017256380629840425,
+      0.1432865049948828,
+      0.13919041185984443,
+      0.09332560237290753
+     ],
+     "wheel_vertical_load_n": [
+      305.3725901338249,
+      275.64183081042006,
+      274.91877934499144,
+      308.8130116409453
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21566739235379967,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4476530228191714,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ },
+ "cr4": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21511697838230687,
+     "up_z": 0.999246033080072,
+     "angular_velocity_rad_s": [
+      0.031792187605884,
+      0.004443298218296253,
+      0.011481725673487247
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7478253603061007,
+      -2.7480040938654295,
+      -2.747498165080823,
+      -2.7000301090982983
+     ],
+     "velocity_rad_s": [
+      -0.10028824488038413,
+      -0.2432750923435677,
+      0.16146793534159873,
+      -0.2659192061863653
+     ],
+     "wheel_vertical_load_n": [
+      227.51908641437427,
+      258.40511971573704,
+      157.66412311606305,
+      226.25010488867417
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21508181539174,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2724715151332182,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2151167918975838,
+     "up_z": 0.999246033080072,
+     "angular_velocity_rad_s": [
+      0.0010293112463175187,
+      0.0005953494094203378,
+      0.009366745805087551
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7479138219772645,
+      -2.7480243051384043,
+      -2.74744622220193,
+      -2.700023411188859
+     ],
+     "velocity_rad_s": [
+      -0.17105758181156727,
+      -0.259444110723303,
+      0.20302223845613754,
+      -0.2605608786347259
+     ],
+     "wheel_vertical_load_n": [
+      229.1265449901736,
+      255.0388865599728,
+      157.45792004007555,
+      234.264810165134
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21508181539174,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21513762464319305,
+     "up_z": 0.999246033080072,
+     "angular_velocity_rad_s": [
+      -0.03728873816901167,
+      0.008581099117275528,
+      0.011636237409977717
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747616193506746,
+      -2.7479613706326083,
+      -2.747353878264257,
+      -2.699781614193977
+     ],
+     "velocity_rad_s": [
+      0.06704519460309812,
+      -0.20909650608661434,
+      0.2768973885945617,
+      -0.06712328272922125
+     ],
+     "wheel_vertical_load_n": [
+      282.13394197750716,
+      336.3254983489561,
+      233.31044264127792,
+      277.80522133501944
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21508181539174,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4210643302650536,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21511727508975664,
+     "up_z": 0.999246033080072,
+     "angular_velocity_rad_s": [
+      -0.014626351909025368,
+      0.004159246321287342,
+      0.008426063412830706
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7478042207008078,
+      -2.7480926220982362,
+      -2.7474949202887275,
+      -2.6999486279982112
+     ],
+     "velocity_rad_s": [
+      -0.0833765606460837,
+      -0.31409767858895016,
+      0.16406376901804706,
+      -0.20073432611666153
+     ],
+     "wheel_vertical_load_n": [
+      212.02150664865584,
+      267.0024183043555,
+      159.03739759891613,
+      242.47718901108598
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21508181539174,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.27072387107320495,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21514328267164456,
+     "up_z": 0.999246033080072,
+     "angular_velocity_rad_s": [
+      -0.034557246714924175,
+      0.009087909736037701,
+      0.006280726811053593
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.747690286265744,
+      -2.747828606385907,
+      -2.7473343956019494,
+      -2.6996364928851824
+     ],
+     "velocity_rad_s": [
+      0.007770987404974967,
+      -0.10288510872546083,
+      0.29248351844062,
+      0.048973764306623854
+     ],
+     "wheel_vertical_load_n": [
+      316.7311185846201,
+      335.4036965095795,
+      228.92386905599665,
+      296.1491149435749
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21508181539174,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4476530228191714,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ },
+ "cr5": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20545196021906648,
+     "up_z": 0.9989983065051952,
+     "angular_velocity_rad_s": [
+      0.030155689541192136,
+      0.03547096743585751,
+      0.011021962355118698
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.727066787358884,
+      -2.7478499019614064,
+      -2.7478656234476966,
+      -2.7471553432508733
+     ],
+     "velocity_rad_s": [
+      -0.07357542318207871,
+      -0.11992156912508481,
+      -0.13249875815711554,
+      -0.48144590636548756
+     ],
+     "wheel_vertical_load_n": [
+      216.3389833886672,
+      228.9851830575097,
+      240.6791873993696,
+      298.0177985708481
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20541216442107132,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2724715151332182,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20545161683218224,
+     "up_z": 0.9989983065051952,
+     "angular_velocity_rad_s": [
+      -0.0033742507326609303,
+      0.03097670531273892,
+      0.008620142111031901
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7271567755178627,
+      -2.7478667917183466,
+      -2.7478172463100243,
+      -2.7471476326459494
+     ],
+     "velocity_rad_s": [
+      -0.14556595036501874,
+      -0.13343337467716945,
+      -0.09379704801933339,
+      -0.4752774224264336
+     ],
+     "wheel_vertical_load_n": [
+      217.81409123271675,
+      226.13904065499005,
+      240.82033056122123,
+      306.1096917692598
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20541216442107132,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2054738207817078,
+     "up_z": 0.9989983065051952,
+     "angular_velocity_rad_s": [
+      -0.07776060845204572,
+      0.049329131234195404,
+      0.007444989917297087
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.726889115767476,
+      -2.747783590352055,
+      -2.7477088205898927,
+      -2.7468354958973533
+     ],
+     "velocity_rad_s": [
+      0.06856184994426372,
+      -0.06687228164396268,
+      -0.007056471914008671,
+      -0.22556802354959993
+     ],
+     "wheel_vertical_load_n": [
+      261.7181226503568,
+      308.4249197910168,
+      312.99212968744246,
+      370.8979832472558
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20541216442107132,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4210643302650536,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20545202570396734,
+     "up_z": 0.9989983065051952,
+     "angular_velocity_rad_s": [
+      -0.017418203422712115,
+      0.03465570509690058,
+      0.007854333728240421
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.727046918347832,
+      -2.7479365181180833,
+      -2.7478658887477856,
+      -2.74707355649018
+     ],
+     "velocity_rad_s": [
+      -0.05768021434054192,
+      -0.189214494466607,
+      -0.13271099822860843,
+      -0.41601649781103434
+     ],
+     "wheel_vertical_load_n": [
+      200.99403798899877,
+      237.79345237929851,
+      242.50380399325473,
+      314.4016789437508
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20541216442107132,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.27072387107320445,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20547982708713852,
+     "up_z": 0.9989983065051952,
+     "angular_velocity_rad_s": [
+      -0.07819543290311944,
+      0.051353630727015015,
+      0.001591011646565253
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.72696448297609,
+      -2.7476519440961296,
+      -2.7476880327954754,
+      -2.746680581347329
+     ],
+     "velocity_rad_s": [
+      0.008268083053003299,
+      0.03844472309651612,
+      0.009573763619573433,
+      -0.10163638353019866
+     ],
+     "wheel_vertical_load_n": [
+      294.24898161346914,
+      306.98537414546064,
+      308.6003269812142,
+      391.1396466974704
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20541216442107132,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4275175335157632,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ },
+ "cr6": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.205780291858802,
+     "up_z": 0.9991360805643147,
+     "angular_velocity_rad_s": [
+      0.11117661112673359,
+      0.0264804952047184,
+      -0.006045213630315433
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.719764242981505,
+      -2.747789382293011,
+      -2.6695725336257827,
+      -2.7480434663478457
+     ],
+     "velocity_rad_s": [
+      -0.38676050048600846,
+      -0.0715058344086763,
+      -0.6239020354159286,
+      -0.27477307827638875
+     ],
+     "wheel_vertical_load_n": [
+      298.55392557950535,
+      212.77225863308948,
+      356.7836788614592,
+      241.23197207458574
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20573770034168723,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2696857332302115,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20577937858674075,
+     "up_z": 0.9991360805643147,
+     "angular_velocity_rad_s": [
+      0.07407475144579773,
+      0.02038993617175005,
+      -0.009172744209928444
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7198554232751118,
+      -2.747808767528975,
+      -2.669531836945759,
+      -2.7480434133845417
+     ],
+     "velocity_rad_s": [
+      -0.4597047353711947,
+      -0.08701402318003845,
+      -0.5913446913967428,
+      -0.2747307076332249
+     ],
+     "wheel_vertical_load_n": [
+      299.97858995182366,
+      210.22866640632083,
+      352.7176352591114,
+      249.82351462285953
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20573770034168723,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20579762762013687,
+     "up_z": 0.9991360805643147,
+     "angular_velocity_rad_s": [
+      -0.03609456250250151,
+      0.02527451882661544,
+      -0.020162390114899963
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.719609892486555,
+      -2.747725484948252,
+      -2.669516344683559,
+      -2.747769444174638
+     ],
+     "velocity_rad_s": [
+      -0.2632801045260389,
+      -0.02038795860161606,
+      -0.5789508816367426,
+      -0.055555339710272635
+     ],
+     "wheel_vertical_load_n": [
+      340.05417403803995,
+      289.2020141131659,
+      390.7177888333871,
+      317.310948714279
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20573770034168723,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.41394574001895706,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.20578023021724703,
+     "up_z": 0.9991360805643147,
+     "angular_velocity_rad_s": [
+      0.06293273639359498,
+      0.024710491595500837,
+      -0.009973542523676564
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7197426778738047,
+      -2.747878068666423,
+      -2.6695752090024323,
+      -2.7479663754798858
+     ],
+     "velocity_rad_s": [
+      -0.36950841432553927,
+      -0.1424549331380544,
+      -0.6260423367354451,
+      -0.21310038390841177
+     ],
+     "wheel_vertical_load_n": [
+      282.72213819676904,
+      221.2322549618833,
+      356.9039941928888,
+      257.78817087740737
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20573770034168723,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.27072387107320495,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2058035720866086,
+     "up_z": 0.9991360805643147,
+     "angular_velocity_rad_s": [
+      -0.03480308026876061,
+      0.02819190956127058,
+      -0.025770091725341362
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.719688994915748,
+      -2.7475951933987104,
+      -2.669494628043312,
+      -2.7476148298514182
+     ],
+     "velocity_rad_s": [
+      -0.3265620478804189,
+      0.08384528103182509,
+      -0.5615775694391353,
+      0.06813611886555287
+     ],
+     "wheel_vertical_load_n": [
+      374.15543078629116,
+      287.29662414866624,
+      388.45761717582496,
+      336.1156245483788
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.20573770034168723,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.42876695477104354,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ },
+ "cr7": {
+  "total": 5,
+  "passed": 0,
+  "rise_fail": 5,
+  "rows": [
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21993536893930718,
+     "up_z": 0.9990233607542862,
+     "angular_velocity_rad_s": [
+      0.06512931954344073,
+      0.007269979148451837,
+      0.004275999725569193
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7407373725539403,
+      -2.7467220023693417,
+      -2.7475029150832038,
+      -2.7475646314336837
+     ],
+     "velocity_rad_s": [
+      -0.2059225811345718,
+      -0.061592722362860314,
+      0.1576679334369311,
+      0.10829485305313337
+     ],
+     "wheel_vertical_load_n": [
+      243.9945487460623,
+      205.26916477517415,
+      159.920731991457,
+      138.9904733837114
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21990354790634312,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2724715151332182,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09930359654276494,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21993524726169036,
+     "up_z": 0.9990233607542862,
+     "angular_velocity_rad_s": [
+      0.035060868405395254,
+      0.003190753939949971,
+      0.0023654812317000094
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.740824572228534,
+      -2.746742279698745,
+      -2.747451048737395,
+      -2.747559570542953
+     ],
+     "velocity_rad_s": [
+      -0.275682320809686,
+      -0.07781458588529969,
+      0.1991610100841339,
+      0.11234356563745262
+     ],
+     "wheel_vertical_load_n": [
+      245.4535558803489,
+      203.30922452640397,
+      159.74476602310355,
+      147.28788982789877
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21990354790634312,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.2779167288952781,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.08162890767947178,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.21995826441867378,
+     "up_z": 0.9990233607542862,
+     "angular_velocity_rad_s": [
+      -0.027377150569407146,
+      0.022121946520788836,
+      0.0016141428228132917
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7405551198699407,
+      -2.7466759185604928,
+      -2.7473398671386913,
+      -2.747260454748208
+     ],
+     "velocity_rad_s": [
+      -0.06012043393505295,
+      -0.024725675283695542,
+      0.2881062890469184,
+      0.3516362014336151
+     ],
+     "wheel_vertical_load_n": [
+      296.43043136938275,
+      283.5708952070121,
+      236.38269064674833,
+      214.96477802675497
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21990354790634312,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.4210643302650536,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09718951087269265,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2199357285740953,
+     "up_z": 0.9990233607542862,
+     "angular_velocity_rad_s": [
+      0.01906239199389275,
+      0.007133752150896059,
+      0.0015527788142264782
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7407133084923987,
+      -2.7468110575605533,
+      -2.7474989637773732,
+      -2.747483073490436
+     ],
+     "velocity_rad_s": [
+      -0.1866713319014931,
+      -0.132836875332008,
+      0.16082897810138339,
+      0.17354120765151443
+     ],
+     "wheel_vertical_load_n": [
+      228.54746611800496,
+      214.06219672766824,
+      161.27643684603615,
+      155.39081897940588
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21990354790634312,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.27072387107320495,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09334080298593846,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   },
+   {
+    "passed": false,
+    "survived": false,
+    "first_failure": [
+     "joint_angle"
+    ],
+    "failure_state": {
+     "time_s": 0.00125,
+     "base_height_m": 0.2199639957395253,
+     "up_z": 0.9990233607542862,
+     "angular_velocity_rad_s": [
+      -0.027997696291075666,
+      0.024484209115776392,
+      -0.004612172038925344
+     ],
+     "joint": [
+      "FL_calf",
+      "FR_calf",
+      "RL_calf",
+      "RR_calf"
+     ],
+     "angle_rad": [
+      -2.7406361609815733,
+      -2.7465487576312153,
+      -2.7473183418833083,
+      -2.7471086005708933
+     ],
+     "velocity_rad_s": [
+      -0.12495332324122417,
+      0.07700306813845387,
+      0.30532649335342116,
+      0.47311954328524186
+     ],
+     "wheel_vertical_load_n": [
+      330.3666614540536,
+      282.1809723775243,
+      231.98572554118013,
+      235.4048758792944
+     ]
+    },
+    "initial_body_contact": false,
+    "last_height_m": 0.21990354790634312,
+    "last_joint_error_rad": 1.1476999761581421,
+    "final_wheel_support": true,
+    "fixed_final_window_s": 0.0,
+    "longest_fixed_window_s": 0.0,
+    "final_150_frames_failed": {
+     "height": 1,
+     "upright": 0,
+     "wheel_support": 0,
+     "body_clear": 0,
+     "joint_error": 1,
+     "linear_speed": 0,
+     "angular_speed": 0
+    },
+    "fixed_gate_frames_observed": 1,
+    "push_times_s": [],
+    "final_speed_gate_events": [],
+    "min_knee_surface_m": null,
+    "nonwheel_after_upright": false,
+    "max_effort_fraction_of_guard": 0.43952332330729743,
+    "max_target_step_rad": 0.0,
+    "p99_target_step_rad": 0.0,
+    "n_steps_gt_02": 0,
+    "n_steps_gt_04": 0,
+    "max_leg_dq_rad_s": 0.09059313013774467,
+    "max_wheel_angle_rad": 0.0,
+    "effort_fraction": 0.9,
+    "start_clip": "urdf"
+   }
+  ]
+ }
+}

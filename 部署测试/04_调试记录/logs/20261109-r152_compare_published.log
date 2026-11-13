@@ -1,0 +1,22 @@
+onnx-flat
+passed published 69 rerun 69
+qualified published 30 rerun 30
+fallen published 0 rerun 0
+front_cross_ticks published 0 rerun 0
+mismatch_count 0
+python-flat
+passed published 71 rerun 72
+qualified published 33 rerun 32
+fallen published 0 rerun 0
+front_cross_ticks published 0 rerun 0
+mismatch_count 10
+('fixed', 'left', 81203, {'qualified': (True, False)})
+('fixed', 'right', 81203, {'qualified': (False, True)})
+('fixed', 'turn_left', 81202, {'qualified': (True, False)})
+('fixed', 'arc_left', 81201, {'qualified': (False, True)})
+('fixed', 'arc_left', 81202, {'qualified': (True, False)})
+('fixed', 'arc_left', 81203, {'qualified': (False, True)})
+('fixed', 'arc_left', 81204, {'qualified': (True, False)})
+('fixed', 'arc_right', 81202, {'qualified': (True, False)})
+('independent', 'mixed_24', 91125, {'qualified': (False, True)})
+('independent', 'mixed_26', 91127, {'passed': (False, True)})

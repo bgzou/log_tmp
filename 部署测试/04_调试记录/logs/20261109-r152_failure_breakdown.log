@@ -1,0 +1,19 @@
+fixed total 52 tracking 44 strict 21 falls 0
+tracking-but-not-strict 23
+among tracking passes: self_force>=1N 0 nonwheel_ground>=50N 23 front_crossing 0
+  arc_left tracking 4 strict 1
+  arc_right tracking 4 strict 1
+  diagonal_left tracking 2 strict 0
+  diagonal_right tracking 2 strict 0
+  forward tracking 4 strict 1
+  forward_fast tracking 4 strict 0
+  forward_slow tracking 4 strict 4
+  left tracking 2 strict 1
+  reverse tracking 4 strict 3
+  right tracking 2 strict 2
+  stop tracking 4 strict 4
+  turn_left tracking 4 strict 3
+  turn_right tracking 4 strict 1
+independent total 52 tracking 25 strict 9 falls 0
+tracking-but-not-strict 16
+among tracking passes: self_force>=1N 0 nonwheel_ground>=50N 16 front_crossing 0

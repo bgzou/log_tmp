@@ -1,0 +1,6 @@
+﻿Stage: r152-replay
+Started: 2026-11-09T15:42:07+08:00
+Command: ./build-r152/deploy/robots/as2w/r152/as2w_r152_replay models/r152/deploy.yaml models/r152/r152-trace.csv
+rows=750 max_abs_error=2.38419e-07 leg_and_wheel_targets=verified stale_state=latched_off
+Exit code: 0
+Finished: 2026-11-09T15:42:07+08:00

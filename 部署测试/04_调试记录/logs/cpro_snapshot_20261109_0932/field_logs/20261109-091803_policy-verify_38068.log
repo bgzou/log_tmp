@@ -1,0 +1,17 @@
+Stage: policy-verify
+Started: 2026-11-09T09:18:03+08:00
+Command: python3 tools/policy_select.py verify all
+VERIFY recovery-r09 (recovery)
+frames=60 max_abs_error=1.90735e-05
+VERIFY recovery-r12 (recovery)
+frames=60 max_abs_error=1.71661e-05
+VERIFY recovery-r13 (recovery)
+frames=60 max_abs_error=1.14441e-05
+VERIFY stairs-r14 (stairs)
+frames=60 max_abs_error=1.14441e-05
+VERIFY stairs-r17-2000 (stairs)
+frames=60 max_abs_error=1.14441e-05
+VERIFY stairs-r17-3000 (stairs)
+frames=60 max_abs_error=9.77516e-06
+Exit code: 0
+Finished: 2026-11-09T09:18:03+08:00

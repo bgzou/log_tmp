@@ -1,0 +1,2 @@
+{"config": {"pose": "bank_prone", "guard": false, "effort": 0.9, "clip": "safety", "crouch_h": null}, "summary": {"bank0": [3, 5, 0], "bank1": [3, 5, 0], "bank2": [3, 5, 0], "bank3": [3, 5, 0], "bank4": [3, 5, 0], "bank5": [3, 5, 0], "bank6": [3, 5, 0], "bank7": [3, 5, 0]}}
+AGG pass=24/40 rise_fail=0

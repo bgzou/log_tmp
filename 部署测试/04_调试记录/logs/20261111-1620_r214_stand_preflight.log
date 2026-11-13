@@ -1,0 +1,33 @@
+===== 1. build-r214-ab-fsm compile definitions (expect ONLY STAND_TRIAL) =====
+CXX_DEFINES = -DAS2W_ENABLE_POLICY_STAND_TRIAL=1
+
+===== 2. residual publisher processes =====
+none
+
+===== 3. offline-audit of the exact stand binary =====
+FSM CONTRACT A=FixedStand B=PolicyHandoff Y=FixSquat X=EmergencyDamping
+GUARD INJECTION PASS: safe-envelope-200f warn@5->Brake hard@3->Emergency motorstate=hard flicker-reset remote-timeout@200ms no-auto-rewalk slew-0.5s-in/0.25s-out applied==policy-command
+FRAME neutral_zero_torque sizeof=1004 mode_pr=0 mode_machine=2 crc=0x5ba0c90e
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+audit_rc=0
+
+===== 4. startup wake constants from source (unchanged check) =====
+75:constexpr auto StartupObserve = std::chrono::milliseconds(500);
+76:constexpr auto StartupNeutralMinimum = std::chrono::milliseconds(500);
+77:constexpr auto StartupModeAck = std::chrono::milliseconds(200);
+78:constexpr auto StartupModeTimeout = std::chrono::seconds(2);
+79:constexpr auto StartupDampingRamp = std::chrono::seconds(1);
+81:constexpr auto RemoteCommandTimeout = std::chrono::milliseconds(200);
+
+===== 5. launcher + session script presence and SHA =====
+-rwxr-xr-x. 1 root root 7941 Nov 10 15:45 tools/run_r214_field_session.sh
+-rw-rw-rw-. 1 root root  743 Nov 10 09:49 tools/run_r214_stand_trial.sh
+e7fcf5afdf95172d23cf57273621504c3e9ac056e99d1207e5a06ac660e62908  tools/run_r214_stand_trial.sh
+1df3a56c4752fefc7d5e5aac35c0ca9c62117fe006a907c2f72c1b470567df73  tools/run_r214_field_session.sh
+8e7ea22cb2e020bd7a93d91026cff02c41749f091274816c42db315971f8f947  build-r214-ab-fsm/deploy/robots/as2w/r214/as2w_r214_publish
+419dca66e91688a83e87173366d8662bb8c9d03b945a8db3fb43b9bb50951aab  deploy/robots/as2w/r214/r214_publish.cpp
+
+===== 6. stand launcher gate flags (must pass --stand-trial) =====
+8:    echo 'Usage: run_r214_stand_trial.sh' >&2
+14:    --i-confirm-lowcmd-publish --stand-trial --stand t2 \
+===== PREFLIGHT DONE =====

@@ -1,0 +1,16 @@
+policy_rows=1170 bad_policy_rows=0 walk_rows=1054
+policy_phases={'BRAKE': 16, 'HANDOFF': 100, 'WALK': 1054}
+policy_obs=65 state_count=0 all_valid=True
+lowcmd_rows=26586 bad_lowcmd_rows=0
+policy_walk_dt_ms p50=19.999 p99=20.492 max=22.040 gaps_gt_40ms=0
+lowcmd_dt_ms p50=2.001 p99=2.825 max=10.969 gaps_gt_40ms=0
+low_capture_valid_rows=29687 protection_rows=11297 nonzero_protection=0
+walk_vx_range=[-0.2000,0.1600] moving_frames=373 quiet_frames=600
+lowpass_off_requested_applied_leg_q_max_abs=0.00000000
+moving_raw_leg_output range=[-6.000,6.000] fraction_abs_ge_5.9=0.8865 frames_any_ge_5.9=1.0000
+quiet_raw_leg_output range=[-6.000,6.000] fraction_abs_ge_5.9=0.9146 frames_any_ge_5.9=1.0000
+moving_leg_target_step_rad p50=0.05969 p99=0.12598 peak=0.12599; raw_leg_step_p99=12.00000; raw_wheel_step_p99=5.91306
+quiet_leg_target_step_rad p50=0.00000 p99=0.05504 peak=0.06614; raw_leg_step_p99=12.00000; raw_wheel_step_p99=4.81050
+moving_segments_ge_0.3s=8
+  tick=1732137-1733918 duration_s=1.78 vx=[-0.200,-0.032]
+  tick=1737358-1738317 duration_s=0.96 vx=[0.032,0.160]

@@ -1,0 +1,6 @@
+﻿Stage: low-crc
+Started: 2026-11-09T17:27:18+08:00
+Command: ./build-sdk2/as2w_sdk2 low-crc eth0 rt/lowstate 5
+stoi
+Exit code: 1
+Finished: 2026-11-09T17:27:18+08:00

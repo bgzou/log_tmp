@@ -1,0 +1,28 @@
+recovery-r09 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r12 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r13 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r14 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-2000 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-3000 ONNX SHA256 OK; actor SHA256 and header OK
+checked 6 models
+
+
+Algorithm : SHA256
+Hash      : DDA64E753534D34C4A93797037EE64BA141429ECD0891726FA490C3B1BAC7383
+Path      : D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\cpp_deploy-as2w.tar.gz
+
+
+
+Package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\cpp_deploy-as2w.tar.gz
+
+
+Algorithm : SHA256
+Hash      : A6EC33EA1D956EAE153C3CFE11F42446011A0ECF93C01BAE176D4C049374897A
+Path      : D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\unitree_sdk2-src.tar.gz
+
+
+
+SDK2 package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\unitree_sdk2-src.tar.gz
+Field package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试
+dda64e753534d34c4a93797037ee64ba141429ecd0891726fa490c3b1bac7383  cpp_deploy-as2w.tar.gz
+a6ec33ea1d956eae153c3cfe11f42446011a0ecf93c01bae176d4c049374897a  unitree_sdk2-src.tar.gz

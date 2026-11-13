@@ -1,0 +1,244 @@
+{
+  "input": "D:\\Projects\\Athena\\运动控制\\Collie\\AS2-W_CPRO\\部署测试\\04_调试记录\\logs\\20261109-140729_windows_LowCaptureFast.log",
+  "samples": 498,
+  "rejected_rows": 2,
+  "thresholds": {
+    "leg_dq_rad_s": 0.12,
+    "wheel_dq_rad_s": 0.3,
+    "gap_s": 1.5,
+    "min_segment_s": 0.25,
+    "min_static_s": 1.0
+  },
+  "segments": [],
+  "static_windows": [
+    {
+      "start_s": 0.03,
+      "end_s": 5.0,
+      "duration_s": 4.97,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.572455,
+        0.993568,
+        -2.756354,
+        0.56764,
+        1.047454,
+        -2.756059,
+        -0.563007,
+        1.009343,
+        -2.757107,
+        0.579611,
+        0.949795,
+        -2.7147,
+        -0.165384,
+        -0.15479,
+        -0.457994,
+        -0.174418
+      ]
+    }
+  ],
+  "static_anchors": {
+    "prone_candidate": {
+      "start_s": 0.03,
+      "end_s": 5.0,
+      "duration_s": 4.97,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.572455,
+        0.993568,
+        -2.756354,
+        0.56764,
+        1.047454,
+        -2.756059,
+        -0.563007,
+        1.009343,
+        -2.757107,
+        0.579611,
+        0.949795,
+        -2.7147,
+        -0.165384,
+        -0.15479,
+        -0.457994,
+        -0.174418
+      ]
+    }
+  },
+  "turn_checks": [],
+  "mapping_template": [
+    {
+      "contract_index": 0,
+      "joint_name": "FL_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 1,
+      "joint_name": "FR_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 2,
+      "joint_name": "RL_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 3,
+      "joint_name": "RR_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 4,
+      "joint_name": "FL_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 5,
+      "joint_name": "FR_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 6,
+      "joint_name": "RL_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 7,
+      "joint_name": "RR_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 8,
+      "joint_name": "FL_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 9,
+      "joint_name": "FR_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 10,
+      "joint_name": "RL_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 11,
+      "joint_name": "RR_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 12,
+      "joint_name": "FL_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 13,
+      "joint_name": "FR_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 14,
+      "joint_name": "RL_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 15,
+      "joint_name": "RR_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-standtrial
+[ 25%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214.dir/r214_controller.cpp.o
+[ 50%] Linking CXX static library libas2w_r214.a
+[ 50%] Built target as2w_r214
+[ 75%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-standtrial
+Test project /root/as2w_deploy/build-r214-standtrial
+    Start 1: recovery-r09
+Could not find executable /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+1/8 Test #1: recovery-r09 .....................***Not Run   0.00 sec
+    Start 2: recovery-r12
+Could not find executable /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+2/8 Test #2: recovery-r12 .....................***Not Run   0.00 sec
+    Start 3: recovery-r13
+Could not find executable /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+3/8 Test #3: recovery-r13 .....................***Not Run   0.00 sec
+    Start 4: stairs-r14
+Could not find executable /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+4/8 Test #4: stairs-r14 .......................***Not Run   0.00 sec
+    Start 5: stairs-r17-2000
+Could not find executable /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+5/8 Test #5: stairs-r17-2000 ..................***Not Run   0.00 sec
+    Start 6: stairs-r17-3000
+Could not find executable /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Release/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+root/as2w_deploy/build-r214-standtrial/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r214-standtrial/as2w_deploy
+6/8 Test #6: stairs-r17-3000 ..................***Not Run   0.00 sec
+    Start 7: controller
+Could not find executable /root/as2w_deploy/build-r214-standtrial/as2w_controller_test
+Looked in the following places:
+/root/as2w_deploy/build-r214-standtrial/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Release/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Debug/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Deployment/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_controller_test
+/root/as2w_deploy/build-r214-standtrial/Development/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Release/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Release/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Debug/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/MinSizeRel/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/RelWithDebInfo/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Deployment/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Development/as2w_controller_test
+root/as2w_deploy/build-r214-standtrial/Development/as2w_controller_test
+Unable to find executable: /root/as2w_deploy/build-r214-standtrial/as2w_controller_test
+7/8 Test #7: controller .......................***Not Run   0.00 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.55 sec
+
+13% tests passed, 7 tests failed out of 8
+
+Total Test time (real) =   0.56 sec
+
+The following tests FAILED:
+	  1 - recovery-r09 (Not Run)
+	  2 - recovery-r12 (Not Run)
+	  3 - recovery-r13 (Not Run)
+	  4 - stairs-r14 (Not Run)
+	  5 - stairs-r17-2000 (Not Run)
+	  6 - stairs-r17-3000 (Not Run)
+	  7 - controller (Not Run)
+Errors while running CTest

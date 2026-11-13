@@ -1,0 +1,7 @@
+﻿Stage: package-version
+Started: 2026-11-09T09:54:34+08:00
+Command: ./build-sdk2/as2w_sdk2 package-version eth0
+RobotState GetPkgVersion rc=3203 package= modules=0
+RobotState GetPkgVersion failed
+Exit code: 1
+Finished: 2026-11-09T09:54:34+08:00

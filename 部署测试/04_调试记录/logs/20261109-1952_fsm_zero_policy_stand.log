@@ -1,0 +1,7 @@
+T1 seed=101: prone_h=0.232 interp_dq=2.00 h_path=[0.23, 0.223, 0.224, 0.224, 0.319, 0.367, 0.368, 0.272, 0.125, 0.117, 0.163] handoff(h=0.432,up=1.000,err=0.360) hold_up=0.997 fwd=+0.73m stop_v=0.044 fallen=False peak=0.0N
+T1 seed=202: prone_h=0.232 interp_dq=2.66 h_path=[0.23, 0.222, 0.224, 0.224, 0.318, 0.321, 0.279, 0.311, 0.344, 0.262, 0.178] handoff(h=0.421,up=0.999,err=0.298) hold_up=0.997 fwd=+0.69m stop_v=0.050 fallen=False peak=0.0N
+T1 seed=303: prone_h=0.234 interp_dq=3.13 h_path=[0.233, 0.223, 0.224, 0.224, 0.318, 0.298, 0.28, 0.301, 0.317, 0.25, 0.162] handoff(h=0.420,up=0.999,err=0.294) hold_up=0.997 fwd=+0.68m stop_v=0.055 fallen=False peak=0.0N
+T2 seed=101: prone_h=0.232 interp_dq=1.57 h_path=[0.23, 0.223, 0.224, 0.224, 0.292, 0.368, 0.344, 0.394, 0.149, 0.12, 0.164] handoff(h=0.385,up=1.000,err=0.275) hold_up=1.000 fwd=+0.72m stop_v=0.043 fallen=False peak=0.0N
+T2 seed=202: prone_h=0.232 interp_dq=1.75 h_path=[0.23, 0.222, 0.224, 0.224, 0.291, 0.309, 0.294, 0.324, 0.341, 0.282, 0.213] handoff(h=0.382,up=1.000,err=0.246) hold_up=1.000 fwd=+0.67m stop_v=0.053 fallen=False peak=0.0N
+T2 seed=303: prone_h=0.234 interp_dq=1.63 h_path=[0.233, 0.223, 0.224, 0.224, 0.292, 0.304, 0.292, 0.317, 0.329, 0.272, 0.194] handoff(h=0.381,up=1.000,err=0.244) hold_up=1.000 fwd=+0.67m stop_v=0.051 fallen=False peak=0.0N
+saved /home/caolin/as2w_workstation/部署参考/as2w-flat-rerun/results/fsm_zero_policy_stand_20261109.json

@@ -1,0 +1,41 @@
+[field-session] mode=training-contract monitor=240s dry_run=0 debug=1 lowpass_ms=0 lowpass_wheels=0 dir=/root/field_sessions/20261112-220051_training-contract
+[field-session] step1 binary: build-r1199-training-contract-debug/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+0b019509477200c1abcd0afdedaf835cf96ce616589acc5a85451d1424faa674  deploy/robots/as2w/common/as2w_publish.cpp
+feebea78e4af238cf682fc043fa253b856b7db4a2c4c8e61f9b17ba40f2bda4c  deploy/robots/as2w/r1199/r1199_controller.cpp
+fc526254a8ac51455cb71c50902a9ea0853de310679c1ec2d82b0cb681fbd750  deploy/robots/as2w/r1199/r1199_controller.hpp
+0e794783bc2d0315117acf24728c4b2b136b881c2f9b9c6475f12a4a8447240c  tools/run_r1199_forward_trial.sh
+ca72bbe60abd5e4714e67f38dab1f5ed77949f47c86b5ca0de80230fb2d36d38  tools/run_r1199_joystick_trial.sh
+e2dd0c63c3e25789585dd6327375025f35802eab20e3dc42d808910b77e35d8c  tools/run_r1199_training_contract_trial.sh
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+c465f1dffaf516af096148fc0059fcdef25ed2dc6c44271a26f615ff6e59e657  build-r1199-training-contract-debug/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1037 tick=1692081 mode_pr=0 mode_machine=2 imu_wxyz=0.99633,0.00107523,-0.000625654,0.0855915, gyro=-0.00958738,-0.00532632,0.00532632, m0=-0.573098,-0.00613592 m1=1.05065,0.00613592 m2=-2.76216,0.00409062 m3=0.575405,0 m4=1.04747,-0.00613592 m5=-2.75699,-0.0143172 m6=-0.570257,0 m7=1.04709,0.00920388 m8=-2.75502,-0.00613592 m9=0.576465,0.00306796 m10=1.04303,-0.00306796 m11=-2.75289,0 m12=0.0975756,0 m13=-0.791942,0 m14=0.00373906,0 m15=-0.905121,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=ai
+[field-session] step3 factory control (ai): ensure prone before releasing
+[field-session] step3 current fsm: fsm_name=ai_damping
+[field-session] step3 prone confirmed -> ReleaseMode
+[field-session] step3 release: MotionSwitcher ReleaseMode rc=0
+[field-session] step3 recheck: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step4 sample: LOW_SAMPLE,2000,2084,1,1696178,0,2,0.99632,0.00144211,-0.00099293,0.0856907,0.00319579,-0.00106526,-0.00106526,-0.57308,
+[field-session] step4 packets=2084 16-axis modes={0}
+[field-session] step4 forward prone calf gate=yes
+[field-session] step5 starting 240s monitoring (low-capture 2ms + low-protection)
+[field-session] step6 launching: bash tools/run_r1199_training_contract_trial.sh
+[field-session]     >>> Passive ready expected in ~3-5s; then hand the remote to the operator.
+[field-session]     >>> A=fixed stand  B=2s zero handoff then LY vx and RX yaw within deploy.yaml envelope (default 0.2/0.2) for max60s (training-contract continuous/straight bias)  Y=squat  X=emergency; LX ignored.
+[field-session] publisher exited rc=0
+[field-session] policy diagnostics archived: policy_diag.log (1171 lines)
+[field-session] debug diagnostics archived: debug_policy.csv (1171 lines)
+[field-session] debug diagnostics archived: debug_lowcmd.csv (26587 lines)
+[field-session] monitoring done; artifacts:
+total 41335
+drwxr-xr-x.  2 root root     3440 Nov 12 22:01 .
+drwxr-xr-x. 35 root root     3440 Nov 12 22:00 ..
+-rw-r--r--.  1 root root 11621071 Nov 12 22:01 debug_lowcmd.csv
+-rw-r--r--.  1 root root  2583182 Nov 12 22:01 debug_policy.csv
+-rw-r--r--.  1 root root 25009241 Nov 12 22:01 low_capture_fast.log
+-rw-r--r--.  1 root root  2449408 Nov 12 22:01 low_protection.log
+-rw-r--r--.  1 root root   583979 Nov 12 22:01 policy_diag.log
+-rw-r--r--.  1 root root    23089 Nov 12 22:01 publisher.log
+-rw-r--r--.  1 root root     3456 Nov 12 22:01 session.log
+[field-session] session complete (mode=training-contract rc=0). Copy /root/field_sessions/20261112-220051_training-contract back to the workstation logs dir and append INDEX.

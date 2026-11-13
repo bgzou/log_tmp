@@ -1,0 +1,6 @@
+[field-session] policy=r284 mode=zero-b monitor=60s dir=/root/field_sessions/20261110-193551_r284-zero-b
+[field-session] step1 binary: build-r284-zero-b/deploy/robots/as2w/r284/as2w_r284_publish
+30c77bfbdf13b57cbe4f22b37b3dd31d463d7458a3f89419867dcd40887f7159  build-r284-zero-b/deploy/robots/as2w/r284/as2w_r284_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; firmware acceptance unknown
+[field-session] step2 probe: low packets=0
+[field-session] FATAL: LowState not flowing (got 0 pkts/s). Robot/link down?

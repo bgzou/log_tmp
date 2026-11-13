@@ -1,0 +1,12 @@
+forward 0 8
+back 0 8
+left 0 8
+right 0 8
+front_left 0 8
+front_right 0 8
+back_left 0 8
+back_right 0 8
+turn_left 0 8
+turn_right 0 8
+up 0 8
+down 0 8

@@ -1,0 +1,45 @@
+COMMAND: ip -br link show eth0
+eth0             DOWN           00:18:82:0c:0d:65 <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+HDC_EXIT=0
+COMMAND: ip -br link show eth1
+eth1             UP             00:18:82:0c:0d:64 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+HDC_EXIT=0
+COMMAND: ip route
+192.168.10.0/24 dev wlan0 proto kernel scope link src 192.168.10.180 
+HDC_EXIT=0
+COMMAND: ip rule
+0:	from all uidrange 0-65534 lookup local
+11000:	from all fwmark 0x10063/0x1ffff iif lo uidrange 0-65534 lookup 99
+11000:	from all fwmark 0x10064/0x1ffff iif lo uidrange 0-65534 lookup 2013
+12000:	from all iif lo oif wlan0 uidrange 0-65534 lookup 2013
+13000:	from all fwmark 0/0x10000 uidrange 0-65534 lookup 99
+16000:	from all fwmark 0/0xffff iif lo uidrange 0-65534 lookup 2013
+32766:	from all uidrange 0-65534 lookup main
+HDC_EXIT=0
+COMMAND: ip neigh show
+192.168.10.61 dev wlan0 lladdr ac:f2:3c:a1:78:83 REACHABLE 
+192.168.10.1 dev wlan0 lladdr 80:af:ca:c9:56:cd STALE 
+fe80::82af:caff:fec9:56cd dev wlan0 lladdr 80:af:ca:c9:56:cd router STALE 
+HDC_EXIT=0
+COMMAND: cat /sys/class/net/eth1/carrier
+1
+HDC_EXIT=0
+COMMAND: cat /sys/class/net/eth1/operstate
+up
+HDC_EXIT=0
+COMMAND: cat /sys/class/net/eth1/device/uevent
+DRIVER=xge
+OF_NAME=xge
+OF_FULLNAME=/xge@0xBF900000
+OF_COMPATIBLE_0=hisilicon,hixgemac1
+OF_COMPATIBLE_N=1
+MODALIAS=of:NxgeT(null)Chisilicon,hixgemac1
+HDC_EXIT=0
+COMMAND: cat /sys/class/net/eth0/device/uevent
+DRIVER=xge
+OF_NAME=xge
+OF_FULLNAME=/xge@0xBF800000
+OF_COMPATIBLE_0=hisilicon,hixgemac0
+OF_COMPATIBLE_N=1
+MODALIAS=of:NxgeT(null)Chisilicon,hixgemac0
+HDC_EXIT=0

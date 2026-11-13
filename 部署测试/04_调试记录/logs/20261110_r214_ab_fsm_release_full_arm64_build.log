@@ -1,0 +1,32 @@
+[ 14%] Built target as2w_policy
+[ 28%] Built target as2w_r214
+[ 42%] Built target as2w_bench
+[ 57%] Built target as2w_deploy
+[ 85%] Built target as2w_r214_replay
+[ 85%] Built target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 92%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-ab-fsm-full
+Test project /root/as2w_deploy/build-r214-ab-fsm-full
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.57 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.72 sec

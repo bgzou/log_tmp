@@ -1,0 +1,205 @@
+variant=T1 route=A_Y seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.421 min_up=0.998 contact=14.0N
+  fixed_hold: h=0.424->0.380 min_up=0.994 contact=0.0N
+  Y_fixsquat: h=0.380->0.073 min_up=0.960 contact=104.6N
+variant=T1 route=A_Y seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.412 min_up=0.998 contact=15.9N
+  fixed_hold: h=0.415->0.380 min_up=0.998 contact=0.0N
+  Y_fixsquat: h=0.379->0.071 min_up=0.961 contact=106.0N
+variant=T1 route=A_Y seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.411 min_up=0.998 contact=16.5N
+  fixed_hold: h=0.414->0.386 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.386->0.069 min_up=0.966 contact=126.9N
+variant=T1 route=A_B_A_Y seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.421 min_up=0.998 contact=14.0N
+  fixed_hold: h=0.424->0.380 min_up=0.994 contact=0.0N
+  B_policy_handoff: h=0.380->0.344 min_up=0.995 contact=0.0N
+  policy_forward: h=0.344->0.341 min_up=0.997 contact=0.0N
+  A_policy_brake: h=0.341->0.347 min_up=0.998 contact=0.0N
+  A_return_stand: h=0.347->0.351 min_up=0.988 contact=0.0N
+  returned_fixed_hold: h=0.351->0.305 min_up=0.950 contact=0.0N
+  Y_fixsquat: h=0.303->0.071 min_up=0.918 contact=72.0N
+variant=T1 route=A_B_A_Y seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.412 min_up=0.998 contact=15.9N
+  fixed_hold: h=0.415->0.380 min_up=0.998 contact=0.0N
+  B_policy_handoff: h=0.379->0.340 min_up=0.997 contact=0.0N
+  policy_forward: h=0.340->0.337 min_up=0.998 contact=0.0N
+  A_policy_brake: h=0.337->0.342 min_up=0.998 contact=0.0N
+  A_return_stand: h=0.343->0.347 min_up=0.989 contact=0.0N
+  returned_fixed_hold: h=0.347->0.305 min_up=0.955 contact=0.0N
+  Y_fixsquat: h=0.303->0.071 min_up=0.919 contact=113.7N
+variant=T1 route=A_B_A_Y seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.411 min_up=0.998 contact=16.5N
+  fixed_hold: h=0.414->0.386 min_up=0.999 contact=0.0N
+  B_policy_handoff: h=0.386->0.345 min_up=0.999 contact=0.0N
+  policy_forward: h=0.345->0.340 min_up=0.998 contact=0.0N
+  A_policy_brake: h=0.340->0.345 min_up=0.998 contact=0.0N
+  A_return_stand: h=0.345->0.352 min_up=0.991 contact=0.0N
+  returned_fixed_hold: h=0.351->0.317 min_up=0.967 contact=0.0N
+  Y_fixsquat: h=0.316->0.069 min_up=0.924 contact=86.3N
+variant=T2 route=A_Y seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.373->0.159 min_up=0.999 contact=38.2N
+variant=T2 route=A_Y seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.364->0.092 min_up=0.996 contact=89.2N
+variant=T2 route=A_Y seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.363->0.071 min_up=0.992 contact=159.5N
+variant=T2 route=A_B_Y seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.373->0.388 min_up=1.000 contact=0.0N
+  policy_forward: h=0.388->0.380 min_up=1.000 contact=0.0N
+  Y_policy_brake: h=0.380->0.383 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.383->0.109 min_up=0.996 contact=139.5N
+variant=T2 route=A_B_Y seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.364->0.379 min_up=1.000 contact=0.0N
+  policy_forward: h=0.379->0.368 min_up=1.000 contact=0.0N
+  Y_policy_brake: h=0.368->0.371 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.371->0.074 min_up=0.989 contact=119.8N
+variant=T2 route=A_B_Y seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.363->0.377 min_up=1.000 contact=0.0N
+  policy_forward: h=0.377->0.366 min_up=1.000 contact=0.0N
+  Y_policy_brake: h=0.366->0.370 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.370->0.073 min_up=0.988 contact=126.0N
+variant=T2 route=A_B_A_Y seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.373->0.388 min_up=1.000 contact=0.0N
+  policy_forward: h=0.388->0.380 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.380->0.383 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.383->0.347 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.347->0.343 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.343->0.075 min_up=0.991 contact=73.2N
+variant=T2 route=A_B_A_Y seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.364->0.379 min_up=1.000 contact=0.0N
+  policy_forward: h=0.379->0.368 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.368->0.371 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.371->0.338 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.338->0.336 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.336->0.071 min_up=0.991 contact=68.2N
+variant=T2 route=A_B_A_Y seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.363->0.377 min_up=1.000 contact=0.0N
+  policy_forward: h=0.377->0.366 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.366->0.370 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.370->0.338 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.338->0.336 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.336->0.069 min_up=0.990 contact=103.9N
+variant=T2 route=A_B_A_Y_snapshot seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.373->0.388 min_up=1.000 contact=0.0N
+  policy_forward: h=0.388->0.380 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.380->0.383 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.383->0.323 min_up=0.992 contact=0.0N
+  returned_fixed_hold: h=0.323->0.306 min_up=0.980 contact=0.0N
+  Y_fixsquat: h=0.306->0.093 min_up=0.967 contact=54.6N
+variant=T2 route=A_B_A_Y_snapshot seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.364->0.379 min_up=1.000 contact=0.0N
+  policy_forward: h=0.379->0.368 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.368->0.371 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.371->0.299 min_up=0.983 contact=0.0N
+  returned_fixed_hold: h=0.298->0.272 min_up=0.955 contact=9.7N
+  Y_fixsquat: h=0.272->0.073 min_up=0.955 contact=96.4N
+variant=T2 route=A_B_A_Y_snapshot seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.363->0.377 min_up=1.000 contact=0.0N
+  policy_forward: h=0.377->0.366 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.366->0.370 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.370->0.295 min_up=0.982 contact=0.0N
+  returned_fixed_hold: h=0.294->0.271 min_up=0.955 contact=10.0N
+  Y_fixsquat: h=0.271->0.069 min_up=0.955 contact=88.6N
+variant=T2 route=A_B_A_Y_slow seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.373->0.388 min_up=1.000 contact=0.0N
+  policy_forward: h=0.388->0.380 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.380->0.383 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.383->0.343 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.343->0.341 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.340->0.072 min_up=0.992 contact=128.1N
+variant=T2 route=A_B_A_Y_slow seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.364->0.379 min_up=1.000 contact=0.0N
+  policy_forward: h=0.379->0.368 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.368->0.371 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.371->0.336 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.336->0.334 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.334->0.072 min_up=0.990 contact=95.3N
+variant=T2 route=A_B_A_Y_slow seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.363->0.377 min_up=1.000 contact=0.0N
+  policy_forward: h=0.377->0.366 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.366->0.370 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.370->0.336 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.336->0.334 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.334->0.069 min_up=0.991 contact=118.0N
+variant=T2 route=A_B_A_Y_freeze seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.373->0.388 min_up=1.000 contact=0.0N
+  policy_forward: h=0.388->0.380 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.380->0.383 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.383->0.370 min_up=1.000 contact=0.0N
+  returned_fixed_hold: h=0.370->0.367 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.367->0.076 min_up=0.990 contact=110.5N
+variant=T2 route=A_B_A_Y_freeze seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.364->0.379 min_up=1.000 contact=0.0N
+  policy_forward: h=0.379->0.368 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.368->0.371 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.371->0.363 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.363->0.361 min_up=0.999 contact=0.0N
+  Y_fixsquat: h=0.361->0.071 min_up=0.991 contact=120.9N
+variant=T2 route=A_B_A_Y_freeze seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N
+  B_policy_handoff: h=0.363->0.377 min_up=1.000 contact=0.0N
+  policy_forward: h=0.377->0.366 min_up=1.000 contact=0.0N
+  A_policy_brake: h=0.366->0.370 min_up=1.000 contact=0.0N
+  A_return_stand: h=0.370->0.362 min_up=0.999 contact=0.0N
+  returned_fixed_hold: h=0.362->0.361 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.360->0.072 min_up=0.989 contact=130.8N
+saved /home/caolin/as2w_workstation/部署参考/as2w-flat-rerun/results/r214_ab_fsm_final_20261110.json

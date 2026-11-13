@@ -1,0 +1,4 @@
+walk rows 291 file D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试\04_调试记录\logs\20261112_r1199_joystick_walk_5hz.csv
+capture rows 8822 file D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试\04_调试记录\logs\20261112_r1199_joystick_capture_10ms.csv
+policy command intervals and mean absolute hip target error:
+  t=0.20s ZERO vx=0.0000 hip_err=0.392

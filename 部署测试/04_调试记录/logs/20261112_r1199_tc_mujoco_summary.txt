@@ -1,0 +1,12 @@
+=== SUMMARY (stable/tracked/held/nonwheel/unload) ===
+forward  seed=101 stable=True  tracked=True  held=True  nonwheel=False mean_vx=+0.0520 first_nonwheel=None max_unload_s=0.040 effort_ratio=0.247 hold_drift=0.0018 hold_p95=0.0044 stop_s=1.18
+forward  seed=202 stable=True  tracked=True  held=True  nonwheel=False mean_vx=+0.0495 first_nonwheel=None max_unload_s=0.020 effort_ratio=0.223 hold_drift=0.0075 hold_p95=0.0050 stop_s=1.24
+forward  seed=303 stable=True  tracked=True  held=True  nonwheel=False mean_vx=+0.0489 first_nonwheel=None max_unload_s=0.000 effort_ratio=0.250 hold_drift=0.0143 hold_p95=0.0047 stop_s=1.3800000000000001
+back     seed=101 stable=True  tracked=True  held=True  nonwheel=False mean_vx=-0.0465 first_nonwheel=None max_unload_s=0.040 effort_ratio=0.247 hold_drift=0.0146 hold_p95=0.0083 stop_s=1.28
+back     seed=202 stable=True  tracked=True  held=True  nonwheel=False mean_vx=-0.0479 first_nonwheel=None max_unload_s=0.020 effort_ratio=0.233 hold_drift=0.0029 hold_p95=0.0048 stop_s=1.72
+back     seed=303 stable=True  tracked=True  held=True  nonwheel=False mean_vx=-0.0486 first_nonwheel=None max_unload_s=0.000 effort_ratio=0.259 hold_drift=0.0052 hold_p95=0.0065 stop_s=1.24
+
+=== SUSTAINED FORWARD MID-SECTION (trace t in [3.0, 9.0]s of motion) ===
+seed=101 n_trace=500 mid_frames=301 max_leg_step_mid=0.06300rad max_wheel_step_mid=0.3209rad/s wheel_dq_rms_mid=0.5530rad/s wheel_dq_peak_mid=0.8791rad/s pitch_span_mid=0.0441rad min_wheel_load_mid=50.27N max_wheel_load_mid=80.16N
+seed=202 n_trace=500 mid_frames=301 max_leg_step_mid=0.06300rad max_wheel_step_mid=0.4722rad/s wheel_dq_rms_mid=0.5539rad/s wheel_dq_peak_mid=0.9513rad/s pitch_span_mid=0.0515rad min_wheel_load_mid=47.67N max_wheel_load_mid=75.35N
+seed=303 n_trace=500 mid_frames=301 max_leg_step_mid=0.06300rad max_wheel_step_mid=0.5012rad/s wheel_dq_rms_mid=0.5556rad/s wheel_dq_peak_mid=0.9465rad/s pitch_span_mid=0.0457rad min_wheel_load_mid=46.72N max_wheel_load_mid=74.71N

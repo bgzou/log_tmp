@@ -1,0 +1,32 @@
+== NF  20261112-220051_training-contract  (no filter (LowPassMs 0))
+debug_policy: valid=1170 bad=0 phases={'BRAKE': 16, 'HANDOFF': 100, 'WALK': 1054}
+walk: frames=1054 tick=[1720938..1741998] dt_ms p50=19.999 p99=20.492 max=22.040 gaps>40ms=0
+debug_lowcmd: valid=26586 bad=0 dt_ms p50=2.001 p99=2.825 max=10.969 gaps>40ms=0
+low_capture: valid=29687 short_ignored=8 tick=[1696541..1755912] rows_in_walk=10530 (500 Hz over 21060 ms walk span)
+low_protection: complete_rows=11297 nonzero_warn_or_motorstate=0
+policy_diag rows=1170
+filter-scope check: max|req-app| wheel dq=0.00e+00 kp=0.00e+00 kd=0.00e+00; leg-q |req-app| max=0.0000 rad; obs previous-action vs wrapped(k-1) max err=0.00e+00
+candidate segments (rule |vx|>=0.08 or |wz|>=0.03, >=0.4 s): fwd[510:531] n=22 vx=+0.108 wz=+0.000; fwd[686:711] n=26 vx=+0.113 wz=+0.000; fwd[833:862] n=30 vx=+0.120 wz=+0.000; bwd[572:642] n=71 vx=-0.162 wz=+0.000; bwd[766:792] n=27 vx=-0.116 wz=+0.000; bwd[897:917] n=21 vx=-0.108 wz=+0.000; quiet[0:308] n=309 vx=+0.000 wz=+0.000; quiet[343:378] n=36 vx=+0.000 wz=+0.000; quiet[416:491] n=76 vx=+0.000 wz=+0.000; quiet[721:747] n=27 vx=-0.000 wz=+0.000; quiet[957:1053] n=97 vx=+0.000 wz=+0.000
+command clamp: slewed vx range [-0.200,+0.160] but obs-filtered (policy-visible) physical_cmd range [-0.100,+0.098] (planar clamp 0.10 m/s in as2w r284_observations.hpp Observations::push)
+
+== LP15  20261112-223732_training-contract  (40 ms leg-target LP, 15 s walk)
+debug_policy: valid=868 bad=0 phases={'BRAKE': 17, 'HANDOFF': 100, 'WALK': 751}
+walk: frames=751 tick=[3917284..3932283] dt_ms p50=20.000 p99=20.744 max=21.537 gaps>40ms=0
+debug_lowcmd: valid=25013 bad=0 dt_ms p50=2.000 p99=2.788 max=5.439 gaps>40ms=0
+low_capture: valid=28048 short_ignored=9 tick=[3895151..3951244] rows_in_walk=7500 (500 Hz over 14999 ms walk span)
+low_protection: complete_rows=10682 nonzero_warn_or_motorstate=0
+policy_diag rows=868
+filter-scope check: max|req-app| wheel dq=0.00e+00 kp=0.00e+00 kd=0.00e+00; leg-q |req-app| max=0.0764 rad; obs previous-action vs wrapped(k-1) max err=0.00e+00
+candidate segments (rule |vx|>=0.08 or |wz|>=0.03, >=0.4 s): fwd[252:355] n=104 vx=+0.170 wz=+0.000; fwd[401:487] n=87 vx=+0.151 wz=+0.000; bwd[533:735] n=203 vx=-0.186 wz=+0.000; quiet[0:174] n=175 vx=+0.000 wz=+0.000
+command clamp: slewed vx range [-0.200,+0.198] but obs-filtered (policy-visible) physical_cmd range [-0.100,+0.100] (planar clamp 0.10 m/s in as2w r284_observations.hpp Observations::push)
+
+== LP30  20261112-224151_training-contract  (40 ms leg-target LP, 30 s walk)
+debug_policy: valid=1619 bad=0 phases={'BRAKE': 18, 'HANDOFF': 100, 'WALK': 1501}
+walk: frames=1501 tick=[4173978..4203978] dt_ms p50=20.004 p99=20.873 max=21.656 gaps>40ms=0
+debug_lowcmd: valid=30886 bad=0 dt_ms p50=2.001 p99=2.884 max=8.344 gaps>40ms=0
+low_capture: valid=34036 short_ignored=6 tick=[4154328..4222395] rows_in_walk=15001 (500 Hz over 30000 ms walk span)
+low_protection: complete_rows=12952 nonzero_warn_or_motorstate=0
+policy_diag rows=1619
+filter-scope check: max|req-app| wheel dq=0.00e+00 kp=0.00e+00 kd=0.00e+00; leg-q |req-app| max=0.0764 rad; obs previous-action vs wrapped(k-1) max err=0.00e+00
+candidate segments (rule |vx|>=0.08 or |wz|>=0.03, >=0.4 s): fwd[398:472] n=75 vx=+0.156 wz=+0.000; fwd[1061:1131] n=71 vx=+0.160 wz=+0.000; fwd[1274:1337] n=64 vx=+0.158 wz=-0.005; bwd[194:246] n=53 vx=-0.149 wz=+0.000; bwd[980:1029] n=50 vx=-0.140 wz=+0.000; bwd[1161:1244] n=84 vx=-0.167 wz=+0.000; quiet[0:175] n=176 vx=-0.000 wz=+0.000; quiet[257:278] n=22 vx=+0.000 wz=+0.000; quiet[298:379] n=82 vx=+0.000 wz=+0.000; quiet[482:506] n=25 vx=+0.000 wz=-0.000; quiet[767:790] n=24 vx=+0.000 wz=-0.000; quiet[902:961] n=60 vx=-0.000 wz=+0.000; yaw+[1381:1499] n=119 vx=+0.000 wz=+0.090; yaw-[513:554] n=42 vx=+0.000 wz=-0.078; yaw-[574:736] n=163 vx=+0.000 wz=-0.092; yaw-[797:897] n=101 vx=+0.000 wz=-0.087; yaw-[1333:1364] n=32 vx=+0.028 wz=-0.071
+command clamp: slewed vx range [-0.200,+0.200] but obs-filtered (policy-visible) physical_cmd range [-0.100,+0.100] (planar clamp 0.10 m/s in as2w r284_observations.hpp Observations::push)

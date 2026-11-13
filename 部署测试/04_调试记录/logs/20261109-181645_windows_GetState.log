@@ -1,0 +1,7 @@
+﻿Stage: sport-command
+Started: 2026-11-09T18:16:46+08:00
+Command: ./build-sdk2/as2w_sdk2 sport-command eth0 get-state
+Sport API rc=3104
+Sport API failed
+Exit code: 1
+Finished: 2026-11-09T18:16:52+08:00

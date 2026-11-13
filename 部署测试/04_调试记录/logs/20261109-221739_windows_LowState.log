@@ -1,0 +1,9 @@
+﻿Stage: low-state
+Started: 2026-11-09T22:17:39+08:00
+Command: ./build-sdk2/as2w_sdk2 low-state eth0 rt/lowstate 3
+low packets=0
+low packets=0
+low packets=0
+No compatible HG LowState packets
+Exit code: 1
+Finished: 2026-11-09T22:17:42+08:00

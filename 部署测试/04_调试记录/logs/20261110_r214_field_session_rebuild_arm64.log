@@ -1,0 +1,81 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-ab-fsm
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r214
+[ 14%] Built target as2w_policy
+[ 28%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_r214_replay
+[ 42%] Built target as2w_deploy
+[ 57%] Built target as2w_bench
+[ 71%] Built target as2w_controller_test
+[ 85%] Built target as2w_r214_replay
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 92%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-ab-fsm
+Test project /root/as2w_deploy/build-r214-ab-fsm
+    Start 8: r214-startup-frame-audit
+1/1 Test #8: r214-startup-frame-audit .........   Passed    0.57 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.57 sec
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-zero-b
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r214
+[ 14%] Built target as2w_policy
+[ 28%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_r214_replay
+[ 42%] Built target as2w_controller_test
+[ 71%] Built target as2w_bench
+[ 64%] Built target as2w_deploy
+[ 85%] Built target as2w_r214_replay
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 92%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-zero-b
+Test project /root/as2w_deploy/build-r214-zero-b
+    Start 8: r214-startup-frame-audit
+1/1 Test #8: r214-startup-frame-audit .........   Passed    0.56 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.57 sec
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-ab-fsm-full
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r214
+[ 14%] Built target as2w_policy
+[ 28%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_r214_replay
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_bench
+[ 42%] Built target as2w_deploy
+[ 57%] Built target as2w_controller_test
+[ 71%] Built target as2w_bench
+[ 85%] Built target as2w_r214_replay
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 92%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-ab-fsm-full
+Test project /root/as2w_deploy/build-r214-ab-fsm-full
+    Start 8: r214-startup-frame-audit
+1/1 Test #8: r214-startup-frame-audit .........   Passed    0.54 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.54 sec

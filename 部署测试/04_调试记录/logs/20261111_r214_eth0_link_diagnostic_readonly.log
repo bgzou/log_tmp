@@ -1,0 +1,68 @@
+COMMAND: ip -br addr
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+dummy0           DOWN           
+tunl0@NONE       DOWN           
+ip_vti0@NONE     DOWN           
+ip6_vti0@NONE    DOWN           
+sit0@NONE        DOWN           
+ip6tnl0@NONE     DOWN           
+eth0             DOWN           
+eth1             UP             fe80::218:82ff:fe0c:d64/64 
+endvnic          DOWN           
+can0             DOWN           
+Hisilicon0       DOWN           
+wlan0            UP             192.168.10.180/24 fe80::a0c1:99ff:fe7a:5eb8/64 
+p2p0             DORMANT        
+wlan1            DOWN           
+HDC_EXIT=0
+COMMAND: cat /sys/class/net/eth0/carrier
+0
+HDC_EXIT=0
+COMMAND: cat /sys/class/net/eth0/operstate
+down
+HDC_EXIT=0
+COMMAND: ethtool eth0
+/bin/sh: ethtool: inaccessible or not found
+HDC_EXIT=0
+COMMAND: dmesg | tail -40
+[ 3877.005693] [2] pid=69 tid=340 comm=kworker/u41:1   [plat_1105][I]board_host_wakeup_dev_set_mp]host_wakeup_wlan set low
+[ 3877.005729] [2] pid=69 tid=340 comm=kworker/u41:1   [plat_1105][I]gpio_default_intr_enable]enable_irq: wlan_wake_host[irq 357]
+[ 3877.005767] [2] pid=69 tid=340 comm=kworker/u41:1   [MPXX][I][WLAN_PM]wifi have traffic, hold deepsleep_wakelock 500 ms, gpio_405 = 0[wlan_pm_sleep_cmd_proc:2746]
+[ 3877.113577] [0] pid=69 tid=512 comm=EtherCAT-IDLE   EtherCAT WARNING 0: 50 datagrams TIMED OUT!
+[ 3877.238727] [2] pid=2 tid=43 comm=utimermgr       [hmfg:479][fg] timer_cleanup_block_rule_cache, cur_time=3846985
+[ 3877.240422] [2] pid=69 tid=266 comm=kworker/u41:4   [I/sensorhub] write_buf:131044 ,read_buf:28 ,port = 1
+[ 3877.443782] [2] pid=69 tid=266 comm=kworker/u41:4   [loadmonitor&freqdump]:update_dpm_data begin
+[ 3877.444536] [2] pid=69 tid=266 comm=kworker/u41:4   [iomcu_ipc_link]:[iomcu_link_ipc_send] [0x80f01] [0xf4537] tag[0x37],cmd[0x45] lvl 1 resp 0 ver 0 tranid 15 shmem 0 len 8
+[ 3877.445250] [0] pid=69 tid=340 comm=kworker/u41:1   [iomcu_ipc_tcp]:[iomc_tcp_amsm_recv_handler]tag[0x37]cmd[0x46]len[24]
+[ 3877.507337] [1] pid=69 tid=3197 comm=hisi_hcc        [plat_1105][I]gpio_default_intr_enable]disable_irq: wlan_wake_host[irq 357]
+[ 3877.507448] [1] pid=69 tid=3197 comm=hisi_hcc        [plat_1105][I]gpio_default_intr_enable]enable_irq: wlan_wake_host[irq 357]
+[ 3877.507483] [1] pid=69 tid=3197 comm=hisi_hcc        [MPXX][I][WLAN_PM]wifi wakeup cmd send with gpio:5 level:0[wlan_pm_pcie_wakeup_cmd:1505]
+[ 3877.507506] [1] pid=69 tid=3197 comm=hisi_hcc        [plat_1105][I]board_host_wakeup_dev_set_mp]host_wakeup_wlan set high
+[ 3877.507582] [1] pid=69 tid=3197 comm=hisi_hcc        [PCIE][INFO]pcie wakeup device control, pull up gpio[oal_pcie_device_wakeup_handler:962]
+[ 3877.514173] [0] pid=69 tid=99 comm=dh-irq-bind-0   [PCIE][INFO]pcie_gpio_int: 5089[oal_pcie_gpio_irq:2500]
+[ 3877.514244] [0] pid=69 tid=99 comm=dh-irq-bind-0   [PCIE][INFO]pcie_gpio_irq wakeup dev ack[oal_pcie_gpio_irq:2512]
+[ 3877.514408] [1] pid=69 tid=1677 comm=wlan_bus_rx/pci [PCIE][INFO]link state is disabled:linkup![oal_pcie_read_d2h_message_mp:2337]
+[ 3877.515049] [1] pid=69 tid=3197 comm=hisi_hcc        [PCIE][INFO]link_state change from linkup to workup[oal_pcie_change_link_state:953]
+[ 3877.515358] [1] pid=69 tid=3197 comm=hisi_hcc        [MPXX][I][WLAN_PM]wakeup dev succ, gpio_405 = 1, cost 8038 us[wlan_pm_wakeup_dev_mp:1927]
+[ 3877.630680] [4] pid=22866 tid=22866 comm=dmesg           [hmseh:381]avc: denied { read } for pid=22866, comm="/bin/dmesg"  path="/dev/kmsg" dev="" ino=27 scontext=u:r:su:s0 tcontext=u:object_r:dev_kmsg_file:s0 tclass=chr_file permissive=1
+[ 3877.630747] [4] pid=22866 tid=22866 comm=dmesg           [hmseh:381]avc: denied { open } for pid=22866, comm="/bin/dmesg"  path="/dev/kmsg" dev="" ino=27 scontext=u:r:su:s0 tcontext=u:object_r:dev_kmsg_file:s0 tclass=chr_file permissive=1
+[ 3877.630793] [4] pid=22866 tid=22866 comm=dmesg           [hmseh:381]avc: denied { syslog } for pid=22866, comm="/bin/dmesg"  capability=34 scontext=u:r:su:s0 tcontext=u:r:su:s0 tclass=capability2 permissive=1
+[ 3877.753573] [3] pid=69 tid=266 comm=kworker/u41:4   [MPXX][I][WLAN_PM]sleep request send, gpio_405 = 1[wlan_pm_sleep_request:276]
+[ 3877.753858] [0] pid=69 tid=99 comm=dh-irq-bind-0   [PCIE][INFO]pcie_gpio_int: 5090[oal_pcie_gpio_irq:2500]
+[ 3877.754268] [3] pid=69 tid=266 comm=kworker/u41:4   [plat_1105][I]gpio_default_intr_enable]disable_irq: wlan_wake_host[irq 357]
+[ 3877.754349] [3] pid=69 tid=266 comm=kworker/u41:4   [MPXX][I][WLAN_PM]wifi sleep cmd send, pkt_num:[7][wlan_pm_sleep_cmd_send:2570]
+[ 3877.754414] [3] pid=69 tid=266 comm=kworker/u41:4   [PCIE][INFO]link_state change from workup to linkup[oal_pcie_change_link_state:953]
+[ 3877.754628] [3] pid=69 tid=266 comm=kworker/u41:4   [PCIE][INFO]consume 216 us[oal_pcie_sleep_request:1650]
+[ 3877.754653] [3] pid=69 tid=266 comm=kworker/u41:4   [plat_1105][I]board_host_wakeup_dev_set_mp]host_wakeup_wlan set low
+[ 3877.754686] [3] pid=69 tid=266 comm=kworker/u41:4   [plat_1105][I]gpio_default_intr_enable]enable_irq: wlan_wake_host[irq 357]
+[ 3877.754725] [3] pid=69 tid=266 comm=kworker/u41:4   [MPXX][I][WLAN_PM]wifi have traffic, hold deepsleep_wakelock 500 ms, gpio_405 = 0[wlan_pm_sleep_cmd_proc:2746]
+[ 3877.871637] [2] pid=22868 tid=22868 comm=pidof           [procmgr_core:1713]process start exit, pid=22868, exit_status=0x0
+[ 3877.871813] [2] pid=22868 tid=22868 comm=pidof           [threadmgr_thread:1359]last thread has exited in user space, nr_threads=1
+[ 3877.872306] [3] pid=2 tid=2 comm=sysmgr-main     [procmgr_process:940]process has exited, pid=22868, resource_refcnt=3
+[ 3877.874550] [2] pid=2 tid=40 comm=wk:0/0/1/20     [hmfg:75][fg] handle devhost message, cmd 122
+[ 3877.874589] [2] pid=2 tid=40 comm=wk:0/0/1/20     [lnxbase:27][fg] actvcall sec fileguard cfg len 20, ret 0, err 0
+[ 3877.874807] [2] pid=2 tid=40 comm=wk:0/0/1/20     [procmgr_process:831]process cleanup end, pid=22868, process_refcnt=1
+[ 3877.953541] [1] pid=5472 tid=5503 comm=OS_DfxWatchdog  [hmpm:266]security check failed: E_HM_PERM
+[ 3877.953573] [1] pid=5472 tid=5503 comm=OS_DfxWatchdog  [hmpm:322]invalid wrapper ctx: E_HM_PERM
+[ 3877.953583] [1] pid=5472 tid=5503 comm=OS_DfxWatchdog  [fs_libhmsrv_kernfs:529]fops.read failed, E_HM_PERM
+HDC_EXIT=0

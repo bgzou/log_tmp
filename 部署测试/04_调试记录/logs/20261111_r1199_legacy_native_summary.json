@@ -1,0 +1,223 @@
+{
+  "summary": {
+    "measured_forward": {
+      "trials": 1,
+      "passed": 0,
+      "stable": 0,
+      "brake_ok": 1,
+      "fixed_exit_ok": 0,
+      "tracking_ok": 1,
+      "mean_tracking": {
+        "mean_vx_m_s": 0.23081801454190615,
+        "mean_vy_m_s": -0.0015809778991031146,
+        "mean_wz_rad_s": -2.8433417835268623e-05
+      },
+      "max_brake_distance_m": 0.11139178368526155
+    }
+  },
+  "rows": [
+    {
+      "seed": 202,
+      "scenario": "measured_forward",
+      "measured_fixedstand_start": true,
+      "requested_command": [
+        0.3,
+        0.0,
+        0.0
+      ],
+      "command_mapping_uses_vy": false,
+      "vy_mapping_expected_zero": false,
+      "stable": false,
+      "brake_ok": true,
+      "fixed_exit_ok": false,
+      "tracking_ok": true,
+      "passed": false,
+      "motion_tracking": {
+        "mean_vx_m_s": 0.23081801454190615,
+        "mean_vy_m_s": -0.0015809778991031146,
+        "mean_wz_rad_s": -2.8433417835268623e-05,
+        "requested_vx_m_s": 0.3,
+        "requested_vy_m_s": 0.0,
+        "requested_wz_rad_s": 0.0
+      },
+      "brake_distance_m": 0.11139178368526155,
+      "max_target_step_equivalent": 0.2416610709286755,
+      "stress": {
+        "friction": 0.5127341545635387,
+        "push_time_s": 3.70199840761553,
+        "push_delta_xy_m_s": [
+          -0.06167660248528327,
+          0.14563716375905414
+        ]
+      },
+      "phases": [
+        {
+          "name": "B_enter_policy_centered",
+          "seconds": 0.76,
+          "min_height_m": 0.3692381210901847,
+          "min_up": 0.9953592838862005,
+          "peak_nonwheel_n": 0.0,
+          "min_wheel_load_n": 0.0,
+          "max_wheel_dq_rad_s": 0.437927859388849,
+          "max_leg_dq_rad_s": 2.5014564930849446,
+          "max_effort_ratio": 0.24750000000000003,
+          "max_leg_error_rad": 0.25278681921963925,
+          "tail_max_leg_error_rad": 0.25278681921963925,
+          "mean_tail_vx_m_s": 0.07768012700462758,
+          "mean_tail_vy_m_s": -0.0031553096864150067,
+          "mean_tail_wz_rad_s": -0.0034393227868720674,
+          "tail_speed_p95_m_s": 0.14308950228769476,
+          "displacement_m": 0.05938082103190896,
+          "yaw_delta_rad": -0.003072069206217609
+        },
+        {
+          "name": "policy_static_before_motion",
+          "seconds": 2.0,
+          "min_height_m": 0.3646809477293968,
+          "min_up": 0.9993021278361838,
+          "peak_nonwheel_n": 0.0,
+          "min_wheel_load_n": 0.0,
+          "max_wheel_dq_rad_s": 0.22622649918405102,
+          "max_leg_dq_rad_s": 0.5300260996249205,
+          "max_effort_ratio": 0.17009283542520856,
+          "max_leg_error_rad": 0.12616438221810186,
+          "tail_max_leg_error_rad": 0.12616438221810186,
+          "mean_tail_vx_m_s": -0.008063848859211438,
+          "mean_tail_vy_m_s": -0.0006906098513022932,
+          "mean_tail_wz_rad_s": -0.0021367068719579025,
+          "tail_speed_p95_m_s": 0.1546587393313116,
+          "displacement_m": 0.017464726786484433,
+          "yaw_delta_rad": -0.004120276590717342
+        },
+        {
+          "name": "policy_measured_forward",
+          "seconds": 8.0,
+          "min_height_m": 0.24646100741206345,
+          "min_up": 0.9127648734822313,
+          "peak_nonwheel_n": 74.23680482223318,
+          "min_wheel_load_n": 0.0,
+          "max_wheel_dq_rad_s": 4.369128171820575,
+          "max_leg_dq_rad_s": 1.8917638164964594,
+          "max_effort_ratio": 0.5530683749082126,
+          "max_leg_error_rad": 0.5355817912796591,
+          "tail_max_leg_error_rad": 0.5355817912796591,
+          "mean_tail_vx_m_s": 0.23081801454190615,
+          "mean_tail_vy_m_s": -0.0015809778991031146,
+          "mean_tail_wz_rad_s": -2.8433417835268623e-05,
+          "tail_speed_p95_m_s": 0.2666001453323879,
+          "displacement_m": 1.7982968371364223,
+          "yaw_delta_rad": -0.0011112606177743345
+        },
+        {
+          "name": "brake_to_center",
+          "seconds": 2.6,
+          "min_height_m": 0.24805613174720614,
+          "min_up": 0.9155538678863546,
+          "peak_nonwheel_n": 0.0,
+          "min_wheel_load_n": 32.294614506975876,
+          "max_wheel_dq_rad_s": 0.36259483983302343,
+          "max_leg_dq_rad_s": 0.7778474159091149,
+          "max_effort_ratio": 0.5056599869269768,
+          "max_leg_error_rad": 0.5329793561861604,
+          "tail_max_leg_error_rad": 0.4693228534106238,
+          "mean_tail_vx_m_s": 0.031845612616854556,
+          "mean_tail_vy_m_s": -0.0003212181411146905,
+          "mean_tail_wz_rad_s": 0.00014561571260246928,
+          "tail_speed_p95_m_s": 0.12659021123741146,
+          "displacement_m": 0.11139178368526155,
+          "yaw_delta_rad": -0.0031804278761264904
+        },
+        {
+          "name": "A_exit_to_fixedstand",
+          "seconds": 0.76,
+          "min_height_m": 0.2869506266246742,
+          "min_up": 0.972331394700554,
+          "peak_nonwheel_n": 0.0,
+          "min_wheel_load_n": 44.67231755293842,
+          "max_wheel_dq_rad_s": 0.14734006003907457,
+          "max_leg_dq_rad_s": 0.2782049334169891,
+          "max_effort_ratio": 0.38245404059577415,
+          "max_leg_error_rad": 0.415365688984093,
+          "tail_max_leg_error_rad": 0.415365688984093,
+          "mean_tail_vx_m_s": -0.05289591243169534,
+          "mean_tail_vy_m_s": 0.000761997848732673,
+          "mean_tail_wz_rad_s": 0.0010917916632849228,
+          "tail_speed_p95_m_s": 0.09495330415236364,
+          "displacement_m": 0.03937533269029745,
+          "yaw_delta_rad": 0.0008190875310809531
+        },
+        {
+          "name": "fixed_hold_after_exit",
+          "seconds": 2.0,
+          "min_height_m": 0.27590024508881095,
+          "min_up": 0.9635095239673824,
+          "peak_nonwheel_n": 0.0,
+          "min_wheel_load_n": 38.650712072014414,
+          "max_wheel_dq_rad_s": 0.31538188250877525,
+          "max_leg_dq_rad_s": 0.2591560980945806,
+          "max_effort_ratio": 0.3890311000319332,
+          "max_leg_error_rad": 0.4242490607947152,
+          "tail_max_leg_error_rad": 0.4242490607947152,
+          "mean_tail_vx_m_s": -0.012333127643938681,
+          "mean_tail_vy_m_s": 0.00047675476171626127,
+          "mean_tail_wz_rad_s": -0.001260714960987465,
+          "tail_speed_p95_m_s": 0.08614388771666648,
+          "displacement_m": 0.025505081839976892,
+          "yaw_delta_rad": -0.0025337144410602086
+        }
+      ],
+      "mapping_tail": [
+        {
+          "requested": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "motion_gate": 0.0,
+          "leg_offset_max": 0.17866107092867556,
+          "wheel_target_max": 0.3428162267624373
+        },
+        {
+          "requested": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "motion_gate": 0.0,
+          "leg_offset_max": 0.17866107092867556,
+          "wheel_target_max": 0.34309976078399984
+        },
+        {
+          "requested": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "motion_gate": 0.0,
+          "leg_offset_max": 0.17866107092867556,
+          "wheel_target_max": 0.34319429479199215
+        },
+        {
+          "requested": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "motion_gate": 0.0,
+          "leg_offset_max": 0.17866107092867556,
+          "wheel_target_max": 0.3431139043765796
+        },
+        {
+          "requested": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "motion_gate": 0.0,
+          "leg_offset_max": 0.17866107092867556,
+          "wheel_target_max": 0.3429825247500631
+        }
+      ]
+    }
+  ]
+}

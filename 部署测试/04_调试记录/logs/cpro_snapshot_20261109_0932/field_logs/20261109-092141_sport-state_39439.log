@@ -1,0 +1,7 @@
+Stage: sport-state
+Started: 2026-11-09T09:21:41+08:00
+Command: ./build-sdk2/as2w_sdk2 sport-state eth0 10
+terminate called after throwing an instance of 'unitree::common::SystemException'
+  what():  readlink error
+Exit code: 134
+Finished: 2026-11-09T09:21:41+08:00

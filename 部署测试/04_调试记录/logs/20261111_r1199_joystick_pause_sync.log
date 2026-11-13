@@ -1,0 +1,2 @@
+1dd7c7a6306d83ee0869237f5a02f393469ff2f04eb85e33d2a2267bfeb0ad85  tools/run_r1199_field_session.sh
+FATAL: R1199 joystick trial paused after 2026-11-11 real-robot posture drop and leg target-step warning. Review the recorded run and fix the stand-bias transition before another LowCmd test.

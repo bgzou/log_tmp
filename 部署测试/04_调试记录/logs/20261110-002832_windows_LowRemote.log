@@ -1,0 +1,8 @@
+﻿Stage: low-remote
+Started: 2026-11-10T00:28:33+08:00
+Command: ./build-sdk2/as2w_sdk2 low-remote eth0 rt/lowstate 3
+low remote packets=1036 tick=5989454 raw24=555100000000000000000000000000000000000000000000 candidate_buttons=0x0 candidate_axes=0,0,0,0,0
+low remote packets=2088 tick=5990456 raw24=555100000000000000000000000000000000000000000000 candidate_buttons=0x0 candidate_axes=0,0,0,0,0
+low remote packets=3143 tick=5991461 raw24=555100000000000000000000000000000000000000000000 candidate_buttons=0x0 candidate_axes=0,0,0,0,0
+Exit code: 0
+Finished: 2026-11-10T00:28:36+08:00

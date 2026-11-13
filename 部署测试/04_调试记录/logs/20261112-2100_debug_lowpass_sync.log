@@ -1,0 +1,18 @@
+time=2026-11-12T21:00:45.5771370+08:00 files=17
+deploy/robots/as2w/common/as2w_publish.cpp: rc=0 FileTransfer finish, Size:135083, File count = 1, time:8146ms rate:16.58kB/s 
+deploy/robots/as2w/r214/r214_controller.hpp: rc=0 FileTransfer finish, Size:1993, File count = 1, time:133ms rate:14.98kB/s 
+deploy/robots/as2w/r214/r214_controller.cpp: rc=0 FileTransfer finish, Size:7885, File count = 1, time:51ms rate:154.61kB/s 
+deploy/robots/as2w/r249/r249_controller.hpp: rc=0 FileTransfer finish, Size:2147, File count = 1, time:204ms rate:10.52kB/s 
+deploy/robots/as2w/r249/r249_controller.cpp: rc=0 FileTransfer finish, Size:10005, File count = 1, time:204ms rate:49.04kB/s 
+deploy/robots/as2w/r270/r270_controller.hpp: rc=0 FileTransfer finish, Size:2291, File count = 1, time:107ms rate:21.41kB/s 
+deploy/robots/as2w/r270/r270_controller.cpp: rc=0 FileTransfer finish, Size:10900, File count = 1, time:376ms rate:28.99kB/s 
+deploy/robots/as2w/r284/r284_controller.hpp: rc=0 FileTransfer finish, Size:1502, File count = 1, time:83ms rate:18.10kB/s 
+deploy/robots/as2w/r284/r284_controller.cpp: rc=0 FileTransfer finish, Size:6018, File count = 1, time:132ms rate:45.59kB/s 
+deploy/robots/as2w/r1199/CMakeLists.txt: rc=0 FileTransfer finish, Size:5796, File count = 1, time:34ms rate:170.47kB/s 
+tools/run_r1199_training_contract_trial.sh: rc=0 FileTransfer finish, Size:1595, File count = 1, time:136ms rate:11.73kB/s 
+tools/run_r1199_field_session.sh: rc=0 FileTransfer finish, Size:13963, File count = 1, time:110ms rate:126.94kB/s 
+tools/run_r214_field_session.sh: rc=0 FileTransfer finish, Size:9048, File count = 1, time:60ms rate:150.80kB/s 
+tools/run_r214_stand_trial.sh: rc=0 FileTransfer finish, Size:853, File count = 1, time:35ms rate:24.37kB/s 
+tools/run_r214_zero_b_trial.sh: rc=0 FileTransfer finish, Size:975, File count = 1, time:41ms rate:23.78kB/s 
+tools/run_r214_motion_trial.sh: rc=0 FileTransfer finish, Size:998, File count = 1, time:62ms rate:16.10kB/s 
+tools/build_on_cpro.sh: rc=0 FileTransfer finish, Size:3569, File count = 1, time:31ms rate:115.13kB/s 

@@ -1,0 +1,7 @@
+﻿Stage: motion-select
+Started: 2026-11-09T19:14:27+08:00
+Command: ./build-sdk2/as2w_sdk2 motion-select eth0 ai
+MotionSwitcher SelectMode("ai") rc=0
+MotionSwitcher CheckMode rc=0 form=1 name=ai
+Exit code: 0
+Finished: 2026-11-09T19:14:31+08:00

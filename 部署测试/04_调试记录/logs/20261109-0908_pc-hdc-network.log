@@ -1,0 +1,29 @@
+Time: 2026-11-09 09:08 CST
+Environment: personal Windows PC; CPRO reportedly connected to PC and AS2-W.
+
+Command: hdc -v
+Result: current Codex shell PATH did not contain hdc; command not found. The user PATH does contain the HDC tool directory, indicating this shell inherited an older PATH. Used the absolute exe path thereafter.
+
+Command: 部署测试/00_HDC工具/hdc_6.1.1.280/hdc.exe -v
+Result: Ver: 3.2.0d
+
+Command: hdc.exe list targets -v
+Result: [Empty]; no HDC target discovered.
+
+Command: Get-NetAdapter
+Result: WLAN up at 144.4 Mbps; Realtek USB GbE Family Controller #3 (以太网 4) up at 1 Gbps. Other listed adapters disconnected or not present.
+
+Command: Get-NetIPAddress -AddressFamily IPv4
+Result: WLAN 192.168.43.4/24; 以太网 4 has link-local 169.254.44.105/16. No confirmed CPRO-facing configured IP.
+
+Command: Get-NetIPConfiguration/Get-NetNeighbor on 以太网 4
+Result: No default gateway; no dynamic IPv4 neighbor (only broadcast/multicast permanent entries). Received unicast packets: 0 at inspection time.
+
+Command: sha256sum -c 部署测试/01_现场部署包/SHA256SUMS.txt
+Result: cpp_deploy-as2w.tar.gz OK; unitree_sdk2-src.tar.gz OK.
+
+Decision: HDC tool and packages are ready, but CPRO management access is not established. No CPRO network settings or robot command were changed. Need connection type and CPRO management IP/SSH or HDC authorization before transferring packages.
+
+Update 09:10 CST: User confirmed PC→CPRO is via Ethernet, with no confirmed IP. `CPRO命令.txt` only proposes 192.168.123.100/24 on CPRO eth0 after login. PC Ethernet 4 was DHCP enabled and link-local only before any change. Attempted `New-NetIPAddress -InterfaceAlias '以太网 4' -IPAddress 192.168.123.220 -PrefixLength 24 -PolicyStore ActiveStore`; Windows returned Access denied. No address was added. User was asked to run this exact temporary host-only address command in an administrator PowerShell or provide the CPRO management IP. WLAN 192.168.43.4 has only its gateway as a reachable neighbor; Ethernet 4 has no IPv4/IPv6 dynamic neighbor. No SSH endpoint established.
+
+Update 09:12 CST: User ran the temporary IP command in administrator PowerShell. PC Ethernet 4 now has 192.168.123.220/24 Preferred, with no default gateway on that interface. Explicit source-IP ping of 192.168.123.100 and 192.168.123.161 timed out or returned local destination-host-unreachable. Additional one-packet probes of .1, .18, .164, .222 did not reply. Neighbor table shows all tested addresses Unreachable with zero MAC; Ethernet 4 received unicast packet count remains 0. No CPRO SSH/HDC endpoint. Requested `ip -br addr` from the CPRO local console or an authorized USB/HDC connection. No changes were made on CPRO or AS2-W.

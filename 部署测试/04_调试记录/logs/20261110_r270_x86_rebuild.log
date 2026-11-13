@@ -1,0 +1,33 @@
+[ 14%] Built target as2w_policy
+[ 57%] Built target as2w_bench
+[ 57%] Built target as2w_controller_test
+[ 57%] Built target as2w_deploy
+[ 71%] Built target as2w_r270
+[ 78%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_smoke.dir/smoke.cpp.o
+[ 92%] Built target as2w_r270_publish
+[100%] Linking CXX executable as2w_r270_smoke
+[100%] Built target as2w_r270_smoke
+Internal ctest changing into directory: /tmp/opencode/r270-zero-b
+Test project /tmp/opencode/r270-zero-b
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.36 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.42 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.61 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.60 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.45 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    1.14 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.63 sec
+    Start 8: r270-controller-smoke
+8/9 Test #8: r270-controller-smoke ............   Passed    1.19 sec
+    Start 9: r270-startup-frame-audit
+9/9 Test #9: r270-startup-frame-audit .........   Passed    1.46 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   6.86 sec

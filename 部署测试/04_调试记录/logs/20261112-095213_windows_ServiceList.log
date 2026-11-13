@@ -1,0 +1,4 @@
+﻿Stage: service-list
+Started: 2026-11-12T09:52:13+08:00
+Command: ./build-sdk2/as2w_sdk2 service-list eth0
+RobotState ServiceList rc=3104 count=0

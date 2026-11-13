@@ -1,0 +1,59 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r270-zero-b
+[  7%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270.dir/r270_controller.cpp.o
+[ 14%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[ 21%] Linking CXX static library libas2w_policy.a
+[ 21%] Built target as2w_policy
+[ 28%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 35%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 42%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 50%] Linking CXX executable as2w_controller_test
+[ 57%] Linking CXX executable as2w_deploy
+[ 57%] Built target as2w_controller_test
+[ 64%] Linking CXX executable as2w_bench
+[ 64%] Built target as2w_deploy
+[ 64%] Built target as2w_bench
+[ 71%] Linking CXX static library libas2w_r270.a
+[ 71%] Built target as2w_r270
+[ 78%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_publish.dir/__/r214/r214_publish.cpp.o
+[ 85%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_smoke.dir/smoke.cpp.o
+[ 92%] Linking CXX executable as2w_r270_smoke
+[ 92%] Built target as2w_r270_smoke
+[100%] Linking CXX executable as2w_r270_publish
+[100%] Built target as2w_r270_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r270-zero-b
+Test project /root/as2w_deploy/build-r270-zero-b
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.03 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.03 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r270-controller-smoke
+8/9 Test #8: r270-controller-smoke ............   Passed    0.08 sec
+    Start 9: r270-startup-frame-audit
+9/9 Test #9: r270-startup-frame-audit .........   Passed    0.11 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.36 sec

@@ -1,0 +1,7 @@
+﻿Stage: low-crc
+Started: 2026-11-09T17:28:30+08:00
+Command: ./build-sdk2/as2w_sdk2 low-crc eth0 rt/lowstate 5
+low-crc packets=5259 crc_matched=5259
+first frame: received_crc=0x40ea602b computed_crc=0x40ea602b mode_pr=0 mode_machine=2 tick=13216746
+Exit code: 0
+Finished: 2026-11-09T17:28:35+08:00

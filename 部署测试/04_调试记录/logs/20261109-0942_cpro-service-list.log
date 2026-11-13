@@ -1,0 +1,19 @@
+Usage: bash tools/field.sh STAGE [ARG...]
+  preflight                         Read-only CPRO, network and USB inventory
+  build                             Build policy core, run model/controller tests
+  sdk-build SDK_PREFIX              Build SDK2 diagnostic binaries after SDK2 install
+  policy-list                       List delivered recovery/stairs model names
+  policy-verify NAME|all            Run model reference trace by config name
+  policy-bench NAME [ITERATIONS]     Time inference on this CPU (no DDS)
+  policy-shadow NAME NIC MAP SEC [TOPIC]  Read-only live preview; stairs only
+  sport-state NIC [SECONDS]         Read official high-level state
+  remote-state NIC [SECONDS]        Read original Unitree remote DDS topic
+  low-state NIC [SECONDS] [TOPIC]   Read HG LowState (35 message slots); default rt/lowstate
+  low-remote NIC [SECONDS] [TOPIC]  Read raw 40-byte remote field in HG LowState
+  motion-mode NIC                   Read current motion-switcher form/mode
+  sport-command NIC ACTION          Explicit official high-level action:
+                                    get-state|stop-move|balance-stand|stand-up|stand-down|damp
+  shadow NIC MODEL MAP SECONDS [TOPIC]  Read-only stairs preview; requires verified map
+
+Each invocation writes a timestamped log and an INDEX.md entry to field_logs/.
+An exit code of zero proves only that the command ran, not that hardware mapping is safe.

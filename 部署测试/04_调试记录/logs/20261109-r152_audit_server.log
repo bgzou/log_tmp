@@ -1,0 +1,4 @@
+python-flat fixed 52 tracking 44 qualified 22 crossing Counter() falls 0
+python-flat independent 52 tracking 28 qualified 10 crossing Counter() falls 0
+onnx-flat fixed 52 tracking 44 qualified 21 crossing Counter() falls 0
+onnx-flat independent 52 tracking 25 qualified 9 crossing Counter() falls 0

@@ -1,0 +1,41 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/as2w_r214_base
+[ 12%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[ 25%] Linking CXX static library libas2w_policy.a
+[ 25%] Built target as2w_policy
+[ 37%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 50%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 62%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 75%] Linking CXX executable as2w_controller_test
+[ 75%] Built target as2w_controller_test
+[ 87%] Linking CXX executable as2w_deploy
+[ 87%] Built target as2w_deploy
+[100%] Linking CXX executable as2w_bench
+[100%] Built target as2w_bench
+Internal ctest changing into directory: /tmp/as2w_r214_base
+Test project /tmp/as2w_r214_base
+    Start 1: recovery-r09
+1/7 Test #1: recovery-r09 .....................   Passed    0.52 sec
+    Start 2: recovery-r12
+2/7 Test #2: recovery-r12 .....................   Passed    0.33 sec
+    Start 3: recovery-r13
+3/7 Test #3: recovery-r13 .....................   Passed    0.31 sec
+    Start 4: stairs-r14
+4/7 Test #4: stairs-r14 .......................   Passed    0.21 sec
+    Start 5: stairs-r17-2000
+5/7 Test #5: stairs-r17-2000 ..................   Passed    0.39 sec
+    Start 6: stairs-r17-3000
+6/7 Test #6: stairs-r17-3000 ..................   Passed    0.27 sec
+    Start 7: controller
+7/7 Test #7: controller .......................   Passed    0.30 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   2.34 sec

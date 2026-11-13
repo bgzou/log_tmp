@@ -1,0 +1,19 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+GETUP1199 TRIAL: from prone press B once = knee-open (~2.5s, body lifts ~3cm) -> rise to stand (~3-5s) -> FixedStand hold (auto-squat by --stand-hold-seconds) -> Y squat. A is disabled in this build. One B chain per session. X emergency.
+GETUP1199 contract: obs 42 / act 12 legs; wheels position-hold at the latched angle; staged rise 0.22/0.50 0.22/1.1 1.45/1.2 authority 0.42; low-support latch 0.45s blend 0.85s; integral stand; predictive guard; entry gate: prone, legs in 90% envelope, wheels quiet; success gate 2s; 15s cap; one B chain per session
+Type 'GO' and press Enter to start (nothing else proceeds).
+FIELD_SAFETY_PROFILE command_accel=0.2,0.1,0.2 command_decel=0.4,0.2,0.4 remote_timeout_ms=200 leg_dq=5/8 wheel_dq=8/12 leg_tau=35/50 wheel_tau=8/12 leg_pd=35/50 wheel_pd=8/15 leg_step=0.35/0.75 wheel_step=15/30 warn_frames=5 hard_frames=3 (units: dq rad/s, tau/pd Nm, step per 20 ms)
+DEBUG_CAPTURE enabled: 50Hz policy inputs/targets + 500Hz final LowCmd; independent LowState monitor required
+POLICY_LOWPASS tau_ms=0 wheels=0 (0=OFF; enabled only for isolated candidate builds)
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=2643859 packets=622
+FSM started in Passive startup. A/B/Y locked out. X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 749 frames
+[Passive] B rejected: entry gate h_est=0.202718 (max 0.26) up=0.999985 (max 0.6) wheel_dq=0.0122718 (max 0.35)
+GETUP TRIAL: B not pressed in 120s, stop
+Operator exit; stop.
+DEBUG_LOWCMD_RESULT rows=60502 dropped=0 file_ok=1
+DEBUG_POLICY_RESULT rows=0 file_ok=1
+Publisher stopped, exit=0
+GETUP1199_REMOTE_RC=0

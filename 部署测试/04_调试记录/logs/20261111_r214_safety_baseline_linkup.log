@@ -1,0 +1,15 @@
+COMMAND: /data/local/tmp/as2w_field/cpro_ubuntu.sh /bin/bash -lc 'cd /root/as2w_deploy && env LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib ./build-sdk2/as2w_sdk2 low-state eth0 rt/lowstate 2'
+low packets=1063 tick=3782523 mode_pr=0 mode_machine=2 imu_wxyz=0.996216,0.00212812,0.000102908,0.0868896, gyro=0.00319579,-0.00639159,0.00319579, m0=-0.579581,0 m1=1.04984,0 m2=-2.76226,0.00613592 m3=0.569179,0 m4=1.0474,0.00306796 m5=-2.75611,0 m6=-0.569556,0.00920388 m7=1.04,-0.00613592 m8=-2.75383,0 m9=0.574733,-0.00920388 m10=1.04776,0 m11=-2.75292,0 m12=0.105174,0 m13=-0.62584,0 m14=-0.0535455,0 m15=-0.847524,-0.0122718 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+low packets=2119 tick=3783529 mode_pr=0 mode_machine=2 imu_wxyz=0.996226,0.00230373,-0.000136065,0.0867722, gyro=-0.00852211,-0.00319579,0.00319579, m0=-0.579617,-0.00613592 m1=1.04984,0.00613592 m2=-2.76226,0.00818123 m3=0.569179,-0.00613592 m4=1.04739,0 m5=-2.7561,0.00409062 m6=-0.56958,-0.00613592 m7=1.03999,0.00306796 m8=-2.75383,0 m9=0.574739,0 m10=1.04777,-0.00613592 m11=-2.75291,0.00204531 m12=0.105174,0 m13=-0.62584,0 m14=-0.0535455,-0.0122718 m15=-0.847524,-0.0122718 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+HDC_EXIT=0
+COMMAND: /data/local/tmp/as2w_field/cpro_ubuntu.sh /bin/bash -lc 'cd /root/as2w_deploy && env LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib ./build-sdk2/as2w_sdk2 motion-mode eth0'
+MotionSwitcher CheckMode rc=0 form=1 name=ai
+HDC_EXIT=0
+COMMAND: /data/local/tmp/as2w_field/cpro_ubuntu.sh /bin/bash -lc 'cd /root/as2w_deploy && env LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib ./build-sdk2/as2w_sdk2 sport-command eth0 get-state'
+auto_recovery_switch=true
+fsm_id=0
+fsm_name=ai_damping
+process_state=active
+speed_level=0
+Sport API rc=0
+HDC_EXIT=0

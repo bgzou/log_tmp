@@ -1,0 +1,16 @@
+2026-11-09 CPRO Ubuntu read-only SportModeState eth0 via isolated mount+UTS namespaces
+Stage: sport-state
+Started: 2026-11-09T09:23:58+08:00
+Command: ./build-sdk2/as2w_sdk2 sport-state eth0 10
+sport packets=21 mode=0 velocity=-0.000352304,0.000260932,0.00028765
+sport packets=41 mode=0 velocity=6.35071e-05,0.000175451,0.00105918
+sport packets=61 mode=0 velocity=2.22436e-05,5.69693e-05,0.00121437
+sport packets=81 mode=0 velocity=-0.000336033,-0.000402871,0.000580899
+sport packets=101 mode=0 velocity=0.000244871,-0.000388248,-0.0010636
+sport packets=121 mode=0 velocity=-0.000224071,-0.000501676,0.000391352
+sport packets=141 mode=0 velocity=0.000323757,-0.000410809,-0.000323432
+sport packets=161 mode=0 velocity=-7.78852e-05,0.000237484,0.000830603
+sport packets=181 mode=0 velocity=-0.000111057,0.000323308,1.85192e-05
+sport packets=201 mode=0 velocity=-0.000165509,4.76287e-05,0.00200723
+Exit code: 0
+Finished: 2026-11-09T09:24:09+08:00

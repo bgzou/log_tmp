@@ -1,0 +1,80 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-debug-validation
+[  2%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[  4%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214.dir/r214_controller.cpp.o
+[  6%] Building CXX object deploy/robots/as2w/r249/CMakeFiles/as2w_r249.dir/r249_controller.cpp.o
+[  9%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270.dir/r270_controller.cpp.o
+[ 11%] Linking CXX static library libas2w_policy.a
+[ 11%] Built target as2w_policy
+[ 13%] Building CXX object deploy/robots/as2w/r284/CMakeFiles/as2w_r284.dir/r284_controller.cpp.o
+[ 15%] Linking CXX static library libas2w_r214.a
+[ 15%] Built target as2w_r214
+[ 18%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199.dir/r1199_controller.cpp.o
+[ 20%] Linking CXX static library libas2w_r249.a
+[ 20%] Built target as2w_r249
+[ 22%] Linking CXX static library libas2w_r270.a
+[ 25%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick.dir/r1199_controller.cpp.o
+[ 25%] Built target as2w_r270
+[ 27%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 29%] Linking CXX static library libas2w_r284.a
+[ 29%] Built target as2w_r284
+[ 31%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 34%] Linking CXX executable as2w_deploy
+[ 34%] Built target as2w_deploy
+[ 36%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 38%] Linking CXX executable as2w_bench
+[ 38%] Built target as2w_bench
+[ 40%] Linking CXX executable as2w_controller_test
+[ 43%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_replay.dir/replay.cpp.o
+[ 43%] Built target as2w_controller_test
+[ 45%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/__/common/as2w_publish.cpp.o
+[ 47%] Linking CXX static library libas2w_r1199.a
+[ 47%] Built target as2w_r1199
+[ 50%] Building CXX object deploy/robots/as2w/r249/CMakeFiles/as2w_r249_smoke.dir/smoke.cpp.o
+[ 52%] Linking CXX static library libas2w_r1199_joystick.a
+[ 54%] Linking CXX executable as2w_r214_replay
+[ 54%] Built target as2w_r1199_joystick
+[ 54%] Built target as2w_r214_replay
+[ 56%] Building CXX object deploy/robots/as2w/r249/CMakeFiles/as2w_r249_publish.dir/__/common/as2w_publish.cpp.o
+[ 59%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_smoke.dir/smoke.cpp.o
+[ 61%] Linking CXX executable as2w_r249_smoke
+[ 61%] Built target as2w_r249_smoke
+[ 63%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_publish.dir/__/common/as2w_publish.cpp.o
+[ 65%] Linking CXX executable as2w_r270_smoke
+[ 65%] Built target as2w_r270_smoke
+[ 68%] Building CXX object deploy/robots/as2w/r284/CMakeFiles/as2w_r284_smoke.dir/smoke.cpp.o
+[ 70%] Linking CXX executable as2w_r284_smoke
+[ 70%] Built target as2w_r284_smoke
+[ 72%] Building CXX object deploy/robots/as2w/r284/CMakeFiles/as2w_r284_publish.dir/__/common/as2w_publish.cpp.o
+/root/as2w_deploy/deploy/robots/as2w/common/as2w_publish.cpp: In lambda function:
+/root/as2w_deploy/deploy/robots/as2w/common/as2w_publish.cpp:2218:61: error: ‘const struct as2w_r284_deploy::Config’ has no member named ‘dt’
+ 2218 |                         slewed_command, desired_cmd, config.dt);
+      |                                                             ^~
+/root/as2w_deploy/deploy/robots/as2w/common/as2w_publish.cpp:2236:68: error: ‘const struct as2w_r284_deploy::Config’ has no member named ‘dt’
+ 2236 |                     targets = policy_lowpass.apply(targets, config.dt, true);
+      |                                                                    ^~
+/root/as2w_deploy/deploy/robots/as2w/common/as2w_publish.cpp:2318:68: error: ‘const struct as2w_r284_deploy::Config’ has no member named ‘dt’
+ 2318 |                     targets = policy_lowpass.apply(targets, config.dt, false);
+      |                                                                    ^~
+gmake[2]: *** [deploy/robots/as2w/r284/CMakeFiles/as2w_r284_publish.dir/build.make:76: deploy/robots/as2w/r284/CMakeFiles/as2w_r284_publish.dir/__/common/as2w_publish.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:1350: deploy/robots/as2w/r284/CMakeFiles/as2w_r284_publish.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] Linking CXX executable as2w_r214_publish
+[ 75%] Built target as2w_r214_publish
+[ 77%] Linking CXX executable as2w_r249_publish
+[ 77%] Built target as2w_r249_publish
+[ 79%] Linking CXX executable as2w_r270_publish
+[ 79%] Built target as2w_r270_publish
+gmake: *** [Makefile:101: all] Error 2

@@ -1,0 +1,26 @@
+﻿Stage: service-list
+Started: 2026-11-09T23:37:55+08:00
+Command: ./build-sdk2/as2w_sdk2 service-list eth0
+RobotState ServiceList rc=0 count=20
+service name=4gcm status=0 protect=1
+service name=ai_sport status=0 protect=0
+service name=audio_hub status=0 protect=0
+service name=audio_player_service status=0 protect=0
+service name=bashrunner status=0 protect=0
+service name=basic_service status=0 protect=1
+service name=chat_go status=0 protect=0
+service name=lidar_driver status=0 protect=0
+service name=log_system status=0 protect=0
+service name=motion_switcher status=0 protect=0
+service name=net_switcher status=0 protect=0
+service name=ota_box status=1 protect=0
+service name=robot_state status=0 protect=1
+service name=robot_type_service status=0 protect=0
+service name=utrack status=0 protect=0
+service name=video_hub status=0 protect=0
+service name=vui_service status=0 protect=0
+service name=webrtc_bridge status=0 protect=1
+service name=webrtc_multicast_responder status=0 protect=0
+service name=webrtc_signal_server status=0 protect=1
+Exit code: 0
+Finished: 2026-11-09T23:37:55+08:00

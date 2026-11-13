@@ -1,0 +1,6 @@
+﻿Stage: motion-mode
+Started: 2026-11-10T00:27:32+08:00
+Command: ./build-sdk2/as2w_sdk2 motion-mode eth0
+MotionSwitcher CheckMode rc=0 form=1 name=
+Exit code: 0
+Finished: 2026-11-10T00:27:32+08:00

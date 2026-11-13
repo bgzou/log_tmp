@@ -1,0 +1,48 @@
+===== residual publisher processes (via /proc) =====
+none
+
+===== MotionSwitcher CheckMode (motion-mode) =====
+MotionSwitcher CheckMode rc=0 form=1 name=ai
+
+===== Sport get-state (field.sh sport-command get-state) =====
+Stage: sport-command
+Started: 2026-11-11T16:00:11+08:00
+Command: ./build-sdk2/as2w_sdk2 sport-command eth0 get-state
+auto_recovery_switch=true
+fsm_id=0
+fsm_name=ai_damping
+process_state=active
+speed_level=0
+Sport API rc=0
+Exit code: 0
+Finished: 2026-11-11T16:00:11+08:00
+
+===== LowState 2s rate + mode_machine =====
+low packets=1042 tick=614979 mode_pr=0 mode_machine=2 imu_wxyz=0.998876,0.000737511,-0.00165705,-0.0473642, gyro=0.00319579,-0.00852211,-0.00213053, m0=-0.550406,0 m1=1.01067,-0.00306796 m2=-2.7623,-0.00409062 m3=0.537439,0.00306796 m4=1.01466,-0.00613592 m5=-2.76838,-0.00204531 m6=-0.577292,-0.00306796 m7=1.09554,-0.00306796 m8=-2.74923,-0.00613592 m9=0.592153,-0.00306796 m10=1.08847,0.00613592 m11=-2.74144,0.00409062 m12=0.161715,0 m13=-0.80081,-0.0122718 m14=-0.167923,-0.0122718 m15=-0.291001,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+low packets=2091 tick=615981 mode_pr=0 mode_machine=2 imu_wxyz=0.998873,0.000754673,-0.0018518,-0.0474114, gyro=-0.00745685,0.00639159,0.0106526, m0=-0.550382,0 m1=1.01066,0 m2=-2.7623,-0.00409062 m3=0.537427,0.00306796 m4=1.01466,-0.0153398 m5=-2.76839,-0.00613592 m6=-0.577286,-0.00920388 m7=1.09556,0.00920388 m8=-2.74921,0 m9=0.592177,0.00306796 m10=1.08846,-0.00920388 m11=-2.74144,0.00818123 m12=0.161715,0 m13=-0.800762,0.0122718 m14=-0.167899,0 m15=-0.290977,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+as2w_sdk2: /home/unitree/dev/cyclonedds__noshm/cyclonedds-cxx-0.10.2/src/ddscxx/src/org/eclipse/cyclonedds/core/EntityDelegate.cpp:255: void org::eclipse::cyclonedds::core::EntityDelegate::prevent_callbacks(): Assertion `false' failed.
+/tmp/p3_baseline.sh: line 23: 30629 Aborted                 (core dumped) ./build-sdk2/as2w_sdk2 low-state eth0 rt/lowstate 2 2>&1
+
+===== LowCapture 2s x200ms (16-axis q/dq/mode, last sample) =====
+/tmp/p3_baseline.sh: line 27: 30639 Aborted                 (core dumped) ./build-sdk2/as2w_sdk2 low-capture eth0 rt/lowstate 2 200 2>&1
+     30640 Done                    | grep "LOW_SAMPLE," > /tmp/p3_cap.txt
+sample_count=10
+tick=618031 mode_pr=0 mode_machine=2 quat_w=0.9989
+slot00 q=-0.5504 dq=-0.0061 mode=1
+slot01 q=1.0107 dq=-0.0031 mode=1
+slot02 q=-2.7623 dq=-0.0061 mode=1
+slot03 q=0.5374 dq=0.0000 mode=1
+slot04 q=1.0147 dq=-0.0031 mode=1
+slot05 q=-2.7684 dq=0.0020 mode=1
+slot06 q=-0.5773 dq=0.0061 mode=1
+slot07 q=1.0956 dq=-0.0031 mode=1
+slot08 q=-2.7492 dq=-0.0061 mode=1
+slot09 q=0.5922 dq=0.0000 mode=1
+slot10 q=1.0885 dq=0.0000 mode=1
+slot11 q=-2.7414 dq=0.0000 mode=1
+slot12 q=0.1617 dq=0.0245 mode=1
+slot13 q=-0.8008 dq=0.0123 mode=1
+slot14 q=-0.1679 dq=0.0123 mode=1
+slot15 q=-0.2910 dq=0.0245 mode=1
+
+===== BASELINE DONE =====

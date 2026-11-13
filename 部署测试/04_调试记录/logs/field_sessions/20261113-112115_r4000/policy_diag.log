@@ -1,0 +1,1 @@
+POLICY_DIAG_SCHEMA,phase,t_since_walk_s,cmd_vx,cmd_vy,cmd_wz,tick,raw_0..15,wrapped_0..15,target_q_0..11,target_dq_12..15,stand_bias_0..11,bias_scale,hold_frames

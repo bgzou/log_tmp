@@ -1,0 +1,18 @@
+{
+ "config": {
+  "wheel_source": "recorded",
+  "leg_source": "fixed",
+  "friction_scale": 1.0,
+  "wheel_kd_scale": 10.0,
+  "turn_gain": 1.0,
+  "t0_tick": 1694429,
+  "dur_s": 11.6
+ },
+ "frames": 116,
+ "terminated": false,
+ "nonwheel_contact": true,
+ "meas_diff_mean_1s": -0.3103921048310992,
+ "meas_diff_mean_3_5s": -1.242575869619589,
+ "meas_diff_mean_last5": -1.3426771046047632,
+ "yaw_mean": -0.10559339883853182
+}

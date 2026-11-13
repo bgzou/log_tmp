@@ -1,0 +1,13 @@
+[field-session] mode=forward monitor=30s dry_run=1 dir=/root/field_sessions/20261111-230412_forward-dry-run
+[field-session] step1 binary: build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_forward_publish
+dfd67d90ddfc9067e15fd69e439aaaa096de558bcfd10bc36f3dd722efffb825  deploy/robots/as2w/r214/r214_publish.cpp
+1dca78ee45271669238e7d47b0fbefc6f10e4fb59e31e0fec841aa6d65cf53dc  deploy/robots/as2w/r1199/r1199_controller.cpp
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+b22c87f1863c2077ac87eb7f7cdd0d8d793cb2907cef9a624734e28382892c72  build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_forward_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1043 tick=8381952 mode_pr=0 mode_machine=2 imu_wxyz=0.996406,0.00153733,0.00233487,0.0846576, gyro=-0.00852211,-0.00319579,0.00319579, m0=-0.609745,0.00306796 m1=0.952626,-0.00306796 m2=-2.71219,0 m3=0.58477,0 m4=0.964389,-0.00613592 m5=-2.73967,0 m6=-0.556152,0.00306796 m7=1.02414,0 m8=-2.74794,-0.00409062 m9=0.536012,0.00613592 m10=1.0003,0 m11=-2.76035,-0.00204531 m12=-2.02473,0 m13=-3.13455,0 m14=-2.14407,0.0122718 m15=-3.39578,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2005,2090,0,8384280,0,2,0.99641,0.00144871,0.00217268,0.0846176,-0.00106526,-0.00426106,0.00213053,-0.609727,
+[field-session] step4 packets=2090 16-axis modes={0}
+[field-session] dry-run: steps 1-4 PASS; would now start monitoring + forward launcher

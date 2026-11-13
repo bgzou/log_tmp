@@ -1,0 +1,32 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+ZERO-B TRIAL: A fixed stand; once B enters R214 at forced zero speed, auto-returns and squats; sticks forced neutral.
+Type 'GO' and press Enter to start (nothing else proceeds).
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=5549939 packets=581
+FSM started in Passive startup. A/Y enabled; B once (forced zero speed, auto return+squat). X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 736 frames
+[Passive] → FixStand (A)
+[FixStand] → FixedStand (PD hold; B required for R214)
+[FixedStand] → PolicyHandoff (B accepted: pose_error=0.2746 wheel_dq=0.0122718 upright=0.994948 quiet_dq=0.0306796)
+[PolicyHandoff] → PolicyWalk (zero-speed handoff complete)
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+[PolicyWalk] → Brake (2.5s zero hold cap)
+[Brake] → ReturnStand (A/timeout, wheels stable)
+[ReturnStand] → FixSquat
+[FixSquat] → Passive (auto, squat done + kp decay)
+ZERO-B TRIAL: prone hold complete, stop
+Operator exit; stop.
+Publisher stopped, exit=0
+ZERO_B_TRIAL_REMOTE_RC=0

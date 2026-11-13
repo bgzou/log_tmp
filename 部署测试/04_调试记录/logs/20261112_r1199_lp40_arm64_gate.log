@@ -1,0 +1,150 @@
+bf241a8fa835763c8bf93ae5ea28f1fc1005311976145ffd483bf8edd18aae56  deploy/robots/as2w/common/as2w_publish.cpp
+b246d2b0ae606f4247a63e510f9eacf253237488310f03427dd4e23b4bcb6b26  tools/run_r1199_field_session.sh
+db8b58c6379ef87b076f4dfc3ceea042b7d158e7fdbec126f46b892e5187ccd0  tools/run_r1199_training_contract_trial.sh
+=== BUILD build-r1199-training-contract ===
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r1199-training-contract
+Consolidate compiler generated dependencies of target as2w_r1199
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_r1199_joystick
+[ 10%] Built target as2w_policy
+[ 20%] Built target as2w_r1199
+[ 30%] Built target as2w_r1199_joystick
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_r1199_replay
+[ 40%] Built target as2w_bench
+[ 50%] Built target as2w_controller_test
+[ 60%] Built target as2w_deploy
+[ 70%] Built target as2w_r1199_replay
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_replay
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_publish
+[ 80%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/common/as2w_publish.cpp.o
+[ 85%] Built target as2w_r1199_joystick_replay
+[ 90%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/common/as2w_publish.cpp.o
+[ 95%] Linking CXX executable as2w_r1199_publish
+[ 95%] Built target as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-training-contract
+Test project /root/as2w_deploy/build-r1199-training-contract
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r1199-startup-frame-audit
+8/9 Test #8: r1199-startup-frame-audit ........   Passed    0.09 sec
+    Start 9: r1199-joystick-startup-audit
+9/9 Test #9: r1199-joystick-startup-audit .....   Passed    0.10 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.34 sec
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+3e22749387ff2989e141c797e33238865c91a2ebf32ad73e40cff0be72547eea  build-r1199-training-contract/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+=== BUILD build-r1199-training-contract-debug ===
+[ 10%] Built target as2w_policy
+[ 20%] Built target as2w_r1199_joystick
+[ 30%] Built target as2w_r1199
+[ 40%] Built target as2w_bench
+[ 50%] Built target as2w_deploy
+[ 60%] Built target as2w_controller_test
+[ 70%] Built target as2w_r1199_replay
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_publish
+[ 80%] Built target as2w_r1199_joystick_replay
+[ 85%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/common/as2w_publish.cpp.o
+[ 90%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/common/as2w_publish.cpp.o
+[ 95%] Linking CXX executable as2w_r1199_publish
+[ 95%] Built target as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-training-contract-debug
+Test project /root/as2w_deploy/build-r1199-training-contract-debug
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r1199-startup-frame-audit
+8/9 Test #8: r1199-startup-frame-audit ........   Passed    0.11 sec
+    Start 9: r1199-joystick-startup-audit
+9/9 Test #9: r1199-joystick-startup-audit .....   Passed    0.11 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.36 sec
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+3e22749387ff2989e141c797e33238865c91a2ebf32ad73e40cff0be72547eea  build-r1199-training-contract-debug/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+=== BUILD build-r1199-training-contract-filter ===
+[ 10%] Built target as2w_policy
+[ 20%] Built target as2w_r1199
+[ 30%] Built target as2w_r1199_joystick
+[ 40%] Built target as2w_controller_test
+[ 50%] Built target as2w_deploy
+[ 60%] Built target as2w_bench
+[ 70%] Built target as2w_r1199_replay
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+Consolidate compiler generated dependencies of target as2w_r1199_joystick_publish
+[ 80%] Built target as2w_r1199_joystick_replay
+[ 85%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/common/as2w_publish.cpp.o
+[ 90%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/common/as2w_publish.cpp.o
+[ 95%] Linking CXX executable as2w_r1199_publish
+[ 95%] Built target as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-training-contract-filter
+Test project /root/as2w_deploy/build-r1199-training-contract-filter
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r1199-startup-frame-audit
+8/9 Test #8: r1199-startup-frame-audit ........   Passed    0.10 sec
+    Start 9: r1199-joystick-startup-audit
+9/9 Test #9: r1199-joystick-startup-audit .....   Passed    0.12 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.37 sec
+DEBUG_LOWCMD_RESULT rows=500 dropped=0 file_ok=1
+DEBUG_CAPTURE_AUDIT PASS rows=500 at 500Hz
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+393b99c832fbe3b17af838f2035f82350d196a3a658ab457a88bac44da7d4aee  build-r1199-training-contract-filter/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+R1199_LP40_ARM64_GATE_PASS

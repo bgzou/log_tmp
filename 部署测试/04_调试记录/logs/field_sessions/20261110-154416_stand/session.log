@@ -1,0 +1,8 @@
+[field-session] mode=stand monitor=30s dry_run=1 dir=/root/field_sessions/20261110-154416_stand
+[field-session] step1 binary: build-r214-ab-fsm/deploy/robots/as2w/r214/as2w_r214_publish
+4c84a22ccc9b3c1a659559e925a3b197e4c6eeaab06e01449d30aeba7e2cc672  deploy/robots/as2w/r214/r214_publish.cpp
+08141e203cb8ba445d223c20e7eeb883db280b2b2be6aacdbf7d1dcee4bf3e3f  build-r214-ab-fsm/deploy/robots/as2w/r214/as2w_r214_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; firmware acceptance unknown
+[field-session] step2 probe: low packets=1086 tick=1064117 mode_pr=0 mode_machine=2 imu_wxyz=0.999951,0.00213223,-0.000737055,0.00959732, gyro=-0.00106526,-0.00213053,-0.00426106, m0=-0.579599,0 m1=1.05064,-0.00306796 m2=-2.76049,0 m3=0.574955,-0.0153398 m4=1.04782,-0.00306796 m5=-2.75698,0.00613592 m6=-0.567819,0.00613592 m7=1.04005,0.00613592 m8=-2.75427,-0.00613592 m9=0.574416,0 m10=1.04111,0 m11=-2.75263,0.00409062 m12=-0.38268,0 m13=-0.48433,0 m14=-0.547368,0 m15=-0.429539,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=ai
+[field-session] dry-run: factory mode (ai); would stand-down-if-standing + ReleaseMode here

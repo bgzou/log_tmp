@@ -1,0 +1,25 @@
+﻿Stage: r152-shadow
+Started: 2026-11-09T15:46:16+08:00
+Command: ./build-r152/deploy/robots/as2w/r152/as2w_r152_shadow models/r152/deploy.yaml eth0 rt/lowstate config/r152_measured.map --imu-wxyz-body-to-world
+shadow_only tick=7083323 FL_hip_q=0 RR_foot_dq=0.003269
+shadow_only tick=7083822 FL_hip_q=0 RR_foot_dq=-0.00392191
+shadow_only tick=7084322 FL_hip_q=0 RR_foot_dq=-0.0072532
+shadow_only tick=7084822 FL_hip_q=0 RR_foot_dq=-0.00618311
+shadow_only tick=7085322 FL_hip_q=0 RR_foot_dq=0.0052855
+shadow_only tick=7085822 FL_hip_q=0 RR_foot_dq=-0.0131005
+shadow_only tick=7086322 FL_hip_q=0 RR_foot_dq=-0.00440916
+shadow_only tick=7086823 FL_hip_q=0 RR_foot_dq=-0.0324467
+shadow_only tick=7087322 FL_hip_q=0 RR_foot_dq=-0.0515304
+shadow_only tick=7087822 FL_hip_q=0 RR_foot_dq=-0.065256
+shadow_only tick=7088323 FL_hip_q=0 RR_foot_dq=-0.0393215
+shadow_only tick=7088822 FL_hip_q=0 RR_foot_dq=-0.0553458
+shadow_only tick=7089322 FL_hip_q=0 RR_foot_dq=-0.0818179
+shadow_only tick=7089822 FL_hip_q=0 RR_foot_dq=-0.0913596
+shadow_only tick=7090322 FL_hip_q=0 RR_foot_dq=-0.0810833
+shadow_only tick=7090822 FL_hip_q=0 RR_foot_dq=-0.0787133
+shadow_only tick=7091322 FL_hip_q=0 RR_foot_dq=-0.0918174
+shadow_only tick=7091822 FL_hip_q=0 RR_foot_dq=-0.0940346
+shadow_only tick=7092322 FL_hip_q=0 RR_foot_dq=-0.105939
+shadow_only tick=7092822 FL_hip_q=0 RR_foot_dq=-0.103318
+Exit code: 0
+Finished: 2026-11-09T15:46:27+08:00

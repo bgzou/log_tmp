@@ -1,0 +1,21 @@
+环境：服务器 192.168.10.163，Ubuntu x86_64；工作副本 /tmp/opencode/r214_zero_b
+权威源码：工作站 SSHFS /home/caolin/as2w_workstation/部署参考/cpp_deploy-as2w
+日期：2026-11-11
+
+本次使用既有增量构建目录，没有 rm -rf，也没有在 SSHFS 上直接全量编译。
+将唯一改动文件 r214_publish.cpp 复制到 /tmp/opencode/r214_zero_b 后执行：
+
+  cmake --build b -j8
+  ctest --test-dir b --output-on-failure
+  b/deploy/robots/as2w/r214/as2w_r214_publish --offline-audit
+  sha256sum deploy/robots/as2w/r214/r214_publish.cpp b/deploy/robots/as2w/r214/as2w_r214_publish
+
+结果：
+
+  100% tests passed, 0 tests failed out of 8
+  Total Test time (real) = 0.25 sec
+  AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; firmware acceptance unknown
+  3a022ca8fa489efc350732a03f5a9283bff730510c72aaa3aaade532612fac63  deploy/robots/as2w/r214/r214_publish.cpp
+  200c4323cd502ce0ee805b9da1acaf526d3c4b3da7a650c23028bfeb4920d58d  b/deploy/robots/as2w/r214/as2w_r214_publish
+
+结论：x86 编译、既有 8 项 CTest、合成启动帧/斜率/守卫审计通过。没有 DDS 发布、ReleaseMode 或机器人动作。合成审计不能替代真机故障注入与阈值验收。

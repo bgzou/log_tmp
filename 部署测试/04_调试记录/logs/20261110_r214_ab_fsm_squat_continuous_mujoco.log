@@ -1,0 +1,16 @@
+variant=T2 route=A_Y seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.373->0.163 min_up=0.998 contact=15.8N
+variant=T2 route=A_Y seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.364->0.135 min_up=0.995 contact=17.5N
+variant=T2 route=A_Y seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N
+  Y_fixsquat: h=0.363->0.131 min_up=0.995 contact=20.3N
+saved results/r214_ab_fsm_squat_continuous_20261110.json

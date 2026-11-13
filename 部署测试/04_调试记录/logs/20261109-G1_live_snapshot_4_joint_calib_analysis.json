@@ -1,0 +1,465 @@
+{
+  "input": "D:\\Projects\\Athena\\运动控制\\Collie\\AS2-W_CPRO\\部署测试\\04_调试记录\\logs\\20261109-G1_live_snapshot_4.log",
+  "samples": 8915,
+  "rejected_rows": 1,
+  "thresholds": {
+    "leg_dq_rad_s": 0.12,
+    "wheel_dq_rad_s": 0.3,
+    "gap_s": 1.5,
+    "min_segment_s": 0.25,
+    "min_static_s": 1.0
+  },
+  "segments": [
+    {
+      "number": 1,
+      "start_s": 32.41,
+      "end_s": 47.13,
+      "duration_s": 14.72,
+      "dominant_slot": 12,
+      "second_slot": 0,
+      "dominant_excursion_slot": 0,
+      "mean_gyro_z_rad_s": 0.001956,
+      "slots": [
+        {
+          "slot": 0,
+          "delta_q_rad": 0.005249,
+          "direction": "+",
+          "mean_dq_rad_s": -0.000864,
+          "q_range_rad": 0.22293
+        },
+        {
+          "slot": 1,
+          "delta_q_rad": -0.003814,
+          "direction": "-",
+          "mean_dq_rad_s": 0.001466,
+          "q_range_rad": 0.112413
+        },
+        {
+          "slot": 2,
+          "delta_q_rad": -0.00523,
+          "direction": "-",
+          "mean_dq_rad_s": -0.001958,
+          "q_range_rad": 0.00526
+        },
+        {
+          "slot": 3,
+          "delta_q_rad": -1.5e-05,
+          "direction": "-",
+          "mean_dq_rad_s": -0.002724,
+          "q_range_rad": 0.000305
+        },
+        {
+          "slot": 4,
+          "delta_q_rad": -0.00055,
+          "direction": "-",
+          "mean_dq_rad_s": -0.003793,
+          "q_range_rad": 0.00059
+        },
+        {
+          "slot": 5,
+          "delta_q_rad": -6.5e-05,
+          "direction": "-",
+          "mean_dq_rad_s": 0.001091,
+          "q_range_rad": 0.00014
+        },
+        {
+          "slot": 6,
+          "delta_q_rad": 0.001375,
+          "direction": "+",
+          "mean_dq_rad_s": 0.002881,
+          "q_range_rad": 0.002283
+        },
+        {
+          "slot": 7,
+          "delta_q_rad": 0.00018,
+          "direction": "+",
+          "mean_dq_rad_s": 0.001841,
+          "q_range_rad": 0.00031
+        },
+        {
+          "slot": 8,
+          "delta_q_rad": -1e-05,
+          "direction": "-",
+          "mean_dq_rad_s": -0.002206,
+          "q_range_rad": 5e-05
+        },
+        {
+          "slot": 9,
+          "delta_q_rad": 0.001373,
+          "direction": "+",
+          "mean_dq_rad_s": 0.001858,
+          "q_range_rad": 0.002247
+        },
+        {
+          "slot": 10,
+          "delta_q_rad": -0.001729,
+          "direction": "-",
+          "mean_dq_rad_s": -0.002843,
+          "q_range_rad": 0.001846
+        },
+        {
+          "slot": 11,
+          "delta_q_rad": 0.0,
+          "direction": "0",
+          "mean_dq_rad_s": 0.002404,
+          "q_range_rad": 5e-05
+        },
+        {
+          "slot": 12,
+          "delta_q_rad": 0.178529,
+          "direction": "+",
+          "mean_dq_rad_s": 0.011539,
+          "q_range_rad": 0.17926
+        },
+        {
+          "slot": 13,
+          "delta_q_rad": 0.00048,
+          "direction": "+",
+          "mean_dq_rad_s": 0.000725,
+          "q_range_rad": 0.00106
+        },
+        {
+          "slot": 14,
+          "delta_q_rad": 0.000575,
+          "direction": "+",
+          "mean_dq_rad_s": 5.8e-05,
+          "q_range_rad": 0.000911
+        },
+        {
+          "slot": 15,
+          "delta_q_rad": 0.000564,
+          "direction": "+",
+          "mean_dq_rad_s": -0.0015,
+          "q_range_rad": 0.002564
+        }
+      ]
+    }
+  ],
+  "static_windows": [
+    {
+      "start_s": 0.02,
+      "end_s": 32.4,
+      "duration_s": 32.38,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.572736,
+        0.993637,
+        -2.756361,
+        0.554034,
+        1.031122,
+        -2.768033,
+        -0.569493,
+        1.011071,
+        -2.757098,
+        0.577677,
+        0.958165,
+        -2.715468,
+        -0.16656,
+        1.915839,
+        -0.459319,
+        -0.198381
+      ]
+    },
+    {
+      "start_s": 33.62,
+      "end_s": 35.09,
+      "duration_s": 1.47,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.786514,
+        1.110437,
+        -2.75713,
+        0.554256,
+        1.030959,
+        -2.7681,
+        -0.567588,
+        1.01123,
+        -2.757099,
+        0.579497,
+        0.958168,
+        -2.71547,
+        -0.163536,
+        1.915906,
+        -0.45913,
+        -0.199391
+      ]
+    },
+    {
+      "start_s": 39.49,
+      "end_s": 40.79,
+      "duration_s": 1.3,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.786429,
+        1.003393,
+        -2.761594,
+        0.554199,
+        1.030723,
+        -2.768122,
+        -0.567587,
+        1.011257,
+        -2.757101,
+        0.579616,
+        0.95785,
+        -2.715468,
+        0.012394,
+        1.916507,
+        -0.45895,
+        -0.199607
+      ]
+    },
+    {
+      "start_s": 42.43,
+      "end_s": 43.61,
+      "duration_s": 1.18,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.568029,
+        1.00149,
+        -2.761599,
+        0.554112,
+        1.030588,
+        -2.768114,
+        -0.567695,
+        1.01123,
+        -2.7571,
+        0.579326,
+        0.95653,
+        -2.715468,
+        0.012379,
+        1.916377,
+        -0.458899,
+        -0.197945
+      ]
+    },
+    {
+      "start_s": 47.14,
+      "end_s": 89.16,
+      "duration_s": 42.02,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.569213,
+        1.000203,
+        -2.761603,
+        0.5541,
+        1.030569,
+        -2.768105,
+        -0.567932,
+        1.011226,
+        -2.757101,
+        0.579303,
+        0.956533,
+        -2.715471,
+        0.012046,
+        1.916406,
+        -0.458848,
+        -0.198037
+      ]
+    }
+  ],
+  "static_anchors": {
+    "prone_candidate": {
+      "start_s": 47.14,
+      "end_s": 89.16,
+      "duration_s": 42.02,
+      "posture_candidate": "prone_candidate",
+      "q_mean_rad": [
+        -0.569213,
+        1.000203,
+        -2.761603,
+        0.5541,
+        1.030569,
+        -2.768105,
+        -0.567932,
+        1.011226,
+        -2.757101,
+        0.579303,
+        0.956533,
+        -2.715471,
+        0.012046,
+        1.916406,
+        -0.458848,
+        -0.198037
+      ]
+    }
+  },
+  "turn_checks": [],
+  "mapping_template": [
+    {
+      "contract_index": 0,
+      "joint_name": "FL_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 1,
+      "joint_name": "FR_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 2,
+      "joint_name": "RL_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 3,
+      "joint_name": "RR_hip",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 4,
+      "joint_name": "FL_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 5,
+      "joint_name": "FR_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 6,
+      "joint_name": "RL_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 7,
+      "joint_name": "RR_thigh",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 8,
+      "joint_name": "FL_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 9,
+      "joint_name": "FR_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 10,
+      "joint_name": "RL_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 11,
+      "joint_name": "RR_calf",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 12,
+      "joint_name": "FL_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 13,
+      "joint_name": "FR_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 14,
+      "joint_name": "RL_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    },
+    {
+      "contract_index": 15,
+      "joint_name": "RR_foot",
+      "activity_segment": null,
+      "dds_slot": null,
+      "physical_positive_direction": null,
+      "sign": null,
+      "prone_q_rad": null,
+      "standing_q_rad": null,
+      "evidence": null
+    }
+  ]
+}

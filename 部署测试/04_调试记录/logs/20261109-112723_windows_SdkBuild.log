@@ -1,0 +1,60 @@
+﻿Stage: sdk-build
+Started: 2026-11-09T11:27:24+08:00
+Command: bash tools/build_on_cpro.sh
+recovery-r09 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r12 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r13 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r14 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-2000 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-3000 ONNX SHA256 OK; actor SHA256 and header OK
+checked 6 models
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build
+Consolidate compiler generated dependencies of target as2w_policy
+[ 25%] Built target as2w_policy
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_controller_test
+[ 50%] Built target as2w_deploy
+[ 75%] Built target as2w_bench
+[100%] Built target as2w_controller_test
+Internal ctest changing into directory: /root/as2w_deploy/build
+Test project /root/as2w_deploy/build
+    Start 1: recovery-r09
+1/7 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/7 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/7 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/7 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/7 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/7 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/7 Test #7: controller .......................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   0.16 sec
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-sdk2
+Consolidate compiler generated dependencies of target as2w_policy
+Consolidate compiler generated dependencies of target as2w_sport_gamepad
+[ 16%] Built target as2w_policy
+[ 33%] Built target as2w_sport_gamepad
+Consolidate compiler generated dependencies of target as2w_deploy
+Consolidate compiler generated dependencies of target as2w_bench
+Consolidate compiler generated dependencies of target as2w_controller_test
+Consolidate compiler generated dependencies of target as2w_sdk2
+[ 50%] Built target as2w_bench
+[ 66%] Built target as2w_deploy
+[ 83%] Built target as2w_controller_test
+[ 91%] Building CXX object CMakeFiles/as2w_sdk2.dir/deploy/robots/as2w/src/diagnostics.cpp.o
+[100%] Linking CXX executable as2w_sdk2
+[100%] Built target as2w_sdk2
+Exit code: 0
+Finished: 2026-11-09T11:27:36+08:00

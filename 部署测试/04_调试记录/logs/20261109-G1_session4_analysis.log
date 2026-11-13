@@ -1,0 +1,3 @@
+samples=30000 rejected=0 segments=5 static_windows=8 turns=0
+json=D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试\04_调试记录\logs\20261109-143736_windows_LowCaptureFast_joint_calib_analysis.json
+markdown=D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试\04_调试记录\logs\20261109-143736_windows_LowCaptureFast_joint_calib_analysis.md

@@ -1,0 +1,64 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (2.8s)
+-- Generating done (0.3s)
+-- Build files have been written to: /tmp/opencode/r270-zero-b
+[  7%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270.dir/r270_controller.cpp.o
+[ 14%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[ 21%] Linking CXX static library libas2w_policy.a
+[ 21%] Built target as2w_policy
+[ 42%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 42%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 42%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 50%] Linking CXX static library libas2w_r270.a
+[ 50%] Built target as2w_r270
+[ 57%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_smoke.dir/smoke.cpp.o
+[ 64%] Building CXX object deploy/robots/as2w/r270/CMakeFiles/as2w_r270_publish.dir/__/r214/r214_publish.cpp.o
+[ 71%] Linking CXX executable as2w_controller_test
+[ 71%] Built target as2w_controller_test
+[ 78%] Linking CXX executable as2w_deploy
+[ 78%] Built target as2w_deploy
+[ 85%] Linking CXX executable as2w_bench
+[ 85%] Built target as2w_bench
+[ 92%] Linking CXX executable as2w_r270_smoke
+[ 92%] Built target as2w_r270_smoke
+[100%] Linking CXX executable as2w_r270_publish
+[100%] Built target as2w_r270_publish
+Internal ctest changing into directory: /tmp/opencode/r270-zero-b
+Test project /tmp/opencode/r270-zero-b
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    1.20 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    1.04 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    1.32 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.87 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    1.98 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    1.10 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.92 sec
+    Start 8: r270-controller-smoke
+8/9 Test #8: r270-controller-smoke ............Subprocess aborted***Exception:   3.50 sec
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  R270 low-speed hind gate not applied
+
+    Start 9: r270-startup-frame-audit
+9/9 Test #9: r270-startup-frame-audit .........   Passed    1.44 sec
+
+89% tests passed, 1 tests failed out of 9
+
+Total Test time (real) =  13.38 sec
+
+The following tests FAILED:
+	  8 - r270-controller-smoke (Subprocess aborted)
+Errors while running CTest

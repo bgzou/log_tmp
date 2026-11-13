@@ -1,0 +1,7 @@
+Stage: sport-state
+Started: 2026-11-09T09:32:26+08:00
+Command: ./build-sdk2/as2w_sdk2 sport-state eth0 2
+sport packets=21 mode=3 velocity=0.0266682,-0.0199718,0.000213102
+sport packets=41 mode=3 velocity=-0.00724495,0.00299964,0.00814632
+Exit code: 0
+Finished: 2026-11-09T09:32:28+08:00

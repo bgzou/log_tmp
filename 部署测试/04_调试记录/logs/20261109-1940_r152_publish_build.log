@@ -1,0 +1,24 @@
+[  6%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[ 12%] Building CXX object deploy/robots/as2w/r152/CMakeFiles/as2w_r152.dir/r152_controller.cpp.o
+[ 18%] Linking CXX static library libas2w_policy.a
+[ 18%] Built target as2w_policy
+[ 25%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 31%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 37%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 43%] Linking CXX executable as2w_controller_test
+[ 43%] Built target as2w_controller_test
+[ 50%] Linking CXX executable as2w_deploy
+[ 56%] Linking CXX executable as2w_bench
+[ 56%] Built target as2w_deploy
+[ 56%] Built target as2w_bench
+[ 62%] Linking CXX static library libas2w_r152.a
+[ 62%] Built target as2w_r152
+[ 68%] Building CXX object deploy/robots/as2w/r152/CMakeFiles/as2w_r152_shadow.dir/shadow.cpp.o
+[ 81%] Building CXX object deploy/robots/as2w/r152/CMakeFiles/as2w_r152_publish.dir/r152_publish.cpp.o
+[ 81%] Building CXX object deploy/robots/as2w/r152/CMakeFiles/as2w_r152_replay.dir/replay.cpp.o
+[ 87%] Linking CXX executable as2w_r152_replay
+[ 87%] Built target as2w_r152_replay
+[ 93%] Linking CXX executable as2w_r152_shadow
+[ 93%] Built target as2w_r152_shadow
+[100%] Linking CXX executable as2w_r152_publish
+[100%] Built target as2w_r152_publish

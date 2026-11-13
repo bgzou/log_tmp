@@ -1,0 +1,115 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+FSM motion ENABLED.
+Type 'GO' and press Enter to start (nothing else proceeds).
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=6083634 packets=613
+FSM started in Passive startup. A/B/Y enabled. X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 747 frames
+[Passive] → FixStand (A)
+[FixStand] → FixedStand (PD hold; B required for R214)
+[FixedStand] → PolicyHandoff (B accepted: pose_error=0.270538 wheel_dq=0.0122718 upright=0.995203 quiet_dq=0.0245437)
+[PolicyHandoff] → PolicyWalk (zero-speed handoff complete)
+WALK_CMD vx=0.0151228 vy=0 wz=0 ly=0.128544 lx=0 rx=0
+WALK_CMD vx=0.054603 vy=0 wz=0 ly=0.464125 lx=0 rx=0
+WALK_CMD vx=0.0630405 vy=0 wz=0 ly=0.535844 lx=0 rx=0
+WALK_CMD vx=0.0626742 vy=0 wz=0 ly=0.532731 lx=0 rx=0
+WALK_CMD vx=0.0838361 vy=0 wz=0 ly=0.712607 lx=0 rx=0
+WALK_CMD vx=0.0961225 vy=0 wz=0 ly=0.817042 lx=0 rx=0
+WALK_CMD vx=0.095031 vy=0 wz=0 ly=0.807764 lx=0 rx=0
+WALK_CMD vx=0.0959035 vy=0 wz=0 ly=0.81518 lx=0 rx=0
+WALK_CMD vx=0.0959035 vy=0 wz=0 ly=0.81518 lx=0 rx=0
+WALK_CMD vx=0.0965606 vy=0 wz=0 ly=0.820765 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.857845 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.859676 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.860317 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.859676 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.859676 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.861538 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.860927 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.860317 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.860317 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.858455 lx=0 rx=0
+WALK_CMD vx=0.0694386 vy=0 wz=0 ly=0.590228 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.872097 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.902768 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.898038 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.898618 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.901578 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.903928 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.897458 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0.0386077 vy=0 wz=0 ly=0.328166 lx=0 rx=0
+WALK_CMD vx=0.0986681 vy=0 wz=0 ly=0.838679 lx=0 rx=0
+WALK_CMD vx=0.098959 vy=0 wz=0 ly=0.841151 lx=0 rx=0
+WALK_CMD vx=0.0988118 vy=0 wz=0 ly=0.8399 lx=0 rx=0
+WALK_CMD vx=0.0988118 vy=0 wz=0 ly=0.8399 lx=0 rx=0
+WALK_CMD vx=0.0987399 vy=0 wz=0 ly=0.83929 lx=0 rx=0
+WALK_CMD vx=0.0987399 vy=0 wz=0 ly=0.83929 lx=0 rx=0
+WALK_CMD vx=0.0988118 vy=0 wz=0 ly=0.8399 lx=0 rx=0
+WALK_CMD vx=0.098959 vy=0 wz=0 ly=0.841151 lx=0 rx=0
+WALK_CMD vx=0.098959 vy=0 wz=0 ly=0.841151 lx=0 rx=0
+WALK_CMD vx=0.0990308 vy=0 wz=0 ly=0.841762 lx=0 rx=0
+WALK_CMD vx=0.0991026 vy=0 wz=0 ly=0.842372 lx=0 rx=0
+WALK_CMD vx=0.0990308 vy=0 wz=0 ly=0.841762 lx=0 rx=0
+WALK_CMD vx=0.098959 vy=0 wz=0 ly=0.841151 lx=0 rx=0
+WALK_CMD vx=0.098959 vy=0 wz=0 ly=0.841151 lx=0 rx=0
+WALK_CMD vx=0.099178 vy=0 wz=0 ly=0.843013 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0.0161389 vy=0 wz=0 ly=0.137181 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0.0836889 vy=0 wz=0 ly=0.711356 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=-0.0212122 vy=0 wz=0 ly=-0.180303 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.960509 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.911588 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.888028 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.949889 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.853511 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.862148 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.860927 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.860927 lx=0 rx=0
+WALK_CMD vx=0.1 vy=0 wz=0 ly=0.863399 lx=0 rx=0
+WALK_CMD vx=0.0961943 vy=0 wz=0 ly=0.817652 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=-0.0826369 vy=0 wz=0 ly=-0.702414 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.916318 lx=0 rx=0
+WALK_CMD vx=-0.0611447 vy=0 wz=0 ly=-0.51973 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.971099 lx=0 rx=0
+WALK_CMD vx=-0.1 vy=0 wz=0 ly=-0.875057 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+[PolicyWalk] → Brake (A)
+[Brake] → ReturnStand (A/timeout, wheels stable)
+[ReturnStand] → FixSquat
+[FixSquat] → Passive (auto, squat done + kp decay)
+MOTION SESSION: prone hold complete, stop
+Operator exit; stop.
+Publisher stopped, exit=0
+MOTION_TRIAL_REMOTE_RC=0

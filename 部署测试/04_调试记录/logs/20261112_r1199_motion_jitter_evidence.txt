@@ -1,0 +1,20 @@
+quiet_zero {'window_capture_s': '27-35', 'n': 800, 'leg_dq_rms_rad_s': 0.006609937530901057, 'leg_dq_peak_rad_s': 0.0337476, 'leg_q_hp_rms_rad': 8.483481210061654e-06, 'leg_tau_hp_rms_Nm': 0.018075413088301587, 'leg_tau_hp_rms_by_motor_Nm': [0.021976132078232673, 0.01934855408579334, 0.01516338956047377, 0.010795472168939946, 0.01425348166694326, 0.012364308474977537, 0.013833570184161268, 0.013371034908182028, 0.03288961668984706, 0.020910126269331624, 0.018006972884431448, 0.012143217439944176]}
+sustained_forward {'window_capture_s': '53-67', 'n': 1400, 'leg_dq_rms_rad_s': 0.11127835843296106, 'leg_dq_peak_rad_s': 0.720971, 'leg_q_hp_rms_rad': 0.000814263801432798, 'leg_tau_hp_rms_Nm': 0.6798548234344839, 'leg_tau_hp_rms_by_motor_Nm': [0.8212219803230876, 0.6959300992614504, 0.7680333504591176, 0.6638937288800483, 0.6506425199598348, 0.35415627935261496, 0.6225887659504321, 0.40848060294706423, 0.8363149744760885, 0.8056054131616219, 0.6988228541629766, 0.6458056081152243]}
+tau_hp_rms_forward_over_quiet 37.61213202228203
+sustained_forward 1s windows (capture clock; FR hip and all-leg peaks):
+53 FR_hip_dq_rms 0.0968 all_leg_dq_peak 0.5246 FR_hip_tau_range 2.6875
+54 FR_hip_dq_rms 0.0943 all_leg_dq_peak 0.5369 FR_hip_tau_range 2.7375
+55 FR_hip_dq_rms 0.0384 all_leg_dq_peak 0.3528 FR_hip_tau_range 1.9375
+56 FR_hip_dq_rms 0.0104 all_leg_dq_peak 0.135 FR_hip_tau_range 0.6875
+57 FR_hip_dq_rms 0.0097 all_leg_dq_peak 0.0828 FR_hip_tau_range 0.6375
+58 FR_hip_dq_rms 0.0104 all_leg_dq_peak 0.1595 FR_hip_tau_range 1.6375
+59 FR_hip_dq_rms 0.1043 all_leg_dq_peak 0.6412 FR_hip_tau_range 3.225
+60 FR_hip_dq_rms 0.118 all_leg_dq_peak 0.6842 FR_hip_tau_range 3.175
+61 FR_hip_dq_rms 0.1273 all_leg_dq_peak 0.6934 FR_hip_tau_range 3.475
+62 FR_hip_dq_rms 0.086 all_leg_dq_peak 0.678 FR_hip_tau_range 3.125
+63 FR_hip_dq_rms 0.1033 all_leg_dq_peak 0.6351 FR_hip_tau_range 3.225
+64 FR_hip_dq_rms 0.1024 all_leg_dq_peak 0.5093 FR_hip_tau_range 3.425
+65 FR_hip_dq_rms 0.0568 all_leg_dq_peak 0.6473 FR_hip_tau_range 3.425
+66 FR_hip_dq_rms 0.0484 all_leg_dq_peak 0.721 FR_hip_tau_range 3.625
+forward_oscillation_capture_59.35_59.95 {'FR_hip_dq_peak_rad_s': 0.312932, 'FR_hip_tau_range_Nm': 3.2249999999999996, 'all_leg_dq_peak_rad_s': 0.641204}
+plot D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试\04_调试记录\logs\20261112_r1199_motion_jitter_evidence.png

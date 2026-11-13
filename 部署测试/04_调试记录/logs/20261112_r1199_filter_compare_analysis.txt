@@ -1,0 +1,153 @@
+========================================================================================================
+R1199 field-log comparison: NF (no filter) vs LP15/LP30 (40 ms leg-target low-pass, wheels unfiltered)
+sessions: NF=20261112-220051, LP15=20261112-223732, LP30=20261112-224151; WALK-frame windows,
+tick ranges quoted for the 2 ms logs; policy command visible to ONNX is clamped to 0.10 m/s planar,
+so all |vx|>=0.10 windows present the same command to the policy in steady state.
+========================================================================================================
+[NF fwd] frames=30 tick=1737597..1738178 vx_slewed=+0.120 physical_cmd=+0.0856 wz=+0.0000
+    raw leg step p50/p99=12.00/12.00 (actuator limit 12); |raw|>=5.9 frac=0.931; sign-flip rate=0.34/frame
+    requested leg-q step rad p50/p95/p99/max = 0.1153/0.1235/0.1237/0.1237
+    applied  leg-q step rad p50/p95/p99/max = 0.1153/0.1235/0.1237/0.1237
+    final LowCmd q step (500 Hz) p99/max = 0.1231/0.1237; |applied-req| mean/max = 0.0000/0.0000; |applied-meas q| mean = 0.1445
+    wheel cmd common=+0.995 measured=+0.760 rad/s (body-speed proxy +0.065 m/s)
+
+[NF bwd] frames=71 tick=1732378..1733778 vx_slewed=-0.162 physical_cmd=-0.0938 wz=+0.0000
+    raw leg step p50/p99=3.66/12.00 (actuator limit 12); |raw|>=5.9 frac=0.948; sign-flip rate=0.07/frame
+    requested leg-q step rad p50/p95/p99/max = 0.0089/0.1260/0.1260/0.1260
+    applied  leg-q step rad p50/p95/p99/max = 0.0089/0.1260/0.1260/0.1260
+    final LowCmd q step (500 Hz) p99/max = 0.1260/0.1260; |applied-req| mean/max = 0.0000/0.0000; |applied-meas q| mean = 0.1647
+    wheel cmd common=-1.090 measured=-0.869 rad/s (body-speed proxy -0.075 m/s)
+
+[NF quiet] frames=97 tick=1740078..1741998 vx_slewed=+0.000 physical_cmd=+0.0019 wz=+0.0000
+    raw leg step p50/p99=0.75/5.51 (actuator limit 12); |raw|>=5.9 frac=0.920; sign-flip rate=0.01/frame
+    requested leg-q step rad p50/p95/p99/max = 0.0000/0.0023/0.0062/0.0085
+    applied  leg-q step rad p50/p95/p99/max = 0.0000/0.0023/0.0062/0.0085
+    final LowCmd q step (500 Hz) p99/max = 0.0015/0.0085; |applied-req| mean/max = 0.0000/0.0000; |applied-meas q| mean = 0.1708
+    wheel cmd common=+0.023 measured=+0.010 rad/s (body-speed proxy +0.001 m/s)
+
+[LP15 fwd] frames=104 tick=3922324..3924383 vx_slewed=+0.170 physical_cmd=+0.0959 wz=+0.0000
+    raw leg step p50/p99=12.00/12.00 (actuator limit 12); |raw|>=5.9 frac=0.835; sign-flip rate=0.21/frame
+    requested leg-q step rad p50/p95/p99/max = 0.1257/0.1260/0.1260/0.1260
+    applied  leg-q step rad p50/p95/p99/max = 0.0333/0.0494/0.0496/0.0496
+    final LowCmd q step (500 Hz) p99/max = 0.0482/0.0496; |applied-req| mean/max = 0.0120/0.0764; |applied-meas q| mean = 0.1306
+    wheel cmd common=+1.115 measured=+0.879 rad/s (body-speed proxy +0.076 m/s)
+
+[LP15 bwd] frames=203 tick=3927943..3931983 vx_slewed=-0.186 physical_cmd=-0.0978 wz=+0.0000
+    raw leg step p50/p99=0.00/12.00 (actuator limit 12); |raw|>=5.9 frac=0.995; sign-flip rate=0.01/frame
+    requested leg-q step rad p50/p95/p99/max = 0.0000/0.0922/0.1153/0.1178
+    applied  leg-q step rad p50/p95/p99/max = 0.0000/0.0244/0.0318/0.0412
+    final LowCmd q step (500 Hz) p99/max = 0.0038/0.0412; |applied-req| mean/max = 0.0008/0.0635; |applied-meas q| mean = 0.1547
+    wheel cmd common=-1.138 measured=-0.933 rad/s (body-speed proxy -0.080 m/s)
+
+[LP15 quiet] frames=175 tick=3917284..3920764 vx_slewed=+0.000 physical_cmd=+0.0000 wz=+0.0000
+    raw leg step p50/p99=0.79/10.83 (actuator limit 12); |raw|>=5.9 frac=0.850; sign-flip rate=0.02/frame
+    requested leg-q step rad p50/p95/p99/max = 0.0000/0.0041/0.0041/0.0042
+    applied  leg-q step rad p50/p95/p99/max = 0.0000/0.0041/0.0041/0.0041
+    final LowCmd q step (500 Hz) p99/max = 0.0041/0.0041; |applied-req| mean/max = 0.0011/0.0063; |applied-meas q| mean = 0.1658
+    wheel cmd common=+0.002 measured=+0.004 rad/s (body-speed proxy +0.000 m/s)
+
+[LP30 fwd] frames=71 tick=4195199..4196598 vx_slewed=+0.160 physical_cmd=+0.0935 wz=+0.0000
+    raw leg step p50/p99=12.00/12.00 (actuator limit 12); |raw|>=5.9 frac=0.830; sign-flip rate=0.24/frame
+    requested leg-q step rad p50/p95/p99/max = 0.1250/0.1260/0.1260/0.1260
+    applied  leg-q step rad p50/p95/p99/max = 0.0309/0.0472/0.0493/0.0493
+    final LowCmd q step (500 Hz) p99/max = 0.0456/0.0493; |applied-req| mean/max = 0.0134/0.0761; |applied-meas q| mean = 0.1343
+    wheel cmd common=+1.087 measured=+0.866 rad/s (body-speed proxy +0.075 m/s)
+
+[LP30 bwd] frames=84 tick=4197198..4198856 vx_slewed=-0.167 physical_cmd=-0.0945 wz=+0.0000
+    raw leg step p50/p99=0.00/10.88 (actuator limit 12); |raw|>=5.9 frac=0.946; sign-flip rate=0.03/frame
+    requested leg-q step rad p50/p95/p99/max = 0.0000/0.1213/0.1239/0.1254
+    applied  leg-q step rad p50/p95/p99/max = 0.0019/0.0378/0.0424/0.0474
+    final LowCmd q step (500 Hz) p99/max = 0.0326/0.0474; |applied-req| mean/max = 0.0028/0.0730; |applied-meas q| mean = 0.1452
+    wheel cmd common=-1.099 measured=-0.884 rad/s (body-speed proxy -0.076 m/s)
+
+[LP30 quiet] frames=60 tick=4192017..4193198 vx_slewed=-0.000 physical_cmd=-0.0000 wz=+0.0000
+    raw leg step p50/p99=1.98/12.00 (actuator limit 12); |raw|>=5.9 frac=0.922; sign-flip rate=0.05/frame
+    requested leg-q step rad p50/p95/p99/max = 0.0000/0.0188/0.0281/0.0406
+    applied  leg-q step rad p50/p95/p99/max = 0.0000/0.0143/0.0179/0.0190
+    final LowCmd q step (500 Hz) p99/max = 0.0129/0.0190; |applied-req| mean/max = 0.0017/0.0293; |applied-meas q| mean = 0.1729
+    wheel cmd common=+0.055 measured=+0.002 rad/s (body-speed proxy +0.000 m/s)
+
+========================================================================================================
+2 ms LowState feedback, matched windows and 1 s sliding slices (Welch, Hann, fs=500 Hz,
+detrend=mean; dq quantization 2*pi/2048 = 0.00307 rad/s dominates the quiet floor).
+========================================================================================================
+[NF fwd] n=290 (middle 1 s): thigh dq 40-120Hz=2.977e-02, 120-250Hz=1.416e-03; calf 40-120Hz=2.140e-03; wheel 40-120Hz=9.326e-03 (rad^2/s^3)
+    thigh dq RMS=0.3494 rad/s peak=1.3499; thigh tau RMS=2.518 Nm, tau 40-120Hz=5.580e-01 (Nm^2/s)
+[NF bwd] n=701 (middle 1 s): thigh dq 40-120Hz=2.876e-03, 120-250Hz=2.969e-04; calf 40-120Hz=1.035e-04; wheel 40-120Hz=1.241e-03 (rad^2/s^3)
+    thigh dq RMS=0.1998 rad/s peak=1.2303; thigh tau RMS=2.207 Nm, tau 40-120Hz=9.553e-02 (Nm^2/s)
+[NF quiet] n=960 (middle 1 s): thigh dq 40-120Hz=1.769e-05, 120-250Hz=2.103e-05; calf 40-120Hz=7.313e-06; wheel 40-120Hz=1.890e-05 (rad^2/s^3)
+    thigh dq RMS=0.0074 rad/s peak=0.0337; thigh tau RMS=3.507 Nm, tau 40-120Hz=7.793e-05 (Nm^2/s)
+[NF] sliding 1 s slices (0.5 s step):
+    steady   : n= 1 thigh 40-120Hz median=4.745e-04 max=4.745e-04 | tau median=1.555e-02 | worst slice t=11.5s vx=-0.172
+    transient: n=26 thigh 40-120Hz median=1.203e-03 max=2.743e-02 | tau median=3.378e-02 | worst slice t=16.5s vx=+0.090
+    quiet    : n=14 thigh 40-120Hz median=1.946e-05 max=6.036e-04 | tau median=1.015e-04 | worst slice t=0.5s vx=+0.000
+
+[LP15 fwd] n=1030 (middle 1 s): thigh dq 40-120Hz=7.984e-04, 120-250Hz=7.165e-05; calf 40-120Hz=5.938e-05; wheel 40-120Hz=3.216e-04 (rad^2/s^3)
+    thigh dq RMS=0.0848 rad/s peak=0.5369; thigh tau RMS=2.511 Nm, tau 40-120Hz=1.518e-02 (Nm^2/s)
+[LP15 bwd] n=2021 (middle 1 s): thigh dq 40-120Hz=6.072e-05, 120-250Hz=3.711e-05; calf 40-120Hz=6.332e-06; wheel 40-120Hz=4.090e-04 (rad^2/s^3)
+    thigh dq RMS=0.0545 rad/s peak=0.1534; thigh tau RMS=4.635 Nm, tau 40-120Hz=2.794e-04 (Nm^2/s)
+[LP15 quiet] n=1740 (middle 1 s): thigh dq 40-120Hz=9.025e-04, 120-250Hz=7.447e-05; calf 40-120Hz=3.222e-04; wheel 40-120Hz=2.754e-04 (rad^2/s^3)
+    thigh dq RMS=0.3444 rad/s peak=0.8437; thigh tau RMS=5.957 Nm, tau 40-120Hz=2.730e-03 (Nm^2/s)
+[LP15] sliding 1 s slices (0.5 s step):
+    steady   : n=10 thigh 40-120Hz median=7.825e-05 max=9.134e-04 | tau median=3.315e-04 | worst slice t=6.0s vx=+0.187
+    transient: n=14 thigh 40-120Hz median=1.956e-04 max=1.098e-03 | tau median=3.657e-03 | worst slice t=10.5s vx=-0.140
+    quiet    : n= 5 thigh 40-120Hz median=1.390e-04 max=1.219e-03 | tau median=1.153e-03 | worst slice t=1.0s vx=+0.000
+
+[LP30 fwd] n=700 (middle 1 s): thigh dq 40-120Hz=1.196e-03, 120-250Hz=1.125e-04; calf 40-120Hz=1.638e-04; wheel 40-120Hz=9.571e-04 (rad^2/s^3)
+    thigh dq RMS=0.1027 rad/s peak=0.5952; thigh tau RMS=3.419 Nm, tau 40-120Hz=2.688e-02 (Nm^2/s)
+[LP30 bwd] n=830 (middle 1 s): thigh dq 40-120Hz=4.737e-04, 120-250Hz=6.312e-05; calf 40-120Hz=2.224e-05; wheel 40-120Hz=3.954e-04 (rad^2/s^3)
+    thigh dq RMS=0.1208 rad/s peak=0.3528; thigh tau RMS=2.939 Nm, tau 40-120Hz=1.658e-02 (Nm^2/s)
+[LP30 quiet] n=589 (middle 1 s): thigh dq 40-120Hz=3.588e-05, 120-250Hz=2.923e-05; calf 40-120Hz=2.270e-05; wheel 40-120Hz=6.384e-05 (rad^2/s^3)
+    thigh dq RMS=0.0605 rad/s peak=0.3007; thigh tau RMS=5.325 Nm, tau 40-120Hz=2.162e-04 (Nm^2/s)
+[LP30] sliding 1 s slices (0.5 s step):
+    steady   : n= 4 thigh 40-120Hz median=1.152e-03 max=1.401e-03 | tau median=2.111e-02 | worst slice t=8.0s vx=+0.159
+    transient: n=47 thigh 40-120Hz median=1.521e-04 max=2.172e-03 | tau median=4.874e-03 | worst slice t=26.0s vx=+0.138
+    quiet    : n= 8 thigh 40-120Hz median=9.693e-05 max=9.983e-04 | tau median=4.796e-04 | worst slice t=1.0s vx=+0.000
+
+========================================================================================================
+Turning chain (LP30; NF/LP15 had no yaw input): rx -> wz cmd -> wrapper wheel injection ->
+requested wheel dq -> measured wheel dq (2 ms) -> gyro_z / integrated yaw. URDF track=0.331 m;
+if wheels tracked the injected differential and rolled, yaw would be 2*0.66*wz/0.331 = 3.99*wz.
+========================================================================================================
+joystick rx range [-0.804,+0.899]; wz cmd range [-0.100,+0.095]
+[yaw+ 1381:1499] dur=2.36s wz_cmd=+0.0901 rad/s
+    wheel dq diff cmd(R-L)=+1.294 measured=+0.702 rad/s (tracking gain 0.54); wheel tau L=-0.34 R=+0.86 Nm
+    gyro_z mean=+0.0247 rad/s (27% of cmd); integrated yaw=+3.14 deg (+1.33 deg/s)
+    ONNX wheel common=+1.000 steering=+0.000 (no differential signal from policy); leg-target L/R asym=0.0773 rad
+[yaw- 513:554] dur=0.82s wz_cmd=-0.0779 rad/s
+    wheel dq diff cmd(R-L)=-1.037 measured=-0.560 rad/s (tracking gain 0.54); wheel tau L=+0.61 R=-0.24 Nm
+    gyro_z mean=-0.0149 rad/s (19% of cmd); integrated yaw=-0.87 deg (-1.06 deg/s)
+    ONNX wheel common=+1.000 steering=+0.000 (no differential signal from policy); leg-target L/R asym=0.0870 rad
+[yaw- 574:736] dur=3.24s wz_cmd=-0.0919 rad/s
+    wheel dq diff cmd(R-L)=-1.373 measured=-0.419 rad/s (tracking gain 0.31); wheel tau L=+1.28 R=-0.53 Nm
+    gyro_z mean=-0.0245 rad/s (27% of cmd); integrated yaw=-4.82 deg (-1.49 deg/s)
+    ONNX wheel common=+1.000 steering=+0.000 (no differential signal from policy); leg-target L/R asym=0.0522 rad
+[yaw- 797:897] dur=2.00s wz_cmd=-0.0869 rad/s
+    wheel dq diff cmd(R-L)=-1.270 measured=-0.195 rad/s (tracking gain 0.15); wheel tau L=+1.44 R=-0.61 Nm
+    gyro_z mean=-0.0184 rad/s (21% of cmd); integrated yaw=-2.36 deg (-1.18 deg/s)
+    ONNX wheel common=+1.000 steering=+0.000 (no differential signal from policy); leg-target L/R asym=0.0570 rad
+[yaw- 1333:1364] dur=0.62s wz_cmd=-0.0707 rad/s
+    wheel dq diff cmd(R-L)=-0.889 measured=-0.502 rad/s (tracking gain 0.56); wheel tau L=+0.65 R=-0.03 Nm
+    gyro_z mean=-0.0184 rad/s (26% of cmd); integrated yaw=-0.69 deg (-1.12 deg/s)
+    ONNX wheel common=+1.000 steering=+0.000 (no differential signal from policy); leg-target L/R asym=0.0963 rad
+    reference fwd leg-target L/R asym=0.1765 rad (straight-motion gait asymmetry)
+    reference bwd leg-target L/R asym=0.1956 rad (straight-motion gait asymmetry)
+
+========================================================================================================
+Posture and phase transitions
+========================================================================================================
+[NF] first nonzero cmd at walk frame 310 (t=6.20s); max applied leg-q step within +/-1 s = 0.0902 rad; whole-walk applied step p99/max = 0.1260/0.1260 rad
+    posture F/R thigh mean over walk = 0.793/0.884; quiet-start settled F-thigh (frames 100-170) = 0.833; ranges F [0.662,1.070] R [0.738,0.972]
+    handoff thigh F 0.735->0.999, calf F -1.726->-1.560 (identical 2 s interpolation in all sessions)
+    post-walk (Brake/ReturnStand/FixSquat): F-thigh mean 0.770 -> min 0.770 -> final 0.973 (sink below brake-start level = +0.000 rad)
+    stand-bias frozen values (frame 150) thigh F/L=-0.049 F/R=-0.012 R/L=+0.042 R/R=+0.077; bias_scale range [1.000,1.000]
+[LP15] first nonzero cmd at walk frame 176 (t=3.52s); max applied leg-q step within +/-1 s = 0.0434 rad; whole-walk applied step p99/max = 0.0494/0.0496 rad
+    posture F/R thigh mean over walk = 0.681/0.796; quiet-start settled F-thigh (frames 100-170) = 0.714; ranges F [0.528,1.106] R [0.710,0.935]
+    handoff thigh F 0.746->0.998, calf F -1.724->-1.552 (identical 2 s interpolation in all sessions)
+    post-walk (Brake/ReturnStand/FixSquat): F-thigh mean 0.691 -> min 0.691 -> final 0.990 (sink below brake-start level = +0.000 rad)
+    stand-bias frozen values (frame 150) thigh F/L=-0.097 F/R=-0.077 R/L=-0.010 R/R=+0.032; bias_scale range [1.000,1.000]
+[LP30] first nonzero cmd at walk frame 177 (t=3.54s); max applied leg-q step within +/-1 s = 0.0429 rad; whole-walk applied step p99/max = 0.0474/0.0496 rad
+    posture F/R thigh mean over walk = 0.745/0.823; quiet-start settled F-thigh (frames 100-170) = 0.773; ranges F [0.600,1.124] R [0.733,0.946]
+    handoff thigh F 0.745->0.995, calf F -1.719->-1.556 (identical 2 s interpolation in all sessions)
+    post-walk (Brake/ReturnStand/FixSquat): F-thigh mean 0.808 -> min 0.744 -> final 1.009 (sink below brake-start level = +0.064 rad)
+    stand-bias frozen values (frame 150) thigh F/L=-0.076 F/R=-0.041 R/L=+0.015 R/R=+0.056; bias_scale range [0.179,1.000]

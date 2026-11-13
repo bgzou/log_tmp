@@ -1,0 +1,5 @@
+zero_high_pose n 800 dt 0.01 leg_dq_rms 0.0066 leg_dq_peak 0.0337 q_hp_rms 1e-05 tau_hp_rms 0.0181 tau_peak 24.7 tau_spectrum_peak_Hz 7.63
+first_push n 200 dt 0.01 leg_dq_rms 0.234 leg_dq_peak 1.8674 q_hp_rms 0.00429 tau_hp_rms 0.8836 tau_peak 24.7 tau_spectrum_peak_Hz 5.0
+short_pulses n 800 dt 0.01 leg_dq_rms 0.1487 leg_dq_peak 1.5728 q_hp_rms 0.00219 tau_hp_rms 0.6112 tau_peak 24.925 tau_spectrum_peak_Hz 4.87
+long_forward n 1400 dt 0.01 leg_dq_rms 0.1113 leg_dq_peak 0.721 q_hp_rms 0.0008 tau_hp_rms 0.6724 tau_peak 12.825 tau_spectrum_peak_Hz 25.15
+after_release n 600 dt 0.01 leg_dq_rms 0.1415 leg_dq_peak 1.4972 q_hp_rms 0.00192 tau_hp_rms 0.4797 tau_peak 23.3 tau_spectrum_peak_Hz 5.36

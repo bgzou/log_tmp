@@ -1,0 +1,3 @@
+OFFLINE_PREFLIGHT_OK [1, 65] [1, 16]
+AS2-W preflight: Unverified hardware bindings: FL_hip, FR_hip, RL_hip, RR_hip, FL_thigh, FR_thigh, RL_thigh, RR_thigh, FL_calf, FR_calf, RL_calf, RR_calf, FL_foot, FR_foot, RL_foot, RR_foot
+PREVIEW_RC= HARDWARE_MAP_RC=\

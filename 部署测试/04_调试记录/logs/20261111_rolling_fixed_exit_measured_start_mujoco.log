@@ -1,0 +1,99 @@
+  measured_static/101 B_enter_policy_centered: up=0.995 h=0.369 nonwheel=0.0N v=(0.090,-0.003) wz=-0.004
+  measured_static/101 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(-0.000,-0.000) wz=-0.000
+  measured_static/101 policy_measured_static: up=1.000 h=0.365 nonwheel=0.0N v=(0.002,0.000) wz=0.000
+  measured_static/101 brake_to_center: up=1.000 h=0.365 nonwheel=0.0N v=(0.003,-0.000) wz=0.000
+  measured_static/101 A_exit_to_fixedstand: up=1.000 h=0.337 nonwheel=0.0N v=(-0.067,0.000) wz=-0.000
+  measured_static/101 fixed_hold_after_exit: up=1.000 h=0.331 nonwheel=0.0N v=(-0.006,0.000) wz=0.000
+  measured_static/202 B_enter_policy_centered: up=0.995 h=0.369 nonwheel=0.0N v=(0.061,-0.004) wz=0.001
+  measured_static/202 policy_static_before_motion: up=1.000 h=0.368 nonwheel=0.0N v=(0.006,0.001) wz=-0.001
+  measured_static/202 policy_measured_static: up=1.000 h=0.366 nonwheel=0.0N v=(-0.002,-0.000) wz=-0.001
+  measured_static/202 brake_to_center: up=1.000 h=0.370 nonwheel=0.0N v=(-0.000,-0.000) wz=-0.000
+  measured_static/202 A_exit_to_fixedstand: up=1.000 h=0.343 nonwheel=0.0N v=(-0.065,0.000) wz=0.000
+  measured_static/202 fixed_hold_after_exit: up=1.000 h=0.336 nonwheel=0.0N v=(-0.006,0.000) wz=0.000
+  measured_static/303 B_enter_policy_centered: up=0.995 h=0.369 nonwheel=0.0N v=(0.037,-0.005) wz=-0.002
+  measured_static/303 policy_static_before_motion: up=1.000 h=0.369 nonwheel=0.0N v=(0.026,0.000) wz=-0.001
+  measured_static/303 policy_measured_static: up=1.000 h=0.367 nonwheel=0.0N v=(0.004,0.000) wz=0.000
+  measured_static/303 brake_to_center: up=1.000 h=0.370 nonwheel=0.0N v=(0.002,0.000) wz=0.000
+  measured_static/303 A_exit_to_fixedstand: up=1.000 h=0.343 nonwheel=0.0N v=(-0.063,0.000) wz=-0.000
+  measured_static/303 fixed_hold_after_exit: up=1.000 h=0.337 nonwheel=0.0N v=(-0.007,0.000) wz=0.000
+  measured_forward/101 B_enter_policy_centered: up=0.995 h=0.368 nonwheel=0.0N v=(0.058,-0.006) wz=-0.004
+  measured_forward/101 policy_static_before_motion: up=1.000 h=0.368 nonwheel=0.0N v=(0.008,0.002) wz=-0.003
+  measured_forward/101 policy_measured_forward: up=0.988 h=0.304 nonwheel=0.0N v=(0.281,-0.106) wz=-0.058
+  measured_forward/101 brake_to_center: up=0.993 h=0.309 nonwheel=0.0N v=(0.035,-0.018) wz=0.001
+  measured_forward/101 A_exit_to_fixedstand: up=1.000 h=0.317 nonwheel=0.0N v=(-0.058,0.023) wz=-0.008
+  measured_forward/101 fixed_hold_after_exit: up=0.998 h=0.308 nonwheel=0.0N v=(-0.016,0.003) wz=0.004
+  measured_forward/202 B_enter_policy_centered: up=0.995 h=0.366 nonwheel=0.0N v=(-0.001,-0.005) wz=0.019
+  measured_forward/202 policy_static_before_motion: up=0.999 h=0.366 nonwheel=0.0N v=(0.049,0.002) wz=0.005
+  measured_forward/202 policy_measured_forward: up=0.997 h=0.320 nonwheel=0.0N v=(0.242,-0.183) wz=-0.157
+  measured_forward/202 brake_to_center: up=0.999 h=0.325 nonwheel=0.0N v=(0.013,-0.017) wz=-0.001
+  measured_forward/202 A_exit_to_fixedstand: up=0.999 h=0.329 nonwheel=0.0N v=(-0.040,0.048) wz=-0.004
+  measured_forward/202 fixed_hold_after_exit: up=1.000 h=0.324 nonwheel=0.0N v=(-0.006,0.004) wz=0.003
+  measured_forward/303 B_enter_policy_centered: up=0.995 h=0.368 nonwheel=0.0N v=(0.089,-0.002) wz=-0.020
+  measured_forward/303 policy_static_before_motion: up=1.000 h=0.371 nonwheel=0.0N v=(0.000,-0.001) wz=0.004
+  measured_forward/303 policy_measured_forward: up=0.993 h=0.318 nonwheel=0.0N v=(0.276,-0.118) wz=-0.061
+  measured_forward/303 brake_to_center: up=0.998 h=0.324 nonwheel=0.0N v=(0.036,-0.025) wz=0.003
+  measured_forward/303 A_exit_to_fixedstand: up=0.999 h=0.324 nonwheel=0.0N v=(-0.065,0.036) wz=-0.012
+  measured_forward/303 fixed_hold_after_exit: up=0.999 h=0.319 nonwheel=0.0N v=(-0.006,0.000) wz=0.005
+  measured_back/101 B_enter_policy_centered: up=0.995 h=0.368 nonwheel=0.0N v=(0.058,-0.006) wz=-0.004
+  measured_back/101 policy_static_before_motion: up=1.000 h=0.368 nonwheel=0.0N v=(0.008,0.002) wz=-0.003
+  measured_back/101 policy_measured_back: up=0.998 h=0.325 nonwheel=0.0N v=(-0.252,0.143) wz=-0.068
+  measured_back/101 brake_to_center: up=0.995 h=0.314 nonwheel=0.0N v=(0.008,-0.006) wz=-0.001
+  measured_back/101 A_exit_to_fixedstand: up=1.000 h=0.323 nonwheel=0.0N v=(-0.065,0.035) wz=-0.010
+  measured_back/101 fixed_hold_after_exit: up=0.999 h=0.315 nonwheel=0.0N v=(-0.011,0.002) wz=0.007
+  measured_back/202 B_enter_policy_centered: up=0.995 h=0.366 nonwheel=0.0N v=(-0.001,-0.005) wz=0.019
+  measured_back/202 policy_static_before_motion: up=0.999 h=0.366 nonwheel=0.0N v=(0.049,0.002) wz=0.005
+  measured_back/202 policy_measured_back: up=0.996 h=0.329 nonwheel=0.0N v=(-0.189,0.220) wz=-0.152
+  measured_back/202 brake_to_center: up=0.997 h=0.323 nonwheel=0.0N v=(0.012,-0.016) wz=-0.002
+  measured_back/202 A_exit_to_fixedstand: up=0.998 h=0.330 nonwheel=0.0N v=(-0.041,0.049) wz=-0.002
+  measured_back/202 fixed_hold_after_exit: up=0.998 h=0.326 nonwheel=0.0N v=(-0.005,0.004) wz=0.002
+  measured_back/303 B_enter_policy_centered: up=0.995 h=0.368 nonwheel=0.0N v=(0.089,-0.002) wz=-0.020
+  measured_back/303 policy_static_before_motion: up=1.000 h=0.371 nonwheel=0.0N v=(0.000,-0.001) wz=0.004
+  measured_back/303 policy_measured_back: up=0.993 h=0.335 nonwheel=0.0N v=(-0.241,0.129) wz=-0.051
+  measured_back/303 brake_to_center: up=0.993 h=0.335 nonwheel=0.0N v=(0.001,-0.000) wz=-0.006
+  measured_back/303 A_exit_to_fixedstand: up=0.993 h=0.324 nonwheel=0.0N v=(-0.066,0.041) wz=-0.012
+  measured_back/303 fixed_hold_after_exit: up=0.994 h=0.321 nonwheel=0.0N v=(-0.005,0.001) wz=0.001
+{
+  "measured_static": {
+    "trials": 3,
+    "passed": 0,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 0,
+    "tracking_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.0010406946779977994,
+      "mean_vy_m_s": -3.879787678411859e-06,
+      "mean_wz_rad_s": -7.987541992366739e-05
+    },
+    "max_brake_distance_m": 0.0013326324739875088
+  },
+  "measured_forward": {
+    "trials": 3,
+    "passed": 0,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 0,
+    "tracking_ok": 0,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.266292714001335,
+      "mean_vy_m_s": -0.1354258176333156,
+      "mean_wz_rad_s": -0.09193228364891444
+    },
+    "max_brake_distance_m": 0.10570972700768665
+  },
+  "measured_back": {
+    "trials": 3,
+    "passed": 0,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 0,
+    "tracking_ok": 0,
+    "mean_tracking": {
+      "mean_vx_m_s": -0.22747247677125207,
+      "mean_vy_m_s": 0.16426314869040134,
+      "mean_wz_rad_s": -0.09060802730327655
+    },
+    "max_brake_distance_m": 0.05195726901032771
+  }
+}
+saved /home/caolin/as2w_workstation/部署参考/as2w-flat-rerun/results/rolling_fixed_exit_measured_start_20261111.json

@@ -1,0 +1,18 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+R4000 JOYSTICK TRIAL (training-contract 5 Hz leg filter + 0.9 rad/s slew): B accepts LY vx and RX yaw within the deploy.yaml speed envelope for max 30s; LX ignored; center sticks to stop, A brakes, Y squats, X emergency.
+R4000 joystick envelope: vx +/-0.2 m/s, wz +/-0.1 rad/s (deploy.yaml; CLI may only restrict)
+Type 'GO' and press Enter to start (nothing else proceeds).
+FIELD_SAFETY_PROFILE command_accel=0.2,0.1,0.2 command_decel=0.4,0.2,0.4 remote_timeout_ms=200 leg_dq=5/8 wheel_dq=8/12 leg_tau=35/50 wheel_tau=8/12 leg_pd=35/50 wheel_pd=8/15 leg_step=0.2/0.35 wheel_step=15/30 warn_frames=5 hard_frames=3 (units: dq rad/s, tau/pd Nm, step per 20 ms)
+DEBUG_CAPTURE enabled: 50Hz policy inputs/targets + 500Hz final LowCmd; independent LowState monitor required
+POLICY_LOWPASS tau_ms=0 wheels=0 (0=OFF; enabled only for isolated candidate builds)
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=299848 packets=605
+FSM started in Passive startup. A/Y enabled; B once (LY/RX capped, 30s maximum, then auto return+squat). X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 744 frames
+ZERO-B TRIAL: A not pressed in 120s, stop
+Operator exit; stop.
+DEBUG_LOWCMD_RESULT rows=60384 dropped=0 file_ok=1
+DEBUG_POLICY_RESULT rows=0 file_ok=1
+Publisher stopped, exit=0
+R4000_REMOTE_RC=0

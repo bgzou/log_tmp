@@ -1,0 +1,12 @@
+[field-session] mode=getup monitor=60s dry_run=1 dir=/root/field_sessions/20261113-173702_getup-dry-run
+[field-session] step1 binary: build-getup1199/deploy/robots/as2w/getup1199/as2w_getup1199_publish
+b56e3191124f6bd2df72e09ec0e140d866145c1657274292f36eb369062632b9  deploy/robots/as2w/common/as2w_publish.cpp
+1d2ee6c9ebe1a985ecf534850563db8e2e9ba868eb04fc9bfc1f5930ff463ba2  deploy/robots/as2w/getup1199/getup1199_controller.cpp
+ea755787fa961356dd6f21f4e81e66f23b1450cdac7e374cb1f76129286a823c  deploy/robots/as2w/getup1199/getup1199_controller.hpp
+0bdaf1002a0294e05c5c5ba786631012058251776da3f2c718c4e47da8a29a12  tools/run_getup1199_trial.sh
+970e692ebcb99ef4a3a7b6d6574944128f97e75a1dddba8cef9678725caea971  models/getup1199/policy.onnx
+9bdbb2a32e62ebb969e0e55de883c1e23e2a61fd1d3ebeda3a718163c5b52c12  build-getup1199/deploy/robots/as2w/getup1199/as2w_getup1199_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1040 tick=918763 mode_pr=0 mode_machine=2 imu_wxyz=0.993015,0.00215064,-0.00156012,-0.117962, gyro=0,0.00319579,-0.00532632, m0=-0.565703,-0.0153398 m1=0.995997,-0.0153398 m2=-2.74752,-0.00409062 m3=0.538056,0.0122718 m4=1.00762,-0.00306796 m5=-2.769,0 m6=-0.564241,-0.00613592 m7=1.01763,-0.00613592 m8=-2.75569,0 m9=0.568142,0.00306796 m10=0.973131,0 m11=-2.74719,0.00409062 m12=0.471507,0 m13=0.00251669,0 m14=1.19766,0 m15=1.18133,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=ai
+[field-session] dry-run: factory mode (ai); would stand-down-if-standing + ReleaseMode here

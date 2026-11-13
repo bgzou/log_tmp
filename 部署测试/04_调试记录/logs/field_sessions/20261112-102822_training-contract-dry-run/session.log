@@ -1,0 +1,14 @@
+[field-session] mode=training-contract monitor=30s dry_run=1 dir=/root/field_sessions/20261112-102822_training-contract-dry-run
+[field-session] step1 binary: build-r1199-training-contract/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+a99dc6d812fd35fe6262e7603411ad84cbfbbd229b4f9b31e6ade18ca5219e05  deploy/robots/as2w/r214/r214_publish.cpp
+beb824e53a366455c5a7adedc26038062d02994bbf3b040f68d6a18cde35b115  deploy/robots/as2w/r1199/r1199_controller.cpp
+0babf0f12432f928faa1bacf78f736305b80d558dc89a114ca6d3e48ca668cf4  deploy/robots/as2w/r1199/r1199_controller.hpp
+0e794783bc2d0315117acf24728c4b2b136b881c2f9b9c6475f12a4a8447240c  tools/run_r1199_forward_trial.sh
+ca72bbe60abd5e4714e67f38dab1f5ed77949f47c86b5ca0de80230fb2d36d38  tools/run_r1199_joystick_trial.sh
+44b6ad0f4c19fba02825d28eb6622b3b88881687f979b22b3fcedea2216c5c8f  tools/run_r1199_training_contract_trial.sh
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+3e16c25f432336545416042b2eaa227f566e44f2b3dd187d1e92bc10de0f9118  build-r1199-training-contract/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1045 tick=213877 mode_pr=0 mode_machine=2 imu_wxyz=0.999732,-0.000129441,-0.00138768,-0.0231275, gyro=0.00106526,-0.00852211,-0.00213053, m0=-0.550567,-0.00613592 m1=1.03744,0 m2=-2.76202,-0.00204531 m3=0.542993,-0.0122718 m4=1.0111,0 m5=-2.76843,0 m6=-0.564223,0.0122718 m7=1.02722,0.00613592 m8=-2.75292,0 m9=0.571486,0 m10=0.975558,-0.0122718 m11=-2.74173,0 m12=0.0845128,0 m13=-0.260369,-0.0122718 m14=0.495955,0.0122718 m15=0.492288,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=ai
+[field-session] dry-run: factory mode (ai); would stand-down-if-standing + ReleaseMode here

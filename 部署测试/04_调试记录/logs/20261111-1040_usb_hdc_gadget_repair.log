@@ -1,0 +1,75 @@
+# USB HDC gadget 中断与修复：复盘证据
+
+主机：工作站 Windows `192.168.10.61`；HDC 客户端 `部署测试/00_HDC工具/hdc_6.1.1.280/hdc.exe`（`Ver: 3.2.0d`，`hdc` 不在 PATH）。
+设备：CPRO 鸿蒙宿主，USB gadget `/config/usb_gadget/g1`，UDC `ea100000.hiusbc`（`hiusb-port0` / `extcon1 hisi_usb3_0`）。
+
+## 时间线
+
+| 时刻 | 事实 |
+|---|---|
+| 10:24 | `hdc list targets -v` 只有 `0123456789ABCDEF  USB  Offline`；`Get-PnpDevice -PresentOnly` 查不到 `VID_12D1` |
+| 10:27 | 设备端 `configs/b.1/` 下无 `f1`，`cat UDC` 为空，`state=not attached`；`dmesg` 反复 `failed to start g1: -22` |
+| 10:28 | 补 `f1 -> functions/ffs.hdc` 并写 `UDC=ea100000.hiusbc` 成功，`state=configured` |
+| 10:29 | **验证通过**：USB 行变 `Connected`；`hdc -t 0123456789ABCDEF shell` 返回 `USB_OK` 与 `uid=0(root)` |
+| 10:44–10:46 | 复测：Windows 已无 `VID_12D1`、hdc 显示 `Offline`；但设备端仍报 `state=configured`、`extcon1 USB=1` |
+| 10:47 | 用户确认已关闭/拔除该 USB 连接，复测现象由此解释 |
+
+## 10:29 修复成功时的验证输出
+
+```
+$ hdc list targets -v
+0123456789ABCDEF        USB   Connected   localhost  hdc
+192.168.10.180:10178    TCP   Connected   localhost  hdc
+
+$ hdc -t 0123456789ABCDEF shell "echo USB_OK; id; cat /proc/uptime"
+USB_OK
+uid=0(root) gid=0(root) groups=0(root),1006(file_manager),1007(log),2000(shell),3009(readproc) context=u:r:su:s0
+411160.21 7959887.04
+```
+
+## 10:46 复测：设备端状态解析
+
+```
+$ cat /config/usb_gadget/g1/UDC
+ea100000.hiusbc
+
+$ cat /sys/class/udc/ea100000.hiusbc/state
+configured
+
+$ cat /sys/class/extcon/extcon1/state
+USB=1
+USB-HOST=0
+
+$ ls -l /config/usb_gadget/g1/configs/b.1/
+-rw-r--r-- 1 root root 4096 2026-11-06 16:15 MaxPower
+-rw-r--r-- 1 root root 4096 2026-11-06 16:15 bmAttributes
+lrwxrwxrwx 1 root root    0 2026-11-11 10:27 f1 -> ../../../../usb_gadget/g1/functions/ffs.hdc
+drwxr-xr-x 3 root root    0 2026-11-06 16:15 strings
+```
+
+同一时刻 Windows 侧：
+
+```
+$ hdc list targets -v
+0123456789ABCDEF        USB   Offline
+$ Get-PnpDevice -PresentOnly | ? InstanceId -match 'VID_12D1'
+（无结果）
+```
+
+结论：**拔线后设备端 `state` 与 `extcon1` 不复位**（本机 VBUS 断开事件未上报到 gadget），因此“设备端说 configured/USB=1”不能证明线还插在 PC 上；判断连通性只认 Windows 枚举（`VID_12D1` 是否出现、`list targets -v` 是否 `Connected`）。
+
+## 故障期内核日志（dmesg 仍保留）
+
+```
+[411166.882268] udc ea100000.hiusbc: failed to start g1: -22
+[411177.401877] [HIUSBC]hiusbc_gadget_pullup: is_on = 1
+[411177.408507] [HIUSBC]hiusbc_gadget_pullup: -
+```
+
+`-22` = `EINVAL`：配置内无 function，composite 无法 start，pull-up 不拉，PC 侧无任何电气枚举。补回 `f1` 后 `pullup: is_on = 1`，PC 立刻枚举成功。
+
+## 结论
+
+- 属 gadget 配置类软件故障（`configs/b.1` 的 `ffs.hdc` 链接丢失），不是线材/PC 口/HDC 开关；故障期间无线 HDC（`192.168.10.180:10178`）全程可用，管理未中断。
+- 修复不持久：CPRO 重启后由 `hdcd` 重建 gadget 通常自恢复；若再出现，按 `AGENTS.md` 末尾“管理链路：USB HDC 与 WiFi 双通道”第 5–6 步处理。
+- 本阶段无机器人动作，未改 `eth0`/`ip rule`/`hdcrelay`，未执行 `hdc tmode`。

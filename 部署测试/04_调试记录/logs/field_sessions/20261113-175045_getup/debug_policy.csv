@@ -1,0 +1,1 @@
+DEBUG_POLICY_SCHEMA,mono_ns,phase,tick,age_s,cmd_xyz,remote_valid,remote_buttons,remote_axes_5,gyro_xyz,quat_wxyz,imu_accel_xyz,sensor_q_16,sensor_dq_16,obs_count,obs_values,state_count,state_values,raw_action_16,wrapped_action_16,requested_targets(q,dq,kp,kd)x16,applied_targets(q,dq,kp,kd)x16

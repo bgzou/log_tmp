@@ -1,0 +1,37 @@
+[field-session] mode=training-contract monitor=180s dry_run=0 debug=1 lowpass_ms=40 lowpass_wheels=0 dir=/root/field_sessions/20261112-224151_training-contract
+[field-session] step1 binary: build-r1199-training-contract-filter/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+15a2f654ba973cc064a56ecbfcc67babdb0f1f189927851dee34bae0206fca6a  deploy/robots/as2w/common/as2w_publish.cpp
+feebea78e4af238cf682fc043fa253b856b7db4a2c4c8e61f9b17ba40f2bda4c  deploy/robots/as2w/r1199/r1199_controller.cpp
+fc526254a8ac51455cb71c50902a9ea0853de310679c1ec2d82b0cb681fbd750  deploy/robots/as2w/r1199/r1199_controller.hpp
+0e794783bc2d0315117acf24728c4b2b136b881c2f9b9c6475f12a4a8447240c  tools/run_r1199_forward_trial.sh
+ca72bbe60abd5e4714e67f38dab1f5ed77949f47c86b5ca0de80230fb2d36d38  tools/run_r1199_joystick_trial.sh
+5669fddafa5ae43b00286cb9f0855fb86972086aa9c0bf48bb5775a36aada5ff  tools/run_r1199_training_contract_trial.sh
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+5d963ce3c1cf9051315649b525d24fa29891218d8eaf1db8863ff15efd17e1ae  build-r1199-training-contract-filter/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1101 tick=4151669 mode_pr=0 mode_machine=2 imu_wxyz=0.998384,0.00210981,0.00418488,0.0566262, gyro=0,-0.00958738,0.00639159, m0=-0.565458,0.00613592 m1=0.993366,0.00613592 m2=-2.75616,-0.00409062 m3=0.559454,0 m4=0.985643,0 m5=-2.75815,0 m6=-0.552832,-0.00613592 m7=0.999598,0.00920388 m8=-2.74863,0.00204531 m9=0.533837,0.00306796 m10=0.975768,-0.0122718 m11=-2.75845,0 m12=-0.00117445,0 m13=-0.320962,0 m14=-0.499287,0 m15=-0.980262,0.0122718 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2001,2100,0,4154011,0,2,0.998383,0.00183872,0.00389655,0.0566852,0.00106526,-0.00106526,0.00958738,-0.565452,
+[field-session] step4 packets=2100 16-axis modes={0}
+[field-session] step4 forward prone calf gate=yes
+[field-session] step5 starting 180s monitoring (low-capture 2ms + low-protection)
+[field-session] step6 launching: bash tools/run_r1199_training_contract_trial.sh
+[field-session]     >>> Passive ready expected in ~3-5s; then hand the remote to the operator.
+[field-session]     >>> FILTERED CANDIDATE: 40ms leg targets; A=fixed stand, B=2s zero handoff then LY vx +/-0.2m/s, RX yaw +/-0.1rad/s for max30s; A brakes early, X=emergency.
+[field-session] publisher exited rc=0
+[field-session] policy diagnostics archived: policy_diag.log (1620 lines)
+[field-session] debug diagnostics archived: debug_policy.csv (1620 lines)
+[field-session] debug diagnostics archived: debug_lowcmd.csv (30887 lines)
+[field-session] monitoring done; artifacts:
+total 48403
+drwxr-xr-x.  2 root root     3440 Nov 12 22:42 .
+drwxr-xr-x. 41 root root     3440 Nov 12 22:41 ..
+-rw-r--r--.  1 root root 13544370 Nov 12 22:42 debug_lowcmd.csv
+-rw-r--r--.  1 root root  3602341 Nov 12 22:42 debug_policy.csv
+-rw-r--r--.  1 root root 28674385 Nov 12 22:43 low_capture_fast.log
+-rw-r--r--.  1 root root  2809856 Nov 12 22:43 low_protection.log
+-rw-r--r--.  1 root root   826798 Nov 12 22:42 policy_diag.log
+-rw-r--r--.  1 root root    33571 Nov 12 22:42 publisher.log
+-rw-r--r--.  1 root root     3154 Nov 12 22:43 session.log
+[field-session] session complete (mode=training-contract rc=0). Copy /root/field_sessions/20261112-224151_training-contract back to the workstation logs dir and append INDEX.

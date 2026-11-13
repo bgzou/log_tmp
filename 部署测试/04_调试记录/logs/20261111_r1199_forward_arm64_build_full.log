@@ -1,0 +1,133 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r1199-forward
+Consolidate compiler generated dependencies of target as2w_r1199_forward
+[  5%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199.dir/r1199_controller.cpp.o
+[ 10%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[ 20%] Built target as2w_r1199_forward
+Consolidate compiler generated dependencies of target as2w_r1199_forward_replay
+Consolidate compiler generated dependencies of target as2w_r1199_forward_publish
+[ 30%] Built target as2w_r1199_forward_replay
+[ 40%] Built target as2w_r1199_forward_publish
+[ 45%] Linking CXX static library libas2w_policy.a
+[ 45%] Built target as2w_policy
+[ 50%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 55%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 60%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 65%] Linking CXX executable as2w_controller_test
+[ 65%] Built target as2w_controller_test
+[ 70%] Linking CXX executable as2w_bench
+[ 75%] Linking CXX executable as2w_deploy
+[ 75%] Built target as2w_bench
+[ 75%] Built target as2w_deploy
+[ 80%] Linking CXX static library libas2w_r1199.a
+[ 80%] Built target as2w_r1199
+[ 85%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/r214/r214_publish.cpp.o
+[ 90%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_replay.dir/r1199_replay.cpp.o
+[ 95%] Linking CXX executable as2w_r1199_replay
+[ 95%] Built target as2w_r1199_replay
+[100%] Linking CXX executable as2w_r1199_publish
+[100%] Built target as2w_r1199_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-forward
+Test project /root/as2w_deploy/build-r1199-forward
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r1199-forward-startup-audit
+8/9 Test #8: r1199-forward-startup-audit ......   Passed    0.09 sec
+    Start 9: r1199-startup-frame-audit
+9/9 Test #9: r1199-startup-frame-audit ........   Passed    0.14 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.38 sec
+FSM CONTRACT A=FixedStand B=PolicyHandoff Y=FixSquat X=EmergencyDamping
+GUARD INJECTION PASS: safe-envelope-200f warn@5->Brake hard@3->Emergency motorstate=hard flicker-reset remote-timeout@200ms no-auto-rewalk slew-0.5s-in/0.25s-out applied==policy-command
+FRAME neutral_zero_torque sizeof=1004 mode_pr=0 mode_machine=2 crc=0x5ba0c90e
+slot=0 mode=1 q=0.56 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=1 mode=1 q=1 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=2 mode=1 q=-2.75 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=3 mode=1 q=0.56 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=4 mode=1 q=1 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=5 mode=1 q=-2.75 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=6 mode=1 q=0.56 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=7 mode=1 q=1 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=8 mode=1 q=-2.75 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=9 mode=1 q=0.56 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=10 mode=1 q=1 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=11 mode=1 q=-2.75 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=12 mode=1 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=13 mode=1 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=14 mode=1 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=15 mode=1 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=16 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=17 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=18 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=19 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=20 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=21 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=22 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=23 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=24 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=25 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=26 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=27 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=28 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=29 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=30 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=31 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=32 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=33 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=34 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+reserve=0,0,0,0,
+raw_hex=0002000001000000295c0f3f0000000000000000000000000000000000000000010000000000803f000000000000000000000000000000000000000001000000000030c0000000000000000000000000000000000000000001000000295c0f3f0000000000000000000000000000000000000000010000000000803f000000000000000000000000000000000000000001000000000030c0000000000000000000000000000000000000000001000000295c0f3f0000000000000000000000000000000000000000010000000000803f000000000000000000000000000000000000000001000000000030c0000000000000000000000000000000000000000001000000295c0f3f0000000000000000000000000000000000000000010000000000803f000000000000000000000000000000000000000001000000000030c000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ec9a05b
+FRAME passive_kd3 sizeof=1004 mode_pr=0 mode_machine=2 crc=0x421a6fb0
+slot=0 mode=1 q=0.56 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=1 mode=1 q=1 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=2 mode=1 q=-2.75 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=3 mode=1 q=0.56 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=4 mode=1 q=1 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=5 mode=1 q=-2.75 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=6 mode=1 q=0.56 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=7 mode=1 q=1 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=8 mode=1 q=-2.75 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=9 mode=1 q=0.56 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=10 mode=1 q=1 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=11 mode=1 q=-2.75 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=12 mode=1 q=0 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=13 mode=1 q=0 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=14 mode=1 q=0 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=15 mode=1 q=0 dq=0 kp=0 kd=3 tau=0 reserve=0
+slot=16 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=17 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=18 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=19 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=20 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=21 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=22 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=23 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=24 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=25 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=26 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=27 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=28 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=29 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=30 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=31 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=32 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=33 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+slot=34 mode=0 q=0 dq=0 kp=0 kd=0 tau=0 reserve=0
+reserve=0,0,0,0,
+raw_hex=0002000001000000295c0f3f0000000000000000000000000000404000000000010000000000803f000000000000000000000000000040400000000001000000000030c0000000000000000000000000000040400000000001000000295c0f3f0000000000000000000000000000404000000000010000000000803f000000000000000000000000000040400000000001000000000030c0000000000000000000000000000040400000000001000000295c0f3f0000000000000000000000000000404000000000010000000000803f000000000000000000000000000040400000000001000000000030c0000000000000000000000000000040400000000001000000295c0f3f0000000000000000000000000000404000000000010000000000803f000000000000000000000000000040400000000001000000000030c00000000000000000000000000000404000000000010000000000000000000000000000000000000000004040000000000100000000000000000000000000000000000000000040400000000001000000000000000000000000000000000000000000404000000000010000000000000000000000000000000000000000004040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b06f1a42
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown

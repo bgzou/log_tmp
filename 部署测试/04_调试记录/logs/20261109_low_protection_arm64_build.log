@@ -1,0 +1,4 @@
+[ 50%] Built target as2w_policy
+[ 75%] Building CXX object CMakeFiles/as2w_sdk2.dir/deploy/robots/as2w/src/diagnostics.cpp.o
+[100%] Linking CXX executable as2w_sdk2
+[100%] Built target as2w_sdk2

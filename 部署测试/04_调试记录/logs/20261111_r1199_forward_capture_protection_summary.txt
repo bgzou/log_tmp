@@ -1,0 +1,18 @@
+PROTECTION valid 34176 time_ms 16.0 180001.0
+warning_or Counter({'0x0': 34176})
+motorstate_or Counter({'0x0': 34176})
+board_state0 Counter({'0x1': 25895, '0x0': 8281})
+modes Counter({'0000000000000000': 25902, '1111111111111111': 8274})
+motor_a min 1.35 max 5.9
+motor_v min 44.7674 max 45.1904
+battery_v min 45.0043 max 45.4272
+CAPTURE valid 17999 time_s 0.02 180.0
+FULL peak_leg_dq 2.02485 peak_wheel_dq 0.93266 peak_leg_tau 23.9625
+WINDOW 20-22 wheel_dq_peak=0.282 leg_dq_peak=0.279 wheel_q_delta=[-0.041, -0.092, -0.09, -0.092] pitch=0.21..0.27 calf_start=[-2.712, -2.74, -2.748, -2.76] calf_end=[-2.713, -2.741, -2.753, -2.76]
+WINDOW 22-24 wheel_dq_peak=0.675 leg_dq_peak=2.025 wheel_q_delta=[-0.206, -0.229, 0.215, 0.131] pitch=-7.74..0.28 calf_start=[-2.713, -2.741, -2.753, -2.76] calf_end=[-1.742, -1.726, -1.853, -1.857]
+WINDOW 28-30 wheel_dq_peak=0.933 leg_dq_peak=0.632 wheel_q_delta=[-0.112, -0.23, -0.407, -0.545] pitch=-3.58..3.97 calf_start=[-1.742, -1.726, -1.853, -1.857] calf_end=[-1.635, -1.634, -1.508, -1.513]
+WINDOW 30-32 wheel_dq_peak=0.712 leg_dq_peak=0.814 wheel_q_delta=[0.693, 0.733, 0.536, 0.469] pitch=1.48..3.95 calf_start=[-1.637, -1.637, -1.511, -1.516] calf_end=[-1.749, -1.746, -1.731, -1.717]
+WINDOW 32-34 wheel_dq_peak=0.147 leg_dq_peak=0.309 wheel_q_delta=[-0.014, -0.021, 0.021, 0.001] pitch=0.77..1.43 calf_start=[-1.749, -1.746, -1.733, -1.718] calf_end=[-1.748, -1.746, -1.753, -1.742]
+WINDOW 34-36 wheel_dq_peak=0.086 leg_dq_peak=0.407 wheel_q_delta=[-0.0, -0.003, 0.005, 0.005] pitch=0.10..0.80 calf_start=[-1.748, -1.746, -1.753, -1.742] calf_end=[-1.776, -1.768, -1.8, -1.789]
+WINDOW 36-38 wheel_dq_peak=0.442 leg_dq_peak=0.683 wheel_q_delta=[-0.011, 0.003, 0.167, 0.242] pitch=-5.52..0.41 calf_start=[-1.779, -1.772, -1.803, -1.792] calf_end=[-2.369, -2.369, -2.54, -2.517]
+WINDOW 38-40 wheel_dq_peak=0.785 leg_dq_peak=0.820 wheel_q_delta=[0.014, 0.072, -0.109, 0.041] pitch=-5.87..0.43 calf_start=[-2.372, -2.373, -2.545, -2.523] calf_end=[-2.692, -2.698, -2.696, -2.704]

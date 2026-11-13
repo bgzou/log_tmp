@@ -1,0 +1,13 @@
+[field-session] mode=training-contract monitor=120s dry_run=1 debug=1 lowpass_ms=60 lowpass_wheels=0 dir=/root/field_sessions/20261112-211453_dry-run
+[field-session] step1 binary: build-r1199-training-contract-filter/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+955c65c51684e4c7b43fe53d49bb50744f4805c908abef1c9a86b58c6bf88fff  deploy/robots/as2w/common/as2w_publish.cpp
+feebea78e4af238cf682fc043fa253b856b7db4a2c4c8e61f9b17ba40f2bda4c  deploy/robots/as2w/r1199/r1199_controller.cpp
+fc526254a8ac51455cb71c50902a9ea0853de310679c1ec2d82b0cb681fbd750  deploy/robots/as2w/r1199/r1199_controller.hpp
+0e794783bc2d0315117acf24728c4b2b136b881c2f9b9c6475f12a4a8447240c  tools/run_r1199_forward_trial.sh
+ca72bbe60abd5e4714e67f38dab1f5ed77949f47c86b5ca0de80230fb2d36d38  tools/run_r1199_joystick_trial.sh
+e2dd0c63c3e25789585dd6327375025f35802eab20e3dc42d808910b77e35d8c  tools/run_r1199_training_contract_trial.sh
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+0a55a5dca3221b7406ca7577c536593853583d7d8ea223bcd492771f2bfd6781  build-r1199-training-contract-filter/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: <no packets>
+[field-session] FATAL: LowState not flowing (got 0 pkts/s). Robot/link down?

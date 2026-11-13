@@ -1,0 +1,18 @@
+{
+ "config": {
+  "wheel_source": "wrapper",
+  "leg_source": "policy",
+  "friction_scale": 2.0,
+  "wheel_kd_scale": 1.0,
+  "turn_gain": 1.0,
+  "t0_tick": 1694429,
+  "dur_s": 11.6
+ },
+ "frames": 116,
+ "terminated": false,
+ "nonwheel_contact": true,
+ "meas_diff_mean_1s": -0.23367833209944766,
+ "meas_diff_mean_3_5s": -0.36607542023753675,
+ "meas_diff_mean_last5": -0.20864113518367108,
+ "yaw_mean": -0.02915135521104719
+}

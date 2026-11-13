@@ -1,0 +1,15 @@
+{
+  "cases": 8,
+  "velocity_pass": 0,
+  "stop_pass": 0,
+  "posture_pass": 0,
+  "contact_pass": 0,
+  "fully_qualified": 0,
+  "engine": "MuJoCo 3.17.0",
+  "model_timestep_s": 0.00125,
+  "policy": "/home/caolin/as2w_workstation/\u90e8\u7f72\u53c2\u8003/as2w_mlp57_flat_model2700_v1_20261112/model/policy.onnx",
+  "onnx_sha256": "5c2cf0c7b045dfc340ca25765c288038f64fdb5c6f213ea4b82ab8d2cb6a88ef",
+  "initial_states": "np.random.default_rng(81200+repeat), exact reproduction of evaluate.py:93-98",
+  "criteria": "identical to speed_sweep_native.py criteria",
+  "wall_seconds": 2.007693290710449
+}

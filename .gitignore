@@ -4,17 +4,21 @@
 # 该路径是指向 部署参考/unitree_ros 的 Windows junction，会让 git 重复收录 1.7GB 同一份文件
 部署参考/omni-blind-stairs/assets/official-model/
 
-# 采样日志(722M)与可再生包不入库——追溯靠 INDEX 记录的路径/SHA
-部署测试/04_调试记录/logs/
+# 采样日志按需入库（2026-11-14 起 04_调试记录/logs 已入库）；可再生包不入库
 部署测试/01_现场部署包/
 # 外部仓库副本(有自己的 .git, 追溯靠 GitHub)
 部署参考/Rob2Nav-r214-source/
 # 构建产物与临时输出
 **/field_logs/
+# 例外：04_调试记录/logs 下已归档的 field_logs 快照属于证据，要入库
+!部署测试/04_调试记录/logs/**/field_logs/
+!部署测试/04_调试记录/logs/**/field_logs/**
 **/__pycache__/
 **/build*/
 **/dist/
 *.tar.gz
+# 例外：采样日志目录里已归档的原始日志包属于证据，要入库
+!部署测试/04_调试记录/logs/**/*.tar.gz
 *.pyc
 shadow.out
 sportstate.out

@@ -1,0 +1,7 @@
+﻿Stage: motion-mode
+Started: 2026-11-09T22:11:14+08:00
+Command: ./build-sdk2/as2w_sdk2 motion-mode eth0
+MotionSwitcher CheckMode rc=3104 form= name=
+MotionSwitcher CheckMode failed
+Exit code: 1
+Finished: 2026-11-09T22:11:20+08:00

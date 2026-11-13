@@ -1,0 +1,19 @@
+Paired MuJoCo yaw, cmd 0.10 rad/s, only R1199_LOWPASS_MS differs:
+case                   tau_ms yaw_mean(rad/s)  ratio tracked stable nonwheel hold_disp_m brake_m
+turn_left  seed101           0         +0.0461   0.46    True   True    False       0.037   0.073
+turn_left  seed101          40         +0.0346   0.35   False   True    False       0.026   0.073
+turn_left  seed202           0         +0.0621   0.62    True   True    False       0.019   0.040
+turn_left  seed202          40         +0.0513   0.51    True   True    False       0.016   0.032
+turn_left  seed303           0         +0.0671   0.67    True   True    False       0.013   0.031
+turn_left  seed303          40         +0.0549   0.55    True   True    False       0.014   0.021
+turn_right seed101           0         -0.0318   0.32   False   True    False       0.031   0.056
+turn_right seed101          40         -0.0246   0.25   False   True    False       0.024   0.061
+turn_right seed202           0         -0.0404   0.40    True   True    False       0.015   0.027
+turn_right seed202          40         -0.0274   0.27   False   True    False       0.011   0.027
+turn_right seed303           0         -0.0427   0.43    True   True    False       0.008   0.021
+turn_right seed303          40         -0.0345   0.34   False   True    False       0.014   0.022
+
+tau=0 : ratio mean 0.48 (min 0.32 max 0.67), tracked 5/6
+tau=40: ratio mean 0.38 (min 0.25 max 0.55), tracked 2/6
+relative yaw cost of the 40 ms filter in sim: 22% of the tau=0 response
+wrote 20261112_r1199_filter_compare_mujoco_yaw.csv

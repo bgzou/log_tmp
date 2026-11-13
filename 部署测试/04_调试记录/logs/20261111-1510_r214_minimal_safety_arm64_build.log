@@ -1,0 +1,137 @@
+===== BUILD build-r214-ab-fsm =====
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-ab-fsm
+Consolidate compiler generated dependencies of target as2w_r214
+[ 50%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 75%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+===== CTEST build-r214-ab-fsm =====
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-ab-fsm
+Test project /root/as2w_deploy/build-r214-ab-fsm
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.58 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.71 sec
+===== AUDIT build-r214-ab-fsm =====
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; firmware acceptance unknown
+===== BUILD build-r214-zero-b =====
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-zero-b
+Consolidate compiler generated dependencies of target as2w_r214
+[ 50%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 75%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+===== CTEST build-r214-zero-b =====
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-zero-b
+Test project /root/as2w_deploy/build-r214-zero-b
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.57 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.74 sec
+===== AUDIT build-r214-zero-b =====
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; firmware acceptance unknown
+===== BUILD build-r214-ab-fsm-full =====
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r214-ab-fsm-full
+Consolidate compiler generated dependencies of target as2w_r214
+[ 50%] Built target as2w_r214
+Consolidate compiler generated dependencies of target as2w_r214_publish
+[ 75%] Building CXX object deploy/robots/as2w/r214/CMakeFiles/as2w_r214_publish.dir/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r214_publish
+[100%] Built target as2w_r214_publish
+===== CTEST build-r214-ab-fsm-full =====
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-ab-fsm-full
+Test project /root/as2w_deploy/build-r214-ab-fsm-full
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.60 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.76 sec
+===== AUDIT build-r214-ab-fsm-full =====
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; firmware acceptance unknown
+===== SHA256 =====
+3a022ca8fa489efc350732a03f5a9283bff730510c72aaa3aaade532612fac63  deploy/robots/as2w/r214/r214_publish.cpp
+91f0053813755781e13ff273eadfc7db7e195e1c7ef91e390044fe6142a2d362  build-r214-ab-fsm/deploy/robots/as2w/r214/as2w_r214_publish
+257a29542b7c94b2299babb3671c50896f9f99f46ad59b875f95b6c1595f3c37  build-r214-zero-b/deploy/robots/as2w/r214/as2w_r214_publish
+5b940e15a4a2a6e8b74d8245b744a4f47ddeba81f1db9b5130a9ccdc07c2deb6  build-r214-ab-fsm-full/deploy/robots/as2w/r214/as2w_r214_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r214-ab-fsm-full
+Test project /root/as2w_deploy/build-r214-ab-fsm-full
+    Start 1: recovery-r09
+1/8 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/8 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/8 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/8 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/8 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/8 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/8 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r214-startup-frame-audit
+8/8 Test #8: r214-startup-frame-audit .........   Passed    0.58 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   0.73 sec
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; firmware acceptance unknown
+3a022ca8fa489efc350732a03f5a9283bff730510c72aaa3aaade532612fac63  deploy/robots/as2w/r214/r214_publish.cpp
+91f0053813755781e13ff273eadfc7db7e195e1c7ef91e390044fe6142a2d362  build-r214-ab-fsm/deploy/robots/as2w/r214/as2w_r214_publish
+257a29542b7c94b2299babb3671c50896f9f99f46ad59b875f95b6c1595f3c37  build-r214-zero-b/deploy/robots/as2w/r214/as2w_r214_publish
+5b940e15a4a2a6e8b74d8245b744a4f47ddeba81f1db9b5130a9ccdc07c2deb6  build-r214-ab-fsm-full/deploy/robots/as2w/r214/as2w_r214_publish

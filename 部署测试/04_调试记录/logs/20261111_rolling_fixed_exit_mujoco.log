@@ -1,0 +1,403 @@
+  static/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  static/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  static/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  static/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  static/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  static/101 policy_static: up=0.999 h=0.357 nonwheel=0.0N v=(0.010,-0.000) wz=-0.001
+  static/101 brake_to_center: up=1.000 h=0.360 nonwheel=0.0N v=(-0.006,-0.000) wz=-0.001
+  static/101 A_exit_to_fixedstand: up=1.000 h=0.335 nonwheel=0.0N v=(-0.038,0.000) wz=0.001
+  static/101 fixed_hold_after_exit: up=0.999 h=0.329 nonwheel=0.0N v=(-0.008,-0.000) wz=-0.000
+  static/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  static/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  static/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  static/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  static/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  static/202 policy_static: up=1.000 h=0.364 nonwheel=0.0N v=(0.007,0.000) wz=0.000
+  static/202 brake_to_center: up=1.000 h=0.368 nonwheel=0.0N v=(0.001,0.000) wz=-0.001
+  static/202 A_exit_to_fixedstand: up=1.000 h=0.342 nonwheel=0.0N v=(-0.049,-0.001) wz=0.000
+  static/202 fixed_hold_after_exit: up=1.000 h=0.336 nonwheel=0.0N v=(-0.008,-0.001) wz=0.003
+  static/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  static/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  static/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  static/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  static/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  static/303 policy_static: up=1.000 h=0.366 nonwheel=0.0N v=(0.010,0.000) wz=0.000
+  static/303 brake_to_center: up=1.000 h=0.371 nonwheel=0.0N v=(-0.003,0.000) wz=0.000
+  static/303 A_exit_to_fixedstand: up=1.000 h=0.344 nonwheel=0.0N v=(-0.057,-0.000) wz=-0.001
+  static/303 fixed_hold_after_exit: up=1.000 h=0.338 nonwheel=0.0N v=(-0.008,-0.000) wz=0.000
+  forward_0.10/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  forward_0.10/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  forward_0.10/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  forward_0.10/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  forward_0.10/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  forward_0.10/101 policy_forward_0.10: up=0.997 h=0.330 nonwheel=0.0N v=(0.096,-0.009) wz=-0.043
+  forward_0.10/101 brake_to_center: up=0.997 h=0.330 nonwheel=0.0N v=(0.012,-0.007) wz=-0.008
+  forward_0.10/101 A_exit_to_fixedstand: up=0.998 h=0.325 nonwheel=0.0N v=(-0.040,0.007) wz=0.003
+  forward_0.10/101 fixed_hold_after_exit: up=0.998 h=0.322 nonwheel=0.0N v=(-0.005,-0.003) wz=0.010
+  forward_0.10/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  forward_0.10/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  forward_0.10/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  forward_0.10/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  forward_0.10/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  forward_0.10/202 policy_forward_0.10: up=0.997 h=0.328 nonwheel=0.0N v=(0.099,-0.007) wz=-0.064
+  forward_0.10/202 brake_to_center: up=0.997 h=0.329 nonwheel=0.0N v=(0.022,-0.008) wz=-0.003
+  forward_0.10/202 A_exit_to_fixedstand: up=0.998 h=0.328 nonwheel=0.0N v=(-0.038,0.008) wz=0.000
+  forward_0.10/202 fixed_hold_after_exit: up=0.998 h=0.322 nonwheel=0.0N v=(-0.007,-0.002) wz=0.007
+  forward_0.10/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  forward_0.10/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  forward_0.10/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  forward_0.10/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  forward_0.10/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  forward_0.10/303 policy_forward_0.10: up=0.997 h=0.330 nonwheel=0.0N v=(0.101,-0.009) wz=-0.070
+  forward_0.10/303 brake_to_center: up=0.997 h=0.329 nonwheel=0.0N v=(0.021,-0.007) wz=0.001
+  forward_0.10/303 A_exit_to_fixedstand: up=0.999 h=0.329 nonwheel=0.0N v=(-0.058,0.015) wz=-0.005
+  forward_0.10/303 fixed_hold_after_exit: up=0.998 h=0.324 nonwheel=0.0N v=(-0.003,-0.003) wz=0.007
+  forward_0.30/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  forward_0.30/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  forward_0.30/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  forward_0.30/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  forward_0.30/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  forward_0.30/101 policy_forward_0.30: up=0.995 h=0.321 nonwheel=0.0N v=(0.290,-0.045) wz=-0.047
+  forward_0.30/101 brake_to_center: up=0.995 h=0.321 nonwheel=0.0N v=(0.002,-0.004) wz=-0.005
+  forward_0.30/101 A_exit_to_fixedstand: up=0.998 h=0.323 nonwheel=0.0N v=(-0.040,0.007) wz=0.004
+  forward_0.30/101 fixed_hold_after_exit: up=0.997 h=0.319 nonwheel=0.0N v=(-0.005,-0.003) wz=0.009
+  forward_0.30/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  forward_0.30/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  forward_0.30/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  forward_0.30/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  forward_0.30/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  forward_0.30/202 policy_forward_0.30: up=0.994 h=0.323 nonwheel=0.0N v=(0.299,-0.044) wz=-0.073
+  forward_0.30/202 brake_to_center: up=0.997 h=0.323 nonwheel=0.0N v=(0.005,-0.003) wz=-0.000
+  forward_0.30/202 A_exit_to_fixedstand: up=0.999 h=0.328 nonwheel=0.0N v=(-0.043,0.009) wz=-0.001
+  forward_0.30/202 fixed_hold_after_exit: up=0.998 h=0.322 nonwheel=0.0N v=(-0.009,-0.001) wz=0.005
+  forward_0.30/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  forward_0.30/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  forward_0.30/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  forward_0.30/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  forward_0.30/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  forward_0.30/303 policy_forward_0.30: up=0.995 h=0.324 nonwheel=0.0N v=(0.301,-0.052) wz=-0.079
+  forward_0.30/303 brake_to_center: up=0.997 h=0.324 nonwheel=0.0N v=(0.005,-0.004) wz=-0.003
+  forward_0.30/303 A_exit_to_fixedstand: up=0.999 h=0.329 nonwheel=0.0N v=(-0.055,0.015) wz=-0.007
+  forward_0.30/303 fixed_hold_after_exit: up=0.998 h=0.323 nonwheel=0.0N v=(-0.007,-0.001) wz=0.005
+  reverse_0.10/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  reverse_0.10/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  reverse_0.10/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  reverse_0.10/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  reverse_0.10/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  reverse_0.10/101 policy_reverse_0.10: up=0.998 h=0.336 nonwheel=0.0N v=(-0.085,0.022) wz=-0.049
+  reverse_0.10/101 brake_to_center: up=0.997 h=0.335 nonwheel=0.0N v=(0.021,-0.010) wz=-0.007
+  reverse_0.10/101 A_exit_to_fixedstand: up=0.999 h=0.330 nonwheel=0.0N v=(-0.041,0.008) wz=0.004
+  reverse_0.10/101 fixed_hold_after_exit: up=0.999 h=0.326 nonwheel=0.0N v=(-0.005,-0.003) wz=0.009
+  reverse_0.10/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  reverse_0.10/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  reverse_0.10/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  reverse_0.10/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  reverse_0.10/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  reverse_0.10/202 policy_reverse_0.10: up=0.999 h=0.337 nonwheel=0.0N v=(-0.081,0.029) wz=-0.074
+  reverse_0.10/202 brake_to_center: up=0.998 h=0.337 nonwheel=0.0N v=(0.024,-0.008) wz=-0.001
+  reverse_0.10/202 A_exit_to_fixedstand: up=1.000 h=0.335 nonwheel=0.0N v=(-0.050,0.012) wz=-0.003
+  reverse_0.10/202 fixed_hold_after_exit: up=0.999 h=0.329 nonwheel=0.0N v=(-0.006,-0.002) wz=0.006
+  reverse_0.10/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  reverse_0.10/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  reverse_0.10/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  reverse_0.10/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  reverse_0.10/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  reverse_0.10/303 policy_reverse_0.10: up=0.999 h=0.338 nonwheel=0.0N v=(-0.078,0.033) wz=-0.082
+  reverse_0.10/303 brake_to_center: up=0.999 h=0.339 nonwheel=0.0N v=(0.025,-0.009) wz=0.001
+  reverse_0.10/303 A_exit_to_fixedstand: up=1.000 h=0.337 nonwheel=0.0N v=(-0.055,0.017) wz=-0.009
+  reverse_0.10/303 fixed_hold_after_exit: up=1.000 h=0.333 nonwheel=0.0N v=(-0.006,-0.001) wz=0.004
+  reverse_0.30/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  reverse_0.30/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  reverse_0.30/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  reverse_0.30/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  reverse_0.30/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  reverse_0.30/101 policy_reverse_0.30: up=0.999 h=0.336 nonwheel=0.0N v=(-0.281,0.062) wz=-0.059
+  reverse_0.30/101 brake_to_center: up=0.995 h=0.323 nonwheel=0.0N v=(0.011,-0.005) wz=-0.004
+  reverse_0.30/101 A_exit_to_fixedstand: up=0.999 h=0.323 nonwheel=0.0N v=(-0.032,0.006) wz=0.003
+  reverse_0.30/101 fixed_hold_after_exit: up=0.998 h=0.319 nonwheel=0.0N v=(-0.004,-0.002) wz=0.007
+  reverse_0.30/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  reverse_0.30/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  reverse_0.30/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  reverse_0.30/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  reverse_0.30/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  reverse_0.30/202 policy_reverse_0.30: up=0.999 h=0.336 nonwheel=0.0N v=(-0.279,0.066) wz=-0.077
+  reverse_0.30/202 brake_to_center: up=0.997 h=0.326 nonwheel=0.0N v=(-0.012,0.005) wz=0.015
+  reverse_0.30/202 A_exit_to_fixedstand: up=0.999 h=0.334 nonwheel=0.0N v=(-0.010,-0.000) wz=0.005
+  reverse_0.30/202 fixed_hold_after_exit: up=0.999 h=0.330 nonwheel=0.0N v=(-0.002,-0.003) wz=0.008
+  reverse_0.30/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  reverse_0.30/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  reverse_0.30/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  reverse_0.30/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  reverse_0.30/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  reverse_0.30/303 policy_reverse_0.30: up=0.998 h=0.337 nonwheel=0.0N v=(-0.279,0.073) wz=-0.078
+  reverse_0.30/303 brake_to_center: up=0.997 h=0.327 nonwheel=0.0N v=(-0.007,0.005) wz=0.015
+  reverse_0.30/303 A_exit_to_fixedstand: up=0.999 h=0.336 nonwheel=0.0N v=(-0.011,-0.000) wz=0.001
+  reverse_0.30/303 fixed_hold_after_exit: up=0.999 h=0.330 nonwheel=0.0N v=(-0.007,-0.001) wz=0.007
+  yaw_left_0.20/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  yaw_left_0.20/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  yaw_left_0.20/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  yaw_left_0.20/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  yaw_left_0.20/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  yaw_left_0.20/101 policy_yaw_left_0.20: up=0.987 h=0.331 nonwheel=0.0N v=(0.075,0.049) wz=0.183
+  yaw_left_0.20/101 brake_to_center: up=0.985 h=0.341 nonwheel=0.0N v=(0.009,0.014) wz=0.004
+  yaw_left_0.20/101 A_exit_to_fixedstand: up=0.996 h=0.334 nonwheel=0.0N v=(-0.037,-0.043) wz=-0.002
+  yaw_left_0.20/101 fixed_hold_after_exit: up=0.997 h=0.332 nonwheel=0.0N v=(-0.004,-0.001) wz=-0.001
+  yaw_left_0.20/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  yaw_left_0.20/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  yaw_left_0.20/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  yaw_left_0.20/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  yaw_left_0.20/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  yaw_left_0.20/202 policy_yaw_left_0.20: up=0.994 h=0.335 nonwheel=0.0N v=(0.057,-0.007) wz=0.309
+  yaw_left_0.20/202 brake_to_center: up=0.995 h=0.337 nonwheel=0.0N v=(-0.024,0.002) wz=0.023
+  yaw_left_0.20/202 A_exit_to_fixedstand: up=0.997 h=0.339 nonwheel=0.0N v=(-0.003,0.009) wz=-0.005
+  yaw_left_0.20/202 fixed_hold_after_exit: up=0.997 h=0.336 nonwheel=0.0N v=(-0.005,-0.003) wz=-0.005
+  yaw_left_0.20/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  yaw_left_0.20/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  yaw_left_0.20/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  yaw_left_0.20/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  yaw_left_0.20/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  yaw_left_0.20/303 policy_yaw_left_0.20: up=0.995 h=0.336 nonwheel=0.0N v=(0.057,-0.022) wz=0.344
+  yaw_left_0.20/303 brake_to_center: up=0.996 h=0.335 nonwheel=0.0N v=(-0.026,0.003) wz=0.033
+  yaw_left_0.20/303 A_exit_to_fixedstand: up=0.998 h=0.337 nonwheel=0.0N v=(-0.003,0.009) wz=-0.004
+  yaw_left_0.20/303 fixed_hold_after_exit: up=0.998 h=0.333 nonwheel=0.0N v=(-0.004,-0.003) wz=-0.005
+  yaw_right_0.20/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  yaw_right_0.20/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  yaw_right_0.20/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  yaw_right_0.20/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  yaw_right_0.20/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  yaw_right_0.20/101 policy_yaw_right_0.20: up=0.974 h=0.328 nonwheel=0.0N v=(0.073,-0.052) wz=-0.217
+  yaw_right_0.20/101 brake_to_center: up=0.972 h=0.328 nonwheel=0.0N v=(-0.014,0.020) wz=0.010
+  yaw_right_0.20/101 A_exit_to_fixedstand: up=0.993 h=0.339 nonwheel=0.0N v=(-0.004,0.001) wz=-0.000
+  yaw_right_0.20/101 fixed_hold_after_exit: up=0.994 h=0.337 nonwheel=0.0N v=(-0.005,0.002) wz=0.002
+  yaw_right_0.20/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  yaw_right_0.20/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  yaw_right_0.20/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  yaw_right_0.20/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  yaw_right_0.20/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  yaw_right_0.20/202 policy_yaw_right_0.20: up=0.994 h=0.332 nonwheel=0.0N v=(0.051,0.011) wz=-0.299
+  yaw_right_0.20/202 brake_to_center: up=0.994 h=0.338 nonwheel=0.0N v=(-0.009,0.017) wz=0.023
+  yaw_right_0.20/202 A_exit_to_fixedstand: up=0.997 h=0.340 nonwheel=0.0N v=(-0.006,-0.001) wz=0.003
+  yaw_right_0.20/202 fixed_hold_after_exit: up=0.998 h=0.337 nonwheel=0.0N v=(-0.004,0.000) wz=0.004
+  yaw_right_0.20/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  yaw_right_0.20/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  yaw_right_0.20/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  yaw_right_0.20/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  yaw_right_0.20/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  yaw_right_0.20/303 policy_yaw_right_0.20: up=0.994 h=0.332 nonwheel=0.0N v=(0.049,0.027) wz=-0.342
+  yaw_right_0.20/303 brake_to_center: up=0.996 h=0.336 nonwheel=0.0N v=(-0.007,0.015) wz=0.027
+  yaw_right_0.20/303 A_exit_to_fixedstand: up=0.998 h=0.337 nonwheel=0.0N v=(-0.007,0.003) wz=0.000
+  yaw_right_0.20/303 fixed_hold_after_exit: up=0.999 h=0.334 nonwheel=0.0N v=(-0.004,-0.000) wz=0.005
+  arc_left/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  arc_left/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  arc_left/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  arc_left/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  arc_left/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  arc_left/101 policy_arc_left: up=0.996 h=0.328 nonwheel=0.0N v=(0.101,0.008) wz=0.054
+  arc_left/101 brake_to_center: up=0.996 h=0.332 nonwheel=0.0N v=(0.012,0.005) wz=0.001
+  arc_left/101 A_exit_to_fixedstand: up=0.999 h=0.325 nonwheel=0.0N v=(-0.045,-0.010) wz=-0.003
+  arc_left/101 fixed_hold_after_exit: up=0.998 h=0.322 nonwheel=0.0N v=(-0.004,0.002) wz=-0.009
+  arc_left/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  arc_left/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  arc_left/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  arc_left/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  arc_left/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  arc_left/202 policy_arc_left: up=0.997 h=0.331 nonwheel=0.0N v=(0.105,0.009) wz=0.082
+  arc_left/202 brake_to_center: up=0.998 h=0.334 nonwheel=0.0N v=(0.020,0.008) wz=-0.004
+  arc_left/202 A_exit_to_fixedstand: up=1.000 h=0.331 nonwheel=0.0N v=(-0.039,-0.012) wz=0.002
+  arc_left/202 fixed_hold_after_exit: up=0.999 h=0.325 nonwheel=0.0N v=(-0.006,0.000) wz=-0.007
+  arc_left/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  arc_left/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  arc_left/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  arc_left/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  arc_left/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  arc_left/303 policy_arc_left: up=0.998 h=0.332 nonwheel=0.0N v=(0.106,0.007) wz=0.088
+  arc_left/303 brake_to_center: up=0.998 h=0.334 nonwheel=0.0N v=(0.016,0.007) wz=-0.001
+  arc_left/303 A_exit_to_fixedstand: up=1.000 h=0.333 nonwheel=0.0N v=(-0.052,-0.018) wz=-0.000
+  arc_left/303 fixed_hold_after_exit: up=0.999 h=0.328 nonwheel=0.0N v=(-0.006,0.000) wz=-0.005
+  arc_right/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  arc_right/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  arc_right/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  arc_right/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  arc_right/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  arc_right/101 policy_arc_right: up=0.995 h=0.330 nonwheel=0.0N v=(0.121,-0.035) wz=-0.144
+  arc_right/101 brake_to_center: up=0.995 h=0.350 nonwheel=0.0N v=(0.008,-0.008) wz=-0.007
+  arc_right/101 A_exit_to_fixedstand: up=0.998 h=0.338 nonwheel=0.0N v=(-0.038,0.023) wz=0.002
+  arc_right/101 fixed_hold_after_exit: up=0.999 h=0.335 nonwheel=0.0N v=(-0.006,-0.000) wz=0.005
+  arc_right/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  arc_right/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  arc_right/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  arc_right/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  arc_right/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  arc_right/202 policy_arc_right: up=0.996 h=0.332 nonwheel=0.0N v=(0.114,-0.027) wz=-0.188
+  arc_right/202 brake_to_center: up=0.996 h=0.345 nonwheel=0.0N v=(0.017,-0.019) wz=-0.001
+  arc_right/202 A_exit_to_fixedstand: up=0.998 h=0.341 nonwheel=0.0N v=(-0.044,0.036) wz=-0.007
+  arc_right/202 fixed_hold_after_exit: up=0.999 h=0.337 nonwheel=0.0N v=(-0.006,0.001) wz=0.004
+  arc_right/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  arc_right/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  arc_right/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  arc_right/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  arc_right/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  arc_right/303 policy_arc_right: up=0.997 h=0.332 nonwheel=0.0N v=(0.113,-0.018) wz=-0.249
+  arc_right/303 brake_to_center: up=0.998 h=0.339 nonwheel=0.0N v=(0.009,-0.015) wz=-0.002
+  arc_right/303 A_exit_to_fixedstand: up=0.999 h=0.338 nonwheel=0.0N v=(-0.036,0.039) wz=-0.008
+  arc_right/303 fixed_hold_after_exit: up=0.999 h=0.333 nonwheel=0.0N v=(-0.007,0.003) wz=0.005
+  vy_probe_0.10/101 passive: up=1.000 h=0.216 nonwheel=31.0N v=(-0.041,0.002) wz=-0.001
+  vy_probe_0.10/101 A_fixstand: up=0.999 h=0.215 nonwheel=14.0N v=(0.038,-0.000) wz=0.000
+  vy_probe_0.10/101 fixed_hold_before_B: up=1.000 h=0.374 nonwheel=0.0N v=(0.010,0.000) wz=0.002
+  vy_probe_0.10/101 B_enter_policy_centered: up=1.000 h=0.372 nonwheel=0.0N v=(0.030,0.001) wz=0.006
+  vy_probe_0.10/101 policy_static_before_motion: up=1.000 h=0.372 nonwheel=0.0N v=(0.020,-0.001) wz=-0.002
+  vy_probe_0.10/101 policy_vy_probe_0.10: up=0.999 h=0.331 nonwheel=0.0N v=(0.002,0.000) wz=-0.003
+  vy_probe_0.10/101 brake_to_center: up=0.999 h=0.330 nonwheel=0.0N v=(-0.004,0.000) wz=-0.002
+  vy_probe_0.10/101 A_exit_to_fixedstand: up=0.999 h=0.329 nonwheel=0.0N v=(-0.001,0.000) wz=-0.001
+  vy_probe_0.10/101 fixed_hold_after_exit: up=0.999 h=0.326 nonwheel=0.0N v=(-0.002,0.000) wz=0.000
+  vy_probe_0.10/202 passive: up=1.000 h=0.216 nonwheel=38.2N v=(-0.039,-0.001) wz=0.004
+  vy_probe_0.10/202 A_fixstand: up=0.999 h=0.215 nonwheel=16.2N v=(0.034,0.001) wz=0.007
+  vy_probe_0.10/202 fixed_hold_before_B: up=1.000 h=0.364 nonwheel=0.0N v=(0.004,0.005) wz=0.004
+  vy_probe_0.10/202 B_enter_policy_centered: up=1.000 h=0.363 nonwheel=0.0N v=(0.031,0.000) wz=-0.003
+  vy_probe_0.10/202 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.026,0.002) wz=0.003
+  vy_probe_0.10/202 policy_vy_probe_0.10: up=1.000 h=0.336 nonwheel=0.0N v=(0.003,-0.000) wz=0.000
+  vy_probe_0.10/202 brake_to_center: up=1.000 h=0.335 nonwheel=0.0N v=(0.000,-0.000) wz=0.000
+  vy_probe_0.10/202 A_exit_to_fixedstand: up=1.000 h=0.334 nonwheel=0.0N v=(-0.001,-0.000) wz=-0.000
+  vy_probe_0.10/202 fixed_hold_after_exit: up=0.999 h=0.331 nonwheel=0.0N v=(-0.001,-0.000) wz=0.000
+  vy_probe_0.10/303 passive: up=1.000 h=0.216 nonwheel=45.6N v=(-0.038,0.002) wz=-0.002
+  vy_probe_0.10/303 A_fixstand: up=0.999 h=0.216 nonwheel=17.1N v=(0.034,0.000) wz=0.002
+  vy_probe_0.10/303 fixed_hold_before_B: up=1.000 h=0.363 nonwheel=0.0N v=(0.003,0.001) wz=0.003
+  vy_probe_0.10/303 B_enter_policy_centered: up=1.000 h=0.361 nonwheel=0.0N v=(0.028,0.000) wz=-0.005
+  vy_probe_0.10/303 policy_static_before_motion: up=1.000 h=0.370 nonwheel=0.0N v=(0.029,0.000) wz=0.001
+  vy_probe_0.10/303 policy_vy_probe_0.10: up=0.999 h=0.337 nonwheel=0.0N v=(0.002,0.000) wz=0.003
+  vy_probe_0.10/303 brake_to_center: up=1.000 h=0.336 nonwheel=0.0N v=(-0.000,0.000) wz=-0.000
+  vy_probe_0.10/303 A_exit_to_fixedstand: up=1.000 h=0.335 nonwheel=0.0N v=(-0.001,0.000) wz=-0.000
+  vy_probe_0.10/303 fixed_hold_after_exit: up=0.999 h=0.332 nonwheel=0.0N v=(-0.001,0.000) wz=0.000
+{
+  "static": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.00891180145787572,
+      "mean_vy_m_s": 1.972721541460293e-05,
+      "mean_wz_rad_s": -0.00015609034978469446
+    },
+    "max_brake_distance_m": 0.003174051642517227
+  },
+  "forward_0.10": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.09851902067304925,
+      "mean_vy_m_s": -0.008236841636030745,
+      "mean_wz_rad_s": -0.05890122464752015
+    },
+    "max_brake_distance_m": 0.051197682004351645
+  },
+  "forward_0.30": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.2966077352585878,
+      "mean_vy_m_s": -0.04685134378449942,
+      "mean_wz_rad_s": -0.06629564799508522
+    },
+    "max_brake_distance_m": 0.06715917875092767
+  },
+  "reverse_0.10": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": -0.08147911127994102,
+      "mean_vy_m_s": 0.028317669549900514,
+      "mean_wz_rad_s": -0.06809305891887059
+    },
+    "max_brake_distance_m": 0.03300016519596095
+  },
+  "reverse_0.30": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": -0.2796381489585286,
+      "mean_vy_m_s": 0.06685454074667059,
+      "mean_wz_rad_s": -0.071406547113548
+    },
+    "max_brake_distance_m": 0.021568902483952747
+  },
+  "yaw_left_0.20": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.06317924701417062,
+      "mean_vy_m_s": 0.006791428292684417,
+      "mean_wz_rad_s": 0.278796311258869
+    },
+    "max_brake_distance_m": 0.03292903618452714
+  },
+  "yaw_right_0.20": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.057700877838865884,
+      "mean_vy_m_s": -0.004537235476263227,
+      "mean_wz_rad_s": -0.28596931765675965
+    },
+    "max_brake_distance_m": 0.11421456625015766
+  },
+  "arc_left": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.1040335014701893,
+      "mean_vy_m_s": 0.008252572099207432,
+      "mean_wz_rad_s": 0.07449553864802373
+    },
+    "max_brake_distance_m": 0.05705536948505145
+  },
+  "arc_right": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.11584223395398403,
+      "mean_vy_m_s": -0.02675644248365257,
+      "mean_wz_rad_s": -0.1936568705111561
+    },
+    "max_brake_distance_m": 0.04581880319847569
+  },
+  "vy_probe_0.10": {
+    "trials": 3,
+    "passed": 3,
+    "stable": 3,
+    "brake_ok": 3,
+    "fixed_exit_ok": 3,
+    "mean_tracking": {
+      "mean_vx_m_s": 0.0020581366654434307,
+      "mean_vy_m_s": 8.447859042504654e-05,
+      "mean_wz_rad_s": -1.780474580241869e-05
+    },
+    "max_brake_distance_m": 0.0022053099851313093
+  }
+}
+saved /home/caolin/as2w_workstation/部署参考/as2w-flat-rerun/results/rolling_fixed_exit_rehearsal_20261111.json

@@ -1,0 +1,6 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+BOUNDED SINGLE-AXIS PROBE: A/B/Y ignored.
+Type 'GO' and press Enter to start (nothing else proceeds).
+as2w_r214_publish: /home/unitree/dev/cyclonedds__noshm/cyclonedds-cxx-0.10.2/src/ddscxx/src/org/eclipse/cyclonedds/core/EntityDelegate.cpp:255: void org::eclipse::cyclonedds::core::EntityDelegate::prevent_callbacks(): Assertion `false' failed.
+terminate called after throwing an instance of '/bin/bash: line 1: 58192 Done                    echo GO
+     58193 Aborted                 (core dumped) | ./build-r214-publish/deploy/robots/as2w/r214/as2w_r214_publish models/r214/deploy.yaml config/r152_measured.map eth0 --i-confirm-lowcmd-publish --probe-index 0 --probe-amplitude 0.03 --probe-kp 20

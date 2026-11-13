@@ -1,0 +1,30 @@
+[ 10%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick.dir/r1199_controller.cpp.o
+[ 10%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[ 15%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199.dir/r1199_controller.cpp.o
+[ 20%] Linking CXX static library libas2w_policy.a
+[ 20%] Built target as2w_policy
+[ 35%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 35%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 35%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 40%] Linking CXX executable as2w_controller_test
+[ 45%] Linking CXX executable as2w_deploy
+[ 45%] Built target as2w_controller_test
+[ 50%] Linking CXX executable as2w_bench
+[ 50%] Built target as2w_deploy
+[ 50%] Built target as2w_bench
+[ 60%] Linking CXX static library libas2w_r1199_joystick.a
+[ 60%] Linking CXX static library libas2w_r1199.a
+[ 60%] Built target as2w_r1199_joystick
+[ 60%] Built target as2w_r1199
+[ 65%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/r214/r214_publish.cpp.o
+[ 70%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_replay.dir/r1199_replay.cpp.o
+[ 75%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/r214/r214_publish.cpp.o
+[ 80%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_replay.dir/r1199_replay.cpp.o
+[ 85%] Linking CXX executable as2w_r1199_replay
+[ 90%] Linking CXX executable as2w_r1199_joystick_replay
+[ 90%] Built target as2w_r1199_replay
+[ 90%] Built target as2w_r1199_joystick_replay
+[ 95%] Linking CXX executable as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_publish

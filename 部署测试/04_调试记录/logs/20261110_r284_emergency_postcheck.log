@@ -1,0 +1,10 @@
+PUBLISHERS
+10449 /bin/sh -c sh /data/local/tmp/as2w_field/cpro_ubuntu.sh /bin/bash -lc 'cd /root/as2w_deploy && export LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib; echo PUBLISHERS; pgrep -af as2w_r284_publish || true; echo LOWSTATE; ./build-sdk2/as2w_sdk2 low-state eth0 rt/lowstate 1; echo MOTION; ./build-sdk2/as2w_sdk2 motion-mode eth0'
+10451 unshare --mount --uts --fork /bin/sh -c      set -eu     rootfs=$1     shift     # CPRO unshare -m isolates mounts; verified proc is absent outside.     mount -t proc proc "$rootfs/proc"     mount -t sysfs sysfs "$rootfs/sys"     mkdir -p "$rootfs/dev/pts" "$rootfs/dev/shm"     mount -o bind /dev "$rootfs/dev"     mount -o bind /dev/pts "$rootfs/dev/pts"     mount -o bind /dev/shm "$rootfs/dev/shm"     exec chroot "$rootfs" "$@"  sh /data/ubuntu_in_hm/ubuntu_rootfs /bin/bash -lc cd /root/as2w_deploy && export LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib; echo PUBLISHERS; pgrep -af as2w_r284_publish || true; echo LOWSTATE; ./build-sdk2/as2w_sdk2 low-state eth0 rt/lowstate 1; echo MOTION; ./build-sdk2/as2w_sdk2 motion-mode eth0
+10452 /bin/bash -lc cd /root/as2w_deploy && export LD_LIBRARY_PATH=/root/unitree_sdk2_install/lib; echo PUBLISHERS; pgrep -af as2w_r284_publish || true; echo LOWSTATE; ./build-sdk2/as2w_sdk2 low-state eth0 rt/lowstate 1; echo MOTION; ./build-sdk2/as2w_sdk2 motion-mode eth0
+LOWSTATE
+low packets=0
+No compatible HG LowState packets
+MOTION
+MotionSwitcher CheckMode rc=3104 form= name=
+MotionSwitcher CheckMode failed

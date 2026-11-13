@@ -1,0 +1,10 @@
+time=2026-11-12 20:41:07 +08:00
+review=field recording and proposed debug mode; documentation only
+source_session=部署参考/cpp_deploy-as2w/tools/run_r1199_field_session.sh
+source_low_capture=部署参考/cpp_deploy-as2w/deploy/robots/as2w/src/diagnostics.cpp
+source_policy_diag=部署参考/cpp_deploy-as2w/deploy/robots/as2w/common/as2w_publish.cpp
+sample_session=部署测试/04_调试记录/logs/field_sessions/20261112-114347_training-contract/
+finding=LowState target 2ms; R1199 policy diag 20ms but exact 65-D model Observation absent; handoff diag target is pre-blend
+change=clarified current capture and proposed debug mode in 部署测试/02_现场操作/策略交付到实机全流程/04_实机验证阶梯.md
+doc_sha256=0BC24FDD945B8ECDF58C01122D6048F943D54FA856766A0D44DED53F87BA61E7
+robot_action=none; no build or CPRO sync

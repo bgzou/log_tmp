@@ -1,0 +1,308 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r1199-forward
+[ 25%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_forward.dir/r1199_controller.cpp.o
+[ 50%] Linking CXX static library libas2w_r1199_forward.a
+[ 50%] Built target as2w_r1199_forward
+[ 75%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_forward_replay.dir/r1199_replay.cpp.o
+[100%] Linking CXX executable as2w_r1199_forward_replay
+[100%] Built target as2w_r1199_forward_replay
+Consolidate compiler generated dependencies of target as2w_r1199_forward
+[ 50%] Built target as2w_r1199_forward
+[ 75%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_forward_publish.dir/__/r214/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r1199_forward_publish
+[100%] Built target as2w_r1199_forward_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-forward
+Test project /root/as2w_deploy/build-r1199-forward
+    Start 1: recovery-r09
+Could not find executable /root/as2w_deploy/build-r1199-forward/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/as2w_deploy
+1/9 Test #1: recovery-r09 .....................***Not Run   0.00 sec
+    Start 2: recovery-r12
+Could not find executable /root/as2w_deploy/build-r1199-forward/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/as2w_deploy
+2/9 Test #2: recovery-r12 .....................***Not Run   0.00 sec
+    Start 3: recovery-r13
+Could not find executable /root/as2w_deploy/build-r1199-forward/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/as2w_deploy
+3/9 Test #3: recovery-r13 .....................***Not Run   0.00 sec
+    Start 4: stairs-r14
+Could not find executable /root/as2w_deploy/build-r1199-forward/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/as2w_deploy
+4/9 Test #4: stairs-r14 .......................***Not Run   0.00 sec
+    Start 5: stairs-r17-2000
+Could not find executable /root/as2w_deploy/build-r1199-forward/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/as2w_deploy
+5/9 Test #5: stairs-r17-2000 ..................***Not Run   0.00 sec
+    Start 6: stairs-r17-3000
+Could not find executable /root/as2w_deploy/build-r1199-forward/as2w_deploy
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+/root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Release/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Debug/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+root/as2w_deploy/build-r1199-forward/Development/as2w_deploy
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/as2w_deploy
+6/9 Test #6: stairs-r17-3000 ..................***Not Run   0.00 sec
+    Start 7: controller
+Could not find executable /root/as2w_deploy/build-r1199-forward/as2w_controller_test
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Release/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Release/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Debug/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Deployment/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Development/as2w_controller_test
+/root/as2w_deploy/build-r1199-forward/Development/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Release/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Release/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Debug/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Debug/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/MinSizeRel/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/RelWithDebInfo/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Deployment/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Development/as2w_controller_test
+root/as2w_deploy/build-r1199-forward/Development/as2w_controller_test
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/as2w_controller_test
+7/9 Test #7: controller .......................***Not Run   0.00 sec
+    Start 8: r1199-forward-startup-audit
+8/9 Test #8: r1199-forward-startup-audit ......   Passed    0.10 sec
+    Start 9: r1199-startup-frame-audit
+Could not find executable /root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_publish
+Looked in the following places:
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Release/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Release/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Debug/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Debug/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/MinSizeRel/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/MinSizeRel/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/RelWithDebInfo/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/RelWithDebInfo/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Deployment/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Deployment/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Development/as2w_r1199_publish
+/root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Development/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Release/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Release/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Debug/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Debug/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/MinSizeRel/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/MinSizeRel/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/RelWithDebInfo/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/RelWithDebInfo/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Deployment/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Deployment/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Development/as2w_r1199_publish
+root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/Development/as2w_r1199_publish
+Unable to find executable: /root/as2w_deploy/build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_publish
+9/9 Test #9: r1199-startup-frame-audit ........***Not Run   0.00 sec
+
+11% tests passed, 8 tests failed out of 9
+
+Total Test time (real) =   0.12 sec
+
+The following tests FAILED:
+	  1 - recovery-r09 (Not Run)
+	  2 - recovery-r12 (Not Run)
+	  3 - recovery-r13 (Not Run)
+	  4 - stairs-r14 (Not Run)
+	  5 - stairs-r17-2000 (Not Run)
+	  6 - stairs-r17-3000 (Not Run)
+	  7 - controller (Not Run)
+	  9 - r1199-startup-frame-audit (Not Run)
+Errors while running CTest

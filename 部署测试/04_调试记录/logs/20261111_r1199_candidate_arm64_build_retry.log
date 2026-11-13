@@ -1,0 +1,9 @@
+Consolidate compiler generated dependencies of target as2w_r1199
+[ 25%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199.dir/r1199_controller.cpp.o
+[ 50%] Linking CXX static library libas2w_r1199.a
+[ 50%] Built target as2w_r1199
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+[ 75%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/r214/r214_publish.cpp.o
+[100%] Linking CXX executable as2w_r1199_publish
+[100%] Built target as2w_r1199_publish
+BUILD_RC=True

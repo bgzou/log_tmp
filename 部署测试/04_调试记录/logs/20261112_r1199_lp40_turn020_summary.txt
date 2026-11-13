@@ -1,0 +1,6 @@
+101 turn_left stable False tracked False held False nonwheel False min_knee_m 0.0006 hold_m 0.0421 brake_m 0.054
+101 turn_right stable False tracked False held False nonwheel False min_knee_m 0.0043 hold_m 0.0441 brake_m 0.053
+202 turn_left stable True tracked False held False nonwheel False min_knee_m 0.0285 hold_m 0.0191 brake_m 0.0206
+202 turn_right stable True tracked False held True nonwheel False min_knee_m 0.0277 hold_m 0.014 brake_m 0.0249
+303 turn_left stable True tracked False held True nonwheel False min_knee_m 0.035 hold_m 0.0134 brake_m 0.0205
+303 turn_right stable True tracked False held True nonwheel False min_knee_m 0.0364 hold_m 0.0127 brake_m 0.0161

@@ -1,0 +1,40 @@
+[field-session] mode=r4000 monitor=240s dry_run=0 vx_limit=0.2 wz_limit=0.1 dir=/root/field_sessions/20261113-112115_r4000
+[field-session] step1 binary: build-r4000-joystick/deploy/robots/as2w/r4000/as2w_r4000_joystick_publish
+b13e674c8d7c687f1621195f1adb4b3fc947f049ada597347c68d94446027969  deploy/robots/as2w/common/as2w_publish.cpp
+dc9b5808f46020585e6ff4e4c93293514a62fbe688d34c2c361eb622e00f54b2  deploy/robots/as2w/r4000/r4000_controller.cpp
+0918387856232d2f428e3601d423300c38d74e78a99652f819f543b0987c32fd  deploy/robots/as2w/r4000/r4000_controller.hpp
+8966f0f9b80049846aba34fe78defd95a0ef4ffa10088dd5ba76d1b82585c02c  deploy/robots/as2w/r4000/r4000_observations.hpp
+4ca26985e1fd8b56617428c52b75e5d40205bef1cc4c03ec7c2e6da46dbc9edb  tools/run_r4000_trial.sh
+dd42ada25c494fb1801dfdc11e9bde01fd442f8a0ab453da9cfbfbbb29083775  models/r4000/policy.onnx
+3b0bbc28350be6e6c9800457aa4887199e635c9df6d3a2ac3dfd02fe0b5f6d54  build-r4000-joystick/deploy/robots/as2w/r4000/as2w_r4000_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1034 tick=294671 mode_pr=0 mode_machine=2 imu_wxyz=0.99973,0.00296605,-0.00142942,0.0230085, gyro=0.00106526,-0.00106526,0, m0=-0.580252,-0.0184078 m1=1.0505,0 m2=-2.76228,0.00409062 m3=0.573535,-0.00613592 m4=1.04748,0 m5=-2.75691,0.0143172 m6=-0.570659,0.00613592 m7=1.04824,0.00306796 m8=-2.75504,-0.00204531 m9=0.574368,-0.00920388 m10=1.04266,-0.00613592 m11=-2.75211,0.00204531 m12=-0.384286,0 m13=-0.39826,0 m14=-0.314586,0 m15=-0.654626,-0.0122718 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=ai
+[field-session] step3 factory control (ai): ensure prone before releasing
+[field-session] step3 current fsm: fsm_name=ai_damping
+[field-session] step3 prone confirmed -> ReleaseMode
+[field-session] step3 release: MotionSwitcher ReleaseMode rc=0
+[field-session] step3 recheck: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step4 sample: LOW_SAMPLE,2000,2086,0,298847,0,2,0.999734,0.00299454,-0.00162963,0.0228226,-0.00639159,-0.00106526,0.00532632,-0.580234
+[field-session] step4 packets=2086 16-axis modes={0}
+[field-session] step4 prone calf gate=yes
+[field-session] step5 starting 240s monitoring (low-capture 2ms + low-protection)
+[field-session] step6 launching: bash tools/run_r4000_trial.sh --vx-limit 0.2 --wz-limit 0.1
+[field-session]     >>> Passive ready expected in ~3-5s; then hand the remote to the operator.
+[field-session]     >>> R4000 (training-contract 5Hz leg filter + 0.9rad/s slew): A=fixed stand, B=2s zero handoff then LY vx +/-0.2m/s, RX yaw +/-0.1rad/s for max30s; center sticks to stop, A brakes early, Y squats, X=emergency; LX ignored.
+[field-session] publisher exited rc=0
+[field-session] policy diagnostics archived: policy_diag.log (1 lines)
+[field-session] debug diagnostics archived: debug_policy.csv (1 lines)
+[field-session] debug diagnostics archived: debug_lowcmd.csv (60385 lines)
+[field-session] monitoring done; artifacts:
+total 82281
+drwxr-xr-x.  2 root root     3440 Nov 13 11:23 .
+drwxr-xr-x. 44 root root     3440 Nov 13 11:21 ..
+-rw-r--r--.  1 root root 25939897 Nov 13 11:23 debug_lowcmd.csv
+-rw-r--r--.  1 root root      295 Nov 13 11:23 debug_policy.csv
+-rw-r--r--.  1 root root 52952483 Nov 13 11:23 low_capture_fast.log
+-rw-r--r--.  1 root root  5263360 Nov 13 11:23 low_protection.log
+-rw-r--r--.  1 root root      162 Nov 13 11:23 policy_diag.log
+-rw-r--r--.  1 root root     1522 Nov 13 11:23 publisher.log
+-rw-r--r--.  1 root root     3313 Nov 13 11:23 session.log
+[field-session] session complete (mode=r4000 rc=0). Copy /root/field_sessions/20261113-112115_r4000 back to the workstation logs dir and append INDEX.

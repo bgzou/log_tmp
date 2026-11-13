@@ -1,0 +1,51 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+ZERO-B TRIAL: A fixed stand; once B enters R214 at forced zero speed, auto-returns and squats; sticks forced neutral.
+Type 'GO' and press Enter to start (nothing else proceeds).
+FIELD_SAFETY_PROFILE command_accel=0.2,0.1,0.2 command_decel=0.4,0.2,0.4 remote_timeout_ms=200 leg_dq=5/8 wheel_dq=8/12 leg_tau=35/50 wheel_tau=8/12 leg_pd=35/50 wheel_pd=8/15 leg_step=0.2/0.35 wheel_step=15/30 warn_frames=5 hard_frames=3 (units: dq rad/s, tau/pd Nm, step per 20 ms)
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=6575369 packets=610
+FSM started in Passive startup. A/Y enabled; B once (forced zero speed, auto return+squat). X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 743 frames
+[Passive] → FixStand (A)
+[FixStand] → FixedStand (PD hold; B required for R214)
+[FixedStand] → PolicyHandoff (B accepted: pose_error=0.277772 wheel_dq=0.0122718 upright=0.994387 quiet_dq=0.0276117)
+[PolicyHandoff] → PolicyWalk (zero-speed handoff complete)
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.200501,0.398856,-0.39571,0.385283,-0.386512,-0.12476,-0.11666,0.0104201,0.000265718,0.130625,0.158254,0.109424,0.0739551
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.40034,0.398879,-0.39574,0.375085,-0.370597,-0.124928,-0.131802,0.00372094,-0.0222227,0.130617,0.158274,0.0894947,0.0632612
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.600395,0.398891,-0.395722,0.372982,-0.369968,-0.121332,-0.127392,-0.00685513,-0.0247993,0.130689,0.158306,0.0884241,0.0632212
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.800365,0.398909,-0.395728,0.36796,-0.369272,-0.120296,-0.126817,-0.0176649,-0.0263453,0.130705,0.158346,0.0870219,0.0631773
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.00021,0.398921,-0.39571,0.364539,-0.367511,-0.11996,-0.126661,-0.0271624,-0.0266868,0.130765,0.15835,0.0826676,0.0619789
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.20076,0.398921,-0.395698,0.356539,-0.357168,-0.115634,-0.126697,-0.0288582,-0.0311929,0.130769,0.158346,0.074738,0.0617791
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.4029,0.398921,-0.395716,0.353777,-0.353375,-0.11434,-0.126685,-0.0325014,-0.0339553,0.130781,0.15835,0.0652665,0.060349
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.60045,0.398915,-0.395728,0.349061,-0.35328,-0.112872,-0.126517,-0.0389369,-0.0343867,0.130773,0.158386,0.061136,0.0600814
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.80029,0.402792,-0.399598,0.347155,-0.356728,-0.116452,-0.130638,-0.0514395,-0.0384095,0.13023,0.157813,0.0557797,0.0556399
+WALK_CMD vx=0 vy=0 wz=0 requested=0,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,2.00044,0.414382,-0.410649,0.345715,-0.357138,-0.113288,-0.133902,-0.0605416,-0.0473713,0.128581,0.15603,0.0436047,0.0436646
+[PolicyWalk] brake trigger=bounded zero hold cap
+[PolicyWalk] → Brake
+POLICY_TRACK,2.20007,0.414358,-0.410439,0.337074,-0.351823,-0.0992664,-0.122984,-0.060242,-0.0465683,0.128613,0.156038,0.0436685,0.0438684
+POLICY_TRACK,2.40047,0.414364,-0.410439,0.33273,-0.351163,-0.0947603,-0.117358,-0.0630703,-0.0465743,0.128677,0.156062,0.0436287,0.0439322
+POLICY_TRACK,2.60011,0.414358,-0.410337,0.330645,-0.348353,-0.0893974,-0.111396,-0.063256,-0.046796,0.128753,0.156058,0.0435487,0.0440361
+POLICY_TRACK,2.79989,0.414376,-0.410194,0.326241,-0.343446,-0.0882349,-0.104972,-0.0638792,-0.0471076,0.128944,0.156054,0.0434849,0.0440841
+POLICY_TRACK,2.99989,0.414376,-0.410182,0.323371,-0.341432,-0.0880371,-0.104697,-0.0643107,-0.0476709,0.128956,0.156062,0.0434289,0.0440481
+POLICY_TRACK,3.2001,0.414382,-0.410002,0.321621,-0.340396,-0.0871683,-0.104768,-0.0642927,-0.0484019,0.128996,0.15607,0.0434688,0.0440202
+POLICY_TRACK,3.39992,0.41437,-0.409816,0.320476,-0.339383,-0.0825244,-0.104732,-0.0633039,-0.0492049,0.128996,0.156074,0.0435008,0.0439882
+[Brake] → ReturnStand (A/timeout, wheels stable)
+[ReturnStand] → FixedStand (A complete)
+FixedStand squat trigger=Y
+[FixedStand] → FixSquat
+[FixSquat] → Passive (auto, squat done + kp decay)
+ZERO-B TRIAL: prone hold complete, stop
+Operator exit; stop.
+Publisher stopped, exit=0
+R1199_ZERO_B_REMOTE_RC=0

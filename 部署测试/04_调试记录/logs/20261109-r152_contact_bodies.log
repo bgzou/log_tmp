@@ -1,0 +1,4 @@
+fixed count 23 first_hit_body Counter({'RL_calf': 11, 'RR_calf': 8, 'RL_thigh': 2, 'RR_thigh': 2})
+peak_nonwheel_min_median_max 50.39479804411431 59.13173629022934 122.25966937016588
+independent count 16 first_hit_body Counter({'RR_thigh': 5, 'RR_calf': 5, 'RL_calf': 5, 'RL_thigh': 1})
+peak_nonwheel_min_median_max 53.64158401815167 84.16291908195541 167.3260966098765

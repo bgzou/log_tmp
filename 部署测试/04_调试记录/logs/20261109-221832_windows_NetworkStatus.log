@@ -1,0 +1,15 @@
+﻿eth0             DOWN           192.168.123.100/24 
+0:	from all uidrange 0-65534 lookup local
+1000:	from all to 192.168.123.0/24 uidrange 0-65534 lookup main
+11000:	from all fwmark 0x10063/0x1ffff iif lo uidrange 0-65534 lookup 99
+11000:	from all fwmark 0x10064/0x1ffff iif lo uidrange 0-65534 lookup 2013
+12000:	from all iif lo oif wlan0 uidrange 0-65534 lookup 2013
+13000:	from all fwmark 0/0x10000 uidrange 0-65534 lookup 99
+16000:	from all fwmark 0/0xffff iif lo uidrange 0-65534 lookup 2013
+32766:	from all uidrange 0-65534 lookup main
+192.168.123.161 dev eth0 src 192.168.123.100 
+    cache 
+Ping 192.168.123.161 (192.168.123.161) from eth0 (192.168.123.100): 56(84) bytes.
+
+--- 192.168.123.161 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss

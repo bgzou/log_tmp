@@ -1,0 +1,42 @@
+Consolidate compiler generated dependencies of target as2w_r1199
+[ 10%] Built target as2w_policy
+[ 20%] Built target as2w_r1199_forward
+[ 30%] Built target as2w_r1199
+[ 40%] Built target as2w_deploy
+[ 50%] Built target as2w_bench
+[ 60%] Built target as2w_controller_test
+[ 70%] Built target as2w_r1199_forward_replay
+Consolidate compiler generated dependencies of target as2w_r1199_forward_publish
+Consolidate compiler generated dependencies of target as2w_r1199_publish
+Consolidate compiler generated dependencies of target as2w_r1199_replay
+[ 80%] Built target as2w_r1199_replay
+[ 85%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/r214/r214_publish.cpp.o
+[ 90%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_forward_publish.dir/__/r214/r214_publish.cpp.o
+[ 95%] Linking CXX executable as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_forward_publish
+[100%] Built target as2w_r1199_publish
+[100%] Built target as2w_r1199_forward_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-forward
+Test project /root/as2w_deploy/build-r1199-forward
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r1199-forward-startup-audit
+8/9 Test #8: r1199-forward-startup-audit ......   Passed    0.10 sec
+    Start 9: r1199-startup-frame-audit
+9/9 Test #9: r1199-startup-frame-audit ........   Passed    0.10 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.36 sec

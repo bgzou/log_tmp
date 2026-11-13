@@ -1,0 +1,11 @@
+﻿Stage: sport-command
+Started: 2026-11-09T11:37:51+08:00
+Command: ./build-sdk2/as2w_sdk2 sport-command eth0 get-state
+auto_recovery_switch=true
+fsm_id=0
+fsm_name=ai_damping
+process_state=active
+speed_level=0
+Sport API rc=0
+Exit code: 0
+Finished: 2026-11-09T11:37:51+08:00

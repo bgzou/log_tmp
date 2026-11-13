@@ -1,0 +1,11 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+PASSIVE ONLY: A/B/Y ignored.
+Type 'GO' and press Enter to start (nothing else proceeds).
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=3329178 packets=618
+FSM started in Passive startup. A/B/Y locked out. X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 743 frames
+PASSIVE ONLY: bounded duration complete
+Operator exit; stop.
+Done. Final state: EmergencyDamping

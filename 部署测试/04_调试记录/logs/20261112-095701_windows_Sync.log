@@ -1,0 +1,41 @@
+﻿Sync started: 2026-11-12T09:57:01.7258606+08:00
+recovery-r09 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r12 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r13 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r14 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-2000 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-3000 ONNX SHA256 OK; actor SHA256 and header OK
+checked 6 models
+
+
+Algorithm : SHA256
+Hash      : A650D285BC33662591E5ECF15D7BB3593F8880E7F827FEEB5C13A49713E80CA4
+Path      : D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\cpp_deploy-as2w.tar.gz
+
+
+
+Package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\cpp_deploy-as2w.tar.gz
+
+
+Algorithm : SHA256
+Hash      : 0A1679FE34D950B314669C2925C5DD29A718FCF6E8D5FBBF20D28956C43B9767
+Path      : D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\unitree_sdk2-src.tar.gz
+
+
+
+SDK2 package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\unitree_sdk2-src.tar.gz
+Field package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试
+a650d285bc33662591e5ecf15d7bb3593f8880e7f827feeb5c13a49713e80ca4  cpp_deploy-as2w.tar.gz
+0a1679fe34d950b314669c2925c5dd29a718fcf6e8d5fbbf20d28956c43b9767  unitree_sdk2-src.tar.gz
+[Fail]ExecuteCommand need connect-key? please confirm a device by help info
+
+[Fail]ExecuteCommand need connect-key? please confirm a device by help info
+
+[Fail]ExecuteCommand need connect-key? please confirm a device by help info
+
+[Fail]ExecuteCommand need connect-key? please confirm a device by help info
+
+[Fail]ExecuteCommand need connect-key? please confirm a device by help info
+
+[Fail]ExecuteCommand need connect-key? please confirm a device by help info
+

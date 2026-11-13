@@ -1,0 +1,2 @@
+{"config": {"pose": "crouch", "guard": false, "effort": 0.9, "clip": "urdf", "crouch_h": 0.21469442172666184}, "summary": {"cr0": [0, 5, 5], "cr1": [0, 5, 5], "cr2": [0, 5, 5], "cr3": [0, 5, 5], "cr4": [0, 5, 5], "cr5": [0, 5, 5], "cr6": [0, 5, 5], "cr7": [0, 5, 5]}}
+AGG pass=0/40 rise_fail=40

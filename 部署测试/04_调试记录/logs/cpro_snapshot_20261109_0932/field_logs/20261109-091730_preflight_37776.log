@@ -1,0 +1,72 @@
+Stage: preflight
+Started: 2026-11-09T09:17:30+08:00
+Command: bash tools/probe_cpro.sh
+=== runtime ===
+Linux localhost 5.10.43 #1 SMP Thu Oct 22 03:39:07 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+aarch64
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+uid=0(root) gid=0(root) groups=0(root),1006,1007,2000,3009
+/bin/g++
+/bin/cmake
+=== networking (read only) ===
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+dummy0           DOWN           32:92:9b:fb:41:09 <BROADCAST,NOARP> 
+tunl0@NONE       DOWN           0.0.0.0 <NOARP> 
+ip_vti0@NONE     DOWN           0.0.0.0 <NOARP> 
+ip6_vti0@NONE    DOWN           :: <NOARP> 
+sit0@NONE        DOWN           0.0.0.0 <NOARP> 
+ip6tnl0@NONE     DOWN           :: <NOARP> 
+eth0             UP             00:18:82:0c:0d:65 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth1             DOWN           00:18:82:0c:0d:64 <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+endvnic          DOWN           00:e0:fc:fc:d3:d3 <BROADCAST,MULTICAST> 
+can0             DOWN           <NOARP,ECHO> 
+Hisilicon0       DOWN           00:00:00:00:00:00 <BROADCAST,MULTICAST> 
+wlan0            UP             a2:c1:99:7a:5e:b8 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+p2p0             DORMANT        62:c4:28:98:d6:03 <NO-CARRIER,BROADCAST,MULTICAST,UP,LOWER_UP> 
+wlan1            DOWN           c4:11:02:78:03:ea <BROADCAST,MULTICAST> 
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+dummy0           DOWN           
+tunl0@NONE       DOWN           
+ip_vti0@NONE     DOWN           
+ip6_vti0@NONE    DOWN           
+sit0@NONE        DOWN           
+ip6tnl0@NONE     DOWN           
+eth0             UP             fe80::218:82ff:fe0c:d65/64 
+eth1             DOWN           
+endvnic          DOWN           
+can0             DOWN           
+Hisilicon0       DOWN           
+wlan0            UP             192.168.10.180/24 fe80::a0c1:99ff:fe7a:5eb8/64 
+p2p0             DORMANT        
+wlan1            DOWN           
+192.168.10.0/24 dev wlan0 proto kernel scope link src 192.168.10.180 
+0:	from all uidrange 0-65534 lookup local
+11000:	from all fwmark 0x10063/0x1ffff iif lo uidrange 0-65534 lookup 99
+11000:	from all fwmark 0x10064/0x1ffff iif lo uidrange 0-65534 lookup 2013
+12000:	from all iif lo oif wlan0 uidrange 0-65534 lookup 2013
+13000:	from all fwmark 0/0x10000 uidrange 0-65534 lookup 99
+16000:	from all fwmark 0/0xffff iif lo uidrange 0-65534 lookup 2013
+32766:	from all uidrange 0-65534 lookup main
+=== robot PC1 connectivity ===
+PING 192.168.123.161 (192.168.123.161) 56(84) bytes of data.
+
+--- 192.168.123.161 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2064ms
+
+=== USB and input ===
+=== namespace and mounts ===
+mount: failed to read mtab: No such file or directory
+=== SDK / model prerequisites ===
+Exit code: 0
+Finished: 2026-11-09T09:17:34+08:00

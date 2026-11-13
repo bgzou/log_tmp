@@ -1,0 +1,17 @@
+[field-session] mode=joystick monitor=30s dry_run=1 dir=/root/field_sessions/20261111-235549_joystick-dry-run
+[field-session] step1 binary: build-r1199-joystick/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+a99dc6d812fd35fe6262e7603411ad84cbfbbd229b4f9b31e6ade18ca5219e05  deploy/robots/as2w/r214/r214_publish.cpp
+541c7ae663879d60fb7e6d38c2811194c015f5e4ea115ddd26fd4c32e1715c25  deploy/robots/as2w/r1199/r1199_controller.cpp
+0babf0f12432f928faa1bacf78f736305b80d558dc89a114ca6d3e48ca668cf4  deploy/robots/as2w/r1199/r1199_controller.hpp
+0e794783bc2d0315117acf24728c4b2b136b881c2f9b9c6475f12a4a8447240c  tools/run_r1199_forward_trial.sh
+ca72bbe60abd5e4714e67f38dab1f5ed77949f47c86b5ca0de80230fb2d36d38  tools/run_r1199_joystick_trial.sh
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+e67675672f57ce21e842073436fb96e3abccaa4f4883ebe619cc3ae6f7d95297  build-r1199-joystick/deploy/robots/as2w/r1199/as2w_r1199_joystick_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1039 tick=11478462 mode_pr=0 mode_machine=2 imu_wxyz=0.996648,0.000461442,0.00521518,0.0816461, gyro=-0.00213053,-0.00532632,0.00106526, m0=-0.601285,-0.00920388 m1=0.954226,-0.00613592 m2=-2.69739,0.00818123 m3=0.591553,-0.00920388 m4=0.959655,0 m5=-2.71483,0 m6=-0.56103,0.0245437 m7=0.991209,-0.00613592 m8=-2.73095,0 m9=0.54376,0 m10=0.967031,0.00613592 m11=-2.74763,0.00204531 m12=-2.56108,0 m13=-3.77199,0 m14=-2.71376,-0.0122718 m15=-4.05834,0.0122718 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2003,2095,0,11480791,0,2,0.996647,0.000366839,0.0051905,0.0816502,-0.00319579,-0.0106526,-0.00532632,-0.60128
+[field-session] step4 packets=2095 16-axis modes={0}
+[field-session] step4 forward prone calf gate=yes
+[field-session] dry-run: steps 1-4 PASS; would now start monitoring + joystick launcher

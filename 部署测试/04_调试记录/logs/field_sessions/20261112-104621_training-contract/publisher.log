@@ -1,0 +1,18 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+R1199 JOYSTICK TRIAL: B accepts LY vx +/-0.05m/s, RX yaw +/-0.05rad/s for max 60s; LX ignored; center sticks to stop, A brakes, Y squats, X emergency.
+Type 'GO' and press Enter to start (nothing else proceeds).
+FIELD_SAFETY_PROFILE command_accel=0.2,0.1,0.2 command_decel=0.4,0.2,0.4 remote_timeout_ms=200 leg_dq=5/8 wheel_dq=8/12 leg_tau=35/50 wheel_tau=8/12 leg_pd=35/50 wheel_pd=8/15 leg_step=0.2/0.35 wheel_step=15/30 warn_frames=5 hard_frames=3 (units: dq rad/s, tau/pd Nm, step per 20 ms)
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=1296346 packets=607
+FSM started in Passive startup. A/Y enabled; B once (LY/RX capped, 60s maximum, then auto return+squat). X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 745 frames
+[Passive] → FixStand (A)
+[FixStand] → FixedStand (PD hold; B required for R214)
+FixedStand squat trigger=timeout
+[FixedStand] → FixSquat
+[FixSquat] → Passive (auto, squat done + kp decay)
+ZERO-B TRIAL: prone hold complete, stop
+Operator exit; stop.
+Publisher stopped, exit=0
+R1199_TRAINING_CONTRACT_REMOTE_RC=0

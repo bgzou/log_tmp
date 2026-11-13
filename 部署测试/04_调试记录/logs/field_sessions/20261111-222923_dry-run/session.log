@@ -1,0 +1,13 @@
+[field-session] mode=zero-b monitor=30s dry_run=1 dir=/root/field_sessions/20261111-222923_dry-run
+[field-session] step1 binary: build-r1199-zero-b/deploy/robots/as2w/r1199/as2w_r1199_publish
+b17057aab4d3fd627cff37ec58ebe2a3570cc55f74113975dbfe149c08af4641  deploy/robots/as2w/r214/r214_publish.cpp
+7beac2bbe02b139f8e747ab0824e929a30c0246c96e25e77123088eeed8c3dc8  deploy/robots/as2w/r1199/r1199_controller.cpp
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+7d34710d6cf26638168d651b731592c1e1a8f8388a255af724fd25b8004b5fdb  build-r1199-zero-b/deploy/robots/as2w/r1199/as2w_r1199_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1042 tick=6292265 mode_pr=0 mode_machine=2 imu_wxyz=0.99492,0.00258139,0.00166475,0.100623, gyro=0.00319579,-0.00426106,0.00532632, m0=-0.603304,-0.00613592 m1=0.961297,-0.00920388 m2=-2.69808,0.00409062 m3=0.59404,0.00920388 m4=0.951422,0 m5=-2.69686,0.0122718 m6=-0.628698,0.0122718 m7=0.942296,0.00613592 m8=-2.66333,0.00204531 m9=0.618728,0.00306796 m10=0.902113,-0.00613592 m11=-2.66336,0.00409062 m12=0.0796232,0.0245437 m13=-0.741895,0 m14=-0.0286903,0 m15=-0.943398,-0.0122718 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2002,2099,1,6294573,0,2,0.994926,0.00261896,0.00224633,0.100549,-0.0138484,-0.00532632,0.00319579,-0.603298,-
+[field-session] step4 packets=2099 16-axis modes={0}
+[field-session] dry-run: steps 1-4 PASS; would now start monitoring + zero-b launcher

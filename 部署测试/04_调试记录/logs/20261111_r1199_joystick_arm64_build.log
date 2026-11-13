@@ -1,0 +1,69 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r1199-joystick
+[  5%] Building CXX object CMakeFiles/as2w_policy.dir/src/policy.cpp.o
+[ 10%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199.dir/r1199_controller.cpp.o
+[ 15%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick.dir/r1199_controller.cpp.o
+[ 20%] Linking CXX static library libas2w_policy.a
+[ 20%] Built target as2w_policy
+[ 25%] Building CXX object CMakeFiles/as2w_deploy.dir/src/main.cpp.o
+[ 30%] Building CXX object CMakeFiles/as2w_bench.dir/src/benchmark.cpp.o
+[ 35%] Linking CXX executable as2w_deploy
+[ 40%] Linking CXX executable as2w_bench
+[ 40%] Built target as2w_deploy
+[ 40%] Built target as2w_bench
+[ 45%] Building CXX object CMakeFiles/as2w_controller_test.dir/src/controller_test.cpp.o
+[ 50%] Linking CXX executable as2w_controller_test
+[ 50%] Built target as2w_controller_test
+[ 55%] Linking CXX static library libas2w_r1199.a
+[ 60%] Linking CXX static library libas2w_r1199_joystick.a
+[ 60%] Built target as2w_r1199
+[ 60%] Built target as2w_r1199_joystick
+[ 65%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_replay.dir/r1199_replay.cpp.o
+[ 70%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_replay.dir/r1199_replay.cpp.o
+[ 75%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_publish.dir/__/r214/r214_publish.cpp.o
+[ 80%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_joystick_publish.dir/__/r214/r214_publish.cpp.o
+[ 85%] Linking CXX executable as2w_r1199_replay
+[ 90%] Linking CXX executable as2w_r1199_joystick_replay
+[ 90%] Built target as2w_r1199_joystick_replay
+[ 90%] Built target as2w_r1199_replay
+[ 95%] Linking CXX executable as2w_r1199_publish
+[ 95%] Built target as2w_r1199_publish
+[100%] Linking CXX executable as2w_r1199_joystick_publish
+[100%] Built target as2w_r1199_joystick_publish
+Internal ctest changing into directory: /root/as2w_deploy/build-r1199-joystick
+Test project /root/as2w_deploy/build-r1199-joystick
+    Start 1: recovery-r09
+1/9 Test #1: recovery-r09 .....................   Passed    0.02 sec
+    Start 2: recovery-r12
+2/9 Test #2: recovery-r12 .....................   Passed    0.02 sec
+    Start 3: recovery-r13
+3/9 Test #3: recovery-r13 .....................   Passed    0.02 sec
+    Start 4: stairs-r14
+4/9 Test #4: stairs-r14 .......................   Passed    0.02 sec
+    Start 5: stairs-r17-2000
+5/9 Test #5: stairs-r17-2000 ..................   Passed    0.02 sec
+    Start 6: stairs-r17-3000
+6/9 Test #6: stairs-r17-3000 ..................   Passed    0.02 sec
+    Start 7: controller
+7/9 Test #7: controller .......................   Passed    0.02 sec
+    Start 8: r1199-startup-frame-audit
+8/9 Test #8: r1199-startup-frame-audit ........   Passed    0.10 sec
+    Start 9: r1199-joystick-startup-audit
+9/9 Test #9: r1199-joystick-startup-audit .....   Passed    0.11 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.37 sec
+AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown

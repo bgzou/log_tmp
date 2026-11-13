@@ -1,0 +1,8 @@
+time=2026-11-12 10:03:27 +08:00
+doc=部署测试/02_现场操作/AS2-W训练到部署交付清单_v3_通用核心与按需模块.md
+doc_sha256=544A9294EF4C5ECEA637AA519C6329F201386BDC177F720FA33E61DB71992AC6
+zip=部署测试/06_训练协作/R1199_real_robot_feedback_20261112.zip
+zip_sha256=239234867EA60B165C82455F218F2A8B105B00350FD7B9433EDE8B26308ABAC2
+zip_contract_entry=docs/policy_delivery_contract.md
+scope=all-policy core plus skill-specific modules; not_applicable/not_run allowed
+robot_action=none

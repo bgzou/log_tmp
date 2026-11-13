@@ -1,0 +1,46 @@
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+R1199 FORWARD TRIAL: A fixed stand; B automatically requests forward 0.05m/s for 2s, then auto Brake/ReturnStand/Y squat; sticks ignored.
+Type 'GO' and press Enter to start (nothing else proceeds).
+FIELD_SAFETY_PROFILE command_accel=0.2,0.1,0.2 command_decel=0.4,0.2,0.4 remote_timeout_ms=200 leg_dq=5/8 wheel_dq=8/12 leg_tau=35/50 wheel_tau=8/12 leg_pd=35/50 wheel_pd=8/15 leg_step=0.2/0.35 wheel_step=15/30 warn_frames=5 hard_frames=3 (units: dq rad/s, tau/pd Nm, step per 20 ms)
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=8763169 packets=618
+FSM started in Passive startup. A/Y enabled; B once (automatic forward 0.05m/s for 2s, then auto return+squat). X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 745 frames
+[Passive] → FixStand (A)
+[FixStand] → FixedStand (PD hold; B required for R214)
+[FixedStand] → PolicyHandoff (B accepted: pose_error=0.257115 wheel_dq=0.0245437 upright=0.998423 quiet_dq=0.0306796)
+[PolicyHandoff] → PolicyWalk (zero-speed handoff complete)
+WALK_CMD vx=0.04 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.200174,0.346743,-0.343262,0.328078,-0.320306,-0.167317,-0.141116,-0.0173984,-0.00951606,0.0786176,0.106354,0.0482973,0.0397193
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.400101,0.271497,-0.275177,0.253659,-0.246606,-0.142275,-0.118558,-0.0223747,-0.0174745,0.0622722,0.0776173,0.0257674,0.0227253
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.600009,0.251703,-0.257929,0.23381,-0.227992,-0.120268,-0.0965153,-0.0144473,-0.0116616,0.0879788,0.0968701,0.0595495,0.0544446
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.800217,0.245712,-0.251578,0.231277,-0.222415,-0.0813761,-0.0579714,-0.00249916,0.00490254,0.0888914,0.0959806,0.0809528,0.0775805
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.999992,0.24399,-0.249706,0.231916,-0.221058,-0.0599214,-0.040386,0.00296551,0.00670773,0.0881248,0.0971714,0.0923512,0.0984273
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.20012,0.243041,-0.248829,0.23168,-0.220504,-0.109382,-0.0888654,0.0067367,0.0107017,0.0878923,0.0967896,0.0922198,0.0995146
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.4,0.242689,-0.248214,0.232191,-0.220315,-0.0306788,-0.0133826,0.0103032,0.0145039,0.0892882,0.101709,0.0956646,0.108308
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.60024,0.243035,-0.248326,0.232051,-0.220235,-0.03409,-0.0141579,0.00723481,0.0135094,0.0983428,0.108975,0.0972224,0.112467
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,1.80008,0.243252,-0.24744,0.231855,-0.22008,-0.0277269,-0.00549996,0.00413513,0.0132201,0.0986181,0.110804,0.103687,0.116491
+WALK_CMD vx=0.05 vy=0 wz=0 requested=0.05,0,0 ly=0 lx=0 rx=0
+POLICY_TRACK,2.00003,0.158193,-0.160458,0.147712,-0.134727,-0.0390882,-0.0175825,-0.0336294,-0.0191225,0.0405834,0.0406792,0.0340624,0.0425152
+[PolicyWalk] brake trigger=bounded forward 2s cap
+[PolicyWalk] → Brake
+POLICY_TRACK,2.1999,0.190165,-0.197392,0.174137,-0.167983,-0.0527912,-0.0330951,-0.0415919,-0.0245084,0.136981,0.139985,0.0782871,0.0859132
+POLICY_TRACK,2.39992,0.198734,-0.20638,0.187062,-0.178865,0.0013293,0.0179514,-0.00875545,0.00497252,0.14575,0.148502,0.102675,0.113852
+[Brake] → ReturnStand (A/timeout, wheels stable)
+[ReturnStand] → FixedStand (A complete)
+FixedStand squat trigger=Y
+[FixedStand] → FixSquat
+[FixSquat] → Passive (auto, squat done + kp decay)
+ZERO-B TRIAL: prone hold complete, stop
+Operator exit; stop.
+Publisher stopped, exit=0
+R1199_FORWARD_REMOTE_RC=0

@@ -1,0 +1,31 @@
+route=A_B_ZERO_RETURN_Y seed=101
+  passive: h=0.232->0.216 min_up=1.000 contact=31.0N wheel_dq=0.65 leg_dq=2.11 base_v=0.09m/s dxy=0.04m
+  A_fixstand: h=0.216->0.382 min_up=0.999 contact=14.0N wheel_dq=0.29 leg_dq=1.11 base_v=0.22m/s dxy=0.07m
+  fixed_hold: h=0.385->0.374 min_up=1.000 contact=0.0N wheel_dq=0.43 leg_dq=0.95 base_v=0.26m/s dxy=0.02m
+  B_policy_handoff: h=0.373->0.369 min_up=1.000 contact=0.0N wheel_dq=1.07 leg_dq=0.07 base_v=0.08m/s dxy=0.06m
+  policy_zero_hold_3s: h=0.369->0.360 min_up=0.998 contact=0.0N wheel_dq=2.77 leg_dq=0.11 base_v=0.20m/s dxy=0.42m
+  auto_brake: h=0.360->0.354 min_up=0.997 contact=0.0N wheel_dq=2.75 leg_dq=0.28 base_v=0.21m/s dxy=0.18m
+  A_return_stand: h=0.354->0.350 min_up=0.999 contact=0.0N wheel_dq=0.33 leg_dq=0.28 base_v=0.02m/s dxy=0.02m
+  returned_fixed_hold: h=0.350->0.349 min_up=1.000 contact=0.0N wheel_dq=0.09 leg_dq=0.01 base_v=0.01m/s dxy=0.00m
+  Y_fixsquat: h=0.349->0.124 min_up=0.996 contact=16.3N wheel_dq=0.26 leg_dq=0.59 base_v=0.10m/s dxy=0.09m
+route=A_B_ZERO_RETURN_Y seed=202
+  passive: h=0.232->0.216 min_up=1.000 contact=38.2N wheel_dq=0.64 leg_dq=2.00 base_v=0.08m/s dxy=0.04m
+  A_fixstand: h=0.216->0.376 min_up=0.999 contact=15.9N wheel_dq=0.31 leg_dq=1.18 base_v=0.20m/s dxy=0.07m
+  fixed_hold: h=0.379->0.364 min_up=1.000 contact=0.0N wheel_dq=0.50 leg_dq=0.96 base_v=0.23m/s dxy=0.01m
+  B_policy_handoff: h=0.364->0.359 min_up=1.000 contact=0.0N wheel_dq=1.05 leg_dq=0.08 base_v=0.07m/s dxy=0.06m
+  policy_zero_hold_3s: h=0.359->0.352 min_up=0.998 contact=0.0N wheel_dq=2.81 leg_dq=0.10 base_v=0.21m/s dxy=0.42m
+  auto_brake: h=0.352->0.346 min_up=0.997 contact=0.0N wheel_dq=2.70 leg_dq=0.24 base_v=0.21m/s dxy=0.17m
+  A_return_stand: h=0.346->0.341 min_up=0.999 contact=0.0N wheel_dq=0.47 leg_dq=0.15 base_v=0.04m/s dxy=0.03m
+  returned_fixed_hold: h=0.341->0.339 min_up=1.000 contact=0.0N wheel_dq=0.13 leg_dq=0.03 base_v=0.01m/s dxy=0.01m
+  Y_fixsquat: h=0.339->0.110 min_up=0.992 contact=32.9N wheel_dq=0.35 leg_dq=1.35 base_v=0.08m/s dxy=0.06m
+route=A_B_ZERO_RETURN_Y seed=303
+  passive: h=0.234->0.216 min_up=1.000 contact=45.6N wheel_dq=0.87 leg_dq=1.94 base_v=0.08m/s dxy=0.04m
+  A_fixstand: h=0.216->0.375 min_up=0.999 contact=16.5N wheel_dq=0.31 leg_dq=1.16 base_v=0.19m/s dxy=0.07m
+  fixed_hold: h=0.378->0.363 min_up=1.000 contact=0.0N wheel_dq=0.44 leg_dq=0.98 base_v=0.22m/s dxy=0.01m
+  B_policy_handoff: h=0.363->0.356 min_up=1.000 contact=0.0N wheel_dq=1.09 leg_dq=0.08 base_v=0.08m/s dxy=0.06m
+  policy_zero_hold_3s: h=0.356->0.351 min_up=0.998 contact=0.0N wheel_dq=2.89 leg_dq=0.22 base_v=0.21m/s dxy=0.44m
+  auto_brake: h=0.351->0.347 min_up=0.998 contact=0.0N wheel_dq=2.94 leg_dq=0.33 base_v=0.22m/s dxy=0.17m
+  A_return_stand: h=0.348->0.346 min_up=0.999 contact=0.0N wheel_dq=0.42 leg_dq=0.23 base_v=0.02m/s dxy=0.01m
+  returned_fixed_hold: h=0.346->0.345 min_up=1.000 contact=0.0N wheel_dq=0.04 leg_dq=0.01 base_v=0.00m/s dxy=0.00m
+  Y_fixsquat: h=0.345->0.102 min_up=0.995 contact=41.2N wheel_dq=0.37 leg_dq=1.66 base_v=0.11m/s dxy=0.09m
+saved results/r270_zero_b_trial_rehearsal_20261110.json

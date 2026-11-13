@@ -1,0 +1,17 @@
+2026-11-09 CPRO Ubuntu read-only original remote topic, passive 10 s
+Stage: remote-state
+Started: 2026-11-09T09:29:31+08:00
+Command: ./build-sdk2/as2w_sdk2 remote-state eth0 10
+remote packets=0
+remote packets=0
+remote packets=0
+remote packets=0
+remote packets=0
+remote packets=0
+remote packets=0
+remote packets=0
+remote packets=0
+remote packets=0
+No WirelessController packets
+Exit code: 1
+Finished: 2026-11-09T09:29:41+08:00

@@ -1,0 +1,16 @@
+[field-session] mode=forward monitor=30s dry_run=1 dir=/root/field_sessions/20261111-231015_forward-dry-run
+[field-session] step1 binary: build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_forward_publish
+86ede22aff304874e5ee9638cb430760089bf13fd9b2d945468cc8c4998b21b1  deploy/robots/as2w/r214/r214_publish.cpp
+1dca78ee45271669238e7d47b0fbefc6f10e4fb59e31e0fec841aa6d65cf53dc  deploy/robots/as2w/r1199/r1199_controller.cpp
+0babf0f12432f928faa1bacf78f736305b80d558dc89a114ca6d3e48ca668cf4  deploy/robots/as2w/r1199/r1199_controller.hpp
+0e794783bc2d0315117acf24728c4b2b136b881c2f9b9c6475f12a4a8447240c  tools/run_r1199_forward_trial.sh
+df1f2db98efe32ad4a8b767c34b7ca4235c717f80e5778d59552a522b6fc7f23  models/r1199/policy.onnx
+139c541bc927deac92fdbe26d34da0913d30975734d243d9206d243e546597e2  build-r1199-forward/deploy/robots/as2w/r1199/as2w_r1199_forward_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1049 tick=8744178 mode_pr=0 mode_machine=2 imu_wxyz=0.996535,0.00168362,0.00269597,0.0831087, gyro=-0.00745685,0.00639159,-0.00319579, m0=-0.609739,-0.00306796 m1=0.952638,0.00306796 m2=-2.71219,-0.00204531 m3=0.584764,-0.00306796 m4=0.964395,-0.00306796 m5=-2.73967,-0.00204531 m6=-0.55614,0.00306796 m7=1.02412,0 m8=-2.74794,-0.00204531 m9=0.536,-0.00613592 m10=1.0003,-0.00920388 m11=-2.76035,0.00409062 m12=-2.02471,0 m13=-3.13455,0 m14=-2.14407,0 m15=-3.39583,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2001,2086,0,8746507,0,2,0.996532,0.0015129,0.00183251,0.0831732,0.00213053,-0.00426106,-0.00745685,-0.609757,
+[field-session] step4 packets=2086 16-axis modes={0}
+[field-session] step4 forward prone calf gate=yes
+[field-session] dry-run: steps 1-4 PASS; would now start monitoring + forward launcher

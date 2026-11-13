@@ -1,0 +1,8 @@
+walk_frames=2173 tau_ms=60.0 alpha=0.283469
+recorded_max_leg_step_rad {'mean': 0.024443769106814003, 'p99': 0.12341000000000002, 'peak': 0.12595999999999985}
+ema_max_leg_step_rad {'mean': 0.006960823731833071, 'p99': 0.027661692544978855, 'peak': 0.03568815703014305}
+warning=target-only, no robot feedback or closed-loop dynamics
+walk_frames=2173 tau_ms=80.0 alpha=0.221199
+recorded_max_leg_step_rad {'mean': 0.024443769106814003, 'p99': 0.12341000000000002, 'peak': 0.12595999999999985}
+ema_max_leg_step_rad {'mean': 0.005885890254608797, 'p99': 0.021392087229100243, 'peak': 0.027825822379770715}
+warning=target-only, no robot feedback or closed-loop dynamics

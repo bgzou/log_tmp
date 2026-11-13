@@ -1,0 +1,55 @@
+[field-session] policy=r284 mode=zero-b monitor=120s dir=/root/field_sessions/20261110-194636_r284-zero-b
+[field-session] step1 binary: build-r284-zero-b/deploy/robots/as2w/r284/as2w_r284_publish
+83764fa6fa9702aa957711a83eba552b5c5bbdbdde1580a19086859901c21dff  deploy/robots/as2w/r214/r214_publish.cpp
+6db515b7ef557acfc529e82e521dfd2a7a3e1c4aa066c3e1abaab93ffdd3eebb  deploy/robots/as2w/r284/r284_controller.cpp
+a0865779a15ec82000bc209b417923846a25c3bc83a06446c4bd37f354c5842a  deploy/robots/as2w/r284/r284_observations.hpp
+30c77bfbdf13b57cbe4f22b37b3dd31d463d7458a3f89419867dcd40887f7159  build-r284-zero-b/deploy/robots/as2w/r284/as2w_r284_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; firmware acceptance unknown
+[field-session] step2 probe: low packets=1029 tick=542351 mode_pr=0 mode_machine=2 imu_wxyz=0.999384,0.00207703,0.00203422,0.0349729, gyro=-0.00319579,0.00213053,-0.00106526, m0=-0.593369,0 m1=0.964586,0 m2=-2.71791,0 m3=0.579341,0.00613592 m4=0.967528,0 m5=-2.72,0.00409062 m6=-0.605479,0.00306796 m7=0.958978,0.0122718 m8=-2.68704,0.00409062 m9=0.584477,-0.00920388 m10=0.935189,-0.0122718 m11=-2.70275,0.00409062 m12=0.0139976,-0.0122718 m13=-0.553096,0.0122718 m14=0.138346,0.0122718 m15=-0.876718,0 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step3 already released (name empty) -> continue
+[field-session] step4 sample: LOW_SAMPLE,2009,2094,0,544675,0,2,0.999375,0.00252066,0.00204954,0.0352114,-0.00639159,-0.00426106,0.00213053,-0.593369,
+[field-session] step4 packets=2094 16-axis modes={0}
+[field-session] step5 starting 120s monitoring (low-capture 10ms + low-protection)
+[field-session] step6 launching: bash tools/run_r284_zero_b_trial.sh
+[field-session]     >>> Passive ready expected in ~3-5s; then hand the remote to the operator.
+[field-session]     >>> A=fixed stand  B=policy (mode dependent)  Y=squat  X=emergency.
+WARNING: publishes LowCmd. ReleaseMode must already be done. X selects EmergencyDamping; SIGINT/SIGTERM stop the publisher.
+ZERO-B TRIAL: A fixed stand; once B enters R214 at forced zero speed, auto-returns and squats; sticks forced neutral.
+Type 'GO' and press Enter to start (nothing else proceeds).
+Observing released LowState on eth0 for 500 ms (no LowCmd)...
+Released feedback stable. mode_machine=2 tick=545582 packets=623
+FSM started in Passive startup. A/Y enabled; B once (forced zero speed, auto return+squat). X=emergency.
+STARTUP: 16-axis FOC feedback stable; begin passive kd 0->3 ramp
+STARTUP: Passive ready after 740 frames
+[Passive] → FixStand (A)
+[FixStand] → FixedStand (PD hold; B required for R214)
+[FixedStand] → PolicyHandoff (B accepted: pose_error=0.269871 wheel_dq=0 upright=0.995592 quiet_dq=0.0276117)
+[PolicyHandoff] → PolicyWalk (zero-speed handoff complete)
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.200176,0.424454,0.425215,0.502739,0.202459,0.14447,-0.0944383,-0.364526,0.160231,1.07287,-0.576774,0.518298,-0.421942
+WALK_CMD vx=0 vy=0 wz=0 ly=0 lx=0 rx=0
+POLICY_TRACK,0.400214,0.396638,0.287461,0.479418,0.0928604,-0.0741169,-0.283382,-0.450632,-0.0841773,0.843824,-0.367125,0.215074,-0.501069
+[PolicyWalk] → Brake (A)
+POLICY_TRACK,0.600132,-0.0272648,-0.269386,0.200139,-0.334427,0.267691,0.0479622,0.000529408,0.0911289,0.0633734,0.378018,0.277843,0.376811
+POLICY_TRACK,0.799867,-0.24726,-0.627809,-0.134743,-0.644448,0.333309,0.26645,0.367947,-0.0179238,-0.517882,0.93692,-0.0817144,0.851666
+POLICY_TRACK,1.00022,0.198924,-0.102439,0.362189,-0.194201,0.541455,0.485865,0.0176817,0.157368,0.241059,0.0905292,0.258337,0.347283
+POLICY_TRACK,1.20056,0.0320526,-0.325102,0.114574,-0.426437,0.269714,0.230078,0.226623,-0.0367249,-0.205015,0.588951,0.0201108,0.55869
+POLICY_TRACK,1.39999,0.00737149,-0.345704,0.183753,-0.316003,0.268182,0.185237,0.142317,0.0955381,-0.056277,0.366835,0.0729141,0.478315
+POLICY_TRACK,1.60053,0.386338,0.161305,0.454096,0.0443584,0.0628572,-0.155771,-0.353071,0.106501,0.78418,-0.396337,0.238864,-0.248928
+POLICY_TRACK,1.8002,-0.0168397,-0.391658,0.136816,-0.293063,-0.220065,-0.268181,-0.344056,-0.191152,-0.0612907,0.530835,-0.282104,-0.00290155
+POLICY_TRACK,1.99985,-0.122326,-0.523959,-0.119763,-0.565455,0.16118,0.0562615,0.220787,-0.159959,-0.344531,0.913775,-0.164395,0.646478
+STARTUP FAULT: FOC acknowledgement timeout/loss; 38154 frames sent
+Publisher fault; stop.
+Publisher stopped, exit=1
+R284_ZERO_B_TRIAL_REMOTE_RC=1
+[field-session] publisher exited rc=1
+[field-session] monitoring done; artifacts:
+total 14828
+drwxr-xr-x.  2 root root     3440 Nov 10 19:46 .
+drwxr-xr-x. 10 root root     3440 Nov 10 19:46 ..
+-rw-r--r--.  1 root root 10111159 Nov 10 19:48 low_capture_fast.log
+-rw-r--r--.  1 root root  5044460 Nov 10 19:48 low_protection.log
+-rw-r--r--.  1 root root     2511 Nov 10 19:47 publisher.log
+-rw-r--r--.  1 root root     2176 Nov 10 19:48 session.log
+[field-session] session complete (policy=r284 mode=zero-b rc=1). Copy /root/field_sessions/20261110-194636_r284-zero-b back to the workstation logs dir and append INDEX.

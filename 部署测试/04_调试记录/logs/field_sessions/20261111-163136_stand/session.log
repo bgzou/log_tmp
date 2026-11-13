@@ -1,0 +1,28 @@
+[field-session] mode=stand monitor=180s dry_run=0 dir=/root/field_sessions/20261111-163136_stand
+[field-session] step1 binary: build-r214-ab-fsm/deploy/robots/as2w/r214/as2w_r214_publish
+419dca66e91688a83e87173366d8662bb8c9d03b945a8db3fb43b9bb50951aab  deploy/robots/as2w/r214/r214_publish.cpp
+8e7ea22cb2e020bd7a93d91026cff02c41749f091274816c42db315971f8f947  build-r214-ab-fsm/deploy/robots/as2w/r214/as2w_r214_publish
+[field-session] step1 audit: AUDIT PASS: synthetic HG frames and wake timing; command slew and field safety guards; offline fault injection (warn/hard/motorstate/remote-timeout/slew); firmware acceptance unknown
+[field-session] step2 probe: low packets=1097 tick=2500835 mode_pr=0 mode_machine=2 imu_wxyz=0.999111,0.000830705,-0.000995682,-0.0421273, gyro=-0.00639159,-0.00106526,0.00852211, m0=-0.550471,0.00920388 m1=1.01068,0 m2=-2.76229,0.00613592 m3=0.537259,-0.00306796 m4=1.01478,0 m5=-2.76837,0.0163625 m6=-0.577304,0 m7=1.09547,-0.00306796 m8=-2.74922,-0.00613592 m9=0.592057,-0.00306796 m10=1.08843,-0.00306796 m11=-2.74144,0 m12=0.161739,0 m13=-0.800762,0.0122718 m14=-0.167875,0 m15=-0.291025,-0.0122718 m16=0,0 m17=0,0 m18=0,0 m19=0,0 m20=0,0 m21=0,0 m22=0,0 m23=0,0 m24=0,0 m25=0,0 m26=0,0 m27=0,0 m28=0,0 m29=0,0 m30=0,0 m31=0,0 m32=0,0 m33=0,0 m34=0,0
+[field-session] step3 motion-mode: MotionSwitcher CheckMode rc=0 form=1 name=ai
+[field-session] step3 factory control (ai): ensure prone before releasing
+[field-session] step3 current fsm: fsm_name=ai_damping
+[field-session] step3 prone confirmed -> ReleaseMode
+[field-session] step3 release: MotionSwitcher ReleaseMode rc=0
+[field-session] step3 recheck: MotionSwitcher CheckMode rc=0 form=1 name=
+[field-session] step4 sample: LOW_SAMPLE,2000,2093,0,2504934,0,2,0.999118,0.000659923,-0.00142481,-0.0419547,-0.00852211,0.00319579,-0.00106526,-0.550
+[field-session] step4 packets=2093 16-axis modes={0}
+[field-session] step5 starting 180s monitoring (low-capture 10ms + low-protection)
+[field-session] step6 launching: bash tools/run_r214_stand_trial.sh
+[field-session]     >>> Passive ready expected in ~3-5s; then hand the remote to the operator.
+[field-session]     >>> A=fixed stand  B=policy (mode dependent)  Y=squat  X=emergency.
+[field-session] publisher exited rc=0
+[field-session] monitoring done; artifacts:
+total 21883
+drwxr-xr-x.  2 root root     3440 Nov 11 16:31 .
+drwxr-xr-x. 12 root root     3440 Nov 11 16:31 ..
+-rw-r--r--.  1 root root 14890493 Nov 11 16:34 low_capture_fast.log
+-rw-r--r--.  1 root root  7482163 Nov 11 16:34 low_protection.log
+-rw-r--r--.  1 root root     1142 Nov 11 16:32 publisher.log
+-rw-r--r--.  1 root root     2307 Nov 11 16:34 session.log
+[field-session] session complete (mode=stand rc=0). Copy /root/field_sessions/20261111-163136_stand back to the workstation logs dir and append INDEX.

@@ -1,0 +1,4 @@
+build-r1199-training-contract 16b30b9220b2be6438def21bbec6ac5d4a4932f93861c1323621caec1aa6081b  /tmp/build-r1199-training-contract_audit_frames.txt
+build-r1199-training-contract-debug 16b30b9220b2be6438def21bbec6ac5d4a4932f93861c1323621caec1aa6081b  /tmp/build-r1199-training-contract-debug_audit_frames.txt
+build-r1199-training-contract-filter 16b30b9220b2be6438def21bbec6ac5d4a4932f93861c1323621caec1aa6081b  /tmp/build-r1199-training-contract-filter_audit_frames.txt
+OFFLINE_FRAME_PARITY PASS (filter disabled; old/debug/filter builds produce identical audit frames)

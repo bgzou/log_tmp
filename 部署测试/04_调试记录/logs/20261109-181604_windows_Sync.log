@@ -1,0 +1,42 @@
+﻿Sync started: 2026-11-09T18:16:04.8660262+08:00
+recovery-r09 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r12 ONNX SHA256 OK; actor SHA256 and header OK
+recovery-r13 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r14 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-2000 ONNX SHA256 OK; actor SHA256 and header OK
+stairs-r17-3000 ONNX SHA256 OK; actor SHA256 and header OK
+checked 6 models
+
+
+Algorithm : SHA256
+Hash      : 827E4664723A3CEF3063B9B582716AB59EABD04EE8EF18F65F5C86D8FBF9A193
+Path      : D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\cpp_deploy-as2w.tar.gz
+
+
+
+Package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\cpp_deploy-as2w.tar.gz
+
+
+Algorithm : SHA256
+Hash      : FDA77F474A8118E243CEEE6D7223FB22C6C7FEBC8B651266601F2AAABD5ACADE
+Path      : D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\unitree_sdk2-src.tar.gz
+
+
+
+SDK2 package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署参考\cpp_deploy-as2w\dist\unitree_sdk2-src.tar.gz
+Field package ready: D:\Projects\Athena\运动控制\Collie\AS2-W_CPRO\部署测试
+827e4664723a3cef3063b9b582716ab59eabd04ee8ef18f65f5c86d8fbf9a193  cpp_deploy-as2w.tar.gz
+fda77f474a8118e243ceee6d7223fb22c6c7febc8b651266601f2aaabd5acade  unitree_sdk2-src.tar.gz
+FileTransfer finish, Size:3866195, File count = 1, time:170ms rate:22742.32kB/s
+
+FileTransfer finish, Size:17003094, File count = 1, time:661ms rate:25723.29kB/s
+
+FileTransfer finish, Size:179, File count = 1, time:23ms rate:7.78kB/s
+
+FileTransfer finish, Size:767, File count = 1, time:20ms rate:38.35kB/s
+
+FileTransfer finish, Size:958, File count = 1, time:17ms rate:56.35kB/s
+
+cpp_deploy-as2w.tar.gz: OK
+unitree_sdk2-src.tar.gz: OK
+Sync finished: 2026-11-09T18:16:11.4895457+08:00

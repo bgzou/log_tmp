@@ -1,0 +1,8 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/as2w_deploy/build-r1199-zero-b
+Consolidate compiler generated dependencies of target as2w_r1199
+[ 50%] Built target as2w_r1199
+[ 75%] Building CXX object deploy/robots/as2w/r1199/CMakeFiles/as2w_r1199_replay.dir/r1199_replay.cpp.o
+[100%] Linking CXX executable as2w_r1199_replay
+[100%] Built target as2w_r1199_replay

@@ -1,0 +1,43 @@
+2026-11-09 CPRO Ubuntu policy list, 6x60 fixture, compute benchmark
+Stage: policy-list
+Started: 2026-11-09T09:18:02+08:00
+Command: python3 tools/policy_select.py list
+recovery-r09       recovery offline only
+recovery-r12       recovery offline only
+recovery-r13       recovery offline only
+stairs-r14         stairs   offline + read-only shadow
+stairs-r17-2000    stairs   offline + read-only shadow
+stairs-r17-3000    stairs   offline + read-only shadow
+Exit code: 0
+Finished: 2026-11-09T09:18:03+08:00
+Stage: policy-verify
+Started: 2026-11-09T09:18:03+08:00
+Command: python3 tools/policy_select.py verify all
+VERIFY recovery-r09 (recovery)
+frames=60 max_abs_error=1.90735e-05
+VERIFY recovery-r12 (recovery)
+frames=60 max_abs_error=1.71661e-05
+VERIFY recovery-r13 (recovery)
+frames=60 max_abs_error=1.14441e-05
+VERIFY stairs-r14 (stairs)
+frames=60 max_abs_error=1.14441e-05
+VERIFY stairs-r17-2000 (stairs)
+frames=60 max_abs_error=1.14441e-05
+VERIFY stairs-r17-3000 (stairs)
+frames=60 max_abs_error=9.77516e-06
+Exit code: 0
+Finished: 2026-11-09T09:18:03+08:00
+Stage: policy-bench
+Started: 2026-11-09T09:18:03+08:00
+Command: python3 tools/policy_select.py bench recovery-r12 3000
+BENCH recovery-r12 (recovery); compute only, no DDS
+iterations=3000 p50_us=55.78 p99_us=93.44 max_us=1900.78 policy_period_us=20000 action_sum=1072.61
+Exit code: 0
+Finished: 2026-11-09T09:18:03+08:00
+Stage: policy-bench
+Started: 2026-11-09T09:18:04+08:00
+Command: python3 tools/policy_select.py bench stairs-r17-3000 3000
+BENCH stairs-r17-3000 (stairs); compute only, no DDS
+iterations=3000 p50_us=50.47 p99_us=88.44 max_us=1276.88 policy_period_us=20000 action_sum=572.75
+Exit code: 0
+Finished: 2026-11-09T09:18:04+08:00

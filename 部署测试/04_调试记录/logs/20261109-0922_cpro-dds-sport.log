@@ -1,0 +1,10 @@
+2026-11-09 CPRO Ubuntu read-only SportModeState eth0 10 s
+Stage: sport-state
+Started: 2026-11-09T09:21:41+08:00
+Command: ./build-sdk2/as2w_sdk2 sport-state eth0 10
+terminate called after throwing an instance of 'unitree::common::SystemException'
+  what():  readlink error
+tools/field.sh: line 71: 39452 Aborted                 (core dumped) "${cmd[@]}" 2>&1
+     39453 Done                    | tee -a "$log"
+Exit code: 134
+Finished: 2026-11-09T09:21:41+08:00

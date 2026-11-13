@@ -1,0 +1,38 @@
+2026-11-08 / Windows PC / offline architecture reorganization
+
+Command: python tools/policy_select.py list
+Exit: 0
+recovery-r09       recovery offline only
+recovery-r12       recovery offline only
+recovery-r13       recovery offline only
+stairs-r14         stairs   offline + read-only shadow
+stairs-r17-2000    stairs   offline + read-only shadow
+stairs-r17-3000    stairs   offline + read-only shadow
+
+Command: python tools/policy_select.py verify all
+Exit: 0
+VERIFY recovery-r09 (recovery)
+frames=60 max_abs_error=1.52588e-05
+VERIFY recovery-r12 (recovery)
+frames=60 max_abs_error=9.53674e-06
+VERIFY recovery-r13 (recovery)
+frames=60 max_abs_error=1.52588e-05
+VERIFY stairs-r14 (stairs)
+frames=60 max_abs_error=1.14441e-05
+VERIFY stairs-r17-2000 (stairs)
+frames=60 max_abs_error=1.04904e-05
+VERIFY stairs-r17-3000 (stairs)
+frames=60 max_abs_error=1.04904e-05
+
+Command: zig c++ -target aarch64-linux-gnu -std=c++17 -c diagnostics.cpp
+Exit: 0
+Command: zig c++ -target aarch64-linux-gnu -std=c++17 -c sport_gamepad.cpp
+Exit: 0
+Note: both used local unitree_sdk2 and CycloneDDS headers; this is object compilation, not a linked ARM64 executable.
+
+Command: sha256sum -c SHA256SUMS.txt (from 01_现场部署包)
+Exit: 0
+cpp_deploy-as2w.tar.gz: OK
+unitree_sdk2-src.tar.gz: OK
+
+Host limitation: cmake and ctest are absent from this Windows PATH, so CMake build after source relocation was not rerun on this PC. CPRO Ubuntu build remains a required field gate.
