@@ -19,3 +19,6 @@
 shadow.out
 sportstate.out
 *.log.tmp
+
+# 第三方 go2 仓库里的 *.onnx 是未拉取的 LFS 指针（132B），GitHub 拒绝含无对象指针的推送
+部署参考/unitree_cpp_deploy-go2/logs/**/exported/policy.onnx
